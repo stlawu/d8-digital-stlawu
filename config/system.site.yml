@@ -1,0 +1,14 @@
+uuid: 6389f1df-9567-4916-bc9e-96e56daf05bb
+name: d8-digital-stlawu
+mail: ncainaru@stlawu.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
