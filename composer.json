@@ -21,6 +21,7 @@
         "drupal/address": "^1.4",
         "drupal/addtoany": "^1.10",
         "drupal/allowed_formats": "^1.1",
+        "drupal/block_class": "^1.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
