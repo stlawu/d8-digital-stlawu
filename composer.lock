@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff5d42555d18b5953547b757b86e01cd",
+    "content-hash": "1f6c1d2923961b7c93cd087ff5c1703a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4490,6 +4490,11 @@
         {
             "name": "webflo/drupal-core-strict",
             "version": "8.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webflo/drupal-core-strict.git",
+                "reference": "3a941992f02528327be3cd45de1eb3fe71a5ff30"
+            },
             "require": {
                 "asm89/stack-cors": "1.2.0",
                 "composer/installers": "v1.5.0",
@@ -6947,7 +6952,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "stability-flags": {
         "drupal/simple_block": 10
     },
