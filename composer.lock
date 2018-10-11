@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9a43f84139da89b54abe42f67f2ac72",
+    "content-hash": "c1744fc8b6f9316fe634bdfb8d5aa81d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -123,6 +123,25 @@
             "time": "2017-12-20T14:37:45+00:00"
         },
         {
+            "name": "bower-asset/jquery",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/9e8ec3d10fad04748176144f108d7355662ae75e",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e",
+                "shasum": null
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/jquery-simple-color",
             "version": "v1.2.2",
             "source": {
@@ -140,6 +159,25 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "bower-asset/spectrum",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bgrins/spectrum.git",
+                "reference": "98454b55521cfb495f628db28af01100c029ef76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bgrins/spectrum/zipball/98454b55521cfb495f628db28af01100c029ef76",
+                "reference": "98454b55521cfb495f628db28af01100c029ef76",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7.2"
+            },
+            "type": "bower-asset"
         },
         {
             "name": "commerceguys/addressing",
