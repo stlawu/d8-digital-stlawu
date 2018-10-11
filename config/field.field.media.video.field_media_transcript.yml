@@ -1,0 +1,23 @@
+uuid: d9ac6b1e-d1ee-4627-9e40-d52b5eabb21b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_transcript
+    - media.type.video
+  module:
+    - text
+_core:
+  default_config_hash: KgSLQ42ovkY2m8QZ0vsjDoDlRh5lUTURZ1cWcOzq844
+id: media.video.field_media_transcript
+field_name: field_media_transcript
+entity_type: media
+bundle: video
+label: Transcript
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

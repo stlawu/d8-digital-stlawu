@@ -1,0 +1,25 @@
+uuid: bce194ac-2230-415d-9c75-d248a3327ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_height
+    - media.type.image
+_core:
+  default_config_hash: G_xW3fw9rak97vz1-egTBDKQIOxO4EeMc8Q9Tyib6aU
+id: media.image.field_media_height
+field_name: field_media_height
+entity_type: media
+bundle: image
+label: Height
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

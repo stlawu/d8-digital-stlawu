@@ -1,0 +1,25 @@
+uuid: 04fe9abc-58a1-4f8e-8aee-8186590ef1d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_cache_age
+    - media.type.remote_video
+_core:
+  default_config_hash: LUUFo6Q3x5wF_zMY5-Qo-s7ujdZWz1SgkSnYtdKHXa8
+id: media.remote_video.field_media_cache_age
+field_name: field_media_cache_age
+entity_type: media
+bundle: remote_video
+label: 'Cache age'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

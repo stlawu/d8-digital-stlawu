@@ -1,0 +1,25 @@
+uuid: 9b163ecd-77c2-47d5-b2c6-19d06776e758
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_thumbnail_width
+    - media.type.remote_video
+_core:
+  default_config_hash: qXwZ56rZZKTLoRng8ShagjRJjC6icEaqHYKmw9YvIVg
+id: media.remote_video.field_media_thumbnail_width
+field_name: field_media_thumbnail_width
+entity_type: media
+bundle: remote_video
+label: 'Thumbnail width'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: 71099baa-894f-4bec-8627-8564b411e7f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_author_name
+    - media.type.remote_video
+_core:
+  default_config_hash: fV6qTasHgLcE7M2xcJ0xSCCyGaJomCu2c73psrP6gk0
+id: media.remote_video.field_media_author_name
+field_name: field_media_author_name
+entity_type: media
+bundle: remote_video
+label: 'Author name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

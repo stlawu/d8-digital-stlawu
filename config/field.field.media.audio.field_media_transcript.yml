@@ -1,0 +1,23 @@
+uuid: 8d8701e4-4a33-4776-b4e5-635ab0b44dba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_transcript
+    - media.type.audio
+  module:
+    - text
+_core:
+  default_config_hash: Ymf5z7piYAK-_B7UXgW143oKtqELTVz_6ncSFNioulY
+id: media.audio.field_media_transcript
+field_name: field_media_transcript
+entity_type: media
+bundle: audio
+label: Transcript
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

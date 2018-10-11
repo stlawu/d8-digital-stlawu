@@ -1,0 +1,23 @@
+uuid: f138fb38-fde1-481d-9cca-97ef751d88d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_description
+    - media.type.audio
+  module:
+    - text
+_core:
+  default_config_hash: qaaGfdjPB4aQI8z1Rgv3nlsur1iQHk3hmLu6ElTJtgo
+id: media.audio.field_media_description
+field_name: field_media_description
+entity_type: media
+bundle: audio
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
