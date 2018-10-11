@@ -43,6 +43,7 @@
         "drupal/features": "^3.8",
         "drupal/field_group": "^3.0",
         "drupal/geocoder": "^2.0@beta",
+        "drupal/geofield_map": "^2.14",
         "drupal/geolocation": "^2.0",
         "drupal/google_analytics": "^2.3",
         "drupal/image_effects": "^2.1",
