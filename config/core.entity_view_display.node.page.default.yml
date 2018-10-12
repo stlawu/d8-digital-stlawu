@@ -19,10 +19,10 @@ bundle: page
 mode: default
 content:
   addtoany:
-    weight: 101
+    weight: 99
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   body:
     label: hidden
     type: text_default

@@ -14,6 +14,11 @@ targetEntityType: node
 bundle: landing_page
 mode: default
 content:
+  addtoany:
+    weight: 99
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_last_updated:
     weight: 1
     label: inline
