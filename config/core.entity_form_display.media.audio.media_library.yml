@@ -5,9 +5,11 @@ dependencies:
   config:
     - core.entity_form_mode.media.media_library
     - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_description
+    - field.field.media.audio.field_media_file_size
+    - field.field.media.audio.field_media_mime_type
+    - field.field.media.audio.field_media_transcript
     - media.type.audio
-_core:
-  default_config_hash: 9XTn4CqOB0W8nLo5kOOaNqJAP63e2yQEzMtKttPrlVw
 id: media.audio.media_library
 targetEntityType: media
 bundle: audio
@@ -24,6 +26,10 @@ content:
 hidden:
   created: true
   field_media_audio_file: true
+  field_media_description: true
+  field_media_file_size: true
+  field_media_mime_type: true
+  field_media_transcript: true
   path: true
   status: true
   uid: true

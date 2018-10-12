@@ -7,11 +7,15 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_last_updated
+    - field.field.node.article.field_release_date
     - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser_text
     - image.style.large
     - node.type.article
   module:
     - comment
+    - datetime
     - image
     - text
     - user
@@ -47,6 +51,24 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+  field_last_updated:
+    weight: 2
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'F d, Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_release_date:
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'F d, Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
   field_tags:
     type: entity_reference_label
     weight: 10
@@ -60,4 +82,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_teaser_text: true

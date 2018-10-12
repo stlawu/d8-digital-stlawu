@@ -1,0 +1,23 @@
+uuid: 19f00151-b8e2-4c4e-8137-fefffb7dc216
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_transcript
+    - media.type.remote_video
+  module:
+    - text
+_core:
+  default_config_hash: StoI8Kq9J9yWxtjbE5QLXsEAEB0ZITQ18ltYnJRraGE
+id: media.remote_video.field_media_transcript
+field_name: field_media_transcript
+entity_type: media
+bundle: remote_video
+label: Transcript
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

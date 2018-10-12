@@ -1,0 +1,25 @@
+uuid: 72c5cf24-c679-4e72-8791-5cc5daeaa64c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_height
+    - media.type.remote_video
+_core:
+  default_config_hash: Y4ugPaAqwhzcJ74Cp3Njjd2G_iwezNNXuIkxixukFRo
+id: media.remote_video.field_media_height
+field_name: field_media_height
+entity_type: media
+bundle: remote_video
+label: Height
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: px
+field_type: integer

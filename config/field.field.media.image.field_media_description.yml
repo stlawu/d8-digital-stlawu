@@ -1,0 +1,23 @@
+uuid: 8adc3fe4-682f-4fa8-a47a-1d4c1e9f5466
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_description
+    - media.type.image
+  module:
+    - text
+_core:
+  default_config_hash: PND8iHENYgdm9A1moNslH2PMMlJ3qcQYUxy-cq6I0yo
+id: media.image.field_media_description
+field_name: field_media_description
+entity_type: media
+bundle: image
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

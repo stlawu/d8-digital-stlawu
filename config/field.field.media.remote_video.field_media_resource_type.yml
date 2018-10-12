@@ -1,0 +1,21 @@
+uuid: 404024e5-6aa0-4d53-b27e-9134582933bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_resource_type
+    - media.type.remote_video
+_core:
+  default_config_hash: 0C-4PkQB60IDJ7jkW83sL_rYVqCv_ilS8oJcf7EDdO4
+id: media.remote_video.field_media_resource_type
+field_name: field_media_resource_type
+entity_type: media
+bundle: remote_video
+label: 'Resource type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

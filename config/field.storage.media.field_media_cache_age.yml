@@ -1,0 +1,22 @@
+uuid: bfc92d2a-2103-40cf-be1a-d050e8940326
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: wIbTLalyh9RhoK5waWf2oOdpaSyTgYm-LUq8g4DUOEg
+id: media.field_media_cache_age
+field_name: field_media_cache_age
+entity_type: media
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

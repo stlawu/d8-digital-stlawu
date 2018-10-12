@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_media_description
+    - field.field.media.video.field_media_file_size
+    - field.field.media.video.field_media_mime_type
+    - field.field.media.video.field_media_transcript
     - field.field.media.video.field_media_video_file
     - media.type.video
-_core:
-  default_config_hash: tDAk5WjHHzEBR0eK2k8ZlWr7Ji5lCSh_ddgoQnmfsCY
 id: media.video.media_library
 targetEntityType: media
 bundle: video
@@ -23,6 +25,10 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_media_description: true
+  field_media_file_size: true
+  field_media_mime_type: true
+  field_media_transcript: true
   field_media_video_file: true
   path: true
   status: true

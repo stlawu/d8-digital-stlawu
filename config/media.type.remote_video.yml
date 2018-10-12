@@ -2,8 +2,6 @@ uuid: 2aec104e-07bd-41e0-a068-64fb16f4126d
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 2r_Yo2tYXnt7PLx1pnlr1JU3iHmnsoWFdzQFs2sUXGk
 id: remote_video
 label: 'Remote video'
 description: 'A remotely hosted video from YouTube or Vimeo.'
@@ -16,4 +14,17 @@ source_configuration:
     - YouTube
     - Vimeo
   source_field: field_media_oembed_video
-field_map: {  }
+field_map:
+  type: field_media_resource_type
+  title: field_media_resource_title
+  author_name: field_media_author_name
+  provider_name: field_media_provider_name
+  provider_url: field_media_provider_url
+  cache_age: field_media_cache_age
+  default_name: field_media_default_name
+  thumbnail_width: field_media_thumbnail_width
+  thumbnail_height: field_media_thumbnail_height
+  url: field_media_oembed_video
+  width: field_media_width
+  height: field_media_height
+  html: field_media_html

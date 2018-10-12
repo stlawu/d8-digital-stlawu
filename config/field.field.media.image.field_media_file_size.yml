@@ -1,0 +1,25 @@
+uuid: 3ace581e-94cb-44bf-a02f-377560e483fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file_size
+    - media.type.image
+_core:
+  default_config_hash: BNc6g0G83-dccqDrkw3ke0G50ajBkLGGWRk3R18Sze8
+id: media.image.field_media_file_size
+field_name: field_media_file_size
+entity_type: media
+bundle: image
+label: 'File size'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

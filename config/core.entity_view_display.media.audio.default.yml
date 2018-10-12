@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_description
+    - field.field.media.audio.field_media_file_size
+    - field.field.media.audio.field_media_mime_type
+    - field.field.media.audio.field_media_transcript
     - media.type.audio
   module:
     - file
-_core:
-  default_config_hash: SWf3MLdbEKvlx4Vs6iPwDHu5pr1aKT0SJmgp8no73-k
+    - text
 id: media.audio.default
 targetEntityType: media
 bundle: audio
@@ -25,8 +28,18 @@ content:
       multiple_file_display_type: tags
     third_party_settings: {  }
     region: content
+  field_media_transcript:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
 hidden:
   created: true
+  field_media_description: true
+  field_media_file_size: true
+  field_media_mime_type: true
   name: true
   thumbnail: true
   uid: true

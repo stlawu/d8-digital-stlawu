@@ -1,0 +1,22 @@
+uuid: edc47120-4440-4550-8809-a2ca96bd844e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.person
+id: node.person.status
+field_name: status
+entity_type: node
+bundle: person
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
