@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.person.field_last_updated
+    - field.field.node.person.field_meta_tags
     - node.type.person
   module:
     - datetime
+    - metatag
     - user
 id: node.person.default
 targetEntityType: node
@@ -26,6 +28,13 @@ content:
       date_format: 'F d, Y'
     third_party_settings: {  }
     type: datetime_custom
+    region: content
+  field_meta_tags:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
     weight: 100

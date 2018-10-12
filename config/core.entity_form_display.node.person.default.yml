@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.person.field_last_updated
+    - field.field.node.person.field_meta_tags
     - node.type.person
   module:
     - datetime
     - field_group
+    - metatag
     - path
 third_party_settings:
   field_group:
@@ -41,6 +43,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_meta_tags:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   path:
     type: path
