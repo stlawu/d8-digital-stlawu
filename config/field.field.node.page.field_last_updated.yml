@@ -1,0 +1,24 @@
+uuid: 878b7019-e1a0-4f60-8a5d-0088461cd61b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_updated
+    - node.type.page
+  module:
+    - datetime
+id: node.page.field_last_updated
+field_name: field_last_updated
+entity_type: node
+bundle: page
+label: 'Last updated'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
