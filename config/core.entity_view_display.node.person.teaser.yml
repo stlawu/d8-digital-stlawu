@@ -5,18 +5,65 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.person.field_last_updated
+    - field.field.node.person.field_meta_tags
+    - field.field.node.person.field_person_department
+    - field.field.node.person.field_person_email
+    - field.field.node.person.field_person_name
+    - field.field.node.person.field_person_position
     - node.type.person
   module:
+    - name
     - user
 id: node.person.teaser
 targetEntityType: node
 bundle: person
 mode: teaser
 content:
+  field_person_department:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_person_email:
+    type: email_mailto
+    weight: 3
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_person_name:
+    type: name_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      format: default
+      markup: false
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+    third_party_settings: {  }
+  field_person_position:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   links:
     weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   field_last_updated: true
+  field_meta_tags: true
