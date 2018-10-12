@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.project.field_last_updated
     - field.field.node.project.field_meta_tags
     - field.field.node.project.field_project_director
+    - field.field.node.project.field_project_discipline
     - field.field.node.project.field_project_status
     - field.field.node.project.field_project_supporting_institu
     - field.field.node.project.field_project_team
@@ -66,6 +67,7 @@ third_party_settings:
       region: content
     group_project_details:
       children:
+        - field_project_discipline
         - field_project_supporting_institu
         - field_project_status
         - field_project_url
@@ -134,14 +136,20 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_project_discipline:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_project_status:
-    weight: 123
+    weight: 124
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_project_supporting_institu:
-    weight: 122
+    weight: 123
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -164,7 +172,7 @@ content:
     type: string_textfield
     region: content
   field_project_url:
-    weight: 124
+    weight: 127
     settings:
       placeholder_url: ''
       placeholder_title: ''
