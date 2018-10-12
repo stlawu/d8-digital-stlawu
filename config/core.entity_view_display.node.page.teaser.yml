@@ -18,6 +18,11 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
+  addtoany:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_teaser_text:
     type: text_default
     weight: 0

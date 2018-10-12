@@ -25,6 +25,11 @@ targetEntityType: node
 bundle: article
 mode: teaser
 content:
+  addtoany:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     type: image
     weight: -1
