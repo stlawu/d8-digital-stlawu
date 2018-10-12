@@ -14,12 +14,14 @@ dependencies:
     - field.field.node.person.field_person_name
     - field.field.node.person.field_person_office_location
     - field.field.node.person.field_person_phone
+    - field.field.node.person.field_person_portrait
     - field.field.node.person.field_person_position
     - node.type.person
   module:
     - datetime
     - field_group
     - link
+    - media_library
     - metatag
     - name
     - path
@@ -32,6 +34,7 @@ third_party_settings:
         - title
         - field_person_name
         - field_last_updated
+        - field_person_portrait
       parent_name: ''
       weight: -10
       format_type: fieldset
@@ -99,7 +102,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_last_updated:
-    weight: 121
+    weight: 132
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -175,6 +178,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
+  field_person_portrait:
+    type: media_library_widget
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
     region: content
   field_person_position:
     weight: 123

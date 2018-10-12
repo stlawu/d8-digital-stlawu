@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.person.field_person_name
     - field.field.node.person.field_person_office_location
     - field.field.node.person.field_person_phone
+    - field.field.node.person.field_person_portrait
     - field.field.node.person.field_person_position
     - node.type.person
   module:
@@ -131,6 +132,15 @@ content:
       title: ''
     third_party_settings: {  }
     type: telephone_link
+    region: content
+  field_person_portrait:
+    type: entity_reference_entity_view
+    weight: -10
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   field_person_position:
     weight: 1
