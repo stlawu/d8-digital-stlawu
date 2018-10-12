@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.project.field_project_team
     - field.field.node.project.field_project_title_full
     - field.field.node.project.field_project_url
+    - field.field.node.project.field_teaser_media
     - field.field.node.project.field_teaser_text
     - node.type.project
   module:
@@ -122,4 +123,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_teaser_media: true
   field_teaser_text: true
