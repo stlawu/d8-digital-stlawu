@@ -1,0 +1,9 @@
+uuid: 876fc70e-3dc8-448f-ae38-f2b0d3f710ef
+langcode: en
+status: true
+dependencies: {  }
+name: Status
+vid: project_status
+description: 'Use status in projects.'
+hierarchy: 0
+weight: 0

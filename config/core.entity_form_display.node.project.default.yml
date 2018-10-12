@@ -6,11 +6,18 @@ dependencies:
     - field.field.node.project.body
     - field.field.node.project.field_last_updated
     - field.field.node.project.field_meta_tags
+    - field.field.node.project.field_project_director
+    - field.field.node.project.field_project_status
+    - field.field.node.project.field_project_supporting_institu
+    - field.field.node.project.field_project_team
+    - field.field.node.project.field_project_title_full
+    - field.field.node.project.field_project_url
     - field.field.node.project.field_teaser_text
     - node.type.project
   module:
     - datetime
     - field_group
+    - link
     - metatag
     - path
     - text
@@ -19,6 +26,7 @@ third_party_settings:
     group_basic_info:
       children:
         - title
+        - field_project_title_full
         - field_last_updated
       parent_name: ''
       weight: -10
@@ -56,6 +64,35 @@ third_party_settings:
         required_fields: true
       label: 'Main content'
       region: content
+    group_project_details:
+      children:
+        - field_project_supporting_institu
+        - field_project_status
+        - field_project_url
+      parent_name: ''
+      weight: -8
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Project details'
+      region: content
+    group_project_people:
+      children:
+        - field_project_director
+        - field_project_team
+      parent_name: ''
+      weight: -7
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Project people'
+      region: content
 id: node.project.default
 targetEntityType: node
 bundle: project
@@ -87,6 +124,52 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_project_director:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_project_status:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_project_supporting_institu:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_project_team:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_project_title_full:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_project_url:
+    weight: 124
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_teaser_text:
     weight: 0

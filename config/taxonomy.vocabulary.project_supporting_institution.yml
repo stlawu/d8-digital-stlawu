@@ -1,0 +1,9 @@
+uuid: 3f6e6855-172b-41e6-8e82-c69ccabb3681
+langcode: en
+status: true
+dependencies: {  }
+name: 'Supporting institution'
+vid: project_supporting_institution
+description: 'Use supporting institution in projects.'
+hierarchy: 0
+weight: 0
