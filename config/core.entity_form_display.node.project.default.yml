@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.project.field_meta_tags
     - field.field.node.project.field_project_director
     - field.field.node.project.field_project_discipline
+    - field.field.node.project.field_project_image
     - field.field.node.project.field_project_status
     - field.field.node.project.field_project_supporting_institu
     - field.field.node.project.field_project_team
@@ -58,6 +59,7 @@ third_party_settings:
     group_main_content:
       children:
         - body
+        - field_project_image
       parent_name: ''
       weight: -7
       format_type: fieldset
@@ -144,6 +146,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_project_image:
+    type: media_library_widget
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
     region: content
   field_project_status:
     weight: 124
