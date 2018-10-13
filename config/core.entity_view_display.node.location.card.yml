@@ -1,0 +1,32 @@
+uuid: 5d18bed1-8f42-47f3-80ef-3f31d9e07b12
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.location.body
+    - field.field.node.location.field_last_updated
+    - field.field.node.location.field_meta_tags
+    - field.field.node.location.field_teaser_text
+    - node.type.location
+  module:
+    - text
+    - user
+id: node.location.card
+targetEntityType: node
+bundle: location
+mode: card
+content:
+  field_teaser_text:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_last_updated: true
+  field_meta_tags: true
+  links: true
