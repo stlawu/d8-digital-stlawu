@@ -1,0 +1,12 @@
+uuid: 6ee9703f-65f4-4b19-999c-73707d27235a
+langcode: en
+status: true
+dependencies: {  }
+label: Freeform
+id: freeform
+description: 'Crops without enforcing any aspect ratio.'
+aspect_ratio: ''
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

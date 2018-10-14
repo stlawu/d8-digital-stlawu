@@ -13,7 +13,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - image_widget_crop
     - path
     - text
 id: media.image.default
@@ -45,10 +45,19 @@ content:
     region: content
   field_media_image:
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - freeform
+        - generic_1_1
+        - generic_2_1
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     weight: 0
     region: content
   name:

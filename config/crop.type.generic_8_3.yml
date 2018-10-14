@@ -1,0 +1,12 @@
+uuid: a5b06c4e-ebaf-44b8-804d-1f3f512a5011
+langcode: en
+status: true
+dependencies: {  }
+label: 'Generic 8:3'
+id: generic_8_3
+description: '8:3 picture crop.'
+aspect_ratio: '8:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

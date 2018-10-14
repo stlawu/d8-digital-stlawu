@@ -1,0 +1,12 @@
+uuid: 9cbd0006-5504-49d2-a4cb-b06b0c612fa3
+langcode: en
+status: true
+dependencies: {  }
+label: 'Generic 5:4'
+id: generic_5_4
+description: '5:4 picture crop.'
+aspect_ratio: '5:4'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
