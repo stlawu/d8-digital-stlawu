@@ -138,7 +138,7 @@ content:
     weight: -10
     label: hidden
     settings:
-      view_mode: default
+      view_mode: person
       link: false
     third_party_settings: {  }
     region: content

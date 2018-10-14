@@ -1,0 +1,10 @@
+uuid: 1a107bfd-86ea-4a28-82a2-4c60d5d54468
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.project
+label: Project
+targetEntityType: media
+cache: true
