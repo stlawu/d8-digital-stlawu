@@ -53,6 +53,7 @@ content:
         - freeform
         - generic_1_1
         - generic_2_1
+        - generic_3_2
       progress_indicator: throbber
       crop_types_required: {  }
       show_crop_area: false

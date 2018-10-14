@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 name: scale_crop_160x160
-label: 'Scale crop 160x160'
+label: 'Scale crop 160x160 (1:1)'
 effects:
   930c62cd-aceb-4267-a501-97f562cf241d:
     uuid: 930c62cd-aceb-4267-a501-97f562cf241d
