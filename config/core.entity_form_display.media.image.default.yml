@@ -51,6 +51,7 @@ content:
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - freeform
+        - generic_16_9
         - generic_1_1
         - generic_2_1
         - generic_3_2
