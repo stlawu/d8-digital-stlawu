@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.landing_page.field_last_updated
     - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_sections
     - field.field.node.landing_page.field_teaser_media
     - field.field.node.landing_page.field_teaser_text
     - node.type.landing_page
@@ -13,6 +14,7 @@ dependencies:
     - field_group
     - media_library
     - metatag
+    - paragraphs
     - path
     - text
 third_party_settings:
@@ -45,6 +47,19 @@ third_party_settings:
         required_fields: true
       label: Teaser
       region: content
+    group_main_content:
+      children:
+        - field_sections
+      parent_name: ''
+      weight: -7
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Main content'
+      region: content
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -67,6 +82,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_sections:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings: {  }
+    type: paragraphs
     region: content
   field_teaser_media:
     weight: -2
