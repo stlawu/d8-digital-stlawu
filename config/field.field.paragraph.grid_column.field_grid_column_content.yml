@@ -1,0 +1,45 @@
+uuid: 12d51cf8-1bbc-49e3-80b0-6490250aa275
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_column_content
+    - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_column.field_grid_column_content
+field_name: field_grid_column_content
+entity_type: paragraph
+bundle: grid_column
+label: 'Column content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+      view: view
+    target_bundles_drag_drop:
+      section:
+        weight: 6
+        enabled: false
+      text:
+        enabled: true
+        weight: 7
+      view:
+        enabled: true
+        weight: 8
+      grid_column:
+        weight: 9
+        enabled: false
+      grid_row:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

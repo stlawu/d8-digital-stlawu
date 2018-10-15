@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.grid_row
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.view
@@ -27,15 +28,22 @@ settings:
     negate: 0
     target_bundles:
       text: text
+      grid_row: grid_row
       view: view
     target_bundles_drag_drop:
       text:
         enabled: true
-        weight: -7
+        weight: -11
+      grid_row:
+        enabled: true
+        weight: -10
       view:
         enabled: true
-        weight: -6
+        weight: -9
       section:
-        weight: -5
+        weight: -8
+        enabled: false
+      grid_column:
+        weight: -7
         enabled: false
 field_type: entity_reference_revisions

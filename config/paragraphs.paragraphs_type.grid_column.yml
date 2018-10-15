@@ -1,0 +1,9 @@
+uuid: e0408daf-b292-4bd5-88a9-c83811cd9cc6
+langcode: en
+status: true
+dependencies: {  }
+id: grid_column
+label: Column
+icon_uuid: null
+description: 'Use <em>grid column</em> to build columns inside of a grid row <strong>only</strong>.'
+behavior_plugins: {  }
