@@ -42,3 +42,4 @@ hidden:
   addtoany: true
   field_last_updated: true
   field_meta_tags: true
+  field_sections: true

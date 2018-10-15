@@ -1,0 +1,40 @@
+cdn_provider: ''
+fluid_container: 1
+_core:
+  default_config_hash: K8D8uDcrjcfmNP9HbUwIRq_utBuLuypv-8qnZTcVdNM
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://d8digitalstlawu.lndo.site/themes/custom/di_stlawu/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  di_stlawu: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  navigation_utility: ''
+  header: ''
+  breadcrumb: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer_first: ''
+  footer_second: ''
+  footer_third: ''
+  footer_fourth: ''
+  footer_fifth: ''
+  footer_sixth: ''
+table_responsive: '-1'
+table: ''

@@ -1,0 +1,9 @@
+uuid: 20197bbb-fa0b-4304-92e6-cdab0d39d9c7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Support type'
+vid: support_type
+description: ''
+hierarchy: 0
+weight: 0

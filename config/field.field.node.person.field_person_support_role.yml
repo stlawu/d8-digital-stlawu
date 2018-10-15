@@ -1,0 +1,23 @@
+uuid: abb7c39c-8fbf-461b-8192-14de325ed2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_support_role
+    - node.type.person
+id: node.person.field_person_support_role
+field_name: field_person_support_role
+entity_type: node
+bundle: person
+label: 'Has support role?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

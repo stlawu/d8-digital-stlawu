@@ -30,6 +30,7 @@ hidden:
   body: true
   comment: true
   field_last_updated: true
+  field_media_image: true
   field_meta_tags: true
   field_release_date: true
   field_tags: true
