@@ -1,16 +1,16 @@
-uuid: 3939a53d-8f59-4aa8-9191-1ab87a7d882e
+uuid: dd4f453c-2554-4e39-bdc6-64adba29b4a4
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - di_stlawu
 _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
-id: bartik_powered
-theme: bartik
-region: footer_fifth
+id: di_stlawu_powered
+theme: di_stlawu
+region: navigation
 weight: 10
 provider: null
 plugin: system_powered_by_block

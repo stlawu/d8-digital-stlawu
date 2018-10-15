@@ -1,0 +1,25 @@
+uuid: 63055fa6-c3e1-40a3-9776-fc0c75096a59
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - di_stlawu
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: di_stlawu_branding
+theme: di_stlawu
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -53,6 +53,7 @@ hidden:
   field_meta_tags: true
   field_project_director: true
   field_project_discipline: true
+  field_project_image: true
   field_project_status: true
   field_project_supporting_institu: true
   field_project_team: true

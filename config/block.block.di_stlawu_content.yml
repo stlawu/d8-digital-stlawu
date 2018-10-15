@@ -1,15 +1,15 @@
-uuid: 93958a11-e613-4fec-ba7a-161984efdfcb
+uuid: 53f1a469-4d51-41e5-9610-c365255d1d6f
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - di_stlawu
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+id: di_stlawu_content
+theme: di_stlawu
 region: content
 weight: 0
 provider: null
