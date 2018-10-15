@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_grid_column_content
     - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.media
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.view
   module:
@@ -25,21 +26,25 @@ settings:
     negate: 0
     target_bundles:
       text: text
+      media: media
       view: view
     target_bundles_drag_drop:
-      section:
-        weight: 6
-        enabled: false
       text:
         enabled: true
-        weight: 7
+        weight: -13
+      media:
+        enabled: true
+        weight: -12
       view:
         enabled: true
-        weight: 8
+        weight: -11
+      section:
+        weight: -10
+        enabled: false
       grid_column:
-        weight: 9
+        weight: -9
         enabled: false
       grid_row:
-        weight: 10
+        weight: -8
         enabled: false
 field_type: entity_reference_revisions
