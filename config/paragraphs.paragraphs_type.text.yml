@@ -1,0 +1,11 @@
+uuid: 694d45ac-6325-4b9e-abc5-765e9e3ff7eb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LG2jvJwcN875iVDVwWNuwP7ULmpcpdeV4FzZRP-Xtik
+id: text
+label: Text
+icon_uuid: null
+description: 'Use <em>text</em> to add a WYSIWYG textarea.'
+behavior_plugins: {  }

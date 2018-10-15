@@ -1,0 +1,12 @@
+uuid: 9d528f25-f0bd-461c-bbb7-9a05556f92e9
+langcode: en
+status: true
+dependencies: {  }
+label: 'Generic 16:9'
+id: generic_16_9
+description: '16:9 picture crop.'
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

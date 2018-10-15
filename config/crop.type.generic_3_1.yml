@@ -1,0 +1,12 @@
+uuid: 24b6a6bc-566c-4f5a-be62-7089b75d3f4b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Generic 3:1'
+id: generic_3_1
+description: '3:1 picture crop.'
+aspect_ratio: '3:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_media_byline_freeform
     - field.field.media.image.field_media_description
     - field.field.media.image.field_media_file_size
     - field.field.media.image.field_media_height
@@ -12,7 +13,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - image_widget_crop
     - path
     - text
 id: media.image.default
@@ -26,6 +27,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_media_byline_freeform:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_media_description:
     weight: 1
     settings:
@@ -36,10 +45,21 @@ content:
     region: content
   field_media_image:
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - freeform
+        - generic_16_9
+        - generic_1_1
+        - generic_2_1
+        - generic_3_2
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     weight: 0
     region: content
   name:

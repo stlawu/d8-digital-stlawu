@@ -1,0 +1,19 @@
+uuid: a0bc7cd9-c7e6-4c41-a0c0-85ae69a2e565
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_person_biography
+field_name: field_person_biography
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

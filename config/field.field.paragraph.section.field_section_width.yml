@@ -1,0 +1,25 @@
+uuid: 2c28fc0d-abee-4843-9d31-4f00a23f82b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_width
+    - paragraphs.paragraphs_type.section
+  module:
+    - options
+_core:
+  default_config_hash: '-_O6afq55MDlLkE625oT4uxEd6S-Pif2cM8Bs-w511o'
+id: paragraph.section.field_section_width
+field_name: field_section_width
+entity_type: paragraph
+bundle: section
+label: Width
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

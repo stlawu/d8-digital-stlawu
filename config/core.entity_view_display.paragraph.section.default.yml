@@ -1,0 +1,28 @@
+uuid: 91d1cd26-8c4b-4590-9c9d-3afd627ac50c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_section_content
+    - field.field.paragraph.section.field_section_width
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: eRiyDsrRbbX71zfk3fQbMv1E2v85a3iOOisIQE2EvUc
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_section_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_section_width: true

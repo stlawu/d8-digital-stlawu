@@ -1,0 +1,9 @@
+uuid: 8f725dc8-9d4d-43e0-96fb-959d8016ceee
+langcode: en
+status: true
+dependencies: {  }
+id: view
+label: View
+icon_uuid: null
+description: 'Use <em>view</em> to reference certain Drupal views.'
+behavior_plugins: {  }

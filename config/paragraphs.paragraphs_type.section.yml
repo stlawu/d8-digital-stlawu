@@ -1,0 +1,11 @@
+uuid: 45c752dc-55f0-4e87-a649-c07ea44dde87
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Cgv9ajRgcj5AqtOLOr84PXMG4RJHVIuF-rluGDE1iQw
+id: section
+label: Section
+icon_uuid: null
+description: 'Use <em>section</em> to hold other paragraph types.'
+behavior_plugins: {  }
