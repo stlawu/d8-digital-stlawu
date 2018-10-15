@@ -1,0 +1,20 @@
+uuid: 7fdd8785-2d7d-491b-97cd-26a95d3b3b6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_person_support_types
+field_name: field_person_support_types
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

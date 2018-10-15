@@ -1,0 +1,9 @@
+uuid: 9eadcbff-8c22-4247-837b-40aa4464aa38
+langcode: en
+status: true
+dependencies: {  }
+name: Affiliation
+vid: person_affiliation
+description: ''
+hierarchy: 0
+weight: 0

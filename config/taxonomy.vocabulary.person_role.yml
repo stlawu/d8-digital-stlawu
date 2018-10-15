@@ -1,0 +1,9 @@
+uuid: 4a348a57-6a73-4716-90ca-0261ede366a3
+langcode: en
+status: true
+dependencies: {  }
+name: Role
+vid: person_role
+description: ''
+hierarchy: 0
+weight: 0
