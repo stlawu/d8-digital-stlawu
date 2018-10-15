@@ -6,18 +6,27 @@ core: 8.x
  
 base theme: bootstrap
 
-base theme: bootstrap
-
 regions:
   navigation: Navigation
   navigation_collapsible: Navigation (Collapsible)
+  navigation_utility: 'Navigation (Utility)'
+  breadcrumbs: Breadcrumb
   header: Top Bar
   highlighted: Highlighted
   help: Help
+  before_content: 'Before Content'
+  page_title: 'Page Title'
+  local_tasks: 'Local Tasks'
   content: Content
+  after_content: 'After Content'
   sidebar_first: Primary
   sidebar_second: Secondary
-  footer: Footer
+  footer_top: 'Footer top'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer copyright'
   page_top: Page top
   page_bottom: Page bottom
 
