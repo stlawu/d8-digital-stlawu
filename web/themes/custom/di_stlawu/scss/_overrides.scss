@@ -33,9 +33,40 @@ ol, ul {
 // Footer.
 .footer {
   margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
+  background-color: $color-brown-dark;
+  color: $color-white;
+
+  & a {
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      color: $color-squash-dark;
+    }
+  }
+
+  .footer__main {
+    padding-top: 35px;
+    padding-bottom: 36px;
+  }
+
+  .footer__secondary {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: $color-brown;
+    color: $color-white;
+  }
+
+}
+
+// University brand.
+.university-brand {
+  background-color: $color-brown-dark;
+}
+
+// Navbar links.
+.navbar-nav > li > a {
+  font-weight: 500;
 }
 
 // Paragraphs.

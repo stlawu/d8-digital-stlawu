@@ -5,6 +5,8 @@
  * Functions to support theming in the di_stlawu theme.
  */
 
+use Symfony\Cmf\Component\Routing\RouteObjectInterface;
+
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
@@ -64,6 +66,32 @@ function di_stlawu_theme_suggestions_node_alter(array &$suggestions, array $vari
  */
 function di_stlawu_preprocess_block(array &$variables) {
 
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function di_stlawu_preprocess_breadcrumb(&$variables) {
+  // We are creating a variable for the Current Page Title, to allow us to print
+  // it after the breadcrumbs loop has run.
+  $request = \Drupal::request();
+  if ($route = $request->attributes->get(RouteObjectInterface::ROUTE_OBJECT)) {
+    // Search page titles aren't resolved using the title_resolver service - it
+    // will always return 'Search' instead of 'Search for [term]', which would
+    // give us a breadcrumb of Home >> Search >> Search.
+    // @see https://www.drupal.org/project/drupal/issues/2359901
+    // @see https://www.drupal.org/project/drupal/issues/2403359
+    if (($entity = $request->attributes->get('entity')) && $entity->getEntityTypeId() === 'search_page') {
+      $variables['current_page_title'] = $entity->getPlugin()->suggestedTitle();
+    }
+    else {
+      $variables['current_page_title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
+    }
+  }
+  // Since we are printing the 'Current Page Title', add the URL cache context.
+  // If we don't, then we might end up with something like
+  // "Home > Articles" on the Recipes page, which should read "Home > Recipes".
+  $variables['#cache']['contexts'][] = 'url';
 }
 
 /**

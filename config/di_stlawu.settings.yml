@@ -10,6 +10,30 @@ favicon:
 schemas:
   bootstrap: 8000
   di_stlawu: 8000
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  navigation_utility: ''
+  breadcrumbs: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  before_content: ''
+  page_title: ''
+  local_tasks: ''
+  content: ''
+  after_content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer_top: ''
+  footer_first: ''
+  footer_second: ''
+  footer_third: ''
+  footer_fourth: ''
+  footer_fifth: ''
+table_responsive: '-1'
+table: ''
+breadcrumb_home: 1
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -19,22 +43,4 @@ logo:
   path: ''
   url: ''
   use_default: true
-region_wells:
-  navigation: ''
-  navigation_collapsible: ''
-  navigation_utility: ''
-  header: ''
-  breadcrumb: ''
-  highlighted: ''
-  help: ''
-  content: ''
-  sidebar_first: ''
-  sidebar_second: well
-  footer_first: ''
-  footer_second: ''
-  footer_third: ''
-  footer_fourth: ''
-  footer_fifth: ''
-  footer_sixth: ''
-table_responsive: '-1'
-table: ''
+navbar_inverse: 1

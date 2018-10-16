@@ -80,33 +80,33 @@
   {% if content.field_person_portrait %}
     <div class='card__media'>
       {% block card_image %}
-        <a class="node__link" href="{{ url }}">{{ content.field_person_portrait }}</a>
+        <a href="{{ url }}">{{ content.field_person_portrait }}</a>
       {% endblock %}
     </div>
   {% endif %}
 
-  <div class='card__body'>
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes.addClass('node__title') }}>
-      <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  <div class='card-body'>
+    {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes.addClass('card-title node__title') }}>
+        <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+    {% if display_submitted %}
+      <footer class="node__meta">
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('author') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content|without('field_person_portrait') }}
-  </div>
+    <div{{ content_attributes.addClass('content') }}>
+      {{ content|without('field_person_portrait') }}
+    </div>
   </div>
 
 </article>
