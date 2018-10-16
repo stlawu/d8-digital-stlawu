@@ -171,3 +171,24 @@ function di_stlawu_theme_suggestions_details_alter(array &$suggestions, array $v
 function di_stlawu_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+
+/**
+ * Implements hook_preprocess_paragraph__section().
+ * Prepares variables for paragraph--section.html.twig.
+ */
+function di_stlawu_preprocess_paragraph__section(&$variables) {
+  $p = $variables['paragraph'];
+
+  // Setup width variable for template
+  if(!$p->field_section_width->isEmpty()){
+    switch ($p->field_section_width->get(0)->value) {
+      case "1":
+        $width = "section-content-width";
+        break;
+      case "2":
+        $width = "section-full-width";
+        break;
+    }
+    $variables['width'] = $width;
+  }
+}

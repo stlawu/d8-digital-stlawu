@@ -199,11 +199,16 @@ display:
         sorts: false
         css_class: false
       style:
-        type: default
+        type: grid
         options:
-          row_class: 'col-sm-6 col-md-2'
-          default_row_class: true
           uses_fields: false
+          columns: 1
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: ''
+          row_class_default: false
+          row_class_custom: 'col-sm-6 col-md-2'
       row:
         type: 'entity:node'
         options:
@@ -247,23 +252,29 @@ display:
         pager: false
         style: false
         row: false
+        css_class: false
       pager:
         type: some
         options:
           items_per_page: 9
           offset: 0
       style:
-        type: default
+        type: grid
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          columns: 1
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: ''
+          row_class_default: false
+          row_class_custom: 'col-sm-6 col-md-4'
       row:
         type: 'entity:node'
         options:
           relationship: none
           view_mode: card
+      css_class: clearfix
     cache_metadata:
       max-age: -1
       contexts:
