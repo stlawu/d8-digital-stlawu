@@ -39,6 +39,19 @@
  */
 #}
 
+{% set columns = content.field_grid_row_content %}
+{% set count = columns['#items']|length %}
+{%
+  set grid_classes = [
+    count > 1 ? 'grid',
+    count == 2 ? 'two-columns',
+    count == 3 ? 'three-columns',
+    count == 4 ? 'four-columns',
+    count == 5 ? 'five-columns',
+    count == 6 ? 'six-columns'
+  ]
+%}
+
 {%
   set classes = [
     'paragraph',
@@ -49,10 +62,16 @@
   ]
 %}
 
+{# Merges grid_classes with classes. #}
+{% set classes = classes|merge(grid_classes) %}
+
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-  {% block content %}
-    {{ content }}
-  {% endblock %}
+    {% block content %}
+      {% for key, item in columns if key|first != '#' %}
+        {{ item }}
+      {% endfor %}
+    {% endblock %}
   </div>
 {% endblock paragraph %}
