@@ -5807,6 +5807,36 @@ Custom Stuffs
       color: #444; }
 
 /**
+ * Grid row paragraph
+ * Based off of Bootstrap 3.3.7
+ * 
+ */
+@media (min-width: 768px) {
+  .grid.two-columns .paragraph--type--grid-column {
+    width: 50%;
+    float: left; } }
+
+@media (min-width: 768px) {
+  .grid.three-columns .paragraph--type--grid-column {
+    width: 33.33333333%;
+    float: left; } }
+
+@media (min-width: 768px) {
+  .grid.four-columns .paragraph--type--grid-column {
+    width: 25%;
+    float: left; } }
+
+@media (min-width: 768px) {
+  .grid.five-columns .paragraph--type--grid-column {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 768px) {
+  .grid.six-columns .paragraph--type--grid-column {
+    width: 16.66666667%;
+    float: left; } }
+
+/**
  * Alert styling.
  */
 .alert-sm {
