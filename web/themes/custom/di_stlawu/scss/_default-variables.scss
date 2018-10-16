@@ -906,3 +906,23 @@ $dl-horizontal-offset:        $component-offset-horizontal;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter;
+
+// Cards
+
+$card-spacer-y:                     .75rem;
+$card-spacer-x:                     1.25rem;
+$card-border-width:                 1px;
+$card-border-radius:                $border-radius-base;
+$card-border-color:                 rgba($color-black, .125);
+$card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
+$card-cap-bg:                       rgba($color-black, .03);
+$card-bg:                           $color-white;
+
+$card-img-overlay-padding:          1.25rem;
+
+$card-group-margin:                 ($grid-gutter-width / 2);
+$card-deck-margin:                  $card-group-margin;
+
+$card-columns-count:                3;
+$card-columns-gap:                  1.25rem;
+$card-columns-margin:               $card-spacer-y;
