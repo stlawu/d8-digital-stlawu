@@ -13,7 +13,7 @@ effects:
   cf7510d3-e146-41e0-8e3a-040dec341c42:
     uuid: cf7510d3-e146-41e0-8e3a-040dec341c42
     id: image_scale_and_crop
-    weight: 2
+    weight: 3
     data:
       width: 480
       height: 480
@@ -27,6 +27,6 @@ effects:
   e2842eee-e178-406f-a7a2-4b7fe7f6a6ab:
     uuid: e2842eee-e178-406f-a7a2-4b7fe7f6a6ab
     id: crop_crop
-    weight: 3
+    weight: 2
     data:
       crop_type: generic_1_1
