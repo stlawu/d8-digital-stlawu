@@ -31,8 +31,9 @@ $color-brown-dark:           #4D3126;
 $color-squash:				 #FCF8EE;
 $color-squash-dark:			 #F1DAB1;
 
-$color-gray-light: 			 #CDCDCD;
-$color-gray-medium: 		 #979797;
+$color-gray-light: 		 	 #EEEEEE;
+$color-gray-medium: 		 #CDCDCD;
+$color-gray-dark: 		 	 #979797;
 
 $color-blue-light: 			 #98B7C7;
 $color-blue-dark: 			 #33455B;
@@ -62,7 +63,7 @@ $brand-danger:          #d9534f;
 //** Background color for `<body>`.
 $body-bg:               #fff;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark;
+$text-color:            $gray-base;
 
 //** Global textual link color.
 $link-color:            $brand-primary;

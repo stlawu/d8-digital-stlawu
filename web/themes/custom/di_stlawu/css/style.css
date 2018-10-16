@@ -1080,7 +1080,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #000;
   background-color: #fff; }
 
 input,
@@ -2794,7 +2794,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373; }
+  color: #404040; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -3950,7 +3950,7 @@ a.badge:hover, a.badge:focus {
     margin-right: auto; }
   .thumbnail .caption {
     padding: 9px;
-    color: #333333; }
+    color: #000; }
 
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -5417,6 +5417,132 @@ button.close {
 /* ========================================
 Custom Stuffs
 ======================================== */
+/**
+ * Background-foreground variants
+ * Based off of STLAWU color palette
+ * 
+ */
+.bg-red {
+  background-color: #C4122F;
+  color: #ffffff; }
+  .bg-red a {
+    color: #ffffff; }
+    .bg-red a:hover, .bg-red a:focus {
+      color: #ffffff; }
+    .bg-red a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-red-dark {
+  background-color: #AA2933;
+  color: #ffffff; }
+  .bg-red-dark a {
+    color: #ffffff; }
+    .bg-red-dark a:hover, .bg-red-dark a:focus {
+      color: #ffffff; }
+    .bg-red-dark a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-brown {
+  background-color: #673B2C;
+  color: #ffffff; }
+  .bg-brown a {
+    color: #F1DAB1; }
+    .bg-brown a:hover, .bg-brown a:focus {
+      color: #e9c586; }
+    .bg-brown a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-brown-dark {
+  background-color: #4D3126;
+  color: #ffffff; }
+  .bg-brown-dark a {
+    color: #F1DAB1; }
+    .bg-brown-dark a:hover, .bg-brown-dark a:focus {
+      color: #e9c586; }
+    .bg-brown-dark a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-squash {
+  background-color: #FCF8EE;
+  color: #673B2C; }
+  .bg-squash a {
+    color: #0c439c; }
+    .bg-squash a:hover, .bg-squash a:focus {
+      color: #0e4db4; }
+    .bg-squash a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-squash-dark {
+  background-color: #F1DAB1;
+  color: #4D3126; }
+  .bg-squash-dark a {
+    color: #003c9e; }
+    .bg-squash-dark a:hover, .bg-squash-dark a:focus {
+      color: #0046b8; }
+    .bg-squash-dark a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-gray-light {
+  background-color: #EEEEEE;
+  color: #000000; }
+  .bg-gray-light a {
+    color: #001e94; }
+    .bg-gray-light a:hover, .bg-gray-light a:focus {
+      color: #0023ae; }
+    .bg-gray-light a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-gray-medium {
+  background-color: #CDCDCD;
+  color: #000000; }
+  .bg-gray-medium a {
+    color: #001e94; }
+    .bg-gray-medium a:hover, .bg-gray-medium a:focus {
+      color: #0023ae; }
+    .bg-gray-medium a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-gray-dark {
+  background-color: #979797;
+  color: #000000; }
+  .bg-gray-dark a {
+    color: #001e94; }
+    .bg-gray-dark a:hover, .bg-gray-dark a:focus {
+      color: #0023ae; }
+    .bg-gray-dark a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-blue-light {
+  background-color: #98B7C7;
+  color: #000000; }
+  .bg-blue-light a {
+    color: #001e94; }
+    .bg-blue-light a:hover, .bg-blue-light a:focus {
+      color: #0023ae; }
+    .bg-blue-light a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
+.bg-blue-dark {
+  background-color: #33455B;
+  color: #ffffff; }
+  .bg-blue-dark a {
+    color: #F1DAB1; }
+    .bg-blue-dark a:hover, .bg-blue-dark a:focus {
+      color: #e9c586; }
+    .bg-blue-dark a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
 .navbar {
   position: relative;
   min-height: 50px; }

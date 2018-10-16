@@ -1,0 +1,170 @@
+/**
+ * Background-foreground variants
+ * Based off of STLAWU color palette
+ * 
+ */
+
+.bg-red {
+  background-color: $color-red;
+  color: $color-white;
+  a {
+    color: $color-white;
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-red-dark {
+  background-color: $color-red-dark;
+  color: $color-white;
+  a {
+    color: $color-white;
+    &:hover,
+    &:focus {
+      color: $color-white;
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-brown {
+  background-color: $color-brown;
+  color: $color-white;
+  a {
+    color: $color-squash-dark;
+    &:hover,
+    &:focus {
+      color: darken(lighten($color-squash-dark, 5%), 15%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-brown-dark {
+  background-color: $color-brown-dark;
+  color: $color-white;
+  a {
+    color: $color-squash-dark;
+    &:hover,
+    &:focus {
+      color: darken(lighten($color-squash-dark, 5%), 15%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-squash {
+  background-color: $color-squash;
+  color: $color-brown;
+  a {
+    color: #0c439c;
+    &:hover,
+    &:focus {
+      color: lighten(#0c439c, 5%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-squash-dark {
+  background-color: $color-squash-dark;
+  color: $color-brown-dark;
+  a {
+    color: #003c9e;
+    &:hover,
+    &:focus {
+      color: lighten(#003c9e, 5%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-gray-light {
+  background-color: $color-gray-light;
+  color: $color-black;
+  a {
+    color: #001e94;
+    &:hover,
+    &:focus {
+      color: lighten(#001e94, 5%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-gray-medium {
+  background-color: $color-gray-medium;
+  color: $color-black;
+  a {
+    color: #001e94;
+    &:hover,
+    &:focus {
+      color: lighten(#001e94, 5%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-gray-dark {
+  background-color: $color-gray-dark;
+  color: $color-black;
+  a {
+    color: #001e94;
+    &:hover,
+    &:focus {
+      color: lighten(#001e94, 5%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-blue-light {
+  background-color: $color-blue-light;
+  color: $color-black;
+  a {
+    color: #001e94;
+    &:hover,
+    &:focus {
+      color: lighten(#001e94, 5%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
+
+.bg-blue-dark {
+  background-color: $color-blue-dark;
+  color: $color-white;
+  a {
+    color: $color-squash-dark;
+    &:hover,
+    &:focus {
+      color: darken(lighten($color-squash-dark, 5%), 15%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
