@@ -197,11 +197,11 @@ display:
         style: false
         row: false
         sorts: false
+        css_class: false
       style:
         type: default
         options:
-          grouping: {  }
-          row_class: ''
+          row_class: 'col-sm-6 col-md-2'
           default_row_class: true
           uses_fields: false
       row:
@@ -224,6 +224,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: standard
+      css_class: clearfix
     cache_metadata:
       max-age: -1
       contexts:

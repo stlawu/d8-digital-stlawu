@@ -80,37 +80,37 @@
   {% if content.field_teaser_media %}
     <div class='card__media'>
       {% block card_image %}
-        <a class="node__link" href="{{ url }}">{{ content.field_teaser_media }}</a>
+        <a href="{{ url }}">{{ content.field_teaser_media }}</a>
       {% endblock %}
     </div>
   {% endif %}
 
-  <div class='card__body'>
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes.addClass('node__title') }}>
-      {% if content.field_project_title_full|render|striptags|trim is not empty %}
-        <a class="node__link" href="{{ url }}" rel="bookmark">{{ content.field_project_title_full }}</a>
-      {% else %}
-        <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
-      {% endif %}
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  <div class='card-body'>
+    {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes.addClass('card-title node__title') }}>
+        {% if content.field_project_title_full|render|striptags|trim is not empty %}
+          <a class="node__link" href="{{ url }}" rel="bookmark">{{ node.field_project_title_full.value }}</a>
+        {% else %}
+          <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
+        {% endif %}
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('author') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+    {% if display_submitted %}
+      <footer class="node__meta">
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('author') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content|without('field_project_title_full', 'field_teaser_media') }}
-  </div>
+    <div{{ content_attributes.addClass('content') }}>
+      {{ content|without('field_project_title_full', 'field_teaser_media') }}
+    </div>
   </div>
 
 </article>
