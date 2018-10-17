@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_last_updated
@@ -15,7 +14,6 @@ dependencies:
     - field.field.node.article.field_teaser_text
     - node.type.article
   module:
-    - comment
     - datetime
     - metatag
     - text
@@ -39,15 +37,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
-  comment:
-    type: comment_default
-    weight: 110
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
   field_last_updated:
     weight: 2
     label: inline
@@ -96,5 +85,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  comment: true
   field_teaser_media: true
   field_teaser_text: true

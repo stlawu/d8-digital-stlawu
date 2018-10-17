@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.article.field_teaser_text
     - node.type.article
   module:
-    - comment
     - datetime
     - field_group
     - maxlength
@@ -81,12 +80,6 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
-    third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 20
-    region: content
-    settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
@@ -190,4 +183,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  comment: true
