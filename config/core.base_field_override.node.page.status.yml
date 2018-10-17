@@ -1,13 +1,13 @@
-uuid: edc47120-4440-4550-8809-a2ca96bd844e
+uuid: dce7a770-9891-4d74-8474-c21bf12613b6
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.person
-id: node.person.status
+    - node.type.page
+id: node.page.status
 field_name: status
 entity_type: node
-bundle: person
+bundle: page
 label: Published
 description: ''
 required: false
