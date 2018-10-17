@@ -8,7 +8,24 @@ dependencies:
     - field.field.paragraph.section.field_section_width
     - paragraphs.paragraphs_type.section
   module:
+    - field_group
     - paragraphs
+third_party_settings:
+  field_group:
+    group_background_options:
+      children:
+        - field_section_palette_list
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        label: 'Color palette options'
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: 'Color palette options'
+      region: content
 _core:
   default_config_hash: V78p_N7sE1w-w2jtFa_H_-F6__k7C5GGqVFJY4ZO-HI
 id: paragraph.section.default

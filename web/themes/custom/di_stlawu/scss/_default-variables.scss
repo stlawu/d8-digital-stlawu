@@ -77,7 +77,7 @@ $link-hover-decoration: underline;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  "Avenir","Helvetica",sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -430,7 +430,7 @@ $navbar-default-toggle-border-color:       #ddd;
 //=== Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      lighten($gray-light, 15%);
-$navbar-inverse-bg:                         $color-red;
+$navbar-inverse-bg:                         $color-brown-dark;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%);
 
 // Inverted navbar links
@@ -448,9 +448,9 @@ $navbar-inverse-brand-hover-color:          #fff;
 $navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg:            $color-red-dark;
+$navbar-inverse-toggle-hover-bg:            $color-brown-dark;
 $navbar-inverse-toggle-icon-bar-bg:         #fff;
-$navbar-inverse-toggle-border-color:        $color-red-dark;
+$navbar-inverse-toggle-border-color:        $color-brown-dark;
 
 
 //== Navs
