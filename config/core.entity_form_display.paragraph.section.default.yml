@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section.field_section_content
+    - field.field.paragraph.section.field_section_palette_list
     - field.field.paragraph.section.field_section_width
     - paragraphs.paragraphs_type.section
   module:
@@ -32,6 +33,12 @@ content:
         collapse_edit_all: collapse_edit_all
         add_above: add_above
     third_party_settings: {  }
+    region: content
+  field_section_palette_list:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_section_width:
     weight: 4
