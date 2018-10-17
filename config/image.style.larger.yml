@@ -1,0 +1,15 @@
+uuid: 5f462556-e28b-4471-a0a7-095998ded77c
+langcode: en
+status: true
+dependencies: {  }
+name: larger
+label: 'Larger (720x720)'
+effects:
+  2f7eada8-701c-4ed4-b521-937ec4806626:
+    uuid: 2f7eada8-701c-4ed4-b521-937ec4806626
+    id: image_scale
+    weight: 1
+    data:
+      width: 720
+      height: 720
+      upscale: false

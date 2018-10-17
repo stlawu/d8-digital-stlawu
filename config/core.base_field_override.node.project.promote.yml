@@ -1,14 +1,14 @@
-uuid: edc47120-4440-4550-8809-a2ca96bd844e
+uuid: 2314c253-f969-4aae-be6a-0a07a43f0e8d
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.person
-id: node.person.status
-field_name: status
+    - node.type.project
+id: node.project.promote
+field_name: promote
 entity_type: node
-bundle: person
-label: Published
+bundle: project
+label: 'Promoted to front page'
 description: ''
 required: false
 translatable: true
