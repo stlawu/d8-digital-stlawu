@@ -1,0 +1,9 @@
+uuid: 2f818b5e-29af-40d5-a8a7-2b382268ab66
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  title: '[node:title] | [site:name]'
+  description: '[node:field_teaser_text]'

@@ -1,0 +1,9 @@
+uuid: b75b6b62-0f65-4cb8-bf52-cc4d5ecce334
+langcode: en
+status: true
+dependencies: {  }
+id: node__project
+label: 'Content: Project'
+tags:
+  title: '[node:field_project_title_full] | [site:name]'
+  description: '[node:field_teaser_text]'
