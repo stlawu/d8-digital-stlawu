@@ -179,6 +179,11 @@ function di_stlawu_preprocess_menu_local_task(array &$variables) {
 function di_stlawu_preprocess_paragraph__section(&$variables) {
   $p = $variables['paragraph'];
 
+  // Setup palette color class name variable.
+  $palette = $p->field_section_palette_list->getValue();
+  $palettename = !empty($palette[0]['value']) ? $palette[0]['value'] : 'none';
+  $variables['palette'] = 'bg-' . $palettename;
+
   // Setup width variable for template
   if(!$p->field_section_width->isEmpty()){
     switch ($p->field_section_width->get(0)->value) {

@@ -5555,6 +5555,10 @@ Custom Stuffs
   margin-top: 0; }
 
 .card {
+  margin-bottom: 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
