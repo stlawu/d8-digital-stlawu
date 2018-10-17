@@ -55,6 +55,7 @@ third_party_settings:
     group_main_content:
       children:
         - body
+        - field_media_image
       parent_name: ''
       weight: -7
       format_type: fieldset
@@ -95,7 +96,7 @@ content:
     region: content
   field_media_image:
     type: media_library_widget
-    weight: 4
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
