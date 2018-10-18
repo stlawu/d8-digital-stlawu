@@ -7,6 +7,6 @@ _core:
 id: taxonomy_term
 label: 'Taxonomy term'
 tags:
+  title: '[term:name] | [site:name] | St. Lawrence University'
   canonical_url: '[term:url]'
   description: '[term:description]'
-  title: '[term:name] | [site:name]'

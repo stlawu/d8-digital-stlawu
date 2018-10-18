@@ -5,5 +5,5 @@ dependencies: {  }
 id: node__project
 label: 'Content: Project'
 tags:
-  title: '[node:field_project_title_full] | [site:name]'
+  title: '[node:field_project_title_full] | [site:name] | St. Lawrence University'
   description: '[node:field_teaser_text]'
