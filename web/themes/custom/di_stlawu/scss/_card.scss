@@ -17,6 +17,19 @@
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
 }
 
+.card {
+  font-size: 14px;
+}
+
+.view-id-di_projects .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 //
 // Base styles
 //
@@ -30,8 +43,12 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
+  border-top: 5px solid $color-red;
+  border-left: $card-border-width solid $card-border-color;
+  border-right: $card-border-width solid $card-border-color;
+  border-bottom: $card-border-width solid $card-border-color;
   border-radius: $card-border-radius;
+  padding: ($grid-gutter-width / 2);
 
   > hr {
     margin-right: 0;
@@ -57,7 +74,7 @@
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
-  padding: $card-spacer-x;
+  padding: $card-spacer-x 0 0;
 }
 
 
