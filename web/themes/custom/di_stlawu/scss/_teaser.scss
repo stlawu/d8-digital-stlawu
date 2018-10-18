@@ -13,10 +13,22 @@
 }
 
 .teaser {
+  font-size: 14px;
+}
+
+.teaser {
   margin-bottom: ($grid-gutter-width / 2);
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
 }
 
+.view-id-di_articles .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
 
 // .teaser-body {
@@ -40,7 +52,7 @@
 // }
 
 .teaser__media {
-    display: block!important;
+    display: block;
 }
 
 .teaser__media {
@@ -49,7 +61,7 @@
 }
 
 .teaser {
-    flex-direction: row!important;
+    flex-direction: row;
 }
 
 // .teaser {
@@ -75,7 +87,7 @@
 .teaser {
   position: relative;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: $card-bg;

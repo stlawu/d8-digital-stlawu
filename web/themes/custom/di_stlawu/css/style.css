@@ -5559,6 +5559,17 @@ Custom Stuffs
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
 
 .card {
+  font-size: 14px; }
+
+.view-id-di_projects .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -5566,8 +5577,12 @@ Custom Stuffs
   word-wrap: break-word;
   background-color: #ffffff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 4px; }
+  border-top: 5px solid #C4122F;
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  padding: 15px; }
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -5580,7 +5595,7 @@ Custom Stuffs
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1.25rem; }
+  padding: 1.25rem 0 0; }
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -5678,23 +5693,33 @@ Custom Stuffs
   margin-top: 0; }
 
 .teaser {
+  font-size: 14px; }
+
+.teaser {
   margin-bottom: 15px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
 
+.view-id-di_articles .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
 .teaser__media {
-  display: block !important; }
+  display: block; }
 
 .teaser__media {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
 
 .teaser {
-  flex-direction: row !important; }
+  flex-direction: row; }
 
 .teaser {
   position: relative;
   display: flex;
-  flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: #ffffff;
@@ -6756,6 +6781,10 @@ ol, ul {
 
 .university-brand {
   background-color: #AA2933; }
+
+.navbar .name {
+  text-transform: uppercase;
+  font-family: Oregon,sans-serif; }
 
 .navbar-nav > li > a {
   font-weight: 500; }
