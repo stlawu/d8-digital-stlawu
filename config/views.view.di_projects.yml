@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - node.type.project
+    - taxonomy.vocabulary.project_status
   module:
     - node
+    - taxonomy
     - user
 id: di_projects
 label: 'Digital Initiatives: Projects'
@@ -198,6 +200,10 @@ display:
         row: false
         sorts: false
         css_class: false
+        filters: false
+        filter_groups: false
+        use_ajax: false
+        exposed_form: false
       style:
         type: default
         options:
@@ -225,11 +231,96 @@ display:
           entity_field: title
           plugin_id: standard
       css_class: clearfix
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            project: project
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_project_status_target_id:
+          id: field_project_status_target_id
+          table: node__field_project_status
+          field: field_project_status_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_project_status_target_id_op
+            label: Status
+            description: ''
+            use_operator: false
+            operator: field_project_status_target_id_op
+            identifier: field_project_status_target_id
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              content_manager: '0'
+              content_creator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: project_status
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_ajax: true
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
