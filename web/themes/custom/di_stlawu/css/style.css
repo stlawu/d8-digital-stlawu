@@ -5543,6 +5543,17 @@ Custom Stuffs
       outline: 5px auto -webkit-focus-ring-color;
       outline-offset: -2px; }
 
+.bg-black {
+  background-color: #000000;
+  color: #ffffff; }
+  .bg-black a {
+    color: #F1DAB1; }
+    .bg-black a:hover, .bg-black a:focus {
+      color: #e9c586; }
+    .bg-black a:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+
 /**
  * Card
  * Loosely based off of Bootstrap 4
@@ -5557,6 +5568,16 @@ Custom Stuffs
 .card {
   margin-bottom: 15px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
+
+.card a {
+  color: #337ab7;
+  text-decoration: none; }
+  .card a:hover, .card a:focus {
+    color: #23527c;
+    text-decoration: underline; }
+  .card a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
 
 .card {
   font-size: 14px; }
