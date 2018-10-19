@@ -11,4 +11,4 @@ tags:
   title: '[site:name] | St. Lawrence University'
   canonical_url: '[site:url]'
   description: '[node:field_teaser_text]'
-  image_src: '[node:field_teaser_media]'
+  image_src: '[node:field_teaser_media:entity:field_media_image:entity:url]'

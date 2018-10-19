@@ -8,4 +8,4 @@ tags:
   title: '[node:title] | [site:name] | St. Lawrence University'
   canonical_url: '[node:url]'
   description: '[node:field_teaser_text]'
-  image_src: '[node:field_teaser_media]'
+  image_src: '[node:field_teaser_media:entity:field_media_image:entity:url]'
