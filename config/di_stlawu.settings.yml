@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://dev-d8-digital-stlawu.pantheonsite.io/themes/custom/di_stlawu/favicon.ico'
+  url: 'http://d8digitalstlawu.lndo.site/themes/custom/di_stlawu/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
@@ -33,14 +33,14 @@ region_wells:
   footer_fifth: ''
 table_responsive: '-1'
 table: ''
-breadcrumb_home: 1
-navbar_inverse: 1
+logo:
+  path: ''
+  url: ''
+  use_default: false
+breadcrumb: '2'
+breadcrumb_title: 0
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: false

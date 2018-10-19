@@ -15,9 +15,30 @@ dependencies:
     - node.type.article
   module:
     - datetime
+    - field_group
     - metatag
     - text
     - user
+third_party_settings:
+  field_group:
+    group_aside:
+      children:
+        - field_media_image
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: Aside
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-sm-6 pull-right'
+      label: Aside
+      region: content
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -26,19 +47,19 @@ bundle: article
 mode: default
 content:
   addtoany:
-    weight: 11
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   body:
     type: text_default
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
     label: hidden
   field_last_updated:
-    weight: 2
+    weight: 3
     label: inline
     settings:
       timezone_override: ''
@@ -48,7 +69,7 @@ content:
     region: content
   field_media_image:
     type: entity_reference_entity_view
-    weight: -1
+    weight: 1
     label: hidden
     settings:
       view_mode: article
@@ -56,14 +77,14 @@ content:
     third_party_settings: {  }
     region: content
   field_meta_tags:
-    weight: 101
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: content
   field_release_date:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       timezone_override: ''
@@ -73,14 +94,14 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    weight: 10
+    weight: 4
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   links:
-    weight: 100
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
