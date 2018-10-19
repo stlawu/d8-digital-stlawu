@@ -17,6 +17,21 @@
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
 }
 
+.card a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+
 .card {
   font-size: 14px;
 }

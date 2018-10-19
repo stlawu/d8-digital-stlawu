@@ -44,6 +44,9 @@ settings:
     -
       value: blue-dark
       label: 'Blue dark'
+    -
+      value: black
+      label: Black
   allowed_values_function: ''
 module: options
 locked: false

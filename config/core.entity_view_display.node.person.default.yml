@@ -24,24 +24,107 @@ dependencies:
     - node.type.person
   module:
     - datetime
+    - field_group
     - link
     - metatag
     - name
     - telephone
     - text
     - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_col0
+        - group_col1
+        - group_col2
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+      region: content
+    group_col0:
+      children:
+        - field_person_portrait
+      parent_name: group_row
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-4 pull-right'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Col0
+      region: content
+    group_col1:
+      children:
+        - field_person_biography
+        - addtoany
+        - field_last_updated
+      parent_name: group_row
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-8'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Col1
+      region: content
+    group_col2:
+      children:
+        - field_person_name
+        - field_person_position
+        - field_person_department
+        - field_person_email
+        - field_person_phone
+        - field_person_fax
+        - field_person_office_location
+        - field_person_campus_mailbox
+        - field_person_links
+      parent_name: group_row
+      weight: 22
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-4'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Col2
+      region: content
 id: node.person.default
 targetEntityType: node
 bundle: person
 mode: default
 content:
   addtoany:
-    weight: 99
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_last_updated:
-    weight: 98
+    weight: 6
     label: inline
     settings:
       timezone_override: ''
@@ -50,21 +133,21 @@ content:
     type: datetime_custom
     region: content
   field_meta_tags:
-    weight: 101
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: content
   field_person_biography:
-    weight: 9
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_person_campus_mailbox:
-    weight: 7
+    weight: 12
     label: inline
     settings:
       link_to_entity: false
@@ -72,7 +155,7 @@ content:
     type: string
     region: content
   field_person_department:
-    weight: 2
+    weight: 7
     label: hidden
     settings:
       link: false
@@ -80,29 +163,22 @@ content:
     type: entity_reference_label
     region: content
   field_person_email:
-    weight: 3
+    weight: 8
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: email_mailto
     region: content
   field_person_fax:
-    weight: 5
+    weight: 10
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_person_fellowship_descript:
-    weight: 10
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_person_links:
-    weight: 8
+    weight: 13
     label: inline
     settings:
       trim_length: 80
@@ -114,7 +190,7 @@ content:
     type: link
     region: content
   field_person_name:
-    weight: 0
+    weight: 5
     label: hidden
     settings:
       format: default
@@ -130,7 +206,7 @@ content:
     type: name_default
     region: content
   field_person_office_location:
-    weight: 6
+    weight: 11
     label: inline
     settings:
       link_to_entity: false
@@ -138,7 +214,7 @@ content:
     type: string
     region: content
   field_person_phone:
-    weight: 4
+    weight: 9
     label: inline
     settings:
       title: ''
@@ -147,7 +223,7 @@ content:
     region: content
   field_person_portrait:
     type: entity_reference_entity_view
-    weight: -10
+    weight: 1
     label: hidden
     settings:
       view_mode: person
@@ -155,7 +231,7 @@ content:
     third_party_settings: {  }
     region: content
   field_person_position:
-    weight: 1
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
@@ -163,12 +239,13 @@ content:
     type: string
     region: content
   links:
-    weight: 100
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_person_affiliation: true
+  field_person_fellowship_descript: true
   field_person_role: true
   field_person_support_role: true
   field_person_support_types: true

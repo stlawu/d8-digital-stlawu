@@ -168,3 +168,18 @@
     }
   }
 }
+
+.bg-black {
+  background-color: $color-black;
+  color: $color-white;
+  a {
+    color: $color-squash-dark;
+    &:hover,
+    &:focus {
+      color: darken(lighten($color-squash-dark, 5%), 15%);
+    }
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}
