@@ -18,7 +18,7 @@ Bootstrap Framework
 @import "../bootstrap/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
-@import "../bootstrap/assets/stylesheets/bootstrap/scaffolding";
+// @import "../bootstrap/assets/stylesheets/bootstrap/scaffolding";
 @import "../bootstrap/assets/stylesheets/bootstrap/type";
 @import "../bootstrap/assets/stylesheets/bootstrap/code";
 @import "../bootstrap/assets/stylesheets/bootstrap/grid";
@@ -63,6 +63,7 @@ Bootstrap Framework
 Custom Stuffs
 ======================================== */
 
+@import "scaffolding";
 @import "background-foreground-variants";
 @import "card";
 @import "teaser";
