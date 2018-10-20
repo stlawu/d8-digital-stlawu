@@ -5856,7 +5856,6 @@ hr {
 .navbar {
   position: relative;
   min-height: 50px;
-  border-top: 1px solid transparent;
   border-bottom: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -6811,7 +6810,9 @@ ol, ul {
     color: #ffffff; }
 
 .university-brand {
-  background-color: #AA2933; }
+  background-color: #AA2933;
+  padding-top: 7px;
+  padding-bottom: 7px; }
 
 .navbar .name {
   text-transform: uppercase;
