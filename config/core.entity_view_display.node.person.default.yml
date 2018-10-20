@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.person.field_person_role
     - field.field.node.person.field_person_support_role
     - field.field.node.person.field_person_support_types
+    - field.field.node.person.field_teaser_text
     - node.type.person
   module:
     - datetime
@@ -72,8 +73,6 @@ third_party_settings:
     group_col1:
       children:
         - field_person_biography
-        - addtoany
-        - field_last_updated
       parent_name: group_row
       weight: 21
       format_type: html_element
@@ -119,12 +118,12 @@ bundle: person
 mode: default
 content:
   addtoany:
-    weight: 5
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_last_updated:
-    weight: 6
+    weight: 1
     label: inline
     settings:
       timezone_override: ''
@@ -133,7 +132,7 @@ content:
     type: datetime_custom
     region: content
   field_meta_tags:
-    weight: 2
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -239,7 +238,7 @@ content:
     type: string
     region: content
   links:
-    weight: 1
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -249,3 +248,4 @@ hidden:
   field_person_role: true
   field_person_support_role: true
   field_person_support_types: true
+  field_teaser_text: true
