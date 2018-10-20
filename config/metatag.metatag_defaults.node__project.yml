@@ -9,3 +9,9 @@ tags:
   canonical_url: '[node:url]'
   description: '[node:field_teaser_text]'
   image_src: '[node:field_teaser_media:entity:field_media_image:entity:url]'
+  og_type: project
+  og_image: '[node:field_teaser_media:entity:field_media_image:facebook_rectangle:url]'
+  og_url: '[node:url]'
+  og_description: '[node:field_teaser_text]'
+  og_site_name: '[site:name] | St. Lawrence University'
+  og_title: '[node:title]'

@@ -12,3 +12,7 @@ tags:
   canonical_url: '[site:url]'
   description: '[node:field_teaser_text]'
   image_src: '[node:field_teaser_media:entity:field_media_image:entity:url]'
+  og_type: website
+  og_url: '[site:url]'
+  og_description: '[node:field_teaser_text]'
+  og_site_name: '[site:name] | St. Lawrence University'
