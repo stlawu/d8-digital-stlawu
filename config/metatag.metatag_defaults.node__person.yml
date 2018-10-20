@@ -1,21 +1,21 @@
-uuid: ad25399b-a3e3-468e-ad1b-2eb827b2975f
+uuid: 639f9860-b2c2-449d-aaaa-dd66ebf56dd5
 langcode: en
 status: true
 dependencies: {  }
-id: node__landing_page
-label: 'Content: Landing page'
+id: node__person
+label: 'Content: Person'
 tags:
   title: '[node:title] | [site:name] | St. Lawrence University'
   canonical_url: '[node:url]'
   description: '[node:field_teaser_text]'
-  image_src: '[node:field_teaser_media:entity:field_media_image:entity:url]'
-  og_type: webpage
-  og_image: '[node:field_teaser_media:entity:field_media_image:facebook_rectangle:url]'
+  image_src: '[node:field_person_portrait:entity:field_media_image:entity:url]'
+  og_type: person
+  og_image: '[node:field_person_portrait:entity:field_media_image:facebook_rectangle:url]'
   og_url: '[node:url]'
   og_description: '[node:field_teaser_text]'
   og_site_name: '[site:name] | St. Lawrence University'
   og_title: '[node:title]'
-  twitter_cards_image: '[node:field_teaser_media:entity:field_media_image:twitter_rectangle:url]'
+  twitter_cards_image: '[node:field_person_portrait:entity:field_media_image:twitter_rectangle:url]'
   twitter_cards_description: '[node:field_teaser_text]'
   twitter_cards_type: summary
   twitter_cards_title: '[node:title]'

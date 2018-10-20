@@ -6,20 +6,27 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.person.field_last_updated
     - field.field.node.person.field_meta_tags
+    - field.field.node.person.field_person_affiliation
     - field.field.node.person.field_person_biography
     - field.field.node.person.field_person_campus_mailbox
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_email
     - field.field.node.person.field_person_fax
+    - field.field.node.person.field_person_fellowship_descript
     - field.field.node.person.field_person_links
     - field.field.node.person.field_person_name
     - field.field.node.person.field_person_office_location
     - field.field.node.person.field_person_phone
     - field.field.node.person.field_person_portrait
     - field.field.node.person.field_person_position
+    - field.field.node.person.field_person_role
+    - field.field.node.person.field_person_support_role
+    - field.field.node.person.field_person_support_types
+    - field.field.node.person.field_teaser_text
     - node.type.person
   module:
     - name
+    - text
     - user
 id: node.person.teaser
 targetEntityType: node
@@ -74,6 +81,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_teaser_text:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 100
     region: content
@@ -83,9 +97,14 @@ hidden:
   addtoany: true
   field_last_updated: true
   field_meta_tags: true
+  field_person_affiliation: true
   field_person_biography: true
   field_person_campus_mailbox: true
   field_person_fax: true
+  field_person_fellowship_descript: true
   field_person_links: true
   field_person_office_location: true
   field_person_phone: true
+  field_person_role: true
+  field_person_support_role: true
+  field_person_support_types: true
