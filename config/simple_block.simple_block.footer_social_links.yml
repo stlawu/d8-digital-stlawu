@@ -1,0 +1,11 @@
+uuid: a5eba863-7ea2-414f-a145-eed3df801813
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_social_links
+title: 'Footer social links'
+content:
+  value: "<p><strong>Connect with St. Lawrence</strong></p>\r\n<div class=\"footer-social-links\">\r\n<a href=\"http://www.facebook.com/StLawrenceU\" target=\"_blank\">\r\n  <span class=\"fab fa-facebook\" title=\"St. Lawrence's Facebook\"></span>\r\n  <span class=\"sr-only\">St. Lawrence's Facebook</span>\r\n</a>\r\n<a href=\"http://www.youtube.com/stlawrenceu\" target=\"_blank\">\r\n  <span class=\"fab fa-youtube-square\" title=\"St. Lawrence's Youtube\"></span>\r\n  <span class=\"sr-only\">St. Lawrence's YouTube</span>\r\n</a>\r\n<a href=\"https://twitter.com/stlawrenceu\" target=\"_blank\">\r\n  <span class=\"fab fa-twitter-square\" title=\"St. Lawrence's Twitter\"></span>\r\n  <span class=\"sr-only\">St. Lawrence's Twitter</span>\r\n</a>\r\n<a href=\"http://www.linkedin.com/groups?gid=49134\" target=\"_blank\">\r\n  <span class=\"fab fa-linkedin\" title=\"St. Lawrence's LinkedIn\"></span>\r\n  <span class=\"sr-only\">St. Lawrence's LinkedIn</span>\r\n</a>\r\n<a href=\"https://www.instagram.com/stlawrenceu/\" target=\"_blank\">\r\n  <span class=\"fab fa-instagram\" title=\"St. Lawrence's Instagram\"></span>\r\n  <span class=\"sr-only\">St. Lawrence's Instagram</span>\r\n</a></div>\r\n</div>"
+  format: full_html

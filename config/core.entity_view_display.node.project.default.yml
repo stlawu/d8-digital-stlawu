@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.project.field_project_team
     - field.field.node.project.field_project_title_full
     - field.field.node.project.field_project_url
+    - field.field.node.project.field_project_url_alias
     - field.field.node.project.field_teaser_media
     - field.field.node.project.field_teaser_text
     - node.type.project
@@ -47,7 +48,6 @@ third_party_settings:
       region: content
     group_col1:
       children:
-        - field_project_title_full
         - body
       parent_name: group_row
       weight: 2
@@ -184,14 +184,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  field_project_title_full:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_project_url:
     weight: 6
     label: above
@@ -210,5 +202,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_project_title_full: true
+  field_project_url_alias: true
   field_teaser_media: true
   field_teaser_text: true

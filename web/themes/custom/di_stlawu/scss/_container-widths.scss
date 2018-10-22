@@ -1,0 +1,52 @@
+.content-container {
+  @include container-fixed;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+// To constrain certain regions on pages or nodes that have no-sidebars
+.no-sidebars .region-highlighted,
+.no-sidebars .region-page-title,
+.no-sidebars .region-local-tasks {
+  @include container-fixed;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.no-sidebars .region-content > * {
+  @include container-fixed;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+// To reset the above rule for edge-to-edge pages
+// or nodes
+.no-sidebars .region-content > .edge-to-edge {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// To constrain non-paragraph fields on edge-to-edge pages or nodes
+.no-sidebars .region-content > .edge-to-edge > .node__header,
+.no-sidebars .region-content > .edge-to-edge > .content > * {
+  @include container-fixed;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+// To reset the above rule for the .field--name-field-sections
+// paragraph field on edge-to-edge pages or nodes
+.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

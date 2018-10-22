@@ -1,0 +1,19 @@
+uuid: 352c3baf-7959-43ae-a8f0-85a8dfc899db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_url_alias
+    - node.type.project
+id: node.project.field_project_url_alias
+field_name: field_project_url_alias
+entity_type: node
+bundle: project
+label: 'Project URL alias'
+description: "The project URL alias allows you to customize the link to this project.<br>\r\n<strong>Example:</strong> dslc"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

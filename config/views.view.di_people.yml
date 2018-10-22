@@ -335,16 +335,11 @@ display:
         filter_groups: false
         css_class: false
       style:
-        type: grid
+        type: default
         options:
+          row_class: 'col-xs-12 col-sm-6 col-md-4'
+          default_row_class: false
           uses_fields: false
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
       row:
         type: 'entity:node'
         options:

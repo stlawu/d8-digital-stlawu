@@ -29,35 +29,18 @@
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
 }
 
+.view-display-id-block_students .person.teaser {
+  flex-direction: column;
+}
+
 .view-id-di_articles .view-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  // margin-right: -15px;
+  // margin-left: -15px;
 }
-
-
-// .teaser-body {
-//     flex: 1 1 auto;
-//     padding: 1.25rem;
-// }
-
-// .teaser-body {
-//     display: -ms-flexbox!important;
-//     display: flex!important;
-// }
-
-// .teaser-body {
-//     -ms-flex-direction: column!important;
-//     flex-direction: column!important;
-// }
-
-// .teaser-body {
-//     -ms-flex-align: start!important;
-//     align-items: flex-start!important;
-// }
 
 .teaser__media {
     display: block;
@@ -69,22 +52,17 @@
 }
 
 .teaser {
+  flex-direction: column;
+  @media (min-width: $screen-sm-min) {
+    flex-direction: column;
+  }
+  @media (min-width: $screen-md-min) {
     flex-direction: row;
+  }
+  @media (min-width: $screen-lg-min) {
+    flex-direction: row;
+  }
 }
-
-// .teaser {
-//     position: relative;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -ms-flex-direction: column;
-//     flex-direction: column;
-//     min-width: 0;
-//     word-wrap: break-word;
-//     background-color: #fff;
-//     background-clip: border-box;
-//     border: 1px solid rgba(0,0,0,.125);
-//     border-radius: .25rem;
-// }
 
 
 //

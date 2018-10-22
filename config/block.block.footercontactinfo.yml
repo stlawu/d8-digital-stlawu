@@ -1,0 +1,22 @@
+uuid: fdcd4f26-fe98-41ae-80c2-481c62e69e46
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_contact_info
+  module:
+    - simple_block
+  theme:
+    - di_stlawu
+id: footercontactinfo
+theme: di_stlawu
+region: footer_first
+weight: 0
+provider: null
+plugin: 'simple_block:footer_contact_info'
+settings:
+  id: 'simple_block:footer_contact_info'
+  label: 'Footer contact info'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

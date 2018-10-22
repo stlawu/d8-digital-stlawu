@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.project.field_project_team
     - field.field.node.project.field_project_title_full
     - field.field.node.project.field_project_url
+    - field.field.node.project.field_project_url_alias
     - field.field.node.project.field_teaser_media
     - field.field.node.project.field_teaser_text
     - node.type.project
@@ -33,6 +34,7 @@ third_party_settings:
         - title
         - field_project_title_full
         - field_last_updated
+        - field_project_url_alias
       parent_name: ''
       weight: -10
       format_type: fieldset
@@ -190,6 +192,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_project_url_alias:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_teaser_media:
     weight: -2

@@ -6,7 +6,7 @@ dependencies:
     - system
 id: ewb_temp
 label: 'EWB Temp'
-code: "body {\r\n  text-rendering: optimizeLegibility;\r\n}\r\n\r\n.paragraph--id--23 {\r\n    font-size: 2.8rem;\r\n    padding: 4rem;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.view-di-people.teaser {\r\n    position: relative;\r\n    display: flex;\r\n    min-width: 0;\r\n    /* word-wrap: break-word; */\r\n    /* background-color: #ffffff; */\r\n    /* background-clip: border-box; */\r\n    /* border: 1px solid rgba(0,0,0,0.125); */\r\n    /* border-radius: 4px; */\r\n    /* box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075); */\r\n}\r\n\r\n"
+code: "body {\r\n  text-rendering: optimizeLegibility;\r\n}\r\n\r\n.paragraph--id--23 {\r\n    font-size: 2.8rem;\r\n    /*padding: 4rem;*/\r\n    text-align: center;\r\n}\r\n\r\n"
 media: all
 preprocess: true
 conditions:

@@ -1,0 +1,22 @@
+uuid: fc856025-e89c-4a68-bf42-a3b27cd526d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_social_links
+  module:
+    - simple_block
+  theme:
+    - di_stlawu
+id: footersociallinks
+theme: di_stlawu
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'simple_block:footer_social_links'
+settings:
+  id: 'simple_block:footer_social_links'
+  label: 'Footer social links'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

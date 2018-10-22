@@ -59,52 +59,48 @@
       set navbar_classes = [
         'navbar',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
-        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
+        theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class,
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {# University header#}
-        <header class="university-brand row">
-          <div class="content-container col-xs-12">
-            <a href="http://www.stlawu.edu" title="St. Lawrence University homepage" class="university-logo">
-              <img class="university-line-logo" src="/themes/custom/di_stlawu/images/slu-horizontal-white.png" alt="St. Lawrence University Wordmark Logo White" height="20">
-            </a>
-          </div>
-        </header>
-      {% if not navbar_attributes.hasClass(container) %}
-        <div class="{{ container }}">
-      {% endif %}
-      <div class="navbar-header">
-        {{ page.navigation }}
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
+      <header class="university-brand">
+        <div class="content-container {{ container }}">
+          <a href="http://www.stlawu.edu" title="St. Lawrence University homepage" class="university-logo">
+            <img class="university-line-logo" src="/themes/custom/di_stlawu/images/slu-horizontal-white.png" alt="St. Lawrence University Wordmark Logo White" height="20">
+          </a>
+        </div>
+      </header>
+      <div class="content-container {{ container }}">
+        <div class="navbar-header">
+          {{ page.navigation }}
+          {# .btn-navbar is used as the toggle for collapsed navbar content #}
+          {% if page.navigation_collapsible %}
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          {% endif %}
+        </div>
+
+        {# Navigation (collapsible) #}
         {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            {{ page.navigation_collapsible }}
+            {{ page.navigation_utility }}
+          </div>
         {% endif %}
       </div>
-
-      {# Navigation (collapsible) #}
-      {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse">
-          {{ page.navigation_collapsible }}
-          {{ page.navigation_utility }}
-        </div>
-      {% endif %}
-      {% if not navbar_attributes.hasClass(container) %}
-        </div>
-      {% endif %}
     </header>
   {% endblock %}
 {% endif %}
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
+  <div role="main" class="main-container js-quickedit-main-content">
+    <div class="main-content-container clearfix">
 
       {# Breadcrumbs #}
       {% if page.breadcrumbs %}
@@ -120,6 +116,12 @@
         {% endblock %}
       {% endif %}
 
+      {# Constrains page when no sidebars #}
+      {% if page.sidebar_first and page.sidebar_second or page.sidebar_first and page.sidebar_second is empty or page.sidebar_second and page.sidebar_first is empty %}
+        <div class="content-container">
+          <div class="row">
+      {% endif %}
+
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
@@ -132,10 +134,10 @@
       {# Content #}
       {%
         set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-          page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+          page.sidebar_first and page.sidebar_second ? 'sidebars two-sidebars col-sm-6',
+          page.sidebar_first and page.sidebar_second is empty ? 'sidebars one-sidebar col-sm-9',
+          page.sidebar_second and page.sidebar_first is empty ? 'sidebars one-sidebar col-sm-9',
+          page.sidebar_first is empty and page.sidebar_second is empty ? 'no-sidebars'
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
@@ -143,7 +145,7 @@
         {# Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
-            <div class="highlighted">{{ page.highlighted }}</div>
+            {{ page.highlighted }}
           {% endblock %}
         {% endif %}
 
@@ -196,6 +198,12 @@
             {{ page.sidebar_second }}
           </aside>
         {% endblock %}
+      {% endif %}
+
+      {# Constrains page when no sidebars #}
+      {% if page.sidebar_first and page.sidebar_second or page.sidebar_first and page.sidebar_second is empty or page.sidebar_second and page.sidebar_first is empty %}
+          </div>
+        </div>
       {% endif %}
     </div>
   </div>

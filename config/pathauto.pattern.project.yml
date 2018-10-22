@@ -7,16 +7,16 @@ dependencies:
 id: project
 label: Project
 type: 'canonical_entities:node'
-pattern: 'project/[node:title]'
+pattern: 'project/[node:field_project_url_alias]'
 selection_criteria:
-  1b11366a-88b8-4eb3-bec1-f1b9cbd0a49b:
+  9513b595-bedd-46a2-86d6-73a31bb22d33:
     id: node_type
     bundles:
       project: project
     negate: false
     context_mapping:
       node: node
-    uuid: 1b11366a-88b8-4eb3-bec1-f1b9cbd0a49b
+    uuid: 9513b595-bedd-46a2-86d6-73a31bb22d33
 selection_logic: and
 weight: -5
 relationships: {  }

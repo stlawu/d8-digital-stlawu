@@ -77,7 +77,7 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
-  {% if content.field_teaser_media %}
+  {% if content.field_teaser_media|render|striptags|trim is not empty %}
     <div class='card__media'>
       {% block card_image %}
         <a href="{{ url }}">{{ content.field_teaser_media }}</a>
