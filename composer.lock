@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fe3f37429583655518fe7aa79acc268",
+    "content-hash": "7341af270d6a2be212a6949b2bcfacff",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -159,6 +159,22 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "bower-asset/mixitup",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:barrel/mixitup.git",
+                "reference": "a4c474ead1f4332d3f3b2f997a891ab416dfbf66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barrel/mixitup/zipball/a4c474ead1f4332d3f3b2f997a891ab416dfbf66",
+                "reference": "a4c474ead1f4332d3f3b2f997a891ab416dfbf66",
+                "shasum": null
+            },
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/spectrum",
