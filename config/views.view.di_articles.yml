@@ -189,3 +189,35 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  page_news:
+    display_plugin: page
+    id: page_news
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: news
+      title: News
+      defaults:
+        title: false
+        style: false
+        row: false
+      style:
+        type: default
+        options:
+          row_class: 'col-xs-12 col-sm-12 col-md-12 col-lg-12'
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

@@ -1,6 +1,6 @@
 uuid: fc856025-e89c-4a68-bf42-a3b27cd526d2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - simple_block.simple_block.footer_social_links

@@ -105,7 +105,7 @@
     {% endif %}
 
     <div{{ content_attributes.addClass('content') }}>
-      {{ content|without('field_person_portrait') }}
+      {{ content|without('field_person_portrait', 'field_person_name') }}
     </div>
   </div>
 
