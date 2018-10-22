@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.landing_page.field_teaser_text
     - node.type.landing_page
   module:
-    - datetime
     - entity_reference_revisions
     - metatag
     - user
@@ -19,20 +18,6 @@ targetEntityType: node
 bundle: landing_page
 mode: default
 content:
-  addtoany:
-    weight: 99
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_last_updated:
-    weight: 1
-    label: inline
-    settings:
-      timezone_override: ''
-      date_format: 'F d, Y'
-    third_party_settings: {  }
-    type: datetime_custom
-    region: content
   field_meta_tags:
     weight: 101
     label: above
@@ -55,5 +40,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
+  field_last_updated: true
   field_teaser_media: true
   field_teaser_text: true

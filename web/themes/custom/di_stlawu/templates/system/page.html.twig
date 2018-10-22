@@ -171,7 +171,7 @@
         {% endif %}
 
         {# Local tasks #}
-        {% if page.local_tasks %}
+        {% if page.local_tasks|render|striptags|trim is not empty %}
           {% block local_tasks %}
             {{ page.local_tasks }}
           {% endblock %}

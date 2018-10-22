@@ -6,7 +6,7 @@ dependencies:
     - system
 id: ewb_temp
 label: 'EWB Temp'
-code: "body {\r\n  text-rendering: optimizeLegibility;\r\n}\r\n\r\n.paragraph--id--23 {\r\n    font-size: 2.8rem;\r\n    /*padding: 4rem;*/\r\n    text-align: center;\r\n}\r\n\r\n"
+code: "body {\r\n  text-rendering: optimizeLegibility;\r\n}\r\n\r\n.paragraph--id--23 {\r\n    font-size: 2.8rem;\r\n    /*padding: 4rem;*/\r\n    text-align: center;\r\n}"
 media: all
 preprocess: true
 conditions:
