@@ -1,0 +1,58 @@
+.mixitup_views_filter.fieldgroup {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+  @media (min-width: $screen-lg-min) {
+    width: 33.33333333%;
+    float: left;
+  }
+}
+
+.mixitup_views_filter.fieldgroup {
+    margin-bottom: 18px;
+}
+
+.mixitup_views_filter.fieldgroup legend {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mixitup_views_filter.fieldgroup .checkbox {
+  margin-top: 5px;
+}
+
+.mixitup_views_filter.fieldgroup .form-type-checkbox {
+  font-size: 14px;
+}
+
+.mixitup_views_filter.fieldgroup .checkbox label{
+    min-height: 0px;
+}
+
+.mixitup_views_filter.fieldgroup .form-type-checkbox {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 2px 12px;
+    line-height: 1.555;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mixitup_views_filter.fieldgroup .form-type-checkbox {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}

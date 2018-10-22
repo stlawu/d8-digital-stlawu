@@ -32,7 +32,7 @@ ol, ul {
 
 // Footer.
 .footer {
-  margin-top: 45px;
+  // margin-top: 45px;
   background-color: $color-brown-dark;
   color: $color-white;
 
@@ -50,11 +50,21 @@ ol, ul {
     padding-bottom: 36px;
   }
 
+  .footer__main {
+    font-size: 16px;
+  }
+
   .footer__secondary {
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: $color-brown;
     color: $color-white;
+  }
+
+  .region-footer-fifth {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
   }
 
 }
