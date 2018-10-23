@@ -40,7 +40,7 @@ $settings['install_profile'] = 'standard';
 if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   // Redirect to https://$primary_domain in the Live environment
   if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
-    $primary_domain = 'www.digital.stlawu.edu';
+    $primary_domain = 'digital.stlawu.edu';
   }
   else {
     // Redirect to HTTPS on every Pantheon environment.
