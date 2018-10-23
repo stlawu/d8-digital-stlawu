@@ -87,6 +87,12 @@ ol, ul {
   font-weight: 500;
 }
 
+.flex-height {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
 // Paragraphs.
 p:last-child,
 .form-group:last-child,

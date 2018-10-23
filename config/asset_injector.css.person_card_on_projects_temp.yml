@@ -1,0 +1,18 @@
+uuid: 8e8dd8c4-c950-4502-a391-e38ea8d2feeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: person_card_on_projects_temp
+label: 'person card on projects temp'
+code: ".person.card {\r\n    border-top: 1px solid rgba(0,0,0,0.125);\r\n}\r\n\r\n.person.card {\r\n    flex-direction: row;\r\n}\r\n\r\n\r\n@media (min-width:480px){\r\n  .person.card {\r\n    width: 100%;\r\n  }\r\n}\r\n@media (min-width:568px){\r\n .person.card {\r\n   width: 100%;\r\n }\r\n}\r\n@media(min-width:768px){\r\n  .person.card {\r\n    width: 50%;\r\n    float: left;\r\n  }\r\n}\r\n@media(min-width:812px){\r\n  .person.card {\r\n    width: 50%;\r\n    float: left;\r\n  }\r\n}\r\n@media(min-width:896px){\r\n  .person.card {\r\n    width: 50%;\r\n    float: left;\r\n  }\r\n}\r\n\r\n\r\n.person.card .card__media {\r\n    float: left;\r\n    width: 25%;\r\n    padding-right: 1.25rem;\r\n}\r\n.person.card .card-body {\r\n    float: left;\r\n    width: 75%;\r\n    padding: 0;\r\n}\r\n\r\n@media (min-width:480px){\r\n  .person.card .card__media {\r\n    float: left;\r\n    width: 25%;\r\n    padding-right: 1.25rem;\r\n  }\r\n  .person.card .card-body {\r\n    float: left;\r\n    width: 75%;\r\n  }\r\n}\r\n@media (min-width:568px){\r\n  .person.card .card__media {\r\n    float: left;\r\n  }\r\n}\r\n@media(min-width:768px){\r\n  .person.card .card__media {\r\n    float: left;\r\n    width: 40%;\r\n  }\r\n  .person.card .card-body {\r\n    float: left;\r\n    width: 60%;\r\n  }\r\n}\r\n@media(min-width:812px){\r\n  .person.card .card__media {\r\n    float: left;\r\n    width: 40%;\r\n  }\r\n  .person.card .card-body {\r\n    float: left;\r\n    width: 60%;\r\n  }\r\n}\r\n@media(min-width:896px){\r\n  .person.card .card__media {\r\n    float: left;\r\n    width: 33.3333333333%;\r\n  }\r\n  .person.card .card-body {\r\n    float: left;\r\n    width: 66.6666666667%;\r\n  }\r\n}"
+media: all
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    theme:
+      di_stlawu: di_stlawu
+    negate: false
+conditions_require_all: true

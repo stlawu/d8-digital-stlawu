@@ -5340,7 +5340,9 @@ body {
   font-size: 18px;
   line-height: 1.555;
   color: #000;
-  background-color: #fff; }
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
 
 input,
 button,
@@ -5727,7 +5729,17 @@ hr {
 .card {
   font-size: 14px; }
 
-.view-id-di_projects .view-content {
+.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper .mix_item.mix.flex-height {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row; }
+
+.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -5850,32 +5862,30 @@ hr {
  * Loosely based off of Bootstrap 4
  * 
  */
-.article.teaser {
-  border-top: 1px solid #CDCDCD;
-  padding-top: 1.555em; }
-
 .teaser-title {
   font-size: 18px; }
 
 .teaser-title {
-  margin-top: 0; }
+  margin-top: 7px;
+  margin-bottom: 7px; }
 
-.teaser {
-  font-size: 16px; }
+.teaser .links {
+  margin-top: 7px; }
 
 .teaser .field--name-field-release-date {
   font-size: 14px; }
 
 .teaser .field--name-field-teaser-text {
-  margin-top: 12px; }
-
-.teaser {
-  margin-bottom: 15px; }
+  margin-top: 7px; }
 
 .teaser {
   min-width: 0;
+  font-size: 16px;
   word-wrap: break-word;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #CDCDCD; }
 
 .navbar {
   position: relative;
@@ -5983,7 +5993,8 @@ hr {
   padding: 11px 15px;
   font-size: 18px;
   line-height: 28px;
-  height: 50px; }
+  height: 50px;
+  font-weight: 700; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
   .navbar-brand > img {
@@ -6849,6 +6860,11 @@ ol, ul {
 
 .navbar-nav > li > a {
   font-weight: 500; }
+
+.flex-height {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row; }
 
 p:last-child,
 .form-group:last-child,

@@ -36,13 +36,24 @@
   font-size: 14px;
 }
 
-.view-id-di_projects .view-content {
+.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  // margin-right: -15px;
-  // margin-left: -15px;
+
+  & .mix_item.mix.flex-height {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 //
