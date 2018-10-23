@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default view template to display content with MixItUp.
+ */
+#}
+{% if filters is not null %}
+  <div class="filters_wrapper clearfix">{{ filters }}</div>
+{% endif %}
+
+<div class="custom-mixitup-items-wrapper">
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{ row.content }}
+  </div>
+{% endfor %}
+</div>

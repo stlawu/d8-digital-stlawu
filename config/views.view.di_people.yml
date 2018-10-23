@@ -208,7 +208,7 @@ display:
         filter_groups: false
         style: false
         row: false
-      css_class: clearfix
+      css_class: 'clearfix row'
       pager:
         type: none
         options:
@@ -299,7 +299,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-xs-12 col-sm-12 col-md-12 col-lg-12'
+          row_class: 'col-xs-12 col-sm-6 col-md-4 col-lg-3'
           default_row_class: false
           uses_fields: false
       row:
@@ -337,7 +337,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-4'
+          row_class: 'col-xs-12 col-sm-6 col-md-4 col-lg-3'
           default_row_class: false
           uses_fields: false
       row:
@@ -432,7 +432,7 @@ display:
         operator: AND
         groups:
           1: AND
-      css_class: clearfix
+      css_class: 'clearfix row'
     cache_metadata:
       max-age: -1
       contexts:

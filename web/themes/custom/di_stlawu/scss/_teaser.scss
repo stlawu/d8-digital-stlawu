@@ -4,43 +4,38 @@
  * 
  */
 
-.article.teaser {
-  border-top: 1px solid $color-gray-medium;
-  padding-top: 1.555em;
-}
 
 .teaser-title {
   font-size: $font-size-h5;
 }
 
 .teaser-title {
-  margin-top: 0;
+  margin-top: ($line-height-computed / 4);
+  margin-bottom: ($line-height-computed / 4);
 }
 
-.teaser {
-  font-size: 16px;
+.teaser .links {
+  margin-top: ($line-height-computed / 4);
 }
 
 .teaser .field--name-field-release-date {
-  font-size: 14px
+  font-size: $font-size-small;
 }
 
 .teaser .field--name-field-teaser-text {
-  margin-top: 12px
-}
-
-.teaser {
-  margin-bottom: ($grid-gutter-width / 2);
-  // box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+  margin-top: ($line-height-computed / 4);
 }
 
 //
 // Base styles
 //
 
-
 .teaser {
   min-width: 0;
+  font-size: 16px;
   word-wrap: break-word;
   background-color: $card-bg;
+  padding-top: ($line-height-computed / 2);
+  padding-bottom: ($line-height-computed / 2);
+  border-top: 1px solid $color-gray-medium;
 }

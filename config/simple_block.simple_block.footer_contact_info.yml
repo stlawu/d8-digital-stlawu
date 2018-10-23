@@ -7,5 +7,5 @@ dependencies:
 id: footer_contact_info
 title: 'Footer contact info'
 content:
-  value: "<p><a href=\"https://www.stlawu.edu\"><img alt=\"St Lawrence University\" data-entity-type=\"file\" data-entity-uuid=\"1d4873a2-35f8-4a12-8e60-dc5e6ece4c73\" src=\"/sites/default/files/inline-images/st-lawrence-university-logo%402x.png\" width=\"226\" /></a></p>\r\n\r\n<p><strong>Digital Scholarship</strong><br />\r\n23 Romoda Drive<br />\r\nCanton, NY 13617</p>\r\n"
+  value: "<p><a href=\"https://www.stlawu.edu\"><img alt=\"St Lawrence University\" data-entity-type=\"file\" data-entity-uuid=\"7c939524-69f6-439b-9639-eec35fbe710c\" src=\"/sites/default/files/inline-images/st-lawrence-university-logo%402x.png\" width=\"226\" /></a></p>\r\n\r\n<p><strong>Digital Scholarship</strong><br />\r\n23 Romoda Drive<br />\r\nCanton, NY 13617</p>\r\n"
   format: full_html
