@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_person_affiliation
     - field.field.node.person.field_person_biography
     - field.field.node.person.field_person_campus_mailbox
+    - field.field.node.person.field_person_class_year
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_email
     - field.field.node.person.field_person_fax
@@ -65,6 +66,7 @@ third_party_settings:
         - field_person_role
         - field_person_support_role
         - field_person_support_types
+        - field_person_class_year
       parent_name: ''
       weight: -9
       format_type: fieldset
@@ -153,6 +155,14 @@ content:
     region: content
   field_person_campus_mailbox:
     weight: 129
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_person_class_year:
+    weight: 2
     settings:
       size: 60
       placeholder: ''

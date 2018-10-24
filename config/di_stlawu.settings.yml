@@ -5,7 +5,7 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://d8digitalstlawu.lndo.site/themes/custom/di_stlawu/favicon.ico'
+  url: 'https://digital.stlawu.edu/themes/custom/di_stlawu/favicon.ico'
   use_default: true
 schemas:
   bootstrap: 8000
@@ -37,7 +37,7 @@ logo:
   path: ''
   url: ''
   use_default: false
-breadcrumb: '2'
+breadcrumb: '0'
 breadcrumb_title: 0
 features:
   comment_user_picture: true
