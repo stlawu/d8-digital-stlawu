@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_person_affiliation
     - field.field.node.person.field_person_biography
     - field.field.node.person.field_person_campus_mailbox
+    - field.field.node.person.field_person_class_year
     - field.field.node.person.field_person_department
     - field.field.node.person.field_person_email
     - field.field.node.person.field_person_fax
@@ -28,7 +29,6 @@ dependencies:
     - field_group
     - link
     - metatag
-    - name
     - telephone
     - text
     - user
@@ -89,15 +89,10 @@ third_party_settings:
       region: content
     group_col2:
       children:
-        - field_person_name
+        - field_person_class_year
         - field_person_position
         - field_person_department
-        - field_person_email
-        - field_person_phone
-        - field_person_fax
-        - field_person_office_location
-        - field_person_campus_mailbox
-        - field_person_links
+        - group_person_contact
       parent_name: group_row
       weight: 22
       format_type: html_element
@@ -111,6 +106,29 @@ third_party_settings:
         effect: none
         speed: fast
       label: Col2
+      region: content
+    group_person_contact:
+      children:
+        - field_person_email
+        - field_person_phone
+        - field_person_fax
+        - field_person_office_location
+        - field_person_campus_mailbox
+        - field_person_links
+      parent_name: group_col2
+      weight: 20
+      format_type: html_element
+      format_settings:
+        label: 'Person contact information'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: person-contact
+      label: 'Person contact information'
       region: content
 id: node.person.default
 targetEntityType: node
@@ -146,15 +164,23 @@ content:
     type: text_default
     region: content
   field_person_campus_mailbox:
-    weight: 12
+    weight: 13
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_person_class_year:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_person_department:
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       link: false
@@ -162,14 +188,14 @@ content:
     type: entity_reference_label
     region: content
   field_person_email:
-    weight: 8
+    weight: 9
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: email_mailto
     region: content
   field_person_fax:
-    weight: 10
+    weight: 11
     label: inline
     settings:
       link_to_entity: false
@@ -177,7 +203,7 @@ content:
     type: string
     region: content
   field_person_links:
-    weight: 13
+    weight: 14
     label: inline
     settings:
       trim_length: 80
@@ -188,24 +214,8 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_person_name:
-    weight: 5
-    label: hidden
-    settings:
-      format: default
-      markup: false
-      output: default
-      multiple: default
-      multiple_delimiter: ', '
-      multiple_and: text
-      multiple_delimiter_precedes_last: never
-      multiple_el_al_min: '3'
-      multiple_el_al_first: '1'
-    third_party_settings: {  }
-    type: name_default
-    region: content
   field_person_office_location:
-    weight: 11
+    weight: 12
     label: inline
     settings:
       link_to_entity: false
@@ -213,7 +223,7 @@ content:
     type: string
     region: content
   field_person_phone:
-    weight: 9
+    weight: 10
     label: inline
     settings:
       title: ''
@@ -230,7 +240,7 @@ content:
     third_party_settings: {  }
     region: content
   field_person_position:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       link_to_entity: false
@@ -245,6 +255,7 @@ content:
 hidden:
   field_person_affiliation: true
   field_person_fellowship_descript: true
+  field_person_name: true
   field_person_role: true
   field_person_support_role: true
   field_person_support_types: true
