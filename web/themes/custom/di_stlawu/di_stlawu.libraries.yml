@@ -19,3 +19,23 @@ section:
   css:
     component:
       css/section.css: {}
+grid-row:
+  css:
+    component:
+      css/grid-row.css: {}
+card:
+  css:
+    component:
+      css/card.css: {}
+landing-page:
+  css:
+    component:
+      css/landing-page.css: {}
+person:
+  css:
+    component:
+      css/person.css: {}
+teaser:
+  css:
+    component:
+      css/teaser.css: {}

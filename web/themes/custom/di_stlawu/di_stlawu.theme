@@ -62,6 +62,16 @@ function di_stlawu_theme_suggestions_node_alter(array &$suggestions, array $vari
 }
 
 /**
+ * Implements hook_theme_suggestions_taxonomy_term_alter().
+ */
+function di_stlawu_theme_suggestions_taxonomy_term_alter(array &$suggestions, array $variables) {
+  $bundle = $variables['elements']['name']['#bundle'];
+  $view_mode = $variables['elements']['#view_mode'];
+  $suggestions[] = 'taxonomy_term__' . $view_mode;
+  $suggestions[] = 'taxonomy_term__' . $bundle . '__' . $view_mode;
+}
+
+/**
  * Implements hook_preprocess_HOOK() for Block document templates.
  */
 function di_stlawu_preprocess_block(array &$variables) {

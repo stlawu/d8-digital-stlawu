@@ -222,7 +222,6 @@ display:
           restrict_vocab: 1
           restrict_vocab_ids:
             project_status: project_status
-            project_supporting_institution: project_supporting_institution
           use_sort: 0
           sorts:
             node_field_data_title: ''

@@ -39,6 +39,8 @@
  */
 #}
 
+{{ attach_library('di_stlawu/grid-row') }}
+
 {% set columns = content.field_grid_row_content %}
 {% set count = columns['#items']|length %}
 {%

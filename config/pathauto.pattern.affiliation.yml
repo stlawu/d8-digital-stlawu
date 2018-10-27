@@ -1,0 +1,23 @@
+uuid: 4a944c7b-4deb-4303-8524-b415dfe49f0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: affiliation
+label: Affiliation
+type: 'canonical_entities:taxonomy_term'
+pattern: 'affiliation/[term:name]'
+selection_criteria:
+  bd2b46bb-2a86-4c83-b6e3-45489f39d995:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      person_affiliation: person_affiliation
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: bd2b46bb-2a86-4c83-b6e3-45489f39d995
+selection_logic: and
+weight: -5
+relationships: {  }

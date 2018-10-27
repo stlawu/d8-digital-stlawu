@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;GAGG;ACHH;;;;;;;;;;GAUG;ADFH,kCAAmC;EACjC,WAAW,EAAE,GAAG;;AAGlB,oCAAqC;EACnC,UAAU,EAAE,MAAM",
+"sources": ["../scss/person.scss","../scss/_default-variables.scss"],
+"names": [],
+"file": "person.css"
+}

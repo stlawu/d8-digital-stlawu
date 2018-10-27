@@ -4,12 +4,19 @@
  * 
  */
 
+ @import "default-variables";
+ @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
 .card-title {
   font-size: $font-size-h5;
 }
 
 .card-title {
   margin-top: 0;
+}
+
+.card {
+  font-size: 14px;
 }
 
 .card {
@@ -32,28 +39,8 @@
   }
 }
 
-.card {
-  font-size: 14px;
-}
-
-.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  & .mix_item.mix.flex-height {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.card .field--name-field-person-email {
+  margin-top: ($line-height-computed / 4);
 }
 
 //
@@ -106,7 +93,7 @@
 
 
 .card-title {
-  margin-bottom: $card-spacer-y;
+  margin-bottom: ($line-height-computed / 4);
 }
 
 .card-subtitle {

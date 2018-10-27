@@ -1,0 +1,15 @@
+/**
+ * Person content type
+ * 
+ */
+
+@import "default-variables";
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.field--name-field-person-position {
+  font-weight: 700;
+}
+
+.field--name-field-person-department {
+  font-style: italic;
+}

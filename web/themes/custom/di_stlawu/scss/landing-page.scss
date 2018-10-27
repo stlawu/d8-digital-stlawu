@@ -1,0 +1,44 @@
+/**
+ * Landing page content type
+ * 
+ */
+
+@import "default-variables";
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+// To reset the width of the landing page
+.no-sidebars .region-content > .edge-to-edge {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// To constrain non-paragraph fields on the landing page
+.no-sidebars .region-content > .edge-to-edge > .node__header,
+.no-sidebars .region-content > .edge-to-edge > .content > * {
+  @include container-fixed;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+// To constrain non-paragraph fields on the landing page
+.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections > .paragraph--type--section > .section-full-width .paragraph--type--view .filters_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+// To reset the above rule for the .field--name-field-sections
+// paragraph field on the landing page
+.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

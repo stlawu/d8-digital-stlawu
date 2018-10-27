@@ -4,25 +4,28 @@
  * 
  */
 
+@import "default-variables";
 
 .teaser-title {
   font-size: $font-size-h5;
 }
 
 .teaser-title {
-  margin-top: ($line-height-computed / 4);
+  margin-top: 0px;
   margin-bottom: ($line-height-computed / 4);
-}
-
-.teaser .links {
-  margin-top: ($line-height-computed / 4);
 }
 
 .teaser .field--name-field-release-date {
   font-size: $font-size-small;
+  margin-top: ($line-height-computed / 4);
+  margin-bottom: ($line-height-computed / 4);
 }
 
 .teaser .field--name-field-teaser-text {
+  margin-top: ($line-height-computed / 4);
+}
+
+.teaser .links {
   margin-top: ($line-height-computed / 4);
 }
 

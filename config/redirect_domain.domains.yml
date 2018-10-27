@@ -1,0 +1,34 @@
+domain_redirects:
+  'digital:stlawu:edu':
+    -
+      sub_path: /ksp
+      destination: digitalcollections.stlawu.edu/ksp
+    -
+      sub_path: '/ksp/*'
+      destination: digitalcollections.stlawu.edu/ksp
+    -
+      sub_path: /twitter-society
+      destination: digitalcollections.stlawu.edu/twitter-society
+    -
+      sub_path: '/twitter-society/*'
+      destination: digitalcollections.stlawu.edu/twitter-society
+    -
+      sub_path: /peopleshistoryarchive
+      destination: digitalcollections.stlawu.edu/peopleshistoryarchive
+    -
+      sub_path: '/peopleshistoryarchive/*'
+      destination: digitalcollections.stlawu.edu/peopleshistoryarchive
+    -
+      sub_path: /human-rights-researcher
+      destination: digitalcollections.stlawu.edu/human-rights-researcher
+    -
+      sub_path: '/human-rights-researcher/*'
+      destination: digitalcollections.stlawu.edu/human-rights-researcher
+    -
+      sub_path: /adirondack-bibliography
+      destination: digitalcollections.stlawu.edu/adirondack-bibliography
+    -
+      sub_path: '/adirondack-bibliography/*'
+      destination: digitalcollections.stlawu.edu/adirondack-bibliography
+_core:
+  default_config_hash: CgXLPQkHCGerCdDtMO8wK9Er4j6iy1iMOyalk8iRgrE
