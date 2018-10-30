@@ -1,47 +1,49 @@
 /**
- * NC Paragraphs
+ * Section paragraph type
  * Based off of Bootstrap 3.3.7
  * 
  */
 
-//
-// Variables
-// --------------------------------------------------
+// //
+// // Variables
+// // --------------------------------------------------
 
-//** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.555; // 28/18
+@import "default-variables";
 
-//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-$line-height-computed: 28px;
+// //** Unit-less `line-height` for use in components like buttons.
+// $line-height-base:        1.555; // 28/18
 
-//== Grid system
-//
-//## Define your custom responsive grid.
+// //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+// $line-height-computed: 28px;
 
-// //** Number of columns in the grid.
-// $grid-columns:              12;
-// //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         30px;
+// //== Grid system
+// //
+// //## Define your custom responsive grid.
 
-//== Container sizes
-//
-//## Define the maximum width of `.container` for different screen sizes.
+// // //** Number of columns in the grid.
+// // $grid-columns:              12;
+// // //** Padding between columns. Gets divided in half for the left and right.
+// $grid-gutter-width:         30px;
 
-// Large screen / wide desktop
-$container-large-desktop:      (1140px + $grid-gutter-width);
-//** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop;
+// //== Container sizes
+// //
+// //## Define the maximum width of `.container` for different screen sizes.
+
+// // Large screen / wide desktop
+// $container-large-desktop:      (1140px + $grid-gutter-width);
+// //** For `$screen-lg-min` and up.
+// $container-lg:                 $container-large-desktop;
 
 
-// // Small screen / tablet
-// //** Deprecated `$screen-sm` as of v3.0.1
-// $screen-sm:                  768px;
-// $screen-sm-min:              $screen-sm;
+// // // Small screen / tablet
+// // //** Deprecated `$screen-sm` as of v3.0.1
+// // $screen-sm:                  768px;
+// // $screen-sm-min:              $screen-sm;
 
-// Large screen / wide desktop
-//** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  1200px;
-$screen-lg-min:              $screen-lg;
+// // Large screen / wide desktop
+// //** Deprecated `$screen-lg` as of v3.0.1
+// $screen-lg:                  1200px;
+// $screen-lg-min:              $screen-lg;
 
 // Clearfix
 //
@@ -112,15 +114,3 @@ $screen-lg-min:              $screen-lg;
     width: $container-lg;
   }
 }
-
-// .section-container.content-width .paragraph {
-//   @include make-content-width;
-// }
-
-// .section-container.content-width .paragraph.full-width {
-//   @include make-full-width;
-// }
-
-// .paragraph > .section-container.content-width {
-//   @include make-full-width;
-// }

@@ -1,0 +1,152 @@
+/**
+ * Card
+ * Loosely based off of Bootstrap 4
+ * 
+ */
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+.card-title {
+  font-size: 18px; }
+
+.card-title {
+  margin-top: 0; }
+
+.card {
+  font-size: 14px; }
+
+.card {
+  margin-bottom: 15px;
+  box-shadow: 0 0 12px #979797; }
+
+.card a {
+  color: #337ab7;
+  text-decoration: underline; }
+  .card a:hover, .card a:focus {
+    color: #23527c;
+    text-decoration: underline; }
+  .card a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+
+.card .field--name-field-person-email {
+  margin-top: 7px; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border-top: 5px solid #C4122F;
+  border-radius: 0px;
+  padding: 15px; }
+  .card > hr {
+    margin-right: 0;
+    margin-left: 0; }
+  .card > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .card > .list-group:last-child .list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem 0 0; }
+
+.card-title {
+  margin-bottom: 7px; }
+
+.card-subtitle {
+  margin-top: -0.375rem;
+  margin-bottom: 0; }
+
+.card-text:last-child {
+  margin-bottom: 0; }
+
+.card-link + .card-link {
+  margin-left: 1.25rem; }
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  .card-header + .list-group .list-group-item:first-child {
+    border-top: 0; }
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+
+.card-header-tabs {
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0; }
+
+.card-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem; }
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem; }
+
+.card-img {
+  width: 100%;
+  border-radius: calc(4px - 1px); }
+
+.card-img-top {
+  width: 100%;
+  border-radius: calc(4px - 1px); }
+
+.card-img-bottom {
+  width: 100%;
+  border-radius: calc(4px - 1px); }
+
+.card-deck {
+  display: flex;
+  flex-direction: column; }
+  .card-deck .card {
+    margin-bottom: 15px; }
+
+.card-group {
+  display: flex;
+  flex-direction: column; }
+  .card-group > .card {
+    margin-bottom: 15px; }
+
+.card-columns .card {
+  margin-bottom: 0.75rem; }
+
+.accordion .card:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 0;
+  border-radius: 0; }
+.accordion .card:not(:first-of-type) .card-header:first-child {
+  border-radius: 0; }
+.accordion .card:first-of-type {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+.accordion .card:last-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+/*# sourceMappingURL=card.css.map */

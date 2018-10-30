@@ -3,14 +3,14 @@
   min-height: 1px;
   padding-left:  ($grid-gutter-width / 2);
   padding-right: ($grid-gutter-width / 2);
-  @media (min-width: $screen-lg-min) {
-    width: 33.33333333%;
-    float: left;
-  }
+  // @media (min-width: $screen-lg-min) {
+  //   width: 33.33333333%;
+  //   float: left;
+  // }
 }
 
 .mixitup_views_filter.fieldgroup {
-    margin-bottom: 18px;
+    margin-bottom: 28px;
 }
 
 .mixitup_views_filter.fieldgroup legend {

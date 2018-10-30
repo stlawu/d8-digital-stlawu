@@ -19,7 +19,7 @@ Bootstrap Framework
 
 // Core CSS
 // @import "../bootstrap/assets/stylesheets/bootstrap/scaffolding";
-@import "../bootstrap/assets/stylesheets/bootstrap/type";
+// @import "../bootstrap/assets/stylesheets/bootstrap/type";
 @import "../bootstrap/assets/stylesheets/bootstrap/code";
 @import "../bootstrap/assets/stylesheets/bootstrap/grid";
 @import "../bootstrap/assets/stylesheets/bootstrap/tables";
@@ -64,13 +64,13 @@ Custom Stuffs
 ======================================== */
 
 @import "scaffolding";
+@import "type";
 @import "background-foreground-variants";
+@import "buttons";
 @import "container-widths";
+@import "footer";
 @import "mixitup-overrides";
-@import "card";
-@import "teaser";
 @import "navbar";
-@import "grid-row";
 
 // Base-theme overrides.
 @import 'overrides';

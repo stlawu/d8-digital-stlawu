@@ -26,48 +26,9 @@ ol, ul {
 }
 
 // Page header.
-.page-header {
-  margin-top: 0;
-}
-
-// Footer.
-.footer {
-  // margin-top: 45px;
-  background-color: $color-brown-dark;
-  color: $color-white;
-
-  & a {
-    color: $color-white;
-
-    &:hover,
-    &:focus {
-      color: $color-squash-dark;
-    }
-  }
-
-  .footer__main {
-    padding-top: 35px;
-    padding-bottom: 36px;
-  }
-
-  .footer__main {
-    font-size: 16px;
-  }
-
-  .footer__secondary {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    background-color: $color-brown;
-    color: $color-white;
-  }
-
-  .region-footer-fifth {
-    font-size: 14px;
-    text-align: center;
-    line-height: 1;
-  }
-
-}
+// .page-header {
+//   margin-top: 0;
+// }
 
 // University brand.
 .university-brand {
@@ -91,6 +52,26 @@ ol, ul {
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
+}
+
+.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  & .mix_item.mix.flex-height {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 // Paragraphs.

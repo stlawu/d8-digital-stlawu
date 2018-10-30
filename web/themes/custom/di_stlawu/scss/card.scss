@@ -4,6 +4,9 @@
  * 
  */
 
+ @import "default-variables";
+ @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
 .card-title {
   font-size: $font-size-h5;
 }
@@ -13,8 +16,12 @@
 }
 
 .card {
+  font-size: 14px;
+}
+
+.card {
   margin-bottom: ($grid-gutter-width / 2);
-  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+      box-shadow: 0 0 12px $color-gray-dark;
 }
 
 .card a {
@@ -32,28 +39,8 @@
   }
 }
 
-.card {
-  font-size: 14px;
-}
-
-.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  & .mix_item.mix.flex-height {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.card .field--name-field-person-email {
+  margin-top: ($line-height-computed / 4);
 }
 
 //
@@ -70,10 +57,10 @@
   background-color: $card-bg;
   background-clip: border-box;
   border-top: 5px solid $color-red;
-  border-left: $card-border-width solid $card-border-color;
-  border-right: $card-border-width solid $card-border-color;
-  border-bottom: $card-border-width solid $card-border-color;
-  border-radius: $card-border-radius;
+  // border-left: $card-border-width solid $card-border-color;
+  // border-right: $card-border-width solid $card-border-color;
+  // border-bottom: $card-border-width solid $card-border-color;
+  border-radius: 0px;
   padding: ($grid-gutter-width / 2);
 
   > hr {
@@ -106,7 +93,7 @@
 
 
 .card-title {
-  margin-bottom: $card-spacer-y;
+  margin-bottom: ($line-height-computed / 4);
 }
 
 .card-subtitle {

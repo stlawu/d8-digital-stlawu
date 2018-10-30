@@ -1,0 +1,17 @@
+uuid: c07c13eb-c626-4547-93b8-de673b491887
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: node_175
+label: 'node 175'
+code: ".page-node-type-landing-page .region-content .edge-to-edge .node__header {\r\n  background: url(https://digital.stlawu.edu/sites/default/files/2018-10/all-aboard.png?itok=wDOn9GS2);\r\n  background-size: 100%;\r\n  padding-top: 50%;\r\n}\r\n.page-node-type-landing-page .region-content .edge-to-edge .node__header h1 {\r\n  background: rgb(0,0,0);\r\n  background: rgba(0,0,0,.5);\r\n  color: white;\r\n  text-shadow: 0 0 1px black;\r\n}\r\n@media(min-width: 960px) {\r\n .page-node-type-landing-page .region-content .edge-to-edge .node__header {\r\n  background-attachment: fixed;\r\n  min-height: 500px;\r\n  margin: 0;\r\n  padding: 0;\r\n  width: 100%;\r\n }\r\n .page-node-type-landing-page .region-content .edge-to-edge .node__header h1 {\r\n  max-width: 50%;\r\n  margin-left: auto;\r\n  padding: .5em 0 .5em 1em;\r\n  margin-top: 200px;\r\n }\r\n}\r\n@media(min-width: 1280px) {\r\n .page-node-type-landing-page .region-content .edge-to-edge .node__header {\r\n   min-height: 800px;\r\n }\r\n .page-node-type-landing-page .region-content .edge-to-edge .node__header h1 {\r\n   margin-top: 300px;\r\n }\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /node/175
+    negate: false
+conditions_require_all: true
