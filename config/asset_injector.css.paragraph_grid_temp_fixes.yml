@@ -1,0 +1,11 @@
+uuid: 740ee4cd-cc1b-4f2f-bea6-6d28446bc7d8
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_grid_temp_fixes
+label: 'Paragraph Grid temp fixes'
+code: ".paragraph--type--grid-column {\r\n    padding: 0 15px;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

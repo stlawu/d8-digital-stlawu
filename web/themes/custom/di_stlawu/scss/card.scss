@@ -21,7 +21,7 @@
 
 .card {
   margin-bottom: ($grid-gutter-width / 2);
-  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+      box-shadow: 0 0 12px $color-gray-dark;
 }
 
 .card a {
@@ -57,10 +57,10 @@
   background-color: $card-bg;
   background-clip: border-box;
   border-top: 5px solid $color-red;
-  border-left: $card-border-width solid $card-border-color;
-  border-right: $card-border-width solid $card-border-color;
-  border-bottom: $card-border-width solid $card-border-color;
-  border-radius: $card-border-radius;
+  // border-left: $card-border-width solid $card-border-color;
+  // border-right: $card-border-width solid $card-border-color;
+  // border-bottom: $card-border-width solid $card-border-color;
+  border-radius: 0px;
   padding: ($grid-gutter-width / 2);
 
   > hr {
