@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.section.field_section_content
+    - field.field.paragraph.section.field_section_palette_list
     - field.field.paragraph.section.field_section_width
     - paragraphs.paragraphs_type.section
   module:
@@ -22,4 +23,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_section_palette_list: true
   field_section_width: true
