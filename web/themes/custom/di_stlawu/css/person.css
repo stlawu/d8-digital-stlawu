@@ -19,4 +19,31 @@
 .field--name-field-person-department {
   font-style: italic; }
 
+@media (min-width: 568px) {
+  .person__portrait {
+    float: left;
+    width: 33.3333333333%;
+    padding-right: 15px; } }
+
+.no-sidebars .region-content > .person.full {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.no-sidebars .region-content > .person.full > .content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .no-sidebars .region-content > .person.full > .content:before, .no-sidebars .region-content > .person.full > .content:after {
+    content: " ";
+    display: table; }
+  .no-sidebars .region-content > .person.full > .content:after {
+    clear: both; }
+  @media (min-width: 1200px) {
+    .no-sidebars .region-content > .person.full > .content {
+      width: 1170px; } }
+
 /*# sourceMappingURL=person.css.map */

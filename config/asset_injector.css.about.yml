@@ -1,11 +1,18 @@
 uuid: 132b2d50-df39-4147-93fb-20096737eeb5
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 id: about
 label: 'EWB - About Page'
 code: "#paragraph--id--44 {\r\n  padding-left:24px;\r\n}"
 media: all
 preprocess: true
-conditions: {  }
+conditions:
+  current_theme:
+    id: current_theme
+    theme:
+      di_stlawu: di_stlawu
+    negate: false
 conditions_require_all: true

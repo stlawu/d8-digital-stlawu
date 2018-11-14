@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;;GAGG;ACHH;;;;;;;;;;GAUG;ADFH,kCAAmC;EACjC,WAAW,EAAE,GAAG;;AAGlB,oCAAqC;EACnC,UAAU,EAAE,MAAM",
-"sources": ["../scss/person.scss","../scss/_default-variables.scss"],
+"mappings": "AAAA;;;GAGG;ACHH;;;;;;;;;;GAUG;ADFH,kCAAmC;EACjC,WAAW,EAAE,GAAG;;AAGlB,oCAAqC;EACnC,UAAU,EAAE,MAAM;;AAIlB,yBAA0B;EAD5B,iBAAkB;IAEd,KAAK,EAAE,IAAI;IACX,KAAK,EAAE,cAA+B;IACtC,aAAa,EAAE,IAA8B;;AAMjD,2CAA4C;EAC1C,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,CAAC;EACf,YAAY,EAAE,CAAC;EACf,aAAa,EAAE,CAAC;;AAGlB,sDAAuD;EE5BrD,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAG,IAAoB;EACnC,aAAa,EAAE,IAAmB;ECIlC,2HACQ;IACN,OAAO,EAAE,GAAG;IACZ,OAAO,EAAE,KAAK;EAEhB,4DAAQ;IACN,KAAK,EAAE,IAAI;EHiBb,0BAAmC;IAFrC,sDAAuD;MAGnD,KAAK,ECsWsB,MAAwB",
+"sources": ["../scss/person.scss","../scss/_default-variables.scss","../bootstrap/assets/stylesheets/bootstrap/mixins/_grid.scss","../bootstrap/assets/stylesheets/bootstrap/mixins/_clearfix.scss"],
 "names": [],
 "file": "person.css"
 }
