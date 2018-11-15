@@ -11,8 +11,11 @@
 }
 
 .teaser-title {
-  margin-top: 0px;
+  margin-top: ($line-height-computed / 4);
   margin-bottom: ($line-height-computed / 4);
+  @media (min-width:480px) {
+    margin-top: 0px;
+  }
 }
 
 .teaser .field--name-field-release-date {
@@ -42,3 +45,94 @@
   padding-bottom: ($line-height-computed / 2);
   border-top: 1px solid $color-gray-medium;
 }
+
+// Standard teasers in views
+.teaser__media {
+  @media (min-width:480px) {
+    float: left;
+    width: 25%;
+    padding-right: 1.25rem;
+  }
+  @media (min-width:1200px) {
+    float: left;
+    width: 20%;
+  }
+}
+.teaser-body {
+  @media (min-width:480px) {
+    float: left;
+    width: 75%;
+  }
+  @media (min-width:1200px) {
+    float: left;
+    width: 80%;
+  }
+}
+
+
+// @media (min-width:480px){
+//   .teaser__media {
+//     float: left;
+//     width: 25%;
+//     padding-right: 1.25rem;
+//   }
+//   .teaser-body {
+//     float: left;
+//     width: 75%;
+//   }
+// }
+// @media (min-width:568px){
+//   .teaser__media {
+//     float: left;
+//   }
+// }
+// @media (min-width:768px){
+//   .teaser__media {
+//     float: left;
+//     width: 25%;
+//   }
+//   .teaser-body {
+//     float: left;
+//     width: 75%;
+//   }
+// }
+// @media (min-width:812px){
+//   .teaser__media {
+//     float: left;
+//     width: 25%;
+//   }
+//   .teaser-body {
+//     float: left;
+//     width: 75%;
+//   }
+// }
+// @media (min-width:896px){
+//   .teaser__media {
+//     float: left;
+//     width: 25%;
+//   }
+//   .teaser-body {
+//     float: left;
+//     width: 75%;
+//   }
+// }
+// @media (min-width:992px){
+//   .teaser__media {
+//     float: left;
+//     width: 25%;
+//   }
+//   .teaser-body {
+//     float: left;
+//     width: 75%;
+//   }
+// }
+// @media (min-width:1200px){
+//   .teaser__media {
+//     float: left;
+//     width: 20%;
+//   }
+//   .teaser-body {
+//     float: left;
+//     width: 80%;
+//   }
+// }

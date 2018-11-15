@@ -6,6 +6,11 @@
 
  @import "paragraphs-variables";
 
+.paragraph--type--grid-column {
+  padding-left:  floor(($grid-gutter-width / 2));
+  padding-right: ceil(($grid-gutter-width / 2));
+}
+
 
 .grid.two-columns .paragraph--type--grid-column {
   @media (min-width: $screen-sm-min) {

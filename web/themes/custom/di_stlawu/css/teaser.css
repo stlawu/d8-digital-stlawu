@@ -18,8 +18,11 @@
   font-size: 18px; }
 
 .teaser-title {
-  margin-top: 0px;
+  margin-top: 7px;
   margin-bottom: 7px; }
+  @media (min-width: 480px) {
+    .teaser-title {
+      margin-top: 0px; } }
 
 .teaser .field--name-field-release-date {
   font-size: 14px;
@@ -40,5 +43,24 @@
   padding-top: 14px;
   padding-bottom: 14px;
   border-top: 1px solid #CDCDCD; }
+
+@media (min-width: 480px) {
+  .teaser__media {
+    float: left;
+    width: 25%;
+    padding-right: 1.25rem; } }
+@media (min-width: 1200px) {
+  .teaser__media {
+    float: left;
+    width: 20%; } }
+
+@media (min-width: 480px) {
+  .teaser-body {
+    float: left;
+    width: 75%; } }
+@media (min-width: 1200px) {
+  .teaser-body {
+    float: left;
+    width: 80%; } }
 
 /*# sourceMappingURL=teaser.css.map */

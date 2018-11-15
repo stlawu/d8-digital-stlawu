@@ -8,6 +8,10 @@
  * Based off of Bootstrap 3.3.7
  *
  */
+.paragraph--type--grid-column {
+  padding-left: 15px;
+  padding-right: 15px; }
+
 @media (min-width: 768px) {
   .grid.two-columns .paragraph--type--grid-column {
     width: 50%;

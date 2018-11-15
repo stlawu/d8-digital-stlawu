@@ -6,6 +6,10 @@
 @import "default-variables";
 @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
 
+.person-contact {
+  margin-top: 14px;
+}
+
 .field--name-field-person-position {
   font-weight: 700;
 }
@@ -36,5 +40,35 @@
   @include container-fixed;
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
+  }
+}
+
+// Person card
+
+.person.card {
+  border-top: 0px;
+}
+
+.person.card {
+  width: 100%;
+  flex-direction: column;
+  @media (min-width: 414px) {
+    flex-direction: row;
+  }
+}
+
+.person.card .card__media {
+  @media (min-width: 414px) {
+    float: left;
+    width: 25%;
+    padding-right: 1.25rem;
+  }
+}
+
+.person.card .card-body {
+  @media (min-width: 414px) {
+    float: left;
+    width: 75%;
+    padding: 0px;
   }
 }
