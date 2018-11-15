@@ -60,6 +60,10 @@ ol, ul {
   }
 }
 
+.region-content {
+  padding-bottom: $line-height-computed;
+}
+
 .flex-height {
   display: -ms-flexbox;
   display: flex;

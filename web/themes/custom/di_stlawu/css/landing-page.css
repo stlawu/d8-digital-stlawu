@@ -53,4 +53,7 @@
     .no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections > .paragraph--type--section > .section-full-width .paragraph--type--view .filters_wrapper {
       width: 1170px; } }
 
+.page-node-type-landing-page .region-content {
+  margin-bottom: -28px; }
+
 /*# sourceMappingURL=landing-page.css.map */

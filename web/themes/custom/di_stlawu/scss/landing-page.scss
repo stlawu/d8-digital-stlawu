@@ -42,3 +42,9 @@
     width: $container-lg;
   }
 }
+
+// Remove padding-bottom from .region-content 
+
+.page-node-type-landing-page .region-content {
+  margin-bottom: -$line-height-computed;
+}

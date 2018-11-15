@@ -6650,6 +6650,9 @@ ol, ul {
     .node-header-wrapper .page-title {
       margin-top: 0px; } }
 
+.region-content {
+  padding-bottom: 28px; }
+
 .flex-height {
   display: -ms-flexbox;
   display: flex;
