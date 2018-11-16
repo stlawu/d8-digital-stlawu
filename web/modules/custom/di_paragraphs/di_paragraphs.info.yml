@@ -9,9 +9,12 @@ dependencies:
   - file
   - image
   - link
+  - media
+  - media_library
   - options
   - paragraphs
   - system
   - text
   - token
   - user
+  - viewsreference

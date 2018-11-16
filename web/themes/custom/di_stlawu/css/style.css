@@ -6642,6 +6642,17 @@ ol, ul {
 .navbar-nav > li > a {
   font-weight: 500; }
 
+.node-header-wrapper {
+  margin-bottom: 28px;
+  padding-top: 28px;
+  padding-bottom: 28px; }
+  @media (min-width: 568px) {
+    .node-header-wrapper .page-title {
+      margin-top: 0px; } }
+
+.region-content {
+  padding-bottom: 28px; }
+
 .flex-height {
   display: -ms-flexbox;
   display: flex;

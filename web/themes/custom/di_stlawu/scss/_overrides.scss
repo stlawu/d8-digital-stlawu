@@ -48,6 +48,22 @@ ol, ul {
   font-weight: 500;
 }
 
+.node-header-wrapper {
+  margin-bottom: $line-height-computed;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed;
+
+  & .page-title {
+    @media (min-width: 568px) {
+      margin-top: 0px;
+    }
+  }
+}
+
+.region-content {
+  padding-bottom: $line-height-computed;
+}
+
 .flex-height {
   display: -ms-flexbox;
   display: flex;

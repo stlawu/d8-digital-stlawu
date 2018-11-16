@@ -24,6 +24,16 @@
   }
 }
 
+// To reset the above rule for the .field--name-field-sections
+// paragraph field on the landing page
+.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 // To constrain non-paragraph fields on the landing page
 .no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections > .paragraph--type--section > .section-full-width .paragraph--type--view .filters_wrapper {
   margin-left: auto;
@@ -33,12 +43,8 @@
   }
 }
 
-// To reset the above rule for the .field--name-field-sections
-// paragraph field on the landing page
-.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
+// Remove padding-bottom from .region-content 
+
+.page-node-type-landing-page .region-content {
+  margin-bottom: -$line-height-computed;
 }

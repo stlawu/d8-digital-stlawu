@@ -13,10 +13,62 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+.person-contact {
+  margin-top: 14px; }
+
 .field--name-field-person-position {
   font-weight: 700; }
 
 .field--name-field-person-department {
   font-style: italic; }
+
+@media (min-width: 568px) {
+  .person__portrait {
+    float: left;
+    width: 33.3333333333%;
+    padding-right: 15px; } }
+
+.no-sidebars .region-content > .person.full {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.no-sidebars .region-content > .person.full > .content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .no-sidebars .region-content > .person.full > .content:before, .no-sidebars .region-content > .person.full > .content:after {
+    content: " ";
+    display: table; }
+  .no-sidebars .region-content > .person.full > .content:after {
+    clear: both; }
+  @media (min-width: 1200px) {
+    .no-sidebars .region-content > .person.full > .content {
+      width: 1170px; } }
+
+.person.card {
+  border-top: 0px; }
+
+.person.card {
+  width: 100%;
+  flex-direction: column; }
+  @media (min-width: 414px) {
+    .person.card {
+      flex-direction: row; } }
+
+@media (min-width: 414px) {
+  .person.card .card__media {
+    float: left;
+    width: 25%;
+    padding-right: 1.25rem; } }
+
+@media (min-width: 414px) {
+  .person.card .card-body {
+    float: left;
+    width: 75%;
+    padding: 0px; } }
 
 /*# sourceMappingURL=person.css.map */

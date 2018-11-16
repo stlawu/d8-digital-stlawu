@@ -38,21 +38,7 @@
  * @ingroup themeable
  */
 #}
-
-{{ attach_library('di_stlawu/grid-row') }}
-
-{% set columns = content.field_grid_row_content %}
-{% set count = columns['#items']|length %}
-{%
-  set grid_classes = [
-    count > 1 ? 'grid',
-    count == 2 ? 'two-columns',
-    count == 3 ? 'three-columns',
-    count == 4 ? 'four-columns',
-    count == 5 ? 'five-columns',
-    count == 6 ? 'six-columns'
-  ]
-%}
+{{ attach_library('di_paragraphs/section') }}
 
 {%
   set classes = [
@@ -61,20 +47,22 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'paragraph--id--' ~ paragraph.id.value,
-    'clearfix',
+    palette,
   ]
 %}
-
-{# Merges grid_classes with classes. #}
-{% set classes = classes|merge(grid_classes) %}
-
-
+{% set section_container_attribute = create_attribute() %}
+{%
+  set section_container_classes = [
+    'section-container',
+    width|clean_class,
+  ]
+%}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
+    <div{{ section_container_attribute.addClass(section_container_classes) }}>
     {% block content %}
-      {% for key, item in columns if key|first != '#' %}
-        {{ item }}
-      {% endfor %}
+      {{ content }}
     {% endblock %}
+    </div>
   </div>
 {% endblock paragraph %}

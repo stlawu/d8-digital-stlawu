@@ -15,14 +15,6 @@ framework:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
-section:
-  css:
-    component:
-      css/section.css: {}
-grid-row:
-  css:
-    component:
-      css/grid-row.css: {}
 card:
   css:
     component:

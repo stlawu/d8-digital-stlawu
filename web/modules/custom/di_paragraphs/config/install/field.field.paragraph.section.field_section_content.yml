@@ -3,8 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.grid_row
+    - paragraphs.paragraphs_type.media
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
 id: paragraph.section.field_section_content
@@ -22,13 +25,27 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      media: media
       text: text
+      media: media
+      grid_row: grid_row
+      view: view
     target_bundles_drag_drop:
-      section:
-        weight: 7
-        enabled: false
       text:
         enabled: true
-        weight: 8
+        weight: -13
+      media:
+        enabled: true
+        weight: -12
+      grid_row:
+        enabled: true
+        weight: -11
+      view:
+        enabled: true
+        weight: -10
+      section:
+        weight: -9
+        enabled: false
+      grid_column:
+        weight: -8
+        enabled: false
 field_type: entity_reference_revisions
