@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_disqus_comment
     - field.field.node.article.field_last_updated
     - field.field.node.article.field_media_image
     - field.field.node.article.field_meta_tags
@@ -15,6 +16,7 @@ dependencies:
     - node.type.article
   module:
     - datetime
+    - disqus
     - field_group
     - maxlength
     - media_library
@@ -88,6 +90,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_disqus_comment:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
+    region: content
   field_last_updated:
     weight: 1
     settings: {  }
@@ -184,5 +192,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   comment: true
