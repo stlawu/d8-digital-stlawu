@@ -17,6 +17,7 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view disqus comments'
   - 'view media'
   - 'view paragraph content grid_column'
   - 'view paragraph content grid_row'
