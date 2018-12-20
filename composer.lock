@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9181e46af3ac2e22c5c31196d9f2b8f2",
+    "content-hash": "fbc86a7c72be5b2ac05645426a37e84b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6239,6 +6239,20 @@
                 "php"
             ],
             "time": "2018-10-10T09:24:14+00:00"
+        },
+        {
+            "name": "npm-asset/sortablejs",
+            "version": "1.8.0-RC1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.8.0-rc1.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "oomphinc/composer-installers-extender",

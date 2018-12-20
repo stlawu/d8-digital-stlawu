@@ -71,6 +71,7 @@
         "drupal/viewsreference": "^2.0",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
+        "npm-asset/sortablejs": "1.8.0-RC1",
         "oomphinc/composer-installers-extender": "^1.1",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
@@ -131,6 +132,9 @@
         ],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
+            "web/libraries/Sortable": [
+                "npm-asset/sortablejs"
+            ],
             "web/libraries/{$name}": [
                 "type:drupal-library", 
                 "type:bower-asset", 
