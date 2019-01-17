@@ -89,9 +89,10 @@ content:
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
+      edit_mode: closed
       closed_mode: summary
       autocollapse: none
+      closed_mode_threshold: 0
       add_mode: button
       form_display_mode: default
       default_paragraph_type: _none
@@ -164,5 +165,10 @@ content:
       size: 60
       placeholder: ''
     region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }
