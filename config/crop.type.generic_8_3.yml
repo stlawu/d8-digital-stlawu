@@ -2,6 +2,8 @@ uuid: a5b06c4e-ebaf-44b8-804d-1f3f512a5011
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: nAblGIw25i5FjNU7XjoQaLYjdArVmx_SuskRz8UO8RQ
 label: 'Generic 8:3'
 id: generic_8_3
 description: '8:3 picture crop.'

@@ -7,6 +7,8 @@ dependencies:
   module:
     - crop
     - image_effects
+_core:
+  default_config_hash: MXj5o8TzTKg3CeUATCkeIjAwHtbpcAOY1iBEQe2U5Fk
 name: larger
 label: 'Larger (720x720)'
 effects:

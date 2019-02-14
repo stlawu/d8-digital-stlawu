@@ -25,6 +25,8 @@ dependencies:
     - media
     - path
     - text
+_core:
+  default_config_hash: uWhRDlQVs_4mPe2Ndg4OPnEbSc_MDRwz-QBCGlnm-zs
 id: media.remote_video.default
 targetEntityType: media
 bundle: remote_video
@@ -37,7 +39,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_byline_freeform:
-    weight: 3
+    weight: 4
     settings:
       rows: 5
       placeholder: ''

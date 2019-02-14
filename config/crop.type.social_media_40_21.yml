@@ -2,6 +2,8 @@ uuid: 602e6438-4ddb-4edb-99ba-f5e0ba10a314
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: R5mxSM6W4lgL1Wd4uG8v4lDTa8g6bMOpq6haW-1xBeY
 label: 'Social media 40:21'
 id: social_media_40_21
 description: '40:21 picture crop for Facebook sharing.'

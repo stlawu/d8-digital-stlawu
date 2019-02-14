@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.file.field_media_byline_freeform
     - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_file_size
@@ -12,6 +13,8 @@ dependencies:
     - media.type.file
   module:
     - image
+_core:
+  default_config_hash: 6E4ob7ubrFFH03o1B3V1rnZL9p5lHZHRpEtoS9qsdlU
 id: media.file.media_library
 targetEntityType: media
 bundle: file
@@ -27,7 +30,9 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
+  field_media_byline_freeform: true
   field_media_description: true
   field_media_file: true
   field_media_file_size: true

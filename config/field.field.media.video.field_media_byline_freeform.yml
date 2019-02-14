@@ -7,6 +7,8 @@ dependencies:
     - media.type.video
   module:
     - text
+_core:
+  default_config_hash: bWelb45MPDyzB-dhLF64wv-BkSyxp2J43PZGmE3Iup4
 id: media.video.field_media_byline_freeform
 field_name: field_media_byline_freeform
 entity_type: media

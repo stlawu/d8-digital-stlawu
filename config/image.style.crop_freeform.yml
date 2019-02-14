@@ -7,6 +7,8 @@ dependencies:
   module:
     - crop
     - image_effects
+_core:
+  default_config_hash: cnHi3JhBfIeevAPM7cKPm6jZbWh32x6jwhjhnhQwHeA
 name: crop_freeform
 label: 'Cropped: Freeform'
 effects:

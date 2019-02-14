@@ -2,6 +2,8 @@ uuid: 338635be-5a34-4c20-b850-820bed003c04
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 0vwFqDcW9hmW1i7_3354tsnvTvT79vw1fsaIzquIej0
 label: 'Generic 2:1'
 id: generic_2_1
 description: '2:1 picture crop.'

@@ -16,6 +16,8 @@ dependencies:
     - image_widget_crop
     - path
     - text
+_core:
+  default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -28,7 +30,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_byline_freeform:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''

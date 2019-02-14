@@ -14,7 +14,7 @@ dependencies:
     - file
     - text
 _core:
-  default_config_hash: xmIYev2M8kX95SZyJ-TRBt-HFquyTd8hdn223JOh9UE
+  default_config_hash: CzqNN5CEbfUdf1SVrDkNzSFDCNGWDNXaRB8nM27POks
 id: media.file.full
 targetEntityType: media
 bundle: file
@@ -43,7 +43,7 @@ content:
     weight: 1
     region: content
   field_media_file_size:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       thousand_separator: ''
@@ -52,7 +52,7 @@ content:
     type: number_integer
     region: content
   field_media_mime_type:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link_to_entity: false

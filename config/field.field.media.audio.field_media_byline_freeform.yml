@@ -7,6 +7,8 @@ dependencies:
     - media.type.audio
   module:
     - text
+_core:
+  default_config_hash: f2W2wDjYusQud1ifzAlfxzBbjr3AUUlq4NeBScSuRCo
 id: media.audio.field_media_byline_freeform
 field_name: field_media_byline_freeform
 entity_type: media

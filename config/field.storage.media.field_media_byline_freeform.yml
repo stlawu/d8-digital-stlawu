@@ -5,6 +5,8 @@ dependencies:
   module:
     - media
     - text
+_core:
+  default_config_hash: o_qRXDdlKaKlc4j3-s5OpPifTxLfin-vLW7cotR--jw
 id: media.field_media_byline_freeform
 field_name: field_media_byline_freeform
 entity_type: media

@@ -7,6 +7,8 @@ dependencies:
   module:
     - crop
     - image_effects
+_core:
+  default_config_hash: bN-N1I7f5yFK_5JAW2whVPabqo8TF8u9wiyn4hGvGBo
 name: facebook_rectangle
 label: 'facebook rectangle'
 effects:

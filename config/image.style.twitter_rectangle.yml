@@ -7,6 +7,8 @@ dependencies:
   module:
     - crop
     - image_effects
+_core:
+  default_config_hash: jvSmDjjaIHDbrcQ70rc1Ut3Y3Q2h6tGaeZPupi6GVZU
 name: twitter_rectangle
 label: 'Twitter rectangle'
 effects:

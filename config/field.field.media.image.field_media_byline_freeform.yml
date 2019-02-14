@@ -7,6 +7,8 @@ dependencies:
     - media.type.image
   module:
     - text
+_core:
+  default_config_hash: jlddWQr-ORIwM2HT0VV2h8eKvRAkSjjs-A7zQUzVV0I
 id: media.image.field_media_byline_freeform
 field_name: field_media_byline_freeform
 entity_type: media

@@ -13,6 +13,8 @@ dependencies:
   module:
     - file
     - text
+_core:
+  default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
 id: media.video.default
 targetEntityType: media
 bundle: video

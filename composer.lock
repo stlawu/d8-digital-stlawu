@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1f528aa15cfd05646009f8041742cf4",
+    "content-hash": "6b03ac15a33cd5e6fc2eb4ae0f48e691",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7094,6 +7094,29 @@
             ],
             "description": "Automatic BASH completion for Symfony Console Component based applications.",
             "time": "2019-01-19T21:25:25+00:00"
+        },
+        {
+            "name": "stlawu/di_media",
+            "version": "v0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/di_media",
+                "reference": "4ca26ccacb761642f9357413f562445711c3536c"
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Awesome media handing for Digital Initiatives projects. So LIT, you shouldn’t touch with bare hands.",
+            "homepage": "https://github.com/stlawu/di_media",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-02-14T03:37:38+00:00"
         },
         {
             "name": "symfony-cmf/routing",
