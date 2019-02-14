@@ -2,6 +2,8 @@ uuid: 3052b883-679a-462b-badd-b433e7317606
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: T5dSzlZ8NT3AmaqoXGebNd5fyvFlpp9cCj04jTVF_Fw
 label: 'Social media 28:15'
 id: social_media_28_15
 description: '28:15 picture crop for Twitter sharing.'

@@ -11,6 +11,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/stlawu/di_media"
         }
     ],
     "require": {
@@ -75,6 +79,7 @@
         "oomphinc/composer-installers-extender": "^1.1",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
+        "stlawu/di_media": "^0.5.0",
         "webflo/drupal-core-strict": "^8",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },

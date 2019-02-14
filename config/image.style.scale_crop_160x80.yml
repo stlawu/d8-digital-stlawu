@@ -7,6 +7,8 @@ dependencies:
   module:
     - crop
     - image_effects
+_core:
+  default_config_hash: F3THoPDg8z38N-9jSuhtfP3hTwvz4xtZtghxvTrDwtY
 name: scale_crop_160x80
 label: 'Scale crop 160x80 (2:1)'
 effects:

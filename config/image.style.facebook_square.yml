@@ -7,6 +7,8 @@ dependencies:
   module:
     - crop
     - image_effects
+_core:
+  default_config_hash: YvNSIfg5gXcFcbtwJGyoXdLUwDK9qHHr78xarT4FfBM
 name: facebook_square
 label: facebook_square
 effects:

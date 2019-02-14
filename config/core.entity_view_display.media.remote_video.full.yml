@@ -27,14 +27,14 @@ dependencies:
     - media
     - text
 _core:
-  default_config_hash: p3Zr4hAm20vcGhr3Aq42psroA4T97oDUV0KbXAOBWgQ
+  default_config_hash: ahYdaS7oqF_oLZPnb0II_A0aki06rBkrksxm2nWBzCA
 id: media.remote_video.full
 targetEntityType: media
 bundle: remote_video
 mode: full
 content:
   field_media_author_name:
-    weight: 6
+    weight: 7
     label: inline
     settings:
       link_to_entity: false
@@ -49,7 +49,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_cache_age:
-    weight: 9
+    weight: 10
     label: inline
     settings:
       thousand_separator: ''
@@ -58,7 +58,7 @@ content:
     type: number_integer
     region: content
   field_media_default_name:
-    weight: 10
+    weight: 11
     label: inline
     settings:
       link_to_entity: false
@@ -73,7 +73,7 @@ content:
     type: text_default
     region: content
   field_media_height:
-    weight: 15
+    weight: 16
     label: inline
     settings:
       thousand_separator: ''
@@ -82,7 +82,7 @@ content:
     type: number_integer
     region: content
   field_media_html:
-    weight: 16
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -98,7 +98,7 @@ content:
     third_party_settings: {  }
     region: content
   field_media_provider_name:
-    weight: 7
+    weight: 8
     label: inline
     settings:
       link_to_entity: false
@@ -106,7 +106,7 @@ content:
     type: string
     region: content
   field_media_provider_url:
-    weight: 8
+    weight: 9
     label: inline
     settings:
       trim_length: 80
@@ -118,7 +118,7 @@ content:
     type: link
     region: content
   field_media_resource_title:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       link_to_entity: false
@@ -126,7 +126,7 @@ content:
     type: string
     region: content
   field_media_resource_type:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link_to_entity: false
@@ -134,7 +134,7 @@ content:
     type: string
     region: content
   field_media_thumbnail_height:
-    weight: 13
+    weight: 14
     label: inline
     settings:
       thousand_separator: ''
@@ -143,7 +143,7 @@ content:
     type: number_integer
     region: content
   field_media_thumbnail_uri:
-    weight: 11
+    weight: 12
     label: inline
     settings:
       trim_length: 80
@@ -155,7 +155,7 @@ content:
     type: link
     region: content
   field_media_thumbnail_width:
-    weight: 12
+    weight: 13
     label: inline
     settings:
       thousand_separator: ''
@@ -171,7 +171,7 @@ content:
     type: text_default
     region: content
   field_media_width:
-    weight: 14
+    weight: 15
     label: inline
     settings:
       thousand_separator: ''

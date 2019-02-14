@@ -14,6 +14,8 @@ dependencies:
   module:
     - file
     - text
+_core:
+  default_config_hash: IjtGV9CtL6-gILJzFQF1Rx3nhLUF_1X6K8mAaUShVe8
 id: media.audio.media_library
 targetEntityType: media
 bundle: audio
@@ -28,7 +30,7 @@ content:
     third_party_settings: {  }
   field_media_byline_freeform:
     type: text_textarea
-    weight: 3
+    weight: 4
     region: content
     settings:
       rows: 5

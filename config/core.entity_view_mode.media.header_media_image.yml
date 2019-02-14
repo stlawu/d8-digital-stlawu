@@ -1,0 +1,12 @@
+uuid: 10a8cce4-abb4-4131-850c-55b17a8124ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: bjb4jTtJMy0ARlKueMiOJKVXTgxcPqNinWKahOlwqGo
+id: media.header_media_image
+label: 'Header Media Image Full-width'
+targetEntityType: media
+cache: true

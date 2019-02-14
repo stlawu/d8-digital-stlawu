@@ -15,7 +15,7 @@ dependencies:
     - file
     - text
 _core:
-  default_config_hash: ddKZzeUnQqZq7azpIjVBNRqopLAvfMA1rN3oQIGwsek
+  default_config_hash: 3pQG9MnLuRnsIs0uuoD0RgIPustKBH3Ao7RgzxBucKs
 id: media.video.full
 targetEntityType: media
 bundle: video
@@ -36,7 +36,7 @@ content:
     type: text_default
     region: content
   field_media_file_size:
-    weight: 5
+    weight: 6
     label: inline
     settings:
       thousand_separator: ''
@@ -45,7 +45,7 @@ content:
     type: number_integer
     region: content
   field_media_mime_type:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link_to_entity: false

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.audio.field_media_audio_file
+    - field.field.media.audio.field_media_byline_freeform
     - field.field.media.audio.field_media_description
     - field.field.media.audio.field_media_file_size
     - field.field.media.audio.field_media_mime_type
@@ -13,6 +14,8 @@ dependencies:
     - media.type.audio
   module:
     - image
+_core:
+  default_config_hash: JPxHWDXubOqDL6DP-3oi7eXWT3MTqmPfZFWeX448HWA
 id: media.audio.media_library
 targetEntityType: media
 bundle: audio
@@ -28,8 +31,10 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   created: true
   field_media_audio_file: true
+  field_media_byline_freeform: true
   field_media_description: true
   field_media_file_size: true
   field_media_mime_type: true

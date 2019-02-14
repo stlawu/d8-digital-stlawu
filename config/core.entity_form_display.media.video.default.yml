@@ -14,6 +14,8 @@ dependencies:
     - file
     - path
     - text
+_core:
+  default_config_hash: bZEk64pIqAPKR5XDlwebNABi9hHDAPp20TDdtHnh3PE
 id: media.video.default
 targetEntityType: media
 bundle: video
@@ -26,7 +28,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_byline_freeform:
-    weight: 3
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
