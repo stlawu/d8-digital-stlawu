@@ -7097,11 +7097,11 @@
         },
         {
             "name": "stlawu/di_media",
-            "version": "v0.5",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stlawu/di_media",
-                "reference": "4ca26ccacb761642f9357413f562445711c3536c"
+                "reference": "433a950a52fe1a825945ea9136e514c8af0abb91"
             },
             "type": "drupal-custom-module",
             "license": [
@@ -7116,7 +7116,7 @@
                 "issues": "",
                 "source": ""
             },
-            "time": "2019-02-14T03:37:38+00:00"
+            "time": "2019-02-15T16:53:25+00:00"
         },
         {
             "name": "symfony-cmf/routing",
