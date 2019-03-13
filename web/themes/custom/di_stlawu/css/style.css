@@ -5190,12 +5190,12 @@ p {
 
 .lead {
   margin-bottom: 28px;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.4; }
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.7; }
   @media (min-width: 768px) {
     .lead {
-      font-size: 27px; } }
+      font-size: 24px; } }
 
 small,
 .small {
