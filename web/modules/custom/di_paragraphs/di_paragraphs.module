@@ -40,6 +40,9 @@ function di_paragraphs_theme($existing, $type, $theme, $path) {
     'paragraph__grid_row' => [
       'base hook' => 'paragraph',
     ],
+    'paragraph__heading' => [
+      'base hook' => 'paragraph',
+    ],
     'paragraph__media' => [
       'base hook' => 'paragraph',
     ],

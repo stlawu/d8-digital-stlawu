@@ -3,7 +3,9 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_grid_column_content
+    - paragraphs.paragraphs_type.content_reference
     - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.heading
     - paragraphs.paragraphs_type.media
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.view
@@ -24,26 +26,34 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      heading: heading
       text: text
       media: media
+      content_reference: content_reference
       view: view
     target_bundles_drag_drop:
+      heading:
+        enabled: true
+        weight: -17
       text:
         enabled: true
-        weight: -13
+        weight: -16
       media:
         enabled: true
-        weight: -12
+        weight: -15
+      content_reference:
+        enabled: true
+        weight: -14
       view:
         enabled: true
-        weight: -11
+        weight: -13
       section:
-        weight: -10
+        weight: -12
         enabled: false
       grid_column:
-        weight: -9
+        weight: -11
         enabled: false
       grid_row:
-        weight: -8
+        weight: -10
         enabled: false
 field_type: entity_reference_revisions

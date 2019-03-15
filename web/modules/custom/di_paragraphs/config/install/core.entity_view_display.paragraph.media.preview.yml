@@ -2,30 +2,34 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.media.field_media
     - field.field.paragraph.media.field_media_caption
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.media
   module:
+    - media
     - text
-id: paragraph.media.default
+id: paragraph.media.preview
 targetEntityType: paragraph
 bundle: media
-mode: default
+mode: preview
 content:
   field_media:
     weight: 0
     label: hidden
     settings:
-      link: false
-      view_mode: basic
+      image_style: thumbnail
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: media_thumbnail
     region: content
   field_media_caption:
     weight: 1
     label: visually_hidden
-    settings: {  }
+    settings:
+      trim_length: 600
     third_party_settings: {  }
-    type: text_default
+    type: text_trimmed
     region: content
 hidden: {  }

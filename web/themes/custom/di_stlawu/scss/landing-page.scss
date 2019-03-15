@@ -48,3 +48,8 @@
 .page-node-type-landing-page .region-content {
   margin-bottom: -$line-height-computed;
 }
+
+.paragraph--type--text + .paragraph--type--media, 
+.paragraph--type--media + .paragraph--type--text {
+  margin-top: ($line-height-computed / 2);
+}
