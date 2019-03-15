@@ -38,18 +38,19 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - Source
   plugins:
     stylescombo:
-      styles: ''
+      styles: 'p.lead|Lead paragraph'
+    language:
+      language_list: un
     drupallink:
       linkit_enabled: true
       linkit_profile: default
-    language:
-      language_list: un
 image_upload:
   status: true
   scheme: public
