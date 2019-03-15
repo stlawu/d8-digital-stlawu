@@ -7232,11 +7232,11 @@
         },
         {
             "name": "stlawu/di_paragraphs",
-            "version": "v0.2.2",
+            "version": "v0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stlawu/di_paragraphs",
-                "reference": "8a6d8b36abaac85f035612bb8e00d00515d2f54c"
+                "reference": "5f0d63cb805c291cf8d0c9ca3f0883f7799fe839"
             },
             "type": "drupal-custom-module",
             "license": [
@@ -7251,7 +7251,7 @@
                 "issues": "",
                 "source": ""
             },
-            "time": "2019-03-15T16:21:31+00:00"
+            "time": "2019-03-15T18:07:12+00:00"
         },
         {
             "name": "symfony-cmf/routing",
