@@ -2,33 +2,25 @@
 <footer class="footer" role="contentinfo">
   <div class="footer__main">
     <div class="content-container container-fluid">
-      <div class="row">
+      <div class="footer__row">
       {%- if page.footer_first -%}
-        <div class="footer__first">
-          <div class="col-md-3">
-            {{ page.footer_first }}
-          </div>
+        <div class="footer__column footer__first">
+          {{ page.footer_first }}
         </div>
       {%- endif -%}
       {%- if page.footer_second -%}
-        <div class="footer__second">
-          <div class="col-md-3">
-            {{ page.footer_second }}
-          </div>
+        <div class="footer__column footer__second">
+          {{ page.footer_second }}
         </div>
       {%- endif -%}
       {%- if page.footer_third -%}
-        <div class="footer__third">
-          <div class="col-md-3">
-            {{ page.footer_third }}
-          </div>
+        <div class="footer__column footer__third">
+          {{ page.footer_third }}
         </div>
       {%- endif -%}
       {%- if page.footer_fourth -%}
-        <div class="footer__fourth">
-          <div class="col-md-3">
-            {{ page.footer_fourth }}
-          </div>
+        <div class="footer__column footer__fourth">
+          {{ page.footer_fourth }}
         </div>
       {%- endif -%}
       </div>

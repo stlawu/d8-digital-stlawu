@@ -5651,6 +5651,19 @@ address {
     .no-sidebars .region-content > * {
       width: 1170px; } }
 
+.footer .nav > li {
+  margin-top: 14px;
+  margin-bottom: 14px; }
+  @media (min-width: 690px) {
+    .footer .nav > li:first-child {
+      margin-top: 0; } }
+.footer .nav > li > a {
+  display: inline;
+  padding: 0; }
+  .footer .nav > li > a:hover, .footer .nav > li > afocus {
+    background-color: unset;
+    text-decoration: underline; }
+
 .footer {
   background-color: #4D3126;
   color: #ffffff; }
@@ -5663,6 +5676,23 @@ address {
     padding-bottom: 36px; }
   .footer .footer__main {
     font-size: 16px; }
+  @media screen and (max-width: 690px) {
+    .footer .footer__main {
+      text-align: center; } }
+  @media (min-width: 690px) {
+    .footer .footer__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; } }
+  @media (min-width: 690px) {
+    .footer .footer__column {
+      flex-basis: 20%;
+      flex-grow: 0; }
+      .footer .footer__column.footer__fourth {
+        flex-basis: 31%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; } }
   .footer .footer__secondary {
     padding-top: 24px;
     padding-bottom: 24px;
