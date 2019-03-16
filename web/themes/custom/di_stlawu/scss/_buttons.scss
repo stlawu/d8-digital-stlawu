@@ -1,3 +1,15 @@
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .btn-default-dark {
   @include button-variant($btn-default-dark-color, $btn-default-dark-bg, $btn-default-dark-border);
+}
+
+.btn-scarlet {
+  @include button-variant($btn-scarlet-color, $btn-scarlet-bg, $btn-scarlet-border);
 }

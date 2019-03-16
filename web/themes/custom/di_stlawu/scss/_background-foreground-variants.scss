@@ -7,7 +7,7 @@
 .bg-red {
   background-color: $color-red;
   color: $color-white;
-  a {
+  a:not(.btn) {
     color: $color-white;
     &:hover,
     &:focus {
@@ -22,7 +22,7 @@
 .bg-red-dark {
   background-color: $color-red-dark;
   color: $color-white;
-  a {
+  a:not(.btn) {
     color: $color-white;
     &:hover,
     &:focus {
@@ -37,7 +37,7 @@
 .bg-brown {
   background-color: $color-brown;
   color: $color-white;
-  a {
+  a:not(.btn) {
     color: $color-squash-dark;
     &:hover,
     &:focus {
@@ -52,7 +52,7 @@
 .bg-brown-dark {
   background-color: $color-brown-dark;
   color: $color-white;
-  a {
+  a:not(.btn) {
     color: $color-squash-dark;
     &:hover,
     &:focus {
@@ -67,7 +67,7 @@
 .bg-squash {
   background-color: $color-squash;
   color: $color-brown;
-  a {
+  a:not(.btn) {
     color: #0c439c;
     &:hover,
     &:focus {
@@ -82,7 +82,7 @@
 .bg-squash-dark {
   background-color: $color-squash-dark;
   color: $color-brown-dark;
-  a {
+  a:not(.btn) {
     color: #003c9e;
     &:hover,
     &:focus {
@@ -97,7 +97,7 @@
 .bg-gray-light {
   background-color: $color-gray-light;
   color: $color-black;
-  a {
+  a:not(.btn) {
     color: #001e94;
     &:hover,
     &:focus {
@@ -112,7 +112,7 @@
 .bg-gray-medium {
   background-color: $color-gray-medium;
   color: $color-black;
-  a {
+  a:not(.btn) {
     color: #001e94;
     &:hover,
     &:focus {
@@ -127,7 +127,7 @@
 .bg-gray-dark {
   background-color: $color-gray-dark;
   color: $color-black;
-  a {
+  a:not(.btn) {
     color: #001e94;
     &:hover,
     &:focus {
@@ -142,7 +142,7 @@
 .bg-blue-light {
   background-color: $color-blue-light;
   color: $color-black;
-  a {
+  a:not(.btn) {
     color: #001e94;
     &:hover,
     &:focus {
@@ -157,7 +157,7 @@
 .bg-blue-dark {
   background-color: $color-blue-dark;
   color: $color-white;
-  a {
+  a:not(.btn) {
     color: $color-squash-dark;
     &:hover,
     &:focus {
@@ -172,7 +172,7 @@
 .bg-black {
   background-color: $color-black;
   color: $color-white;
-  a {
+  a:not(.btn) {
     color: $color-squash-dark;
     &:hover,
     &:focus {
