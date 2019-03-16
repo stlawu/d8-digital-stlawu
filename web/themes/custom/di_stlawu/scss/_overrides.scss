@@ -90,6 +90,16 @@ ol, ul {
   flex-wrap: wrap;
 }
 
+.view-footer {
+  padding-left:  floor(($grid-gutter-width / 2));
+  padding-right: ceil(($grid-gutter-width / 2));
+  text-align: center;
+}
+
+.view-footer .btn {
+  margin-top: ($line-height-computed / 2);
+}
+
 // Paragraphs.
 p:last-child,
 .form-group:last-child,

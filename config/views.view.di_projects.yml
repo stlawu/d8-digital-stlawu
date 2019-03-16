@@ -307,13 +307,14 @@ display:
         style: false
         row: false
         css_class: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
-        link_display: false
-        link_url: false
+        use_more: true
+        use_more_always: true
+        use_more_text: true
+        link_display: true
+        link_url: true
         filters: false
         filter_groups: false
+        footer: false
       pager:
         type: some
         options:
@@ -331,11 +332,6 @@ display:
           relationship: none
           view_mode: card
       css_class: 'clearfix row'
-      use_more: true
-      use_more_always: true
-      use_more_text: 'View all projects'
-      link_display: custom_url
-      link_url: projects
       filters:
         status:
           value: '1'
@@ -399,6 +395,18 @@ display:
         operator: AND
         groups:
           1: AND
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<a class="btn btn-scarlet" href="/projects">View all projects</a>'
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
@@ -422,13 +430,14 @@ display:
         style: false
         row: false
         css_class: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
-        link_display: false
-        link_url: false
+        use_more: true
+        use_more_always: true
+        use_more_text: true
+        link_display: true
+        link_url: true
         filters: false
         filter_groups: false
+        footer: false
       pager:
         type: some
         options:
@@ -446,11 +455,6 @@ display:
           relationship: none
           view_mode: card
       css_class: 'clearfix row'
-      use_more: true
-      use_more_always: true
-      use_more_text: 'View all projects'
-      link_display: custom_url
-      link_url: projects
       filters:
         status:
           value: '1'
@@ -514,6 +518,18 @@ display:
         operator: AND
         groups:
           1: AND
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<a class="btn btn-scarlet" href="/projects">View all projects</a>'
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:

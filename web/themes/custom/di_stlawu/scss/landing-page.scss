@@ -53,3 +53,7 @@
 .paragraph--type--media + .paragraph--type--text {
   margin-top: ($line-height-computed / 2);
 }
+
+.paragraph--type--text + .paragraph--type--view {
+  margin-top: $line-height-computed;
+}

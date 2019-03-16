@@ -6737,6 +6737,14 @@ ol, ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+.view-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center; }
+
+.view-footer .btn {
+  margin-top: 14px; }
+
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
