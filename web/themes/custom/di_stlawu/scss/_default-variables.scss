@@ -212,6 +212,10 @@ $btn-danger-color:               #fff;
 $btn-danger-bg:                  $brand-danger;
 $btn-danger-border:              darken($btn-danger-bg, 5%);
 
+$btn-scarlett-color:               #fff !default;
+$btn-scarlett-bg:                  $color-red !default;
+$btn-scarlett-border:              darken($color-red, 15%) !default;
+
 $btn-link-disabled-color:        $gray-light;
 
 // Allows for customizing button radius independently from global border radius
