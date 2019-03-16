@@ -6743,7 +6743,8 @@ ol, ul {
   text-align: center; }
 
 .view-footer .btn {
-  margin-top: 14px; }
+  margin-top: 14px;
+  margin-bottom: 14px; }
 
 p:last-child,
 .form-group:last-child,

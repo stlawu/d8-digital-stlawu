@@ -33,7 +33,8 @@
   margin-top: 7px; }
 
 .teaser .links {
-  margin-top: 7px; }
+  margin-top: 7px;
+  margin-bottom: 0; }
 
 .teaser {
   min-width: 0;
