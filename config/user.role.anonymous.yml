@@ -21,3 +21,4 @@ permissions:
   - 'view paragraph content section'
   - 'view paragraph content text'
   - 'view paragraph content view'
+  - 'view paragraph content webform'

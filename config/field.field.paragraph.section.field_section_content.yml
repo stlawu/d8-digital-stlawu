@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.view
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 _core:
@@ -32,23 +33,30 @@ settings:
       media: media
       grid_row: grid_row
       view: view
+      webform: webform
     target_bundles_drag_drop:
       text:
         enabled: true
-        weight: -13
+        weight: -17
       media:
         enabled: true
-        weight: -12
+        weight: -16
       grid_row:
         enabled: true
-        weight: -11
+        weight: -15
       view:
         enabled: true
-        weight: -10
+        weight: -14
+      webform:
+        enabled: true
+        weight: -13
       section:
-        weight: -9
+        weight: -12
         enabled: false
       grid_column:
-        weight: -8
+        weight: -11
+        enabled: false
+      heading:
+        weight: -10
         enabled: false
 field_type: entity_reference_revisions
