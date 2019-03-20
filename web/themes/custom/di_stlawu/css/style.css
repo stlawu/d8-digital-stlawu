@@ -5432,6 +5432,29 @@ address {
 .field--name-field-tags {
   margin-top: 14px;
   margin-bottom: 14px; }
+  .field--name-field-tags .field--item {
+    display: inline-block; }
+    .field--name-field-tags .field--item a.btn {
+      text-transform: none; }
+
+.field--name-field-media-caption,
+.field--name-field-media-description {
+  color: #767676;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px; }
+
+.field--name-field-media-byline-freeform {
+  font-style: italic;
+  color: #767676;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.field--name-field-media-caption + .field--name-field-media-byline-freeform,
+.field--name-field-media-description + .field--name-field-media-byline-freeform {
+  margin-top: 0; }
 
 /**
  * Background-foreground variants
@@ -5786,6 +5809,10 @@ address {
 /**
  * Custom navbar styling
  */
+.navbar .name {
+  text-transform: uppercase;
+  font-family: Oregon,sans-serif; }
+
 .navbar {
   position: relative;
   min-height: 50px;
@@ -5930,7 +5957,8 @@ address {
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 28px; }
+    line-height: 28px;
+    font-weight: 500; }
   @media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
       position: static;
@@ -6693,25 +6721,40 @@ ol, ul {
   .popover ol:last-child, .popover ul:last-child {
     margin-bottom: 0; }
 
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0; }
+
+.region-help > .glyphicon {
+  font-size: 24px;
+  float: left;
+  margin: -0.05em 0.5em 0 0; }
+.region-help .block {
+  overflow: hidden; }
+
+.help-block, .control-group .help-inline {
+  color: #777777;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0; }
+  .help-block:first-child, .control-group .help-inline:first-child {
+    margin-top: 0; }
+
+/**
+ * Custom overrides
+ */
 .university-brand {
   background-color: #AA2933;
   padding-top: 7px;
   padding-bottom: 7px; }
 
-.navbar .name {
-  text-transform: uppercase;
-  font-family: Oregon,sans-serif; }
+.field--label-inline .field--items {
+  float: none;
+  display: inline-block; }
 
-.navbar-nav > li > a {
-  font-weight: 500; }
-
-.node-header-wrapper {
-  margin-bottom: 28px;
-  padding-top: 28px;
-  padding-bottom: 28px; }
-  @media (min-width: 568px) {
-    .node-header-wrapper .page-title {
-      margin-top: 0px; } }
+.field--label-inline .field--label, .field--label-inline > .field--item, .field--label-inline .field--items {
+  padding-right: .25em; }
 
 .region-content {
   padding-bottom: 28px; }
@@ -6745,25 +6788,5 @@ ol, ul {
 .view-footer .btn {
   margin-top: 14px;
   margin-bottom: 14px; }
-
-p:last-child,
-.form-group:last-child,
-.panel:last-child {
-  margin-bottom: 0; }
-
-.region-help > .glyphicon {
-  font-size: 24px;
-  float: left;
-  margin: -0.05em 0.5em 0 0; }
-.region-help .block {
-  overflow: hidden; }
-
-.help-block, .control-group .help-inline {
-  color: #777777;
-  font-size: 12px;
-  margin: 5px 0 10px;
-  padding: 0; }
-  .help-block:first-child, .control-group .help-inline:first-child {
-    margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */

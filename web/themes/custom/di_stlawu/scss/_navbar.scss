@@ -2,6 +2,12 @@
  * Custom navbar styling
  */
 
+// Navbar name.
+.navbar .name {
+  text-transform: uppercase;
+  font-family: Oregon,sans-serif;
+}
+
 //
 // Navbars
 // --------------------------------------------------
@@ -239,6 +245,7 @@
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: $line-height-computed;
+    font-weight: 500;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {

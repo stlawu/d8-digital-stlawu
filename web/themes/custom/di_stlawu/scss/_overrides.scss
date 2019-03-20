@@ -30,77 +30,6 @@ ol, ul {
 //   margin-top: 0;
 // }
 
-// University brand.
-.university-brand {
-  background-color: $color-red-dark;
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-// Navbar name.
-.navbar .name {
-  text-transform: uppercase;
-  font-family: Oregon,sans-serif;
-}
-
-// Navbar links.
-.navbar-nav > li > a {
-  font-weight: 500;
-}
-
-.node-header-wrapper {
-  margin-bottom: $line-height-computed;
-  padding-top: $line-height-computed;
-  padding-bottom: $line-height-computed;
-
-  & .page-title {
-    @media (min-width: 568px) {
-      margin-top: 0px;
-    }
-  }
-}
-
-.region-content {
-  padding-bottom: $line-height-computed;
-}
-
-.flex-height {
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-}
-
-.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  & .mix_item.mix.flex-height {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.view-footer {
-  padding-left:  floor(($grid-gutter-width / 2));
-  padding-right: ceil(($grid-gutter-width / 2));
-  text-align: center;
-}
-
-.view-footer .btn {
-  margin-top: ($line-height-computed / 2);
-  margin-bottom: ($line-height-computed / 2);
-}
-
 // Paragraphs.
 p:last-child,
 .form-group:last-child,
@@ -129,4 +58,69 @@ p:last-child,
   &:first-child {
     margin-top: 0;
   }
+}
+
+/**
+ * Custom overrides
+ */
+
+// University brand.
+.university-brand {
+  background-color: $color-red-dark;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+// Fix weirdness with inline field labels & field values
+.field--label-inline .field--items {
+  float: none;
+  display: inline-block;
+}
+
+.field--label-inline .field--label, .field--label-inline > .field--item, .field--label-inline .field--items {
+   padding-right: .25em;
+}
+
+// Content region
+.region-content {
+  padding-bottom: $line-height-computed;
+}
+
+// Flexbox stuff
+.flex-height {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
+.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  & .mix_item.mix.flex-height {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+// For the "view all" buttons on views
+.view-footer {
+  padding-left:  floor(($grid-gutter-width / 2));
+  padding-right: ceil(($grid-gutter-width / 2));
+  text-align: center;
+}
+
+.view-footer .btn {
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
 }

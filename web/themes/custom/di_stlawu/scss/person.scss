@@ -6,6 +6,20 @@
 @import "default-variables";
 @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
 
+// Provides padding and margin for the div that holds the Person portrait, Person name, and contact info.
+// Please see node--person--full.html.twig
+.node-header-wrapper {
+  margin-bottom: $line-height-computed;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed;
+
+  & .page-title {
+    @media (min-width: 568px) {
+      margin-top: 0px;
+    }
+  }
+}
+
 .person-contact {
   margin-top: 14px;
 }

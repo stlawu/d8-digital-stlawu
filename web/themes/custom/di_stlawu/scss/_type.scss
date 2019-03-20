@@ -314,4 +314,34 @@ address {
 .field--name-field-tags {
   margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 2);
+
+  .field--item {
+    display: inline-block;
+
+    a.btn {
+      text-transform: none;
+    }
+  }
+}
+
+.field--name-field-media-caption,
+.field--name-field-media-description {
+  color: #767676;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.field--name-field-media-byline-freeform {
+  font-style: italic;
+  color: #767676;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.field--name-field-media-caption + .field--name-field-media-byline-freeform,
+.field--name-field-media-description + .field--name-field-media-byline-freeform {
+  margin-top: 0;
 }

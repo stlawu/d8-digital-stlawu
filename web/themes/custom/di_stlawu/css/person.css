@@ -13,6 +13,14 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+.node-header-wrapper {
+  margin-bottom: 28px;
+  padding-top: 28px;
+  padding-bottom: 28px; }
+  @media (min-width: 568px) {
+    .node-header-wrapper .page-title {
+      margin-top: 0px; } }
+
 .person-contact {
   margin-top: 14px; }
 
