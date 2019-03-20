@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: content_creator
 label: 'Content creator'
-weight: 4
+weight: -8
 is_admin: null
 permissions:
   - 'access content overview'
@@ -61,5 +61,7 @@ permissions:
   - 'update paragraph content text'
   - 'update paragraph content view'
   - 'update paragraph content webform'
+  - 'use text format basic_html'
+  - 'use text format simple'
   - 'view own unpublished content'
   - 'view the administration theme'

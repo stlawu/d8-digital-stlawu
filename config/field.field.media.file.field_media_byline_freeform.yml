@@ -6,7 +6,15 @@ dependencies:
     - field.storage.media.field_media_byline_freeform
     - media.type.file
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    simple: simple
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
 _core:
   default_config_hash: XgthowAuoij1CE2D-fpD0vnI6ElrRtlNxGc2GlSLXoI
 id: media.file.field_media_byline_freeform

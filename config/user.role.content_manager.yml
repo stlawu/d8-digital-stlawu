@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: content_manager
 label: 'Content manager'
-weight: 3
+weight: -7
 is_admin: null
 permissions:
   - 'access administration pages'
@@ -124,7 +124,8 @@ permissions:
   - 'update paragraph content text'
   - 'update paragraph content view'
   - 'update paragraph content webform'
-  - 'use text format full_html'
+  - 'use text format basic_html'
+  - 'use text format simple'
   - 'view all media revisions'
   - 'view article revisions'
   - 'view landing_page revisions'
