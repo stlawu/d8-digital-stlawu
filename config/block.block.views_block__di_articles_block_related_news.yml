@@ -1,0 +1,32 @@
+uuid: 726a10d8-5b81-4ff4-8179-ff4e656c08ff
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.di_articles
+  module:
+    - node
+    - views
+  theme:
+    - di_stlawu
+id: views_block__di_articles_block_related_news
+theme: di_stlawu
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:di_articles-block_related_news'
+settings:
+  id: 'views_block:di_articles-block_related_news'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
