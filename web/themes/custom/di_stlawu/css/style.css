@@ -5707,6 +5707,17 @@ address {
     .no-sidebars .region-content > * {
       width: 1170px; } }
 
+.no-sidebars .region-after-content > * {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .no-sidebars .region-after-content > *:before, .no-sidebars .region-after-content > *:after {
+    content: " ";
+    display: table; }
+  .no-sidebars .region-after-content > *:after {
+    clear: both; }
+
 .footer .nav > li {
   margin-top: 14px;
   margin-bottom: 14px; }
