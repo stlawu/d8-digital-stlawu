@@ -5,14 +5,10 @@ dependencies:
   config:
     - views.view.di_articles
   module:
-    - block_class
     - node
     - views
   theme:
     - di_stlawu
-third_party_settings:
-  block_class:
-    classes: bg-gray-light
 id: views_block__di_articles_block_more_news
 theme: di_stlawu
 region: after_content
