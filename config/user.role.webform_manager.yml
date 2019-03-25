@@ -1,0 +1,12 @@
+uuid: 1715bd26-fb4c-4ff8-9f90-d642435e041f
+langcode: en
+status: true
+dependencies: {  }
+id: webform_manager
+label: 'Webform manager'
+weight: -6
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'view the administration theme'

@@ -12,7 +12,7 @@ id: dsf_application
 title: 'Digital Scholarship Fellows Application'
 description: 'Application webform for Digital Scholarship Fellows'
 category: ''
-elements: "dsf_application_name:\n  '#type': webform_name\n  '#title': Name\n  '#title_display': ''\n  '#required': true\n  '#wrapper_type': container\n  '#title__access': false\n  '#first__title': 'First name'\n  '#first__title_display': before\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': 'Last name'\n  '#last__title_display': before\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\ndsf_application_email:\n  '#type': email\n  '#title': 'Email address'\n  '#required': true\n  '#required_error': 'Email address is required.'\ndsf_application_class_year:\n  '#type': textfield\n  '#title': 'Class year'\n  '#required': true\n  '#required_error': 'Class year is required.'\ndsf_application_majors:\n  '#type': textfield\n  '#title': 'Major(s) or expected majors(s)'\n  '#required': true\n  '#required_error': 'Major(s) are required.'\ndsf_application_interest_description:\n  '#type': textarea\n  '#title': 'Please describe your interest in the fellowship'\n  '#description': 'Include examples of digital scholarship projects you find interesting and any experience you may have with digital platforms and/or digital scholarship. Please note that previous experience is not a requirement for the fellowship!'\n  '#description_display': after\n  '#required': true\n  '#required_error': 'Description of interest is required.'\ndsf_application_study_abroad:\n  '#type': radios\n  '#title': 'Do you plan to study abroad during the academic year?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#required': true"
+elements: "dsf_application_name:\n  '#type': webform_name\n  '#title': Name\n  '#title_display': ''\n  '#required': true\n  '#wrapper_type': container\n  '#title__access': false\n  '#first__title': 'First name'\n  '#first__title_display': before\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': 'Last name'\n  '#last__title_display': before\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\n  '#flexbox': '1'\ndsf_application_email:\n  '#type': email\n  '#title': 'Email address'\n  '#required': true\n  '#required_error': 'Email address is required.'\ndsf_application_class_year:\n  '#type': textfield\n  '#title': 'Class year'\n  '#required': true\n  '#required_error': 'Class year is required.'\ndsf_application_majors:\n  '#type': textfield\n  '#title': 'Major(s) or expected majors(s)'\n  '#required': true\n  '#required_error': 'Major(s) are required.'\ndsf_application_interest_description:\n  '#type': textarea\n  '#title': 'Please describe your interest in the fellowship'\n  '#description': 'Include examples of digital scholarship projects you find interesting and any experience you may have with digital platforms and/or digital scholarship. Please note that previous experience is not a requirement for the fellowship!'\n  '#description_display': after\n  '#required': true\n  '#required_error': 'Description of interest is required.'\ndsf_application_study_abroad:\n  '#type': radios\n  '#title': 'Do you plan to study abroad during the academic year?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -127,43 +127,86 @@ access:
     users: {  }
     permissions: {  }
   view_any:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   update_any:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   delete_any:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   purge_any:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   view_own:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   update_own:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   delete_own:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   administer:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   test:
-    roles: {  }
+    roles:
+      - webform_manager
     users: {  }
     permissions: {  }
   configuration:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  dsf_email_submission:
+    id: email
+    label: 'Notification of submission'
+    handler_id: dsf_email_submission
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: cmcgrath@stlawu.edu
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'Digital Scholarship Fellows application at [site:name]'
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
