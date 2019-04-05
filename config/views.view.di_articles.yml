@@ -56,14 +56,14 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-4 col-lg-4'
+          row_class: ''
           default_row_class: false
           uses_fields: false
       row:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: teaser_alternate
       fields:
         title:
           id: title

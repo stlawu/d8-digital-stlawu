@@ -10,13 +10,16 @@
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 
-// Set the proper directory for the Bootstrap Glyphicon font.
-$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+// Set the directory for the theme root used to locate images, fonts etc.
+$theme-root: '..';
+
+// Set other directories relative to theme root.
+$image-path: '#{$theme-root}/images';
+$icon-font-path: '#{$theme-root}/bootstrap/assets/fonts/bootstrap/';
 
 // Set the proper directory for the Font Awesome font.
 $fa-font-path: '../fonts/fontawesome/webfonts';
 
-$bootstrap-sass-asset-helper: false;
 //
 // Variables
 // --------------------------------------------------
@@ -86,7 +89,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          18px !default;
+$font-size-base:          18px;
 $font-size-large:         ceil(($font-size-base * 1.333));
 $font-size-small:         ceil(($font-size-base * 0.777));
 
