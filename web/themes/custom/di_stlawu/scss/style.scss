@@ -1,10 +1,6 @@
 // Default variables.
 @import "default-variables";
 
-/* ========================================
-Bootstrap Framework
-======================================== */
-
 // Bootstrap Framework.
 // @import '../bootstrap/assets/stylesheets/bootstrap';
 
@@ -16,10 +12,14 @@ Bootstrap Framework
 @import "../bootstrap/assets/stylesheets/bootstrap/normalize";
 @import "../bootstrap/assets/stylesheets/bootstrap/print";
 @import "../bootstrap/assets/stylesheets/bootstrap/glyphicons";
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
 
 // Core CSS
 // @import "../bootstrap/assets/stylesheets/bootstrap/scaffolding";
 // @import "../bootstrap/assets/stylesheets/bootstrap/type";
+@import "scaffolding";
+@import "type";
 @import "../bootstrap/assets/stylesheets/bootstrap/code";
 @import "../bootstrap/assets/stylesheets/bootstrap/grid";
 @import "../bootstrap/assets/stylesheets/bootstrap/tables";
@@ -33,6 +33,8 @@ Bootstrap Framework
 @import "../bootstrap/assets/stylesheets/bootstrap/input-groups";
 @import "../bootstrap/assets/stylesheets/bootstrap/navs";
 // @import "../bootstrap/assets/stylesheets/bootstrap/navbar";
+@import "navbar";
+@import "footer";
 @import "../bootstrap/assets/stylesheets/bootstrap/breadcrumbs";
 @import "../bootstrap/assets/stylesheets/bootstrap/pagination";
 @import "../bootstrap/assets/stylesheets/bootstrap/pager";
@@ -63,14 +65,12 @@ Bootstrap Framework
 Custom Stuffs
 ======================================== */
 
-@import "scaffolding";
-@import "type";
 @import "background-foreground-variants";
 @import "buttons";
 @import "container-widths";
-@import "footer";
+@import "display";
+@import "flex";
 @import "mixitup-overrides";
-@import "navbar";
 
 // Base-theme overrides.
 @import 'overrides';

@@ -11,11 +11,8 @@
 }
 
 .teaser-title {
-  margin-top: ($line-height-computed / 4);
+  margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 4);
-  @media (min-width:480px) {
-    margin-top: 0px;
-  }
 }
 
 .teaser .field--name-field-release-date {
@@ -41,60 +38,9 @@
   min-width: 0;
   font-size: 16px;
   word-wrap: break-word;
+  margin-bottom: $grid-gutter-width;
   // background-color: $card-bg;
-  padding-top: ($line-height-computed / 2);
-  padding-bottom: ($line-height-computed / 2);
-  border-top: 1px solid $color-gray-medium;
-}
-
-// Standard teasers in views
-.teaser__media {
-  @media (min-width:480px) {
-    float: left;
-    width: 25%;
-    padding-right: 1.25rem;
-  }
-  @media (min-width:1200px) {
-    float: left;
-    width: 20%;
-  }
-}
-.teaser-body {
-  @media (min-width:480px) {
-    float: left;
-    width: 75%;
-  }
-  @media (min-width:1200px) {
-    float: left;
-    width: 80%;
-  }
-}
-
-// Vertical teasers in views
-.teaser-vertical .teaser__media {
-  @media (min-width:480px) {
-    float: left;
-    width: 25%;
-    padding-right: 1.25rem;
-  }
-  @media (min-width:768px) {
-    float: none;
-    width: 100%;
-    padding-right: 0;
-  }
-}
-.teaser-vertical .teaser-body {
-  @media (min-width:480px) {
-    float: left;
-    width: 75%;
-  }
-  @media (min-width:768px) {
-    float: none;
-    width: 100%;
-  }
-}
-.teaser-vertical .teaser-title {
-  @media (min-width:768px) {
-    margin-top: ($line-height-computed / 4);
-  }
+  // padding-top: ($line-height-computed / 2);
+  // padding-bottom: ($line-height-computed / 2);
+  // border-top: 1px solid $color-gray-medium;
 }

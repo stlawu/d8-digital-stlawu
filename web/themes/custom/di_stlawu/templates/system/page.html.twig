@@ -63,7 +63,7 @@
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
-      {# University header#}
+      {# University header #}
       <header class="university-brand">
         <div class="content-container {{ container }}">
           <a href="http://www.stlawu.edu" title="St. Lawrence University homepage" class="university-logo">
@@ -71,6 +71,7 @@
           </a>
         </div>
       </header>
+      
       <div class="content-container {{ container }}">
         <div class="navbar-header">
           {{ page.navigation }}
@@ -93,6 +94,7 @@
           </div>
         {% endif %}
       </div>
+      
     </header>
   {% endblock %}
 {% endif %}
@@ -100,7 +102,7 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container js-quickedit-main-content">
-    <div class="main-content-container clearfix">
+    {# <div class="main-content-container clearfix"> #}
 
       {# Breadcrumbs #}
       {% if page.breadcrumbs %}
@@ -116,96 +118,115 @@
         {% endblock %}
       {% endif %}
 
-      {# Constrains page when no sidebars #}
-      {% if page.sidebar_first and page.sidebar_second or page.sidebar_first and page.sidebar_second is empty or page.sidebar_second and page.sidebar_first is empty %}
-        <div class="content-container">
-          <div class="row">
-      {% endif %}
-
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
+      {# Highlighted #}
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">
+            {{ page.highlighted }}
+          </div>
         {% endblock %}
       {% endif %}
 
-      {# Content #}
+      {# Help #}
+      {% if page.help %}
+        {% block help %}
+          {{ page.help }}
+        {% endblock %}
+      {% endif %}
+
       {%
-        set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'sidebars two-sidebars col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'sidebars one-sidebar col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'sidebars one-sidebar col-sm-9',
+        set has_sidebar = [
+          page.sidebar_first and page.sidebar_second ? 'two-sidebars',
+          page.sidebar_first and page.sidebar_second is empty ? 'one-sidebar',
+          page.sidebar_second and page.sidebar_first is empty ? 'one-sidebar',
           page.sidebar_first is empty and page.sidebar_second is empty ? 'no-sidebars'
         ]
       %}
-      <section{{ content_attributes.addClass(content_classes) }}>
-
-        {# Highlighted #}
-        {% if page.highlighted %}
-          {% block highlighted %}
-            {{ page.highlighted }}
-          {% endblock %}
+      {%
+        set layout_class = [
+          'layout-edge-to-edge' == layout_type ? 'edge-to-edge',
+          'layout-constrained' == layout_type ? 'content-container',
+        ]
+      %}
+      
+      <div{{ attributes.addClass(has_sidebar, layout_class) }}>
+        
+        {% if layout_type == 'layout-constrained' %}
+        <div class="row clearfix">
         {% endif %}
+      
+          {# Sidebar First #}
+          {% if page.sidebar_first %}
+            {% block sidebar_first %}
+              <aside class="sidebar col-sm-3" role="complementary">
+                {{ page.sidebar_first }}
+              </aside>
+            {% endblock %}
+          {% endif %}
 
-        {# Help #}
-        {% if page.help %}
-          {% block help %}
-            {{ page.help }}
-          {% endblock %}
-        {% endif %}
+          {# Content #}
+          {%
+            set content_classes = [
+              page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+              page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+              page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+              page.sidebar_first is empty and page.sidebar_second is empty and layout_type == 'layout-constrained' ? 'col-sm-12'
+            ]
+          %}
+          <section{{ content_attributes.addClass('main-content', content_classes) }}>
 
-        {# Before content #}
-        {% if page.before_content %}
-          {% block before_content %}
-            {{ page.before_content }}
-          {% endblock %}
-        {% endif %}
+            {# Before content #}
+            {% if page.before_content %}
+              {% block before_content %}
+                {{ page.before_content }}
+              {% endblock %}
+            {% endif %}
 
-        {# Page Title #}
-        {% if page.page_title %}
-          {% block page_title %}
-            {{ page.page_title }}
-          {% endblock %}
-        {% endif %}
+            {# Page Title #}
+            {% if page.page_title %}
+              {% block page_title %}
+                {{ page.page_title }}
+              {% endblock %}
+            {% endif %}
 
-        {# Local tasks #}
-        {% if page.local_tasks %}
-          {% block local_tasks %}
-            {{ page.local_tasks }}
-          {% endblock %}
-        {% endif %}
+            {# Local tasks #}
+            {% if page.local_tasks %}
+              {% block local_tasks %}
+                {{ page.local_tasks }}
+              {% endblock %}
+            {% endif %}
 
-        {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
-          {{ page.content }}
-        {% endblock %}
+            {# Content #}
+            {% block content %}
+              <a id="main-content"></a>
+              {{ page.content }}
+            {% endblock %}
 
-        {# After content #}
-        {% if page.after_content %}
-          {% block after_content %}
-            {{ page.after_content }}
-          {% endblock %}
-        {% endif %}
-      </section>
+            {# After content #}
+            {% if page.after_content %}
+              {% block after_content %}
+                {{ page.after_content }}
+              {% endblock %}
+            {% endif %}
 
-      {# Sidebar Second #}
-      {% if page.sidebar_second %}
-        {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        {% endblock %}
-      {% endif %}
+          </section>
 
-      {# Constrains page when no sidebars #}
-      {% if page.sidebar_first and page.sidebar_second or page.sidebar_first and page.sidebar_second is empty or page.sidebar_second and page.sidebar_first is empty %}
-          </div>
+          {# Sidebar Second #}
+          {% if page.sidebar_second %}
+            {% block sidebar_second %}
+              <aside class="sidebar col-sm-3" role="complementary">
+                {{ page.sidebar_second }}
+              </aside>
+            {% endblock %}
+          {% endif %}
+      
+        {% if layout_type == 'layout-constrained' %}
         </div>
-      {% endif %}
-    </div>
+        {% endif %}
+      
+      </div>
+
+    {# </div> #}
   </div>
 {% endblock %}
 

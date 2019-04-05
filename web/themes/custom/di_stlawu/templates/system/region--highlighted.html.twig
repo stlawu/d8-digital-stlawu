@@ -14,21 +14,15 @@
  * @see template_preprocess_region()
  */
 #}
-{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {%
   set classes = [
     'region',
     'region-' ~ region|clean_class,
+    'content-container',
   ]
 %}
 {% if content %}
-  <div class="highlighted">
-    <div{{ attributes.addClass(classes) }}>
-      <div class="row">
-        <div class="col-xs-12">
-          {{ content }}
-        </div>
-      </div>
-    </div>
+  <div{{ attributes.addClass(classes) }}>
+    {{ content }}
   </div>
 {% endif %}

@@ -1,0 +1,46 @@
+/**
+ * Teaser Alternate
+ * Loosely based off of Bootstrap 4
+ * 
+ */
+
+@import "default-variables";
+
+
+//  Alternate teasers
+.teaser-alternate {
+  margin-bottom: 0;
+  padding-top: ($line-height-computed / 2);
+  padding-bottom: ($line-height-computed / 2);
+  border-top: 1px solid $color-gray-medium;
+}
+.teaser-alternate .teaser-title {
+  margin-top: 0;
+}
+.teaser-alternate .teaser__media {
+  float: left;
+  width: 33.3333333333%;
+  padding-right: 1.25rem;
+
+  @media (min-width:480px) {
+    float: left;
+    width: 25%;
+  }
+  @media (min-width:1200px) {
+    float: left;
+    width: 20%;
+  }
+}
+.teaser-alternate .teaser-body {
+  float: left;
+  width: 66.6666666667%;
+
+  @media (min-width:480px) {
+    float: left;
+    width: 75%;
+  }
+  @media (min-width:1200px) {
+    float: left;
+    width: 80%;
+  }
+}

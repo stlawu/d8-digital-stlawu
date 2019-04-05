@@ -65,10 +65,10 @@ third_party_settings:
       region: content
     group_col2:
       children:
+        - field_project_discipline
         - field_project_status
         - field_project_supporting_institu
         - field_project_url
-        - field_project_discipline
       parent_name: group_row
       weight: 3
       format_type: html_element

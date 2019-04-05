@@ -18,14 +18,14 @@
   set classes = [
     'region',
     'region-' ~ region|clean_class,
+    'content-container',
   ]
 %}
 {% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    <div class="row">
-      <div class="col-xs-12">
-        {{ content }}
-      </div>
+  {# See Region.php in Bootstrap base theme for more info on why I did this weird stuff, also see https://www.drupal.org/project/bootstrap/issues/2695165 #}
+  <div{{ attributes.addClass(classes).removeClass('alert', 'alert-info', 'messages', 'info') }}>
+    <div{{ attributes.addClass('alert', 'alert-info', 'messages', 'info').removeClass('region', 'content-container') }}>
+      {{ content }}
     </div>
   </div>
 {% endif %}

@@ -64,14 +64,12 @@ p:last-child,
  * Custom overrides
  */
 
-// University brand.
-.university-brand {
-  background-color: $color-red-dark;
-  padding-top: 7px;
-  padding-bottom: 7px;
+// Adds padding to the bottom of region-content
+.region-content {
+  padding-bottom: 28px;
 }
 
-// Fix weirdness with inline field labels & field values
+ // Fix weirdness with inline field labels & field values
 .field--label-inline .field--items {
   float: none;
   display: inline-block;
@@ -81,36 +79,23 @@ p:last-child,
    padding-right: .25em;
 }
 
-// Content region
-.region-content {
-  padding-bottom: $line-height-computed;
-}
-
-// Flexbox stuff
-.flex-height {
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-}
-
-.view-id-di_projects.view-display-id-block_all_projects_grid .view-content .custom-mixitup-items-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  & .mix_item.mix.flex-height {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
+// Adds Fontawesome arrow
+.node-readmore a {
+  &:after {
+    @extend %fa-icon;
+    @extend .fas;
+    content: fa-content($fa-var-angle-right);
+    color: $color-brown;
+    border: 1px solid $color-red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 1.2;
+    margin-left: 7px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
   }
-}
-
-.view-id-di_projects.view-display-id-block_recently_added_grid_9 .view-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 // For the "view all" buttons on views

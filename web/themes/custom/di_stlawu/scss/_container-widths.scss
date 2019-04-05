@@ -1,27 +1,13 @@
 .content-container {
   @include container-fixed;
   @media (min-width: $screen-lg-min) {
-    width: $container-lg;
+    max-width: $container-lg;
   }
 }
 
-// To constrain certain regions on pages or nodes that have no-sidebars
-.no-sidebars .region-highlighted,
-.no-sidebars .region-page-title,
-.no-sidebars .region-local-tasks {
+.no-sidebars.edge-to-edge .region-local-tasks {
   @include container-fixed;
   @media (min-width: $screen-lg-min) {
-    width: $container-lg;
+   max-width: $container-lg;
   }
-}
-
-.no-sidebars .region-content > * {
-  @include container-fixed;
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
-}
-
-.no-sidebars .region-after-content > * {
-  @include container-fixed;
 }

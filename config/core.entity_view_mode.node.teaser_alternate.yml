@@ -1,0 +1,10 @@
+uuid: 4100a3d3-dc45-41b1-85fb-a169ae319526
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_alternate
+label: 'Teaser alternate'
+targetEntityType: node
+cache: true

@@ -31,3 +31,7 @@ teaser:
   css:
     component:
       css/teaser.css: {}
+teaser-alternate:
+  css:
+    component:
+      css/teaser-alternate.css: {}

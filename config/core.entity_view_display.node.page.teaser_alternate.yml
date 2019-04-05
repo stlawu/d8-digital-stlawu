@@ -1,0 +1,48 @@
+uuid: ff058e7c-9cab-461f-8806-22e09cd7958e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_alternate
+    - field.field.node.page.body
+    - field.field.node.page.field_last_updated
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_teaser_media
+    - field.field.node.page.field_teaser_text
+    - node.type.page
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.teaser_alternate
+targetEntityType: node
+bundle: page
+mode: teaser_alternate
+content:
+  field_teaser_media:
+    type: entity_reference_entity_view
+    weight: -10
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_teaser_text:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_last_updated: true
+  field_meta_tags: true

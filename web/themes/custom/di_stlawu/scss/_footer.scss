@@ -1,6 +1,6 @@
 // Footer.
-.footer {
-  .nav > li {
+.footer .nav {
+  > li {
     margin-top: ($line-height-computed / 2);
     margin-bottom: ($line-height-computed / 2);
 
@@ -9,18 +9,19 @@
         margin-top: 0;
       }
     }
-  }
-  .nav > li > a {
-    display: inline;
-    padding: 0;
 
-    &:hover,
-    &focus {
-      background-color: unset;
-      text-decoration: underline;
+    > a {
+      display: inline;
+      padding: 0;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        background-color: unset;
+      }
     }
   }
 }
+
 
 .footer {
   // margin-top: 45px;

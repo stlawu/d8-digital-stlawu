@@ -1,12 +1,12 @@
 uuid: 1390ed7a-4c85-41eb-bf3c-b6e45ac6138d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
 id: teaser_temp
 label: 'teaser temp'
-code: ".view-id-di_articles .view-content {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n.view-id-di_people .view-content {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n\r\n@media(min-width:896px){\r\n  .view-display-id-block_1 .teaser__media {\r\n    float: left;\r\n    width: 33.3333333333%;\r\n  }\r\n  .view-display-id-block_1 .teaser-body {\r\n    float: left;\r\n    width: 66.6666666667%;\r\n  }\r\n}\r\n@media(min-width:992px){\r\n  .view-display-id-block_1 .teaser__media {\r\n    float: left;\r\n    width: 40%;\r\n  }\r\n  .view-display-id-block_1 .teaser-body {\r\n    float: left;\r\n    width: 60%;\r\n  }\r\n}\r\n@media(min-width:1200px){\r\n  .view-display-id-block_1 .teaser__media {\r\n    float: left;\r\n    width: 40%;\r\n  }\r\n  .view-display-id-block_1 .teaser-body {\r\n    float: left;\r\n    width: 60%;\r\n  }\r\n}"
+code: "@media(min-width:896px){\r\n  .view-display-id-block_recent_news .teaser__media {\r\n    float: left;\r\n    width: 33.3333333333%;\r\n  }\r\n  .view-display-id-block_recent_news .teaser-body {\r\n    float: left;\r\n    width: 66.6666666667%;\r\n  }\r\n}\r\n@media(min-width:992px){\r\n  .view-display-id-block_recent_news .teaser__media {\r\n    float: left;\r\n    width: 40%;\r\n  }\r\n  .view-display-id-block_recent_news .teaser-body {\r\n    float: left;\r\n    width: 60%;\r\n  }\r\n}\r\n@media(min-width:1200px){\r\n  .view-display-id-block_recent_news .teaser__media {\r\n    float: left;\r\n    width: 40%;\r\n  }\r\n  .view-display-id-block_recent_news .teaser-body {\r\n    float: left;\r\n    width: 60%;\r\n  }\r\n}"
 media: all
 preprocess: true
 conditions:

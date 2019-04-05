@@ -206,7 +206,7 @@ display:
       style:
         type: mixitup_views
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-2 flex-height'
+          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-2 d-flex'
           default_row_class: false
           uses_fields: false
           filter_type: checkboxes
@@ -323,7 +323,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-3 flex-height'
+          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-3 d-flex'
           default_row_class: false
           uses_fields: false
       row:
@@ -331,7 +331,7 @@ display:
         options:
           relationship: none
           view_mode: card
-      css_class: 'clearfix row'
+      css_class: 'view-d-flex view-flex-wrap row clearfix'
       filters:
         status:
           value: '1'
@@ -446,7 +446,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-2 flex-height'
+          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-2 d-flex'
           default_row_class: false
           uses_fields: false
       row:
@@ -454,7 +454,7 @@ display:
         options:
           relationship: none
           view_mode: card
-      css_class: 'clearfix row'
+      css_class: 'view-d-flex view-flex-wrap row clearfix'
       filters:
         status:
           value: '1'
@@ -569,7 +569,7 @@ display:
       style:
         type: default
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-4 flex-height'
+          row_class: 'col-xs-12 col-sm-6 col-md-4 d-flex'
           default_row_class: false
           uses_fields: false
       row:
@@ -577,7 +577,7 @@ display:
         options:
           relationship: none
           view_mode: card
-      css_class: 'clearfix row'
+      css_class: 'view-d-flex view-flex-wrap row clearfix'
       filters:
         status:
           value: '1'

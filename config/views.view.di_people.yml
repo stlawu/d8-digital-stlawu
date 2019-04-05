@@ -208,7 +208,7 @@ display:
         filter_groups: false
         style: false
         row: false
-      css_class: 'clearfix row'
+      css_class: 'view-d-flex view-flex-wrap row clearfix'
       pager:
         type: none
         options:
@@ -432,7 +432,7 @@ display:
         operator: AND
         groups:
           1: AND
-      css_class: 'clearfix row'
+      css_class: 'view-d-flex view-flex-wrap row clearfix'
     cache_metadata:
       max-age: -1
       contexts:

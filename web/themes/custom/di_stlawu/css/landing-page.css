@@ -13,45 +13,19 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
-.no-sidebars .region-content > .edge-to-edge {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0; }
-
-.no-sidebars .region-content > .edge-to-edge > .node__header,
-.no-sidebars .region-content > .edge-to-edge > .content > * {
+.no-sidebars.edge-to-edge .region-content > .edge-to-edge > .node__header {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .no-sidebars .region-content > .edge-to-edge > .node__header:before, .no-sidebars .region-content > .edge-to-edge > .node__header:after,
-  .no-sidebars .region-content > .edge-to-edge > .content > *:before,
-  .no-sidebars .region-content > .edge-to-edge > .content > *:after {
+  .no-sidebars.edge-to-edge .region-content > .edge-to-edge > .node__header:before, .no-sidebars.edge-to-edge .region-content > .edge-to-edge > .node__header:after {
     content: " ";
     display: table; }
-  .no-sidebars .region-content > .edge-to-edge > .node__header:after,
-  .no-sidebars .region-content > .edge-to-edge > .content > *:after {
+  .no-sidebars.edge-to-edge .region-content > .edge-to-edge > .node__header:after {
     clear: both; }
   @media (min-width: 1200px) {
-    .no-sidebars .region-content > .edge-to-edge > .node__header,
-    .no-sidebars .region-content > .edge-to-edge > .content > * {
-      width: 1170px; } }
-
-.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0; }
-
-.no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections > .paragraph--type--section > .section-full-width .paragraph--type--view .filters_wrapper {
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 1200px) {
-    .no-sidebars .region-content > .edge-to-edge > .content > .field--name-field-sections > .paragraph--type--section > .section-full-width .paragraph--type--view .filters_wrapper {
-      width: 1170px; } }
+    .no-sidebars.edge-to-edge .region-content > .edge-to-edge > .node__header {
+      max-width: 1170px; } }
 
 .page-node-type-landing-page .region-content {
   margin-bottom: -28px; }

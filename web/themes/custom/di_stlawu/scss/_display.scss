@@ -1,0 +1,30 @@
+/**
+ * Display
+ * Loosely based off of Bootstrap 4
+ * 
+ */
+
+.d-flex {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.d-inline-flex {
+  display: -webkit-inline-box!important;
+  display: -ms-inline-flexbox!important;
+  display: inline-flex!important;
+}
+
+// For views
+.view-d-flex .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.view-d-inline-flex .view-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
