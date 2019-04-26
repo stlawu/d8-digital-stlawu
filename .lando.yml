@@ -1,9 +1,0 @@
-name: d8-digital-stlawu
-recipe: pantheon
-config:
-  framework: drupal8
-  site: d8-digital-stlawu
-  id: 9f185cec-9c0b-4fcb-972f-9a5f2f6ed252
-tooling:
-  drupal:
-    cmd: /app/vendor/bin/drupal --root=/app/web
