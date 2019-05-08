@@ -1,0 +1,59 @@
+uuid: 6b8a5f14-61c3-4a62-bd81-79321dc2c5fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.remote_video.field_media_author_name
+    - field.field.media.remote_video.field_media_byline_freeform
+    - field.field.media.remote_video.field_media_cache_age
+    - field.field.media.remote_video.field_media_default_name
+    - field.field.media.remote_video.field_media_description
+    - field.field.media.remote_video.field_media_height
+    - field.field.media.remote_video.field_media_html
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_media_provider_name
+    - field.field.media.remote_video.field_media_provider_url
+    - field.field.media.remote_video.field_media_resource_title
+    - field.field.media.remote_video.field_media_resource_type
+    - field.field.media.remote_video.field_media_thumbnail_height
+    - field.field.media.remote_video.field_media_thumbnail_uri
+    - field.field.media.remote_video.field_media_thumbnail_width
+    - field.field.media.remote_video.field_media_transcript
+    - field.field.media.remote_video.field_media_width
+    - media.type.remote_video
+id: media.remote_video.media_library
+targetEntityType: media
+bundle: remote_video
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_author_name: true
+  field_media_byline_freeform: true
+  field_media_cache_age: true
+  field_media_default_name: true
+  field_media_description: true
+  field_media_height: true
+  field_media_html: true
+  field_media_oembed_video: true
+  field_media_provider_name: true
+  field_media_provider_url: true
+  field_media_resource_title: true
+  field_media_resource_type: true
+  field_media_thumbnail_height: true
+  field_media_thumbnail_uri: true
+  field_media_thumbnail_width: true
+  field_media_transcript: true
+  field_media_width: true
+  path: true
+  status: true
+  uid: true

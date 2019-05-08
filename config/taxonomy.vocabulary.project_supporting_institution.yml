@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Supporting institution'
 vid: project_supporting_institution
 description: 'Use supporting institution in projects.'
-hierarchy: 0
 weight: 0

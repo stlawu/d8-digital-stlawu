@@ -5,5 +5,4 @@ dependencies: {  }
 name: Discipline
 vid: discipline
 description: 'Use discipline to group content of similar disciplines.'
-hierarchy: 0
 weight: 0

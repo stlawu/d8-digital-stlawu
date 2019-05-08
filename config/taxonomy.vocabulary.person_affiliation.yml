@@ -5,5 +5,4 @@ dependencies: {  }
 name: Affiliation
 vid: person_affiliation
 description: ''
-hierarchy: 0
 weight: 0

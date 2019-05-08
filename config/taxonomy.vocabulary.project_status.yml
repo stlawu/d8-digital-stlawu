@@ -5,5 +5,4 @@ dependencies: {  }
 name: Status
 vid: project_status
 description: 'Use status in projects.'
-hierarchy: 0
 weight: 0
