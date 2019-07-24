@@ -1,0 +1,19 @@
+uuid: a5150cc4-ebd8-4f54-91e1-e2cb094afe24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codebase_saml_setup
+    - node.type.codebase_metadata
+id: node.codebase_metadata.field_codebase_saml_setup
+field_name: field_codebase_saml_setup
+entity_type: node
+bundle: codebase_metadata
+label: 'SAML Setup'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

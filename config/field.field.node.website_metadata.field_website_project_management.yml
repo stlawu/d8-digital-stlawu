@@ -1,0 +1,23 @@
+uuid: a6079bfc-fffb-462e-8dc1-4d2762b0bad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_project_management
+    - node.type.website_metadata
+  module:
+    - link
+id: node.website_metadata.field_website_project_management
+field_name: field_website_project_management
+entity_type: node
+bundle: website_metadata
+label: 'Project Management Link'
+description: 'Most cases, the link to the Asana dashboard. Enter ''Asana'' as the link text. If another tool is used, enter that instead.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

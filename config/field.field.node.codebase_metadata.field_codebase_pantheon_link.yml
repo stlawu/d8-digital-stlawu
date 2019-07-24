@@ -1,0 +1,23 @@
+uuid: 2b72798c-d1b4-4389-919d-0fe70b2fc1e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codebase_pantheon_link
+    - node.type.codebase_metadata
+  module:
+    - link
+id: node.codebase_metadata.field_codebase_pantheon_link
+field_name: field_codebase_pantheon_link
+entity_type: node
+bundle: codebase_metadata
+label: 'Pantheon Dashboard'
+description: 'Link text should be Dev, Test, or Live.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

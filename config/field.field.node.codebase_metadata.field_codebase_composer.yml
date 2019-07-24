@@ -1,0 +1,21 @@
+uuid: 24bb16f1-8b51-4a79-9394-39ba830e7d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codebase_composer
+    - node.type.codebase_metadata
+  module:
+    - options
+id: node.codebase_metadata.field_codebase_composer
+field_name: field_codebase_composer
+entity_type: node
+bundle: codebase_metadata
+label: 'Uses Composer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

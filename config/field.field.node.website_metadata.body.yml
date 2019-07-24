@@ -1,0 +1,22 @@
+uuid: ff670ca3-edb8-4829-983f-6632db7ef9fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.website_metadata
+  module:
+    - text
+id: node.website_metadata.body
+field_name: body
+entity_type: node
+bundle: website_metadata
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

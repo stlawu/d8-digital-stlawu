@@ -1,0 +1,28 @@
+uuid: aea52cc2-e5eb-41a1-a59b-8ebb844d2416
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_project_reference
+    - node.type.project
+    - node.type.website_metadata
+id: node.website_metadata.field_website_project_reference
+field_name: field_website_project_reference
+entity_type: node
+bundle: website_metadata
+label: Project
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

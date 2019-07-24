@@ -1,0 +1,29 @@
+uuid: 3b3d84cd-3222-4c6b-a416-9cf9303f0581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_domain_registrar
+    - node.type.website_metadata
+    - taxonomy.vocabulary.domain_name_registrar
+id: node.website_metadata.field_website_domain_registrar
+field_name: field_website_domain_registrar
+entity_type: node
+bundle: website_metadata
+label: 'Domain Registrar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      domain_name_registrar: domain_name_registrar
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

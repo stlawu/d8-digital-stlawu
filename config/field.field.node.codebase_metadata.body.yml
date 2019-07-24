@@ -1,0 +1,22 @@
+uuid: d2d18ecc-1116-483b-a23e-ea682ae0afb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.codebase_metadata
+  module:
+    - text
+id: node.codebase_metadata.body
+field_name: body
+entity_type: node
+bundle: codebase_metadata
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

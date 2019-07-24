@@ -1,0 +1,21 @@
+uuid: 7691d7e2-7c04-4ae5-991c-7b81866bef91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codebase_launch_date
+    - node.type.codebase_metadata
+  module:
+    - datetime
+id: node.codebase_metadata.field_codebase_launch_date
+field_name: field_codebase_launch_date
+entity_type: node
+bundle: codebase_metadata
+label: 'Launch Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

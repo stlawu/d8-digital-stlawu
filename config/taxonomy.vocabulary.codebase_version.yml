@@ -1,0 +1,8 @@
+uuid: ff8b4d68-cc29-440d-8c10-dfc6a15c4ee9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Codebase Version'
+vid: codebase_version
+description: 'The codebase version'
+weight: 0

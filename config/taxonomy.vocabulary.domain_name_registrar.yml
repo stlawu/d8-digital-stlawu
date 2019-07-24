@@ -1,0 +1,8 @@
+uuid: b776a73a-e745-4ab1-9d2c-ca485d054004
+langcode: en
+status: true
+dependencies: {  }
+name: 'Domain Name Registrar'
+vid: domain_name_registrar
+description: 'The Registrar that houses our domain name.'
+weight: 0

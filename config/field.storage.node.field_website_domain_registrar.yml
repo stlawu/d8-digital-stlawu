@@ -1,0 +1,20 @@
+uuid: 691a2a82-9070-4ed4-804a-69dd880e5b4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_website_domain_registrar
+field_name: field_website_domain_registrar
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

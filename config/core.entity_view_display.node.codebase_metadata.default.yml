@@ -1,0 +1,121 @@
+uuid: 969251df-cf64-4801-af0c-3cebbe2c7b4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.codebase_metadata.body
+    - field.field.node.codebase_metadata.field_codease_hosted_location
+    - field.field.node.codebase_metadata.field_codebase_composer
+    - field.field.node.codebase_metadata.field_codebase_created_date
+    - field.field.node.codebase_metadata.field_codebase_git_clone
+    - field.field.node.codebase_metadata.field_codebase_launch_date
+    - field.field.node.codebase_metadata.field_codebase_pantheon_link
+    - field.field.node.codebase_metadata.field_codebase_saml_setup
+    - field.field.node.codebase_metadata.field_codebase_status
+    - field.field.node.codebase_metadata.field_codebase_version
+    - field.field.node.codebase_metadata.field_codebase_website
+    - node.type.codebase_metadata
+  module:
+    - datetime
+    - link
+    - options
+    - text
+    - user
+id: node.codebase_metadata.default
+targetEntityType: node
+bundle: codebase_metadata
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_codease_hosted_location:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codebase_composer:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codebase_created_date:
+    weight: 9
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'F j, Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_codebase_git_clone:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_codebase_launch_date:
+    weight: 10
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'F j, Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_codebase_pantheon_link:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_codebase_saml_setup:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_codebase_status:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codebase_version:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codebase_website:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  addtoany: true
+  links: true

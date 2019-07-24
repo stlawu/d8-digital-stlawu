@@ -1,0 +1,39 @@
+uuid: c62e1059-d6bb-4abe-aa26-d16bcdebadc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_codebase_status
+field_name: field_codebase_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: development
+      label: 'In Development'
+    -
+      value: live
+      label: Live
+    -
+      value: retired
+      label: 'Retired (Accessible, Including External Access)'
+    -
+      value: frozen
+      label: 'Frozen (Accessible, External Access Blocked)'
+    -
+      value: archived
+      label: 'Archived (No Access, Recoverable)'
+    -
+      value: deleted
+      label: 'Deleted (No Access, Not Recoverable)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
