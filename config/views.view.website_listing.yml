@@ -12,6 +12,7 @@ dependencies:
   module:
     - node
     - options
+    - taxonomy
     - user
 id: website_listing
 label: 'Website: Listing'
@@ -83,6 +84,7 @@ display:
           summary: ''
           description: ''
           columns:
+            counter: counter
             title: title
             title_1: title_1
             field_codebase_status: title_1
@@ -90,7 +92,15 @@ display:
             field_codease_hosted_location: field_codease_hosted_location
             field_codebase_saml_setup: field_codebase_saml_setup
             field_codebase_composer: field_codebase_composer
+            name: name
           info:
+            counter:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             title:
               sortable: true
               default_sort_order: asc
@@ -134,6 +144,13 @@ display:
               empty_column: false
               responsive: ''
             field_codebase_composer:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -377,7 +394,7 @@ display:
           group_type: group
           admin_label: ''
           label: Version
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -432,6 +449,72 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_codebase_version
+          group_type: group
+          admin_label: ''
+          label: Version
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
         field_codease_hosted_location:
           id: field_codease_hosted_location
           table: node__field_codease_hosted_location
@@ -730,6 +813,15 @@ display:
           required: true
           entity_type: node
           plugin_id: entity_reverse
+        field_codebase_version:
+          id: field_codebase_version
+          table: node__field_codebase_version
+          field: field_codebase_version
+          relationship: reverse__node__field_codebase_website
+          group_type: group
+          admin_label: 'field_codebase_version: Taxonomy term'
+          required: false
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
