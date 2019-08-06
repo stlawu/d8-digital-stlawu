@@ -92,6 +92,11 @@
   <div class='teaser-body'>
     {{ title_prefix }}
     {% if not page %}
+      {% if teaser_eyebrow|render|striptags|trim is not empty %}
+        <div class="teaser-eyebrow">
+          {{ teaser_eyebrow }}
+        </div>
+      {% endif %}
       <h2{{ title_attributes.addClass('teaser-title node__title') }}>
         <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>

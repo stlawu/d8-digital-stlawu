@@ -6,8 +6,16 @@
 
 @import "default-variables";
 
+.teaser-eyebrow {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-bottom: ($line-height-computed / 4);
+}
+
 .teaser-title {
-  font-size: $font-size-h5;
+  font-size: $font-size-h6;
 }
 
 .teaser-title {

@@ -1,8 +1,11 @@
 // Base styles
 // --------------------------------------------------
 
-.btn {
+.btn:not(.btn-normal) {
   text-transform: uppercase;
+}
+
+.btn {
   font-weight: 700;
 }
 
@@ -12,4 +15,9 @@
 
 .btn-scarlet {
   @include button-variant($btn-scarlet-color, $btn-scarlet-bg, $btn-scarlet-border);
+}
+
+// For taxonomy terms that use the button view mode
+.btn-list > .btn {
+  margin-bottom: 5px;
 }

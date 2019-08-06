@@ -65,46 +65,59 @@
  *   in different view modes.
  */
 #}
-{{ attach_library('di_stlawu/person') }}
+{{ attach_library('di_stlawu/work') }}
+{{ attach_library('di_stlawu/teaser') }}
+{{ attach_library('di_stlawu/teaser-alternate') }}
 {%
   set classes = [
     node.bundle|clean_class,
     node.isPromoted() ? 'is-promoted',
     node.isSticky() ? 'is-sticky',
     not node.isPublished() ? 'is-unpublished',
+    'teaser',
     view_mode ? view_mode|clean_class,
     'clearfix',
   ]
 %}
-<article{{ attributes.addClass(classes) }}>
-  {# todo: create theme settings that allows site owner to add decorative background images in the below div? #}
-  <div class="node-decorative-background"></div>
-  <div class="node-header-wrapper clearfix">
-    {# <div class="content-container"> #}
-     {{ title_prefix }}
-      <header class="node__header">
-        {% if content.field_person_portrait|render|striptags|trim is not empty %}
-          <div class='person__portrait'>
-            {% block person_portrait %}
-              {{ content.field_person_portrait }}
-            {% endblock %}
-          </div>
-        {% endif %}
-        <h1 class="page-title">
-          {{ label }}
-        </h1>
-      </header>
-      {{ title_suffix }}
-      {% if content.group_person_basic_info %}
-        {% block person_info %}
-          {{ content.group_person_basic_info }}
-        {% endblock %}
-      {% endif %}
-    {# </div> #}
-  </div>
+{% set teaser_eyebrow = content.field_work_item_type %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    {{ content|without('field_person_portrait', 'group_person_basic_info') }}
+<article{{ attributes.addClass(classes) }}>
+
+  {% if content.field_teaser_media|render|striptags|trim is not empty %}
+    <div class='teaser__media'>
+      {% block teaser_image %}
+        <a href="{{ url }}">{{ content.field_teaser_media }}</a>
+      {% endblock %}
+    </div>
+  {% endif %}
+
+  <div class='teaser-body'>
+    {{ title_prefix }}
+    {% if not page %}
+      {% if teaser_eyebrow|render|striptags|trim is not empty %}
+        <div class="teaser-eyebrow">
+          {{ teaser_eyebrow }}
+        </div>
+      {% endif %}
+      <h2{{ title_attributes.addClass('teaser-title node__title') }}>
+        <a class="node__link" href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    {% if display_submitted %}
+      <footer class="node__meta">
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('author') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}
+
+    <div{{ content_attributes.addClass('content') }}>
+      {{ content|without('field_teaser_media', 'field_work_item_type') }}
+    </div>
   </div>
 
 </article>

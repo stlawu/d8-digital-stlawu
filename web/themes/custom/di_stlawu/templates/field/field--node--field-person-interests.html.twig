@@ -56,22 +56,14 @@
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field--items') }}>
-      {%- for item in items -%}
-        {%- if items|length > 1 -%}
-          <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ', ' -}}
-        {%- else -%}
-          <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>
-        {%- endif -%}
-      {%- endfor -%}
+      {% for item in items %}
+        { item.content }}
+      {% endfor %}
     </div>
   {% else %}
-    {%- for item in items -%}
-      {%- if items|length > 1 -%}
-        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ', ' -}}
-      {%- else -%}
-        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>
-      {%- endif -%}
-    {%- endfor -%}
+    {% for item in items %}
+      {{ item.content }}
+    {% endfor %}
   {% endif %}
 {% else %}
   <div{{ attributes.addClass(classes) }}>
@@ -79,13 +71,9 @@
     {% if multiple %}
       <div class="field--items">
     {% endif %}
-    {%- for item in items -%}
-      {%- if items|length > 1 -%}
-        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ', ' -}}
-      {%- else -%}
-        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>
-      {%- endif -%}
-    {%- endfor -%}
+    {% for item in items %}
+      {{ item.content }}
+    {% endfor %}
     {% if multiple %}
       </div>
     {% endif %}

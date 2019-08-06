@@ -30,6 +30,17 @@ regions:
   page_top: Page top
   page_bottom: Page bottom
 
+# Libraries-extend is used to attach libraries to other libraries. If the
+# original library is conditionally included, the library it is extended with
+# will be included under the same conditions.
 libraries-extend:
   bootstrap/framework:
     - di_stlawu/framework
+
+# Libraries-override is used to override any of the assets defined by a library.
+# Use it to remove files, replace files with your own, replace a library with
+# your own library, or remove the library completely.
+# See https://www.drupal.org/node/2497313.
+libraries-override:
+  # The library name.
+  # social_media_links/fontawesome.component: false

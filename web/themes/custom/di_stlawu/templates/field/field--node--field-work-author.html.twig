@@ -58,7 +58,7 @@
     <div{{ attributes.addClass(classes, 'field--items') }}>
       {%- for item in items -%}
         {%- if items|length > 1 -%}
-          <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ', ' -}}
+          <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ' &bull; ' -}}
         {%- else -%}
           <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>
         {%- endif -%}
@@ -67,7 +67,7 @@
   {% else %}
     {%- for item in items -%}
       {%- if items|length > 1 -%}
-        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ', ' -}}
+        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ' &bull; ' -}}
       {%- else -%}
         <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>
       {%- endif -%}
@@ -81,7 +81,7 @@
     {% endif %}
     {%- for item in items -%}
       {%- if items|length > 1 -%}
-        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ', ' -}}
+        <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>{{- not loop.last ? ' &bull; ' -}}
       {%- else -%}
         <span{{ item.attributes.addClass('field--item') }}>{{- item.content -}}</span>
       {%- endif -%}

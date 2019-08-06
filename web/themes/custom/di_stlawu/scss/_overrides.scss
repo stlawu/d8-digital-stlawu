@@ -109,3 +109,22 @@ p:last-child,
   margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 2);
 }
+
+// For sidebar navigation
+.region-sidebar-first .nav {
+  background-color: $card-bg;
+  border-top: 5px solid $color-red;
+  box-shadow: 0 0 12px $color-gray-dark;
+
+  li {
+    border-bottom: 1px solid $color-gray-dark;
+    a {
+      color: $color-brown;
+      &:hover,
+      &:focus {
+      color: $color-white;
+      background-color: $color-red;
+      }
+    }
+  }
+}

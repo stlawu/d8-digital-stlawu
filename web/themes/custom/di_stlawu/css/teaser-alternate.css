@@ -15,9 +15,7 @@
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
 .teaser-alternate {
-  margin-bottom: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 30px;
   border-top: 1px solid #CDCDCD; }
 
 .teaser-alternate .teaser-title {

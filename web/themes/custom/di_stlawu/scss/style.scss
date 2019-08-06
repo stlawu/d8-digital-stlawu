@@ -12,8 +12,11 @@
 @import "../bootstrap/assets/stylesheets/bootstrap/normalize";
 @import "../bootstrap/assets/stylesheets/bootstrap/print";
 @import "../bootstrap/assets/stylesheets/bootstrap/glyphicons";
-@import "fontawesome/fontawesome.scss";
-@import "fontawesome/solid.scss";
+@import "../../../../libraries/fontawesome/scss/fontawesome.scss";
+@import "../../../../libraries/fontawesome/scss/brands.scss";
+@import "../../../../libraries/fontawesome/scss/regular.scss";
+@import "../../../../libraries/fontawesome/scss/solid.scss";
+@import "../../../../libraries/fontawesome/scss/v4-shims.scss";
 
 // Core CSS
 // @import "../bootstrap/assets/stylesheets/bootstrap/scaffolding";

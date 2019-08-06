@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3a9fdd445d1cb02a075176d934ef0d8",
+    "content-hash": "54bdb4fb349c4c3b83272bf1e97fdb93",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -121,6 +121,21 @@
                 "stack"
             ],
             "time": "2017-12-20T14:37:45+00:00"
+        },
+        {
+            "name": "bower-asset/font-awesome",
+            "version": "5.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "538a5bc4cf7989821d052e3ff919e2bead07021c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/538a5bc4cf7989821d052e3ff919e2bead07021c",
+                "reference": "538a5bc4cf7989821d052e3ff919e2bead07021c"
+            },
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/jquery",

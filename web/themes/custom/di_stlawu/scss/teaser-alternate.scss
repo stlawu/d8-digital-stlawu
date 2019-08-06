@@ -9,9 +9,7 @@
 
 //  Alternate teasers
 .teaser-alternate {
-  margin-bottom: 0;
-  padding-top: ($line-height-computed / 2);
-  padding-bottom: ($line-height-computed / 2);
+  padding-top: $grid-gutter-width;
   border-top: 1px solid $color-gray-medium;
 }
 .teaser-alternate .teaser-title {

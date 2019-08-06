@@ -8,7 +8,7 @@
  @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
 
 .card-title {
-  font-size: $font-size-h5;
+  font-size: $font-size-h6;
 }
 
 .card-title {
@@ -21,7 +21,7 @@
 
 .card {
   margin-bottom: ($grid-gutter-width / 2);
-      box-shadow: 0 0 12px $color-gray-dark;
+  box-shadow: 0 0 12px $color-gray-dark;
 }
 
 .card a {

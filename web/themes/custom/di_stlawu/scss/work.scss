@@ -1,0 +1,52 @@
+/**
+ * Work content type
+ * 
+ */
+
+@import "default-variables";
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.work {
+  &.teaser {
+    .teaser-body {
+      width: 100%;
+    }
+    .field--name-field-work-author {
+      margin-bottom: ($line-height-computed / 4);
+    }
+    .work-details {
+      font-size: 14px;
+      margin-top: ($line-height-computed / 4);
+      margin-bottom: ($line-height-computed / 4);
+    }
+    .work-details .field,
+    .work-details .field .field--label,
+    .work-details .field .field--item {
+      display: inline-block;
+      float: none;
+      padding: 0;
+      font-weight: normal;
+      font-style: italic;
+    }
+    .work-details .field .field--item:after {
+      content: ', ';
+    }
+    .work-details .field:last-child .field--item:after {
+      content: none;
+    }
+    .work-links {
+      font-size: 14px;
+      margin-top: ($line-height-computed / 4);
+      margin-bottom: ($line-height-computed / 4);
+    }
+    .work-links .field,
+    .work-links .field .field--label,
+    .work-links .field .field--item {
+      display: inline-block;
+      float: none;
+      font-weight: normal;
+      padding: 0;
+    }
+    
+  }
+}

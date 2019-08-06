@@ -6,17 +6,39 @@
 @import "default-variables";
 @import "../bootstrap/assets/stylesheets/bootstrap/mixins";
 
-// Provides padding and margin for the div that holds the Person portrait, Person name, and contact info.
-// Please see node--person--full.html.twig
-.node-header-wrapper {
-  margin-top: $line-height-computed;
-  margin-bottom: $line-height-computed;
+.node-decorative-background {
+  width: 100vw;
+  height: ($line-height-computed * 6);
+  background-color: $color-brown-dark;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: ceil(($grid-gutter-width / -2));
+  margin-right: floor(($grid-gutter-width / -2));
+  z-index: -2;
+  background-image: url(../images/herring-cole.jpg);
+  background-position: 50% 31%;
+  background-size: cover;
+}
 
-  & .page-title {
-    @media (min-width: 568px) {
-      margin-top: 0px;
-    }
+$padding-container: ceil(($grid-gutter-width / 4));
+
+.layout-no-sidebars .node-decorative-background {
+  @media (min-width: $screen-lg-min) {
+    margin-left: calc(-50vw + 50% - #{$padding-container});
+    margin-right: calc(-50vw + 50% - #{$padding-container});
   }
+}
+
+.layout-sidebar-first .node-decorative-background {
+  @media (min-width: $screen-sm-min) {
+    margin-left: calc(-50vw + 33.375% - #{$padding-container});
+  }
+}
+
+.node-header-wrapper {
+  margin-top: 104px;
+  margin-bottom: $line-height-computed;
 }
 
 .person-contact {
@@ -31,10 +53,52 @@
   font-style: italic;
 }
 
-.person__portrait {
-  @media (min-width: 568px) {
+.person {
+  .node-header-wrapper {
+    background-color: $card-bg;
+    border-top: 5px solid $color-red;
+    padding: ceil(($grid-gutter-width / 2));
+    box-shadow: 0 0 12px $color-gray-dark;
+    & .page-title {
+      color: $color-red;
+      float: left;
+      width: percentage((9 / $grid-columns));
+      margin-top: 0;
+      margin-bottom: ($line-height-computed / 4);
+      @media (max-width: 567px) {
+        font-size: $font-size-h2;
+      }
+      @media (min-width: 568px) {
+        width: percentage((8 / $grid-columns));
+      }
+    }
+  }
+  .person__portrait {
     float: left;
-    width: percentage((4 / $grid-columns));
+    width: percentage((3 / $grid-columns));
     padding-right: ceil(($grid-gutter-width / 2));
+    @media (min-width: 568px) {
+      width: percentage((4 / $grid-columns));
+    }
+  }
+  .person__portrait img {
+    padding: $thumbnail-padding;
+    background-color: $thumbnail-bg;
+    border: 1px solid $thumbnail-border;
+  }
+
+  .person__info {
+    float: left;
+    width: percentage((9 / $grid-columns));
+    @media (max-width: 567px) {
+      font-size: 15px;
+    }
+    @media (min-width: 568px) {
+      width: percentage((8 / $grid-columns));
+    }
+    .social-media-links--platforms {
+      margin-top: ($line-height-computed / 4);
+      margin-bottom: 0px;
+    }
   }
 }
