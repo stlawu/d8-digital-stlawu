@@ -1,0 +1,20 @@
+uuid: e1be9f68-18fd-464e-aa43-e9ad8b81da8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: ewb_news_tweaks
+label: 'EWB - News Tweaks'
+code: ".field--name-field-release-date {\r\n  display:none;\r\n}"
+media: all
+preprocess: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+conditions_require_all: true

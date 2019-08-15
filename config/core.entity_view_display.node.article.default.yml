@@ -28,7 +28,6 @@ third_party_settings:
       weight: 0
       format_type: html_element
       format_settings:
-        label: Aside
         element: div
         show_label: false
         label_element: h3
