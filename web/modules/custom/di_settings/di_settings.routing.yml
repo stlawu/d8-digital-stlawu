@@ -1,0 +1,10 @@
+di_settings.settings_form:  
+  path: '/admin/config/di-settings'  
+  defaults:  
+    _form: '\Drupal\di_settings\Form\SettingsForm'  
+    _title: 'SettingsForm'  
+  requirements:  
+    _role: 'administrator'  
+#    _permission: 'access administration pages'  
+  options:  
+    _admin_route: TRUE  
