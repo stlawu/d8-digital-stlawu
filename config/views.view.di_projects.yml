@@ -206,7 +206,7 @@ display:
       style:
         type: mixitup_views
         options:
-          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-2 d-flex'
+          row_class: 'col-xs-12 col-sm-6 col-md-3 col-lg-2'
           default_row_class: false
           uses_fields: false
           filter_type: checkboxes
@@ -564,7 +564,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 9
+          items_per_page: 12
           offset: 0
       style:
         type: default

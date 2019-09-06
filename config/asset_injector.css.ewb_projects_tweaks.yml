@@ -1,0 +1,17 @@
+uuid: e6c1767e-9039-41a5-a802-db72f9273a89
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: ewb_projects_tweaks
+label: 'EWB - Projects Tweaks'
+code: ".card {\r\n  min-height: 322px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /projects
+    negate: false
+conditions_require_all: true
