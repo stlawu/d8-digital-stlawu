@@ -1,7 +1,6 @@
 /**
  * Section paragraph type
  * Based off of Bootstrap 3.3.7
- * 
  */
 
 //
@@ -85,7 +84,6 @@
 // Adapted from the container-fixed mixin in
 // Bootstrap 3.3.7 bootstrap/assets/stylesheets/bootstrap/mixins/_grid.scss partial
 
-
 @mixin make-section-container($gutter: $grid-gutter-width) {
   margin-right: auto;
   margin-left: auto;
@@ -103,7 +101,6 @@
   margin-bottom: $line-height-computed;
 }
  
-
 .section-container {
   @include container-fixed;
 }
@@ -113,4 +110,12 @@
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
+}
+
+// If floated media paragraphs are longer than adjacent paragraphs,
+// do not collapse the section content field
+.field--name-field-section-content::after {
+  content: "";
+  display: block;
+  clear: both;
 }

@@ -38,6 +38,7 @@
  * @ingroup themeable
  */
 #}
+{% set has_caption = content.field_media_caption|render is not empty %}
 
 {%
   set classes = [
@@ -46,13 +47,27 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'paragraph--id--' ~ paragraph.id.value,
+    align|clean_class,
   ]
 %}
 
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
   {% block content %}
-    {{ content }}
+    {{ content|without('field_media_caption') }}
+    {% if has_caption or has_transcript or has_byline_freeform %}
+      <div class="media-caption">
+        {% if has_caption %}
+          {{ content.field_media_caption }}
+        {% endif %}
+        {% if has_transcript %}
+          {{ transcript }}
+        {% endif %}
+        {% if has_byline_freeform %}
+          {{ byline_freeform }}
+        {% endif %}
+      </div>
+    {% endif %}
   {% endblock %}
   </div>
 {% endblock paragraph %}

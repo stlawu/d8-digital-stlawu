@@ -31,9 +31,6 @@ function di_paragraphs_theme($existing, $type, $theme, $path) {
     'field__entity_reference_revisions' => [
       'base hook' => 'paragraph',
     ],
-    // 'field__paragraph__field_media__media' => [
-    //   'base hook' => 'paragraph',
-    // ],
     'paragraph__grid_column' => [
       'base hook' => 'paragraph',
     ],
@@ -59,8 +56,44 @@ function di_paragraphs_theme($existing, $type, $theme, $path) {
 }
 
 /**
- * Implements hook_preprocess_paragraph__section().
- * Prepares variables for paragraph--section.html.twig.
+ * Implements hook_preprocess_paragraph__hook().
+ */
+function di_paragraphs_preprocess_paragraph__media(&$variables) {
+  $p = $variables['paragraph'];
+
+  // Setup align variable for template.
+  if (!$p->field_media_align->isEmpty()) {
+    $align = $p->field_media_align->get(0)->value;
+    $variables['align'] = 'align-' . $align;
+  }
+
+  if ($p && $p->field_media) {
+    $media = $p->field_media->entity;
+    // Check for media entity and byline_freeform.
+    if ($media && $media->hasField('field_media_byline_freeform')) {
+      // Setup has_byline_freeform boolean variable.
+      $has_byline_freeform = $media->field_media_byline_freeform->value;
+      $variables['has_byline_freeform'] = !empty($has_byline_freeform);
+      // Render the media entity's field_media_byline_freeform on media
+      // paragraph type.
+      $byline_freeform = $media->field_media_byline_freeform->view(['label' => 'hidden']);
+      $variables['byline_freeform'] = $byline_freeform;
+    }
+    // Check for media entity and transcript.
+    if ($media && $media->hasField('field_media_transcript')) {
+      // Setup has_transcript boolean variable.
+      $has_transcript = $media->field_media_transcript->value;
+      $variables['has_transcript'] = !empty($has_transcript);
+      // Render the media entity's field_media_transcript on media paragraph
+      // type.
+      $transcript = $media->field_media_transcript->view(['label' => 'hidden']);
+      $variables['transcript'] = $transcript;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph__hook().
  */
 function di_paragraphs_preprocess_paragraph__section(&$variables) {
   $p = $variables['paragraph'];
@@ -70,12 +103,13 @@ function di_paragraphs_preprocess_paragraph__section(&$variables) {
   $palettename = !empty($palette[0]['value']) ? $palette[0]['value'] : 'none';
   $variables['palette'] = 'bg-' . $palettename;
 
-  // Setup width variable for template
-  if(!$p->field_section_width->isEmpty()){
+  // Setup width variable for template.
+  if (!$p->field_section_width->isEmpty()) {
     switch ($p->field_section_width->get(0)->value) {
       case "1":
         $width = "section-content-width";
         break;
+
       case "2":
         $width = "section-full-width";
         break;

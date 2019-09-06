@@ -1,7 +1,6 @@
 /**
  * Grid row paragraph type
  * Based off of Bootstrap 3.3.7
- * 
  */
 
  @import "paragraphs-variables";
@@ -16,7 +15,6 @@
   padding-left:  floor(($grid-gutter-width / 2));
   padding-right: ceil(($grid-gutter-width / 2));
 }
-
 
 .grid.two-columns .paragraph--type--grid-column {
   @media (min-width: $screen-sm-min) {
