@@ -1,0 +1,21 @@
+uuid: 245e8ef9-60ac-4204-afdc-bea6290a17f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_align
+    - paragraphs.paragraphs_type.media
+  module:
+    - options
+id: paragraph.media.field_media_align
+field_name: field_media_align
+entity_type: paragraph
+bundle: media
+label: Align
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

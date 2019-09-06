@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_media_align
     - field.field.paragraph.media.field_media_caption
     - paragraphs.paragraphs_type.media
   module:
@@ -29,4 +30,5 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden: {  }
+hidden:
+  field_media_align: true
