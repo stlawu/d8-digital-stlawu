@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.project.body
     - field.field.node.project.field_geofield_location
+    - field.field.node.project.field_geofield_string_address
     - field.field.node.project.field_last_updated
     - field.field.node.project.field_meta_tags
     - field.field.node.project.field_project_director
@@ -82,6 +83,7 @@ third_party_settings:
         - field_project_status
         - field_project_url
         - field_geofield_location
+        - field_geofield_string_address
       parent_name: ''
       weight: -8
       format_type: fieldset
@@ -145,7 +147,7 @@ content:
         min: '0'
         max: '22'
       geoaddress_field:
-        field: '0'
+        field: field_geofield_string_address
         disabled: '1'
         hidden: 0
       default_value:
@@ -159,6 +161,14 @@ content:
       zoom_level: 5
     third_party_settings: {  }
     type: geofield_map
+    region: content
+  field_geofield_string_address:
+    weight: 129
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_last_updated:
     weight: 1

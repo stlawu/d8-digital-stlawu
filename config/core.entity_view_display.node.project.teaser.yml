@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
     - field.field.node.project.field_geofield_location
+    - field.field.node.project.field_geofield_string_address
     - field.field.node.project.field_last_updated
     - field.field.node.project.field_meta_tags
     - field.field.node.project.field_project_director
@@ -53,6 +54,7 @@ hidden:
   addtoany: true
   body: true
   field_geofield_location: true
+  field_geofield_string_address: true
   field_last_updated: true
   field_meta_tags: true
   field_project_director: true
