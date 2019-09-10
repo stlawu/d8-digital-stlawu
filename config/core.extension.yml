@@ -36,6 +36,7 @@ module:
   file_mdm_font: 0
   filter: 0
   geofield: 0
+  geofield_map: 0
   google_analytics: 0
   help: 0
   history: 0
