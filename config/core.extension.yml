@@ -43,6 +43,9 @@ module:
   image: 0
   image_effects: 0
   image_widget_crop: 0
+  leaflet: 0
+  leaflet_markercluster: 0
+  leaflet_views: 0
   link: 0
   linkit: 0
   maxlength: 0
