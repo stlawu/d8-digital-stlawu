@@ -1,0 +1,25 @@
+uuid: 7bc819c9-54d3-4855-8d3f-1f04ab8698fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: test_leaftlet_interactions
+label: 'Test leaftlet interactions'
+code: "(function ($, Drupal) {\r\n\r\n  'use strict';\r\n\r\n  // This drives the interaction with the Geofield Leaflet Map.\r\n  Drupal.behaviors.geofieldMapLeafletMapInteraction = {\r\n    attach: function (context, settings) {\r\n\r\n      // React on geofieldMapInit event.\r\n        $(document).on('leaflet.map', function (e, settings, lMap, mapid) {\r\n          var map = lMap;\r\n          var markers = Drupal.Leaflet[mapid].markers;\r\n          $('.view-display-id-block_1 .views-field .marker-selector', context).each(function () {\r\n            $(this).hover(\r\n              function() {\r\n                $( this ).css(\"text-decoration\", \"underline\");\r\n                var marker_id = $(this).data('marker-id');\r\n                setTimeout(function () {\r\n                  if(markers[marker_id]) {\r\n                    map.setView(markers[marker_id].getLatLng(), '10');\r\n                    markers[marker_id].fire('click');\r\n                  }\r\n                }, 500);\r\n              }, function() {\r\n                $( this ).css(\"text-decoration\", \"none\");\r\n                setTimeout(function () {\r\n                  map.closePopup();\r\n                }, 500);\r\n              }\r\n            );\r\n          });\r\n          $('.view-display-id-block_1', context).each(function () {\r\n            var timeoutId;\r\n            $(this).hover(\r\n              function() {\r\n              }, function() {\r\n                $( this ).css(\"text-decoration\", \"none\");\r\n                timeoutId = setTimeout(function () {\r\n                  map.closePopup();\r\n                  //$('#' + 'leaflet-map--' + mapid + '--reset-control').click();\r\n                  Drupal.Leaflet.prototype.map_reset(mapid);\r\n                }, 2000);\r\n              }\r\n            );\r\n          });\r\n      });\r\n    }\r\n  };\r\n\r\n})(jQuery, Drupal);"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    theme:
+      di_stlawu: di_stlawu
+    negate: false
+  request_path:
+    id: request_path
+    pages: /test-map
+    negate: false
+conditions_require_all: true
