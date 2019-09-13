@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_geofield_location
+    - field.storage.node.field_geofield_string_address
     - node.type.project
   module:
     - geofield
@@ -64,7 +65,7 @@ display:
           description_field: '#rendered_entity'
           view_mode: teaser
           leaflet_map: 'OSM Mapnik'
-          height: '400'
+          height: '450'
           hide_empty_map: 1
           disable_wheel: 0
           fullscreen_control: 1
@@ -409,12 +410,14 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: list-group-item
+          default_row_class: false
       defaults:
         style: false
         row: false
         fields: false
+        filters: false
+        filter_groups: false
       row:
         type: fields
         options:
@@ -482,7 +485,7 @@ display:
           settings:
             thousand_separator: ''
             prefix_suffix: false
-          group_column: value
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -495,63 +498,6 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: field
-        delta:
-          id: delta
-          table: node__field_geofield_location
-          field: delta
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          set_precision: false
-          precision: 0
-          decimal: .
-          separator: ''
-          format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
-          plugin_id: numeric
         title:
           id: title
           table: node_field_data
@@ -562,8 +508,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: '<div class="marker-selector" data-marker-id="{{ nid }}-{{ delta }}">{{ title }}</div>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -604,7 +550,7 @@ display:
           type: string
           settings:
             link_to_entity: true
-          group_column: value
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -617,18 +563,18 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        field_geofield_location:
-          id: field_geofield_location
-          table: node__field_geofield_location
-          field: field_geofield_location
+        field_geofield_string_address:
+          id: field_geofield_string_address
+          table: node__field_geofield_string_address
+          field: field_geofield_string_address
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<li><span class="fa-li"><span class="fas fa-map-marker-alt"></span></span><span class="visually-hidden sr-only">View map marker for </span>{{ field_geofield_string_address }}</li>'
             make_link: false
             path: ''
             absolute: false
@@ -662,14 +608,13 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: true
+          hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: geofield_default
+          type: string
           settings:
-            output_format: wkt
-            output_escape: 1
+            link_to_entity: false
           group_column: entity_id
           group_columns: {  }
           group_rows: true
@@ -678,14 +623,125 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: ''
           field_api_classes: false
           plugin_id: field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: 'Unordered List of String addresses (Global: Custom text)'
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<ul class=\"fa-ul\">\r\n{{ field_geofield_string_address }} \r\n</ul>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: '0'
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       attachment_position: after
       displays:
         block_all_projects_map: block_all_projects_map
         page_all_projects_map: page_all_projects_map
       display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            project: project
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_geofield_location_value:
+          id: field_geofield_location_value
+          table: node__field_geofield_location
+          field: field_geofield_location_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: 'not empty'
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -694,7 +750,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_geofield_location'
+        - 'config:field.storage.node.field_geofield_string_address'
   block_all_projects_map:
     display_plugin: block
     id: block_all_projects_map
