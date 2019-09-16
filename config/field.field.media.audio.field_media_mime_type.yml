@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_mime_type
     - media.type.audio
 _core:
-  default_config_hash: Q4ru2CSq46ExYkn48o38gn-DPpy7KAG6c3S_BmPua98
+  default_config_hash: ZkDCPFjs2TPz7C2OuT0CaqjZn6wbOeed0aJt38Lp1Ec
 id: media.audio.field_media_mime_type
 field_name: field_media_mime_type
 entity_type: media
@@ -14,7 +14,7 @@ bundle: audio
 label: 'MIME type'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

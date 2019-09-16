@@ -1,0 +1,30 @@
+name: 'STLAWU Digital Scholarship: Landing Page'
+type: module
+description: 'Snazzy landing page content type and fields.'
+core: 8.x
+package: 'STLAWU Digital Scholarship'
+dependencies:
+  - drupal:ckeditor
+  - drupal:datetime
+  - ds_stlawu_date_formats:ds_stlawu_date_formats
+  - ds_stlawu_media:ds_stlawu_media
+  - ds_stlawu_nodes:ds_stlawu_nodes
+  - ds_stlawu_paragraphs:ds_stlawu_paragraphs
+  - ds_stlawu_text_formats:ds_stlawu_text_formats
+  - entity_reference_revisions:entity_reference_revisions
+  - drupal:field
+  - features:features
+  - field_group:field_group
+  - maxlength:maxlength
+  - drupal:media
+  - drupal:media_library
+  - metatag:metatag
+  - drupal:node
+  - drupal:options
+  - paragraphs:paragraphs
+  - drupal:path
+  - pathauto:pathauto
+  - drupal:system
+  - drupal:text
+  - token:token
+  - drupal:user

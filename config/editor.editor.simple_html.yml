@@ -1,0 +1,54 @@
+uuid: 1a2f718d-3822-404d-9223-eb06662f2976
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.simple_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: expxLExPUldZHwWZi74calfC-R8UbYP_eSRAoTPJDQE
+format: simple_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Superscript
+            - Subscript
+            - '-'
+            - RemoveFormat
+        -
+          name: Symbols
+          items:
+            - SpecialChar
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: 'p.lead|Lead paragraph'
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

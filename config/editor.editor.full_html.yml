@@ -44,13 +44,13 @@ settings:
           name: Media
           items:
             - Blockquote
+            - DrupalImage
             - Table
             - HorizontalRule
         -
           name: 'Block Formatting'
           items:
             - Format
-            - Styles
         -
           name: Tools
           items:

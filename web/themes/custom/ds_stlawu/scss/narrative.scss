@@ -1,0 +1,26 @@
+/**
+ * Narrative
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.narrative--view-mode-full > .node__content > *:not(.field--name-field-sections) {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.narrative--view-mode-full > .node__content {
+  & .paragraph--type--section > .field--name-field-section-content > .paragraph--type--text > * {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & .section-content-width > .field--name-field-section-content {
+    @media (min-width: $screen-sm-min) {
+      max-width: ($screen-sm-min + $grid-gutter-width);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/**
+ * Teaser
+ * Loosely based off of Bootstrap 4.
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+@mixin teaser {
+  min-width: 0;
+  font-size: $teaser-font-size;
+  word-wrap: break-word;
+  margin-bottom: $grid-gutter-width;
+}
+
+@mixin teaser-title {
+  font-size: $font-size-h5;
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 4);
+}
+
+@mixin teaser-metadata {
+  color: $gray-dark;
+  font-size: $teaser-metadata-font-size;
+  margin-top: ($line-height-computed / 4);
+  margin-bottom: ($line-height-computed / 4);
+}
+
+@mixin teaser-links {
+  font-size: $teaser-font-size;
+  margin-top: ($line-height-computed / 4);
+  margin-bottom: 0;
+}
+
+.node--view-mode-teaser {
+  @include teaser;
+
+  .teaser__title {
+    @include teaser-title;
+  }
+  .teaser__body .node__metadata {
+    @include teaser-metadata;
+  }
+  .teaser__body .node__author {
+    font-weight: 700;
+  }
+  .teaser__body .links {
+    @include teaser-links;
+  }
+}

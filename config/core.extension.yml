@@ -21,10 +21,19 @@ module:
   devel: 0
   di_media: 0
   di_paragraphs: 0
+  ds_stlawu_article: 0
+  ds_stlawu_date_formats: 0
+  ds_stlawu_landing_page: 0
+  ds_stlawu_media: 0
+  ds_stlawu_narrative: 0
+  ds_stlawu_nodes: 0
+  ds_stlawu_paragraphs: 0
+  ds_stlawu_text_formats: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
   eva: 0
+  exif_orientation: 0
   features: 0
   features_ui: 0
   field: 0
@@ -100,6 +109,7 @@ theme:
   seven: 0
   bootstrap: 0
   di_stlawu: 0
+  ds_stlawu: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

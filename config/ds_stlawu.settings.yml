@@ -1,0 +1,39 @@
+schemas:
+  bootstrap: 8000
+  ds_stlawu: 8000
+cdn_provider: ''
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: /themes/custom/ds_stlawu/favicon.ico
+  use_default: true
+region_wells:
+  navigation_utility: ''
+  breadcrumbs: ''
+  before_content: ''
+  page_title: ''
+  after_content: ''
+  sidebar_second: ''
+  footer_top: ''
+  footer_first: ''
+  footer_second: ''
+  footer_third: ''
+  footer_fourth: ''
+  footer_fifth: ''
+university_brand_banner: 1
+footer_wordmark: 1
+footer_contact_info: 1
+footer_contact_info_address: "23 Romoda Drive\nCanton, NY 13617"
+footer_contact_info_name: 'Digital Scholarship'
+footer_contact_info_email: digital@stlawu.edu
+_core:
+  default_config_hash: LBtKzV_6SeCpcopvCluXGJFNM2mOqqXb037UPFOH3U4
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true

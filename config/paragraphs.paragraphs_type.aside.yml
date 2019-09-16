@@ -1,0 +1,9 @@
+uuid: 18a70dea-40ef-4552-bae5-cc0d3d9af9a8
+langcode: en
+status: true
+dependencies: {  }
+id: aside
+label: Aside
+icon_uuid: null
+description: 'Use <em>aside</em> for complementary content.'
+behavior_plugins: {  }

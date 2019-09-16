@@ -18,6 +18,7 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format simple'
+  - 'use text format simple_html'
   - 'view media'
   - 'view paragraph content grid_column'
   - 'view paragraph content grid_row'

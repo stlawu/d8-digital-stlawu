@@ -43,11 +43,11 @@ settings:
           name: Media
           items:
             - Blockquote
+            - DrupalImage
         -
           name: 'Block Formatting'
           items:
             - Format
-            - Styles
         -
           name: Tools
           items:

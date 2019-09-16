@@ -7,6 +7,7 @@ dependencies:
     - field.field.media.remote_video.field_media_author_name
     - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
+    - field.field.media.remote_video.field_media_caption
     - field.field.media.remote_video.field_media_default_name
     - field.field.media.remote_video.field_media_description
     - field.field.media.remote_video.field_media_height
@@ -22,29 +23,55 @@ dependencies:
     - field.field.media.remote_video.field_media_transcript
     - field.field.media.remote_video.field_media_width
     - media.type.remote_video
+  module:
+    - media
+    - text
+_core:
+  default_config_hash: WA3-6Ym7llEkY1s4dLLSSr_yc1EB2Os5Z2RHO7Wetf4
 id: media.remote_video.media_library
 targetEntityType: media
 bundle: remote_video
 mode: media_library
 content:
-  name:
-    type: string_textfield
+  field_media_byline_freeform:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_caption:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_media_oembed_video:
+    type: oembed_textfield
+    weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
-    weight: 0
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   field_media_author_name: true
-  field_media_byline_freeform: true
   field_media_cache_age: true
   field_media_default_name: true
-  field_media_description: true
   field_media_height: true
   field_media_html: true
-  field_media_oembed_video: true
   field_media_provider_name: true
   field_media_provider_url: true
   field_media_resource_title: true
@@ -54,6 +81,7 @@ hidden:
   field_media_thumbnail_width: true
   field_media_transcript: true
   field_media_width: true
+  name: true
   path: true
   status: true
   uid: true

@@ -1,0 +1,33 @@
+name: 'STLAWU Digital Scholarship'
+type: theme
+base theme: bootstrap
+description: 'Sub-theme for Digital Scholarship projects for St. Lawrence University.'
+package: 'Bootstrap'
+core: 8.x
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  navigation_utility: 'Navigation (Utility)'
+  breadcrumbs: Breadcrumbs
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  before_content: 'Before Content'
+  page_title: 'Page Title'
+  content: 'Content'
+  after_content: 'After Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer_top: 'Footer top'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer copyright'
+  page_top: Page top
+  page_bottom: Page bottom
+
+libraries-extend:
+  bootstrap/framework:
+    - ds_stlawu/framework

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.1_1
+  module:
+    - crop
+name: scale_crop_1_1_992
+label: 'Scale crop 1:1 (992x992)'
+effects:
+  4154f08b-fff4-497a-9a5d-11cc8e2e082e:
+    uuid: 4154f08b-fff4-497a-9a5d-11cc8e2e082e
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '1_1'
+  b2e7ab9a-6274-4aa3-b095-f24ffa4d7f2e:
+    uuid: b2e7ab9a-6274-4aa3-b095-f24ffa4d7f2e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 992
+      height: 992
+      anchor: center-center

@@ -1,0 +1,31 @@
+uuid: 76dfdb77-412e-4f4f-8ed4-4b55f8121720
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_caption
+    - media.type.remote_video
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    simple_html: simple_html
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: LFibmHyKpvfqT040B6LF6nre33YRmP2xmb3wWkGPnyA
+id: media.remote_video.field_media_caption
+field_name: field_media_caption
+entity_type: media
+bundle: remote_video
+label: Caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -6,9 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_image
     - field.field.node.article.field_last_updated
+    - field.field.node.article.field_media_image
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_release_date
+    - field.field.node.article.field_subtitle
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser_media
     - field.field.node.article.field_teaser_text
@@ -26,7 +29,7 @@ mode: teaser
 content:
   field_release_date:
     type: datetime_custom
-    weight: 0
+    weight: -1
     region: content
     label: hidden
     settings:
@@ -58,7 +61,9 @@ hidden:
   addtoany: true
   body: true
   comment: true
+  field_image: true
   field_last_updated: true
   field_media_image: true
   field_meta_tags: true
+  field_subtitle: true
   field_tags: true

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - core.entity_view_mode.node.teaser_alternate
+    - core.entity_view_mode.node.teaser_horizontal
     - node.type.article
   module:
     - node
@@ -63,7 +64,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser_alternate
+          view_mode: teaser_horizontal
       fields:
         title:
           id: title

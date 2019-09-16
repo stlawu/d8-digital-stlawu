@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: '8:3'
+id: '8_3'
+description: '8:3 image crop.'
+aspect_ratio: '8:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

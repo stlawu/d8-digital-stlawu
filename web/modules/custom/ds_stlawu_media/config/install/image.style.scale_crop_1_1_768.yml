@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.1_1
+  module:
+    - crop
+name: scale_crop_1_1_768
+label: 'Scale crop 1:1 (768x768)'
+effects:
+  19fbdf9e-d885-40b9-a661-c7a6c2731537:
+    uuid: 19fbdf9e-d885-40b9-a661-c7a6c2731537
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '1_1'
+  7ad0fe35-3a91-4956-aeb4-920e855a0553:
+    uuid: 7ad0fe35-3a91-4956-aeb4-920e855a0553
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 768
+      height: 768
+      anchor: center-center

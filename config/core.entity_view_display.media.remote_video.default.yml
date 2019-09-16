@@ -6,6 +6,7 @@ dependencies:
     - field.field.media.remote_video.field_media_author_name
     - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
+    - field.field.media.remote_video.field_media_caption
     - field.field.media.remote_video.field_media_default_name
     - field.field.media.remote_video.field_media_description
     - field.field.media.remote_video.field_media_height
@@ -32,7 +33,14 @@ bundle: remote_video
 mode: default
 content:
   field_media_byline_freeform:
-    weight: 3
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_caption:
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -46,13 +54,6 @@ content:
       max_width: 0
       max_height: 0
     third_party_settings: {  }
-    region: content
-  field_media_transcript:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
 hidden:
   addtoany: true
@@ -70,6 +71,7 @@ hidden:
   field_media_thumbnail_height: true
   field_media_thumbnail_uri: true
   field_media_thumbnail_width: true
+  field_media_transcript: true
   field_media_width: true
   name: true
   thumbnail: true

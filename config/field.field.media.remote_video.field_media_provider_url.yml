@@ -8,7 +8,7 @@ dependencies:
   module:
     - link
 _core:
-  default_config_hash: 6cjljx3uhnyx1pqzy-jJno5friawaGVUMN6DR8RaMag
+  default_config_hash: 0uUjRrZpkNEzu4X2fUwPUhobLzjntgt0_V9n7Kwij20
 id: media.remote_video.field_media_provider_url
 field_name: field_media_provider_url
 entity_type: media
@@ -16,10 +16,10 @@ bundle: remote_video
 label: 'Provider URL'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   link_type: 17
-  title: 0
+  title: 1
 field_type: link

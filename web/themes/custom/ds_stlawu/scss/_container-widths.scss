@@ -1,0 +1,21 @@
+/**
+ * Container widths
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.layout-edge-to-edge .highlighted,
+.layout-edge-to-edge .block-local-tasks-block {
+
+  @media (min-width: $screen-md-min) {
+    @include container-fixed;
+    max-width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    @include container-fixed;
+    max-width: $container-lg;
+  }
+  
+}

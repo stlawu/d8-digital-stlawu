@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_cache_age
     - media.type.remote_video
 _core:
-  default_config_hash: LUUFo6Q3x5wF_zMY5-Qo-s7ujdZWz1SgkSnYtdKHXa8
+  default_config_hash: Fv6vHIOfPP6UtfH2H7ikRi0IdDr0Ig9zTC89-_0C38w
 id: media.remote_video.field_media_cache_age
 field_name: field_media_cache_age
 entity_type: media
@@ -14,7 +14,7 @@ bundle: remote_video
 label: 'Cache age'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

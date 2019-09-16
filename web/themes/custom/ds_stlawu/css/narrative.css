@@ -1,0 +1,32 @@
+/**
+ * Narrative
+ */
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+.narrative--view-mode-full > .node__content > *:not(.field--name-field-sections) {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.narrative--view-mode-full > .node__content .paragraph--type--section > .field--name-field-section-content > .paragraph--type--text > * {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .narrative--view-mode-full > .node__content .section-content-width > .field--name-field-section-content {
+    max-width: 798px;
+  }
+}
+
+/*# sourceMappingURL=narrative.css.map */

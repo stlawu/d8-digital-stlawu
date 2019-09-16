@@ -1,0 +1,116 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the directory for the theme root used to locate images, fonts etc.
+$theme-root: '..';
+
+// Set other directories relative to theme root.
+$image-path: '#{$theme-root}/images';
+$icon-font-path: '#{$theme-root}/bootstrap/assets/fonts/bootstrap/';
+
+$color-white:                #ffffff;
+$color-black:                #000000;
+
+$color-red:                  #C4122F;
+$color-red-dark:             #AA2933;
+
+$color-brown:                #673B2C;
+$color-brown-dark:           #4D3126;
+
+$color-squash:				 #FCF8EE;
+$color-squash-dark:			 #F1DAB1;
+
+$color-gray-light: 		 	 #EEEEEE;
+$color-gray-medium: 		 #CDCDCD;
+$color-gray-dark: 		 	 #979797;
+
+$color-blue-light: 			 #98B7C7;
+$color-blue-dark: 			 #33455B;
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%); // #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+$brand-primary:         darken(#428bca, 6.5%); // #337ab7
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff;
+//** Global text color on `<body>`.
+$text-color:            $gray-base;
+
+//** Global textual link color.
+$link-color:            $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:          18px;
+$font-size-large:         ceil(($font-size-base * 1.2));
+$font-size-small:         ceil(($font-size-base * 0.777)); // 14
+
+$font-size-h1:            floor(($font-size-base * 2)); // 36
+$font-size-h2:            ceil(($font-size-base * 1.777)); // 32
+$font-size-h3:            ceil(($font-size-base * 1.555)); // 28
+$font-size-h4:            ceil(($font-size-base * 1.333)); // 24
+$font-size-h5:            ceil(($font-size-base * 1.111)); // 20
+$font-size-h6:            $font-size-base; // 18
+
+$caption-font-size:		  ceil(($font-size-base * 0.777)); // 14
+$metadata-font-size:	  ceil(($font-size-base * 0.888)); // 16
+$teaser-font-size:        ceil(($font-size-base * 0.888)); // 16
+$teaser-metadata-font-size:            $caption-font-size; // 14
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.555556; // 28/18
+
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: 28px;
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit;
+$headings-font-weight:    700;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-border-radius:             0;
+
+$navbar-default-color:             #333;
+$navbar-default-bg:                #f8f8f8;
+
+// Navbar links
+$navbar-default-link-color:                $navbar-default-color;
+$navbar-default-link-active-color:         #222;
+
+// Navbar toggle
+$navbar-default-toggle-icon-bar-bg:        $navbar-default-color;

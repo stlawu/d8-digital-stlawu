@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.video.field_media_byline_freeform
+    - field.field.media.video.field_media_caption
     - field.field.media.video.field_media_description
     - field.field.media.video.field_media_file_size
     - field.field.media.video.field_media_mime_type
@@ -15,7 +16,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: Qka_8gDDd_rvcrEG-JFmDDSMvPhJ6n62MCaYLIEH5JQ
+  default_config_hash: DkuofWjWQCKnIvwrmsxr_bZMWhkeogNSUHd0buGX0zk
 id: media.video.media_library
 targetEntityType: media
 bundle: video
@@ -34,6 +35,7 @@ hidden:
   addtoany: true
   created: true
   field_media_byline_freeform: true
+  field_media_caption: true
   field_media_description: true
   field_media_file_size: true
   field_media_mime_type: true

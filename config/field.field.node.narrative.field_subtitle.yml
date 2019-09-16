@@ -1,0 +1,31 @@
+uuid: 82c4cd87-a3ed-4773-8b1e-df2b855d0d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.narrative
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    simple_html: simple_html
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: uPyED5mkhggQEj6Xe5ABWsWcBczvC1iMWmNy7YsKBtQ
+id: node.narrative.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: narrative
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

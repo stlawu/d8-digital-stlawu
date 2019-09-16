@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_author_name
     - media.type.remote_video
 _core:
-  default_config_hash: fV6qTasHgLcE7M2xcJ0xSCCyGaJomCu2c73psrP6gk0
+  default_config_hash: aZlDB_olPjGVagRCiYxu1cxpjpo_x1N62gSmjRVIF3s
 id: media.remote_video.field_media_author_name
 field_name: field_media_author_name
 entity_type: media
@@ -14,7 +14,7 @@ bundle: remote_video
 label: 'Author name'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.narrative.comment
+    - field.field.node.narrative.field_last_updated
+    - field.field.node.narrative.field_release_date
+    - field.field.node.narrative.field_sections
+    - field.field.node.narrative.field_subtitle
+    - field.field.node.narrative.field_tags
+    - field.field.node.narrative.field_teaser_media
+    - field.field.node.narrative.field_teaser_text
+    - node.type.narrative
+  module:
+    - user
+id: node.narrative.rss
+targetEntityType: node
+bundle: narrative
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  comment: true
+  field_last_updated: true
+  field_release_date: true
+  field_sections: true
+  field_subtitle: true
+  field_tags: true
+  field_teaser_media: true
+  field_teaser_text: true

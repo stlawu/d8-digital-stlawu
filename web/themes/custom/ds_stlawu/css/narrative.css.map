@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;GAEG;ACFH;;;;;;;;;;GAUG;ADFH,gFAAiF;EAC/E,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;;;AAIlB,uIAA8F;EAC5F,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;;AAGlB,yBAAmC;EADrC,uGAA8D;IAE1D,SAAS,EAAE,KAAqC",
+"sources": ["../scss/narrative.scss","../scss/_default-variables.scss"],
+"names": [],
+"file": "narrative.css"
+}

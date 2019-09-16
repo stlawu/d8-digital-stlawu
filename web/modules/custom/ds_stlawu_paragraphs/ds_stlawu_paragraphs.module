@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Contains ds_stlawu_paragraphs.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ds_stlawu_paragraphs_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ds_stlawu_paragraphs module.
+    case 'help.page.ds_stlawu_paragraphs':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Field storage, shared config, paragraph types for Digital Scholarship.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ds_stlawu_paragraphs_theme($existing, $type, $theme, $path) {
+  return [
+    'field__entity_reference_revisions' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function ds_stlawu_paragraphs_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+
+  // Change N/A to None to mimic the Align options in ckeditor.
+  $field_definition = $context['items']->getFieldDefinition();
+  $alignment_fields = ['field_media_align', 'field_aside_align'];
+
+  foreach ($alignment_fields as $alignment_field) {
+    if ($field_definition->getName() == $alignment_field) {
+      $element['#options']['_none'] = t('None');
+      // Set None to be default value.
+      if ($element['#default_value'] == NULL) {
+        $element['#default_value'] = '_none';
+      }
+    }
+  }
+  // Change - None - to Default.
+  $palette_fields = ['field_section_palette_list', 'field_aside_palette_list'];
+  foreach ($palette_fields as $palette_field) {
+    if ($field_definition->getName() == $palette_field) {
+      $element['#options']['_none'] = t('Default');
+      // Set Default to be default value.
+      if ($element['#default_value'] == NULL) {
+        $element['#default_value'] = '_none';
+      }
+    }
+  }
+}

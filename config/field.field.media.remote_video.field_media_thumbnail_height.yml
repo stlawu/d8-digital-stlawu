@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_thumbnail_height
     - media.type.remote_video
 _core:
-  default_config_hash: vOXbwomVnAc3KQF3Bw6OVMVw7KpYjlN6SHq_ekkAXlE
+  default_config_hash: 18EnAbhE2BGfbkFcFxrHkas7cFPtXejETORBPWeyycQ
 id: media.remote_video.field_media_thumbnail_height
 field_name: field_media_thumbnail_height
 entity_type: media
@@ -14,12 +14,12 @@ bundle: remote_video
 label: 'Thumbnail height'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   min: null
   max: null
   prefix: ''
-  suffix: px
+  suffix: ''
 field_type: integer

@@ -1,0 +1,27 @@
+uuid: 6edc91ee-8e50-455f-8b1d-ff633d2e97ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - ds_stlawu
+_core:
+  default_config_hash: Ksc9IW0LOqpH_NXhD0rdj0w-pAmhvPp5CFo-l9s_cKU
+id: ds_stlawu_account_menu
+theme: ds_stlawu
+region: navigation_utility
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

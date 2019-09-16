@@ -1,0 +1,22 @@
+uuid: 1c092c48-4c13-4d1d-9381-25a0d2cdcd98
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ds_stlawu
+_core:
+  default_config_hash: Re6dnq8WuDmkQ1rEL6mWZRZQYNpEF7dSCU0G-lBw11A
+id: ds_stlawu_help
+theme: ds_stlawu
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

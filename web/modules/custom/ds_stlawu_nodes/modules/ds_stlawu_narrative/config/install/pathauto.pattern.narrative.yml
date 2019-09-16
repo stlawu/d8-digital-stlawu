@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: narrative
+label: Narrative
+type: 'canonical_entities:node'
+pattern: 'narrative/[node:created:custom:Y]/[node:created:custom:m]/[node:created:custom:d]/[node:title]'
+selection_criteria:
+  18b7cef2-fbcb-48ee-b53c-9f0ab1ddbc68:
+    id: node_type
+    bundles:
+      narrative: narrative
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 18b7cef2-fbcb-48ee-b53c-9f0ab1ddbc68
+selection_logic: and
+weight: -5
+relationships: {  }

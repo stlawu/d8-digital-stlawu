@@ -1,0 +1,16 @@
+name: 'STLAWU Digital Scholarship: Text Formats'
+type: module
+description: 'Text formats used for Digital Scholarship.'
+core: 8.x
+package: 'STLAWU Digital Scholarship'
+dependencies:
+  - drupal:ckeditor
+  - drupal:editor
+  - features:features
+  - drupal:field
+  - drupal:file
+  - drupal:filter
+  - linkit:linkit
+  - drupal:system
+  - drupal:text
+  - drupal:user

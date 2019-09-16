@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.media
   module:
     - media_library
-    - text
 id: paragraph.media.default
 targetEntityType: paragraph
 bundle: media
@@ -26,17 +25,9 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
-  field_media_caption:
-    weight: 2
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
+    type: options_buttons
     region: content
 hidden:
   created: true
+  field_media_caption: true
   status: true
-  uid: true

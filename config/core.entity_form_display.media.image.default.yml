@@ -4,20 +4,21 @@ status: true
 dependencies:
   config:
     - field.field.media.image.field_media_byline_freeform
+    - field.field.media.image.field_media_caption
     - field.field.media.image.field_media_description
     - field.field.media.image.field_media_file_size
     - field.field.media.image.field_media_height
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_mime_type
     - field.field.media.image.field_media_width
-    - image.style.thumbnail
+    - image.style.crop_thumbnail
     - media.type.image
   module:
     - image_widget_crop
     - path
     - text
 _core:
-  default_config_hash: nZlttO4YMwMCpkhYMz7bQ1ZMjABGc59YY1us3eSfvTY
+  default_config_hash: gq3bovy8uSTqVRHoDwFOwJfaaAzyEE8Hzjk-CkPG4uU
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -37,6 +38,14 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_media_caption:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_media_description:
     weight: 1
     settings:
@@ -47,34 +56,23 @@ content:
     region: content
   field_media_image:
     settings:
+      show_crop_area: true
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: thumbnail
+      preview_image_style: crop_thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - '16_9'
+        - '1_1'
         - freeform
-        - generic_16_9
-        - generic_1_1
-        - generic_2_1
-        - generic_3_2
-        - social_media_28_15
-        - social_media_40_21
-      crop_types_required:
-        - generic_1_1
+        - social_media_facebook
+        - social_media_twitter
       progress_indicator: throbber
-      show_crop_area: false
+      crop_types_required: {  }
     third_party_settings: {  }
     type: image_widget_crop
     weight: 0
     region: content
-  name:
-    type: string_textfield
-    weight: -5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -102,3 +100,4 @@ hidden:
   field_media_height: true
   field_media_mime_type: true
   field_media_width: true
+  name: true

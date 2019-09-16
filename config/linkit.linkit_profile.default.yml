@@ -5,7 +5,7 @@ dependencies:
   module:
     - node
 _core:
-  default_config_hash: Tt8DtxZ3Nooo0PoWPpJvszA3R_5d8MmpUW7LM_R-BzY
+  default_config_hash: pGAFRs1pKN-4lgzQSl-wR62vSgVfmxoksxQ0ohZ_qq4
 id: default
 label: Default
 description: 'A default Linkit profile'
@@ -20,3 +20,4 @@ matchers:
       group_by_bundle: true
       include_unpublished: false
       substitution_type: canonical
+      limit: 100

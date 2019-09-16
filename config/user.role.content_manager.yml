@@ -126,6 +126,7 @@ permissions:
   - 'update paragraph content webform'
   - 'use text format basic_html'
   - 'use text format simple'
+  - 'use text format simple_html'
   - 'view all media revisions'
   - 'view article revisions'
   - 'view landing_page revisions'

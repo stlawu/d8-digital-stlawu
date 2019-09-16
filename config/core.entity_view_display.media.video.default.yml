@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.video.field_media_byline_freeform
+    - field.field.media.video.field_media_caption
     - field.field.media.video.field_media_description
     - field.field.media.video.field_media_file_size
     - field.field.media.video.field_media_mime_type
@@ -21,15 +22,15 @@ bundle: video
 mode: default
 content:
   field_media_byline_freeform:
-    weight: 5
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_media_transcript:
-    weight: 4
-    label: above
+  field_media_caption:
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -54,6 +55,7 @@ hidden:
   field_media_description: true
   field_media_file_size: true
   field_media_mime_type: true
+  field_media_transcript: true
   name: true
   thumbnail: true
   uid: true

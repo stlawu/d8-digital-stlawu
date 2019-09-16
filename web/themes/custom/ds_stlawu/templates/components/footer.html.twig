@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Footer.
+ */
+#}
+{% set wordmark = theme.settings.footer_wordmark %}
+{% set contact_info = theme.settings.footer_contact_info %}
+{% set contact_name = theme.settings.footer_contact_info_name %}
+{% set contact_address = theme.settings.footer_contact_info_address %}
+{% set contact_email = theme.settings.footer_contact_info_email %}
+{% block footer %}
+<footer class="footer" role="contentinfo">
+  <div class="footer__main">
+    <div class="{{ container }}">
+      <div class="footer__row">
+      {%- if page.footer_first or wordmark or contact_info -%}
+        <div class="footer__column footer__first">
+          {%- if wordmark -%}
+            <a href="https://www.stlawu.edu" class="wordmark"><img alt="White shield positioned to the left of white text reading 'St. Lawrence University'." src="/{{ active_theme_path() }}/images/st-lawrence-university-logo%402x.png" width="226"></a>
+          {%- endif -%}
+          {%- if contact_info -%}
+            <address>
+            {%- if contact_name -%}
+              <strong>{{ contact_name }}</strong><br>
+            {%- endif -%}
+            {%- if contact_address -%}
+              {{ contact_address|nl2br }}<br>
+            {%- endif -%}
+            {%- if contact_email -%}
+              <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>
+            {%- endif -%}
+            </address>
+          {%- endif -%}
+            {{ page.footer_first }}
+        </div>
+      {%- endif -%}
+      {%- if page.footer_second -%}
+        <div class="footer__column footer__second">
+          {{ page.footer_second }}
+        </div>
+      {%- endif -%}
+      {%- if page.footer_third -%}
+        <div class="footer__column footer__third">
+          {{ page.footer_third }}
+        </div>
+      {%- endif -%}
+      {%- if page.footer_fourth -%}
+        <div class="footer__column footer__fourth">
+          {{ page.footer_fourth }}
+        </div>
+      {%- endif -%}
+      </div>
+    </div>
+  </div>
+    <div class="footer__secondary">
+      <div class="content-container container-fluid">
+        <div class="footer__copyright">
+          <p><strong>{% trans %}Copyright{% endtrans %} &copy; {{ now|date('Y') }} St. Lawrence University.</strong><p>
+        </div>
+        {%- if page.footer_fifth -%}
+          {{ page.footer_fifth }}
+        {%- endif -%}
+      </div>
+    </div>
+</footer>
+{% endblock %}

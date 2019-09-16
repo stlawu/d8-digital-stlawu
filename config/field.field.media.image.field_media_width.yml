@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_width
     - media.type.image
 _core:
-  default_config_hash: BcKRQQCd3BM5m9U1As-pAgRtUNGEzKASEEggH7dLDxw
+  default_config_hash: VtIZ9y4z3NS2e_thtTXCJN4VzQ47h61BY4DmHqKr5ZU
 id: media.image.field_media_width
 field_name: field_media_width
 entity_type: media
@@ -14,12 +14,12 @@ bundle: image
 label: Width
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   min: null
   max: null
   prefix: ''
-  suffix: px
+  suffix: ''
 field_type: integer

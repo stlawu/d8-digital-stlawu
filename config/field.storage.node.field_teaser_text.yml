@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: cCr3lAkNFNWiME7o3PMstcqlDhXEAQPnqoaRLsbRGGY
 id: node.field_teaser_text
 field_name: field_teaser_text
 entity_type: node

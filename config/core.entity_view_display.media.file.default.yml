@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.file.field_media_byline_freeform
+    - field.field.media.file.field_media_caption
     - field.field.media.file.field_media_description
     - field.field.media.file.field_media_file
     - field.field.media.file.field_media_file_size
@@ -20,6 +21,13 @@ bundle: file
 mode: default
 content:
   field_media_byline_freeform:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_caption:
     weight: 2
     label: hidden
     settings: {  }

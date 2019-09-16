@@ -1,0 +1,38 @@
+/**
+ * Node styling
+ */
+
+
+.node--view-mode-full {
+  .field--name-field-subtitle {
+    margin-bottom: ($line-height-computed / 2);
+    & > p {
+      font-size: $font-size-h4;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+  }
+  .node__metadata {
+    color: $gray-dark;
+    font-size: $metadata-font-size;
+    margin-top: ($line-height-computed / 2);
+    margin-bottom: ($line-height-computed / 2);
+  }
+  .node__author {
+    font-weight: 700;
+  }
+  .field--name-field-last-updated {
+    color: $gray-dark;
+    font-size: $metadata-font-size;
+    margin-top: ($line-height-computed / 2);
+    margin-bottom: ($line-height-computed / 2);
+  }
+  .field--name-field-tags {
+    margin-top: ($line-height-computed / 2);
+    margin-bottom: ($line-height-computed / 2);
+  }
+  .links {
+    margin-top: ($line-height-computed / 2);
+    margin-bottom: 0;
+  }
+}

@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_file_size
     - media.type.audio
 _core:
-  default_config_hash: __C6Vbx15ZuLtlf7uADgRuRaiby0NeySIkZ_XMxVU4E
+  default_config_hash: kU4gIaW2hBxpvlF_T67e7vwXeIHY-0r6wbTjZaWrPck
 id: media.audio.field_media_file_size
 field_name: field_media_file_size
 entity_type: media
@@ -14,7 +14,7 @@ bundle: audio
 label: 'File size'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

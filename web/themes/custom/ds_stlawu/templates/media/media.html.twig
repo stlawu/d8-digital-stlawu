@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * Markup adapted from https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set media_caption = content.field_media_caption %}
+{% set has_media_caption = media_caption|render is not empty %}
+{% set media_byline = content.field_media_byline_freeform %}
+{% set has_media_byline = media_byline|render is not empty %}
+{% set has_media_figcaption = has_media_caption or has_media_byline %}
+{% set media_element = has_media_figcaption ? 'figure' : 'div' %}
+{%
+  set classes = [
+    has_media_figcaption ? 'figure',
+    has_media_figcaption ? 'figure-type-media',
+    'media',
+    'media--type-' ~ media.bundle()|clean_class,
+    not media.isPublished() ? 'media--unpublished',
+    view_mode ? 'media--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{% if media_element == 'figure' %}
+  {% set attributes = attributes.setAttribute('role', 'figure') %}
+{% endif %}
+
+<{{ media_element }}{{ attributes.addClass(classes) }}>
+  {% block media_content %}
+
+    {{ title_suffix.contextual_links }}
+    {% block content_wrapper %}
+      
+      {% if content %}
+        {% block content %}
+          {{ content|without('field_media_caption', 'field_media_byline_freeform') }}
+        {% endblock %}
+      {% endif %}
+      {% block media_caption_wrapper %}
+        {% if has_media_figcaption %}
+          <figcaption class="figure-caption">
+            {% block media_caption %}
+              {{ media_caption }}
+            {% endblock %}
+            {% block media_byline %}
+              {{ media_byline }}
+            {% endblock %}
+          </figcaption>
+        {% endif %}
+      {% endblock %}
+
+    {% endblock %}
+
+  {% endblock %}
+</{{ media_element }}>

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 2r_Yo2tYXnt7PLx1pnlr1JU3iHmnsoWFdzQFs2sUXGk
+  default_config_hash: d_nPD2eMknkYAnSTV4FkaqijceyFJPwT5i_Ih0lEEtc
 id: remote_video
 label: 'Remote video'
 description: 'A remotely hosted video from YouTube or Vimeo.'
@@ -18,12 +18,12 @@ source_configuration:
   source_field: field_media_oembed_video
 field_map:
   type: field_media_resource_type
-  title: field_media_resource_title
+  title: name
   author_name: field_media_author_name
   provider_name: field_media_provider_name
   provider_url: field_media_provider_url
   cache_age: field_media_cache_age
-  default_name: field_media_default_name
+  thumbnail_uri: field_media_thumbnail_uri
   thumbnail_width: field_media_thumbnail_width
   thumbnail_height: field_media_thumbnail_height
   url: field_media_oembed_video

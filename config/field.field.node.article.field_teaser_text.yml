@@ -10,11 +10,13 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    simple: simple
-    plain_text: plain_text
+    simple_html: simple_html
     basic_html: '0'
     restricted_html: '0'
     full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: pSuMiwyPedrXlaf_MFfAhJ5gM20IMmzdjVIrmWC3bnY
 id: node.article.field_teaser_text
 field_name: field_teaser_text
 entity_type: node
@@ -22,7 +24,7 @@ bundle: article
 label: 'Teaser text'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Social media - Facebook'
+id: social_media_facebook
+description: 'Image crop for sharing on Facebook. See https://developers.facebook.com/docs/sharing/webmasters/images/ for more information.'
+aspect_ratio: '40:21'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

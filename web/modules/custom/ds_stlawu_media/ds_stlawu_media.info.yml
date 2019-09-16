@@ -1,0 +1,22 @@
+name: 'STLAWU Digital Scholarship: Media'
+type: module
+description: 'Media types, field storage, and shared config. So LIT, you shouldn’t touch with bare hands.'
+core: 8.x
+package: 'STLAWU Digital Scholarship'
+dependencies:
+  - allowed_formats:allowed_formats
+  - drupal:ckeditor
+  - crop:crop
+  - ds_stlawu_text_formats:ds_stlawu_text_formats
+  - exif_orientation:exif_orientation
+  - features:features
+  - drupal:field
+  - drupal:file
+  - drupal:image
+  - image_widget_crop:image_widget_crop
+  - drupal:link
+  - drupal:media
+  - drupal:media_library
+  - drupal:path
+  - drupal:text
+  - drupal:user

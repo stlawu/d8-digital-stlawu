@@ -1,0 +1,27 @@
+uuid: 0ce203ce-f23b-4220-b5a3-ab084fe7a696
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ds_stlawu
+_core:
+  default_config_hash: ilRi4aCWhwYbw9mQ5kiVcAnpRbXtE71jdTM-sI_-ekg
+id: ds_stlawu_main_menu
+theme: ds_stlawu
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

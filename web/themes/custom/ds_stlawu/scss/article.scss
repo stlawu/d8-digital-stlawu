@@ -1,0 +1,19 @@
+/**
+ * Article
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.article--view-mode-full {
+  max-width: $screen-sm-min;
+  margin: auto;
+}
+
+.article--view-mode-full > .node__metadata,
+.article--view-mode-full > .node__content {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}

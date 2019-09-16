@@ -1,0 +1,9 @@
+name: 'STLAWU Digital Scholarship: Date Formats'
+type: module
+description: 'Date formats used for Digital Scholarship.'
+core: 8.x
+package: 'STLAWU Digital Scholarship'
+dependencies:
+  - drupal:datetime
+  - features:features
+  - drupal:field

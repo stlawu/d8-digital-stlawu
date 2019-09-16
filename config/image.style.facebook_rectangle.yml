@@ -3,21 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - crop.type.social_media_40_21
+    - crop.type.social_media_facebook
   module:
     - crop
-    - image_effects
 _core:
   default_config_hash: bN-N1I7f5yFK_5JAW2whVPabqo8TF8u9wiyn4hGvGBo
 name: facebook_rectangle
-label: 'facebook rectangle'
+label: 'Facebook rectangle'
 effects:
-  7a7bd2b3-5b7f-4f0f-b1fb-6688f7a3e78b:
-    uuid: 7a7bd2b3-5b7f-4f0f-b1fb-6688f7a3e78b
-    id: image_effects_auto_orient
-    weight: -10
-    data:
-      scan_exif: true
   63e4bef9-0990-4ce7-89c8-9a867c2a15a4:
     uuid: 63e4bef9-0990-4ce7-89c8-9a867c2a15a4
     id: image_scale_and_crop
@@ -31,4 +24,4 @@ effects:
     id: crop_crop
     weight: -9
     data:
-      crop_type: social_media_40_21
+      crop_type: social_media_facebook

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.audio.field_media_audio_file
     - field.field.media.audio.field_media_byline_freeform
+    - field.field.media.audio.field_media_caption
     - field.field.media.audio.field_media_description
     - field.field.media.audio.field_media_file_size
     - field.field.media.audio.field_media_mime_type
@@ -15,7 +16,7 @@ dependencies:
     - file
     - text
 _core:
-  default_config_hash: IjtGV9CtL6-gILJzFQF1Rx3nhLUF_1X6K8mAaUShVe8
+  default_config_hash: Op-aL8t3S9u5X80nnAg3bZSaF_NgY0CMfyKCH3bku44
 id: media.audio.media_library
 targetEntityType: media
 bundle: audio
@@ -23,20 +24,20 @@ mode: media_library
 content:
   field_media_audio_file:
     type: file_generic
-    weight: 1
+    weight: 0
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_media_byline_freeform:
     type: text_textarea
-    weight: 4
+    weight: 3
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_media_description:
+  field_media_caption:
     type: text_textarea
     weight: 2
     region: content
@@ -44,19 +45,20 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  name:
-    type: string_textfield
-    weight: 0
-    region: content
+  field_media_description:
+    weight: 1
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
+    region: content
 hidden:
   created: true
   field_media_file_size: true
   field_media_mime_type: true
   field_media_transcript: true
+  name: true
   path: true
   status: true
   uid: true

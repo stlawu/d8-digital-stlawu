@@ -7,6 +7,8 @@ dependencies:
     - node.type.article
   module:
     - datetime
+_core:
+  default_config_hash: fESPfpmIb5wmR8u0tYLKMTxXrOxU0rMT8itJI5URmA8
 id: node.article.field_release_date
 field_name: field_release_date
 entity_type: node

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.social_media_facebook
+  module:
+    - crop
+name: facebook_rectangle
+label: 'Facebook rectangle'
+effects:
+  63e4bef9-0990-4ce7-89c8-9a867c2a15a4:
+    uuid: 63e4bef9-0990-4ce7-89c8-9a867c2a15a4
+    id: image_scale_and_crop
+    weight: -8
+    data:
+      width: 1200
+      height: 630
+      anchor: center-center
+  0423b2f0-3dac-4e45-b435-a84e62ad2ba9:
+    uuid: 0423b2f0-3dac-4e45-b435-a84e62ad2ba9
+    id: crop_crop
+    weight: -9
+    data:
+      crop_type: social_media_facebook

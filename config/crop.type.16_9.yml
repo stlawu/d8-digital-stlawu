@@ -1,0 +1,14 @@
+uuid: f8847b09-5ee2-48ea-8ae3-b574092501f2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JzUjNhBqaaChe_w7eGyjf93ZgeP6H1CvOWTI7PD33k0
+label: '16:9'
+id: '16_9'
+description: '16:9 image crop.'
+aspect_ratio: '16:9'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

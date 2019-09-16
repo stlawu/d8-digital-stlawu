@@ -1,0 +1,60 @@
+/**
+ * Paragraph
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.paragraph--align-left {
+  float: left;
+  @media (min-width: $screen-sm-min) {
+    width: 40%;
+    margin-right: ($line-height-computed / 2);
+  }
+}
+
+.paragraph--align-right {
+  float: right;
+  @media (min-width: $screen-sm-min) {
+    width: 40%;
+    margin-left: ($line-height-computed / 2);
+  }
+}
+
+.layout-edge-to-edge .paragraph--type--section {
+  margin-left:  floor(($grid-gutter-width / -2));
+  margin-right: ceil(($grid-gutter-width / -2));
+}
+
+.section-content-width > .field--name-field-section-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  floor(($grid-gutter-width / 2));
+  padding-right: ceil(($grid-gutter-width / 2));
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.field--name-field-section-content {
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed;
+}
+
+// If floated media paragraphs are longer than adjacent paragraphs,
+// do not collapse the section content field
+.field--name-field-section-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.paragraph--type--text + .paragraph--type--media, 
+.paragraph--type--media + .paragraph--type--text,
+.paragraph--type--text + .paragraph--type--content-reference,
+.paragraph--type--content-reference + .paragraph--type--text,
+.paragraph--type--text + .paragraph--type--aside,
+.paragraph--type--aside + .paragraph--type--text {
+  margin-top: ($line-height-computed / 2);
+}

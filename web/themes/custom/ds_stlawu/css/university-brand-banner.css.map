@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;GAGG;ACHH;;;;;;;;;;GAUG;ADDH,wBAAyB;EACvB,gBAAgB,ECaW,OAAO;EDZlC,WAAW,EAAE,GAA2B;EACxC,cAAc,EAAE,GAA2B;;AAC3C,iDAAyB;EACvB,MAAM,EAAE,IAAI",
+"sources": ["../scss/university-brand-banner.scss","../scss/_default-variables.scss"],
+"names": [],
+"file": "university-brand-banner.css"
+}

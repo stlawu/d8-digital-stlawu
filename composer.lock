@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1d041328a8f3b0a7b1491db99d14067",
+    "content-hash": "f31c99b9bab51cfccf4c21e5a450bd7c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3435,6 +3435,53 @@
             "homepage": "https://www.drupal.org/project/eva",
             "support": {
                 "source": "https://git.drupalcode.org/project/eva"
+            }
+        },
+        {
+            "name": "drupal/exif_orientation",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/exif_orientation.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/exif_orientation-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "c233610a675e663660708f175aab8d90f56dfd2b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1525963087",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "Rotates images per their EXIF Orientation",
+            "homepage": "https://www.drupal.org/project/exif_orientation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/exif_orientation"
             }
         },
         {
@@ -7724,6 +7771,226 @@
             "time": "2019-08-17T16:57:20+00:00"
         },
         {
+            "name": "stlawu/ds_stlawu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/ds_stlawu",
+                "reference": "28eab5c72e8a3e7b7e38a1b031a1248a450fc8bd"
+            },
+            "require": {
+                "drupal/bootstrap": "^3.20",
+                "drupal/core": "~8",
+                "drupal/features": "^3.8",
+                "oomphinc/composer-installers-extender": "^1.1"
+            },
+            "suggest": {
+                "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+                "stlawu/ds_stlawu_media": "Recommended for easy media.",
+                "stlawu/ds_stlawu_nodes": "Recommended for pre-packaged content types.",
+                "stlawu/ds_stlawu_paragraphs": "Recommended for pre-packaged paragraph types.",
+                "stlawu/ds_stlawu_text_formats": "Recommended for pre-packaged text editors/formats."
+            },
+            "type": "drupal-custom-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Theme used for Digital Scholarship.",
+            "homepage": "https://github.com/stlawu/ds_stlawu",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-09-16T19:35:56+00:00"
+        },
+        {
+            "name": "stlawu/ds_stlawu_date_formats",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/ds_stlawu_date_formats",
+                "reference": "95c7121f4cc509da29c3fd66f8b8b54c5e07bd73"
+            },
+            "require": {
+                "drupal/core": "~8",
+                "drupal/features": "^3.8",
+                "oomphinc/composer-installers-extender": "^1.1"
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Date formats used for Digital Scholarship.",
+            "homepage": "https://github.com/stlawu/ds_stlawu_date_formats",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-09-16T19:38:45+00:00"
+        },
+        {
+            "name": "stlawu/ds_stlawu_media",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/ds_stlawu_media",
+                "reference": "09fdaceb53b2cbb300b8f1aa570de1fe1f45aebf"
+            },
+            "require": {
+                "drupal/allowed_formats": "^1.1",
+                "drupal/core": "~8",
+                "drupal/crop": "^2.0",
+                "drupal/exif_orientation": "^1.0",
+                "drupal/features": "^3.8",
+                "drupal/image_widget_crop": "^2.2",
+                "oomphinc/composer-installers-extender": "^1.1"
+            },
+            "suggest": {
+                "stlawu/ds_stlawu": "Recommended sub-theme with St.Lawrence University branding.",
+                "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+                "stlawu/ds_stlawu_nodes": "Recommended for pre-packaged content types.",
+                "stlawu/ds_stlawu_paragraphs": "Recommended for pre-packaged paragraph types.",
+                "stlawu/ds_stlawu_text_formats": "Recommended for pre-packaged text editors/formats."
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Media types, field storage, and shared config. So LIT, you shouldn’t touch with bare hands.",
+            "homepage": "https://github.com/stlawu/ds_stlawu_media",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-09-16T19:40:07+00:00"
+        },
+        {
+            "name": "stlawu/ds_stlawu_nodes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/ds_stlawu_nodes",
+                "reference": "274e7542312d2618ab29bf26cc3942a384cbfbf8"
+            },
+            "require": {
+                "drupal/allowed_formats": "^1.1",
+                "drupal/core": "~8",
+                "drupal/features": "^3.8",
+                "drupal/field_group": "^3.0",
+                "drupal/maxlength": "^1.0",
+                "drupal/metatag": "^1.9",
+                "drupal/pathauto": "^1.4",
+                "drupal/token": "^1.5",
+                "oomphinc/composer-installers-extender": "^1.1"
+            },
+            "suggest": {
+                "stlawu/ds_stlawu": "Recommended sub-theme with St.Lawrence University branding.",
+                "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+                "stlawu/ds_stlawu_media": "Recommended for easy media.",
+                "stlawu/ds_stlawu_paragraphs": "Recommended for pre-packaged paragraph types.",
+                "stlawu/ds_stlawu_text_formats": "Recommended for pre-packaged text editors/formats."
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Field storage, shared config, and various content types for Digital Scholarship.",
+            "homepage": "https://github.com/stlawu/ds_stlawu_nodes",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-09-16T19:41:21+00:00"
+        },
+        {
+            "name": "stlawu/ds_stlawu_paragraphs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/ds_stlawu_paragraphs",
+                "reference": "306865d1ea7f61a271fb078f7544dbc10906309f"
+            },
+            "require": {
+                "drupal/core": "~8",
+                "drupal/entity_reference_revisions": "^1.6",
+                "drupal/features": "^3.8",
+                "drupal/paragraphs": "^1.8",
+                "drupal/viewsreference": "^2.0",
+                "oomphinc/composer-installers-extender": "^1.1"
+            },
+            "suggest": {
+                "npm-asset/sortablejs": "Recommended for supporting drag-and-drop paragraphs.",
+                "stlawu/ds_stlawu": "Recommended sub-theme with St.Lawrence University branding.",
+                "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+                "stlawu/ds_stlawu_media": "Recommended for easy media.",
+                "stlawu/ds_stlawu_nodes": "Recommended for pre-packaged content types.",
+                "stlawu/ds_stlawu_text_formats": "Recommended for pre-packaged text editors/formats."
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Field storage, shared config, paragraph types for Digital Scholarship.",
+            "homepage": "https://github.com/stlawu/ds_stlawu_paragraphs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-09-16T20:27:10+00:00"
+        },
+        {
+            "name": "stlawu/ds_stlawu_text_formats",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stlawu/ds_stlawu_text_formats",
+                "reference": "790df89885b4628743d6f4545251527eb34a52c3"
+            },
+            "require": {
+                "drupal/core": "~8",
+                "drupal/features": "^3.8",
+                "drupal/linkit": "^5.0",
+                "oomphinc/composer-installers-extender": "^1.1"
+            },
+            "suggest": {
+                "drupal/allowed_formats": "Recommended for restricting available text formats per field instance.",
+                "stlawu/ds_stlawu": "Recommended sub-theme with St.Lawrence University branding.",
+                "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+                "stlawu/ds_stlawu_media": "Recommended for easy media.",
+                "stlawu/ds_stlawu_nodes": "Recommended for pre-packaged content types.",
+                "stlawu/ds_stlawu_paragraphs": "Recommended for pre-packaged paragraph types."
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Text formats used for Digital Scholarship.",
+            "homepage": "https://github.com/stlawu/ds_stlawu_text_formats",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "",
+                "source": ""
+            },
+            "time": "2019-09-16T19:41:52+00:00"
+        },
+        {
             "name": "symfony-cmf/routing",
             "version": "1.4.1",
             "source": {
@@ -11820,7 +12087,13 @@
     "stability-flags": {
         "drupal/geocoder": 10,
         "drupal/leaflet": 10,
-        "drupal/simple_block": 10
+        "drupal/simple_block": 10,
+        "stlawu/ds_stlawu": 20,
+        "stlawu/ds_stlawu_date_formats": 20,
+        "stlawu/ds_stlawu_media": 20,
+        "stlawu/ds_stlawu_nodes": 20,
+        "stlawu/ds_stlawu_paragraphs": 20,
+        "stlawu/ds_stlawu_text_formats": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

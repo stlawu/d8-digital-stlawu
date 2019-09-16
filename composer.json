@@ -3,24 +3,48 @@
     "description": "Install drops-8 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
+        "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
         },
-        {
+        "ds_stlawu": {
+            "type": "git",
+            "url": "https://github.com/stlawu/ds_stlawu"
+        },
+        "ds_stlawu_date_formats": {
+            "type": "git",
+            "url": "https://github.com/stlawu/ds_stlawu_date_formats"
+        },
+        "ds_stlawu_text_formats": {
+            "type": "git",
+            "url": "https://github.com/stlawu/ds_stlawu_text_formats"
+        },
+        "ds_stlawu_paragraphs": {
+            "type": "git",
+            "url": "https://github.com/stlawu/ds_stlawu_paragraphs"
+        },
+        "ds_stlawu_nodes": {
+            "type": "git",
+            "url": "https://github.com/stlawu/ds_stlawu_nodes"
+        },
+        "ds_stlawu_media": {
+            "type": "git",
+            "url": "https://github.com/stlawu/ds_stlawu_media"
+        },
+        "di_media": {
             "type": "git",
             "url": "https://github.com/stlawu/di_media"
         },
-        {
+        "di_paragraphs": {
             "type": "git",
             "url": "https://github.com/stlawu/di_paragraphs"
         }
-    ],
+    },
     "require": {
         "php": ">=7.0.8",
         "bower-asset/font-awesome": "^5.9",
@@ -89,6 +113,12 @@
         "rvtraveller/qs-composer-installer": "^1.1",
         "stlawu/di_media": "^0.5.0",
         "stlawu/di_paragraphs": "^0.2.0",
+        "stlawu/ds_stlawu": "dev-master",
+        "stlawu/ds_stlawu_date_formats": "dev-master",
+        "stlawu/ds_stlawu_media": "dev-master",
+        "stlawu/ds_stlawu_nodes": "dev-master",
+        "stlawu/ds_stlawu_paragraphs": "dev-master",
+        "stlawu/ds_stlawu_text_formats": "dev-master",
         "webflo/drupal-core-strict": "^8",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },

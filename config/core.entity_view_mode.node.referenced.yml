@@ -1,0 +1,12 @@
+uuid: b184b9bd-1f7e-48c4-8827-4264a2bf5f54
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: PYcyCN_YN3GWwL5G1ZIoX65Qp0UwR_sEN_n12HTKXwc
+id: node.referenced
+label: Referenced
+targetEntityType: node
+cache: true

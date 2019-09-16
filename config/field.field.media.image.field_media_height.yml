@@ -6,7 +6,7 @@ dependencies:
     - field.storage.media.field_media_height
     - media.type.image
 _core:
-  default_config_hash: G_xW3fw9rak97vz1-egTBDKQIOxO4EeMc8Q9Tyib6aU
+  default_config_hash: tkKnmZEj2KsbPB0Em3-sBh2S6YgqgU5rqwHdXhwq85U
 id: media.image.field_media_height
 field_name: field_media_height
 entity_type: media
@@ -14,12 +14,12 @@ bundle: image
 label: Height
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   min: null
   max: null
   prefix: ''
-  suffix: px
+  suffix: ''
 field_type: integer

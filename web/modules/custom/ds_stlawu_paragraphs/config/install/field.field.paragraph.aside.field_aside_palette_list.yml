@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aside_palette_list
+    - paragraphs.paragraphs_type.aside
+  module:
+    - options
+id: paragraph.aside.field_aside_palette_list
+field_name: field_aside_palette_list
+entity_type: paragraph
+bundle: aside
+label: 'Background color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

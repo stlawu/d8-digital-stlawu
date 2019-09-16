@@ -6,15 +6,15 @@ dependencies:
     - field.storage.media.field_media_html
     - media.type.remote_video
 _core:
-  default_config_hash: VcoXfPkdOzGU3O5trTZRn4xqq_bxkJY0--oOCNJmBkE
+  default_config_hash: m3iN3w1s-TpDygV4vM2c3Lo2-vUsNX3gp5X6xwdtvo8
 id: media.remote_video.field_media_html
 field_name: field_media_html
 entity_type: media
 bundle: remote_video
-label: HTML
+label: 'Media HTML'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

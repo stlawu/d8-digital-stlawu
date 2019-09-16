@@ -1,0 +1,22 @@
+uuid: 892b1ee4-fcf9-4e7e-8bf3-2ecadb85240f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ds_stlawu
+_core:
+  default_config_hash: 3l7IkUxggYlgUtT_kr_OdWSgY4tF5GqdcxEfuknr-zo
+id: ds_stlawu_local_tasks
+theme: ds_stlawu
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

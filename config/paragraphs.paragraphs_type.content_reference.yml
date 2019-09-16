@@ -1,0 +1,9 @@
+uuid: bf94cd51-3f69-4060-9dc1-ebb23296ece5
+langcode: en
+status: true
+dependencies: {  }
+id: content_reference
+label: 'Content Reference'
+icon_uuid: null
+description: 'Use <em>content reference</em> to reference existing content.'
+behavior_plugins: {  }

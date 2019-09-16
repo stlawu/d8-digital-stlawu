@@ -1,0 +1,27 @@
+uuid: b903a56a-5bcf-44cb-b340-881b626dde98
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - ds_stlawu
+_core:
+  default_config_hash: fxTG8j7xxUZGYlCLpzO12TrY6_TSQ7R9OqQVmMkpMRc
+id: ds_stlawu_tools
+theme: ds_stlawu
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

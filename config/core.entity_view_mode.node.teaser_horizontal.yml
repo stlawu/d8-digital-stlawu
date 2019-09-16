@@ -1,0 +1,12 @@
+uuid: 4cce0e7c-9405-4f63-a48c-82e9ff6e0331
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: vE7jBwgh9ebMMo8cad4GKYHQRMny72hVVfgFfNaKDGw
+id: node.teaser_horizontal
+label: 'Teaser horizontal'
+targetEntityType: node
+cache: true

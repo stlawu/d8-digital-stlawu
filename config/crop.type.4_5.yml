@@ -1,0 +1,14 @@
+uuid: 493e1335-3fa2-4b9b-b2dd-212e1a71f062
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uSAU9C-P7o-o5inYtkKyXioc95gZuRDKcHqfplF-1Hw
+label: '4:5'
+id: '4_5'
+description: '4:5 image crop.'
+aspect_ratio: '4:5'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

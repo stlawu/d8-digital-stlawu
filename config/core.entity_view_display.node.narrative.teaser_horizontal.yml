@@ -1,0 +1,63 @@
+uuid: 0816275e-152f-45c1-b1fd-e8c7472e8096
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_horizontal
+    - field.field.node.narrative.comment
+    - field.field.node.narrative.field_last_updated
+    - field.field.node.narrative.field_release_date
+    - field.field.node.narrative.field_sections
+    - field.field.node.narrative.field_subtitle
+    - field.field.node.narrative.field_tags
+    - field.field.node.narrative.field_teaser_media
+    - field.field.node.narrative.field_teaser_text
+    - node.type.narrative
+  module:
+    - datetime
+    - text
+    - user
+_core:
+  default_config_hash: ZbN7xpmVTK6483QFngAXKlsDubJO3sMaayWACJ46vHc
+id: node.narrative.teaser_horizontal
+targetEntityType: node
+bundle: narrative
+mode: teaser_horizontal
+content:
+  field_release_date:
+    type: datetime_custom
+    weight: -1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'F d, Y'
+    third_party_settings: {  }
+  field_teaser_media:
+    type: entity_reference_entity_view
+    weight: -10
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_teaser_text:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  comment: true
+  field_last_updated: true
+  field_sections: true
+  field_subtitle: true
+  field_tags: true

@@ -1,0 +1,27 @@
+uuid: ad4e20d9-fc68-4f0a-856b-be6734206723
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.16_9
+  module:
+    - crop
+_core:
+  default_config_hash: 6pCDdtc5BQFwY0R9HXY9y-NR0qyPsNG0YpcviVOChN8
+name: scale_crop_16_9_992
+label: 'Scale crop 16:9 (992x558)'
+effects:
+  688b8088-2b51-43c2-988b-65d97682ba3e:
+    uuid: 688b8088-2b51-43c2-988b-65d97682ba3e
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '16_9'
+  bc97044d-fe62-48c5-967e-26ba4e4a6bf3:
+    uuid: bc97044d-fe62-48c5-967e-26ba4e4a6bf3
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 992
+      height: 558
+      anchor: center-center

@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_row_content
+    - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.grid_row
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_row.field_grid_row_content
+field_name: field_grid_row_content
+entity_type: paragraph
+bundle: grid_row
+label: Columns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      grid_column: grid_column
+    target_bundles_drag_drop:
+      text:
+        enabled: false
+        weight: -15
+      media:
+        enabled: false
+        weight: -14
+      grid_row:
+        enabled: false
+        weight: -13
+      aside:
+        enabled: false
+        weight: -12
+      content_reference:
+        enabled: false
+        weight: -11
+      view:
+        enabled: false
+        weight: -10
+      grid_column:
+        enabled: true
+        weight: -9
+      section:
+        enabled: false
+        weight: -8
+field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+name: 'STLAWU Digital Scholarship: Paragraphs'
+type: module
+description: 'Field storage, shared config, paragraph types for Digital Scholarship.'
+core: 8.x
+package: 'STLAWU Digital Scholarship'
+dependencies:
+  - drupal:ckeditor
+  - entity_reference_revisions:entity_reference_revisions
+  - ds_stlawu_media:ds_stlawu_media
+  - ds_stlawu_nodes:ds_stlawu_nodes
+  - drupal:field
+  - features:features
+  - field_group:field_group
+  - drupal:media
+  - drupal:media_library
+  - drupal:node
+  - drupal:options
+  - paragraphs:paragraphs
+  - drupal:system
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - viewsreference:viewsreference

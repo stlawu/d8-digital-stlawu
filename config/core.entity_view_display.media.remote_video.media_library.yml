@@ -7,6 +7,7 @@ dependencies:
     - field.field.media.remote_video.field_media_author_name
     - field.field.media.remote_video.field_media_byline_freeform
     - field.field.media.remote_video.field_media_cache_age
+    - field.field.media.remote_video.field_media_caption
     - field.field.media.remote_video.field_media_default_name
     - field.field.media.remote_video.field_media_description
     - field.field.media.remote_video.field_media_height
@@ -26,7 +27,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: D80qehyE5jo-Mna6pb8UyxHyIKyeydte8S2Td3pJAMs
+  default_config_hash: '-ZT8F0e_gk_2dfAMAriyfYgI4XBiG-DZ83KGasyOlng'
 id: media.remote_video.media_library
 targetEntityType: media
 bundle: remote_video
@@ -47,6 +48,7 @@ hidden:
   field_media_author_name: true
   field_media_byline_freeform: true
   field_media_cache_age: true
+  field_media_caption: true
   field_media_default_name: true
   field_media_description: true
   field_media_height: true

@@ -1,0 +1,14 @@
+uuid: df5dcba6-3767-45e6-9999-ca6342f163ba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tSmBlwmFHznGLy7Y6GMXfC-9qpPDUpuycVY-eUaY05Y
+label: '1:1'
+id: '1_1'
+description: '1:1 image crop.'
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

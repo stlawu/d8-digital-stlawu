@@ -5,15 +5,18 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_image
     - field.field.node.article.field_last_updated
     - field.field.node.article.field_media_image
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_release_date
+    - field.field.node.article.field_subtitle
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser_media
     - field.field.node.article.field_teaser_text
     - node.type.article
   module:
+    - comment
     - datetime
     - field_group
     - maxlength
@@ -26,16 +29,17 @@ third_party_settings:
     group_basic_info:
       children:
         - title
+        - field_subtitle
         - field_release_date
         - field_last_updated
       parent_name: ''
       weight: -10
       format_type: fieldset
       format_settings:
+        description: ''
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
+        required_fields: false
       label: 'Basic information'
       region: content
     group_teaser:
@@ -43,27 +47,28 @@ third_party_settings:
         - field_teaser_media
         - field_teaser_text
       parent_name: ''
-      weight: -9
+      weight: -5
       format_type: fieldset
       format_settings:
+        description: ''
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
+        required_fields: false
       label: Teaser
       region: content
     group_main_content:
       children:
         - field_media_image
         - body
+        - field_tags
       parent_name: ''
-      weight: -7
+      weight: -2
       format_type: fieldset
       format_settings:
         id: ''
         classes: ''
         description: ''
-        required_fields: true
+        required_fields: false
       label: 'Main content'
       region: content
 _core:
@@ -75,12 +80,18 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 0
     region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 20
+    region: content
+    settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
@@ -89,14 +100,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_last_updated:
-    weight: 1
+    weight: -6
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_media_image:
     type: media_library_widget
-    weight: 0
+    weight: -1
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -108,14 +119,22 @@ content:
     type: metatag_firehose
     region: content
   field_release_date:
-    weight: 0
+    weight: -7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_subtitle:
+    weight: -8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -124,13 +143,13 @@ content:
     third_party_settings: {  }
   field_teaser_media:
     type: media_library_widget
-    weight: -2
+    weight: -4
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_teaser_text:
-    weight: -1
+    weight: -3
     settings:
       rows: 5
       placeholder: ''
@@ -171,7 +190,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: -9
     region: content
     settings:
       size: 60
@@ -188,8 +207,8 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
-  comment: true
+  field_image: true

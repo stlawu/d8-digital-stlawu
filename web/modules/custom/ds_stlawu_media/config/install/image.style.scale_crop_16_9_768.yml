@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.16_9
+  module:
+    - crop
+name: scale_crop_16_9_768
+label: 'Scale crop 16:9 (768x432)'
+effects:
+  2ece9f8d-97d7-4f91-b50a-584ba1a07770:
+    uuid: 2ece9f8d-97d7-4f91-b50a-584ba1a07770
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '16_9'
+  a7d4516e-2cd3-4ea3-8505-2de2cbe7079a:
+    uuid: a7d4516e-2cd3-4ea3-8505-2de2cbe7079a
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 768
+      height: 432
+      anchor: center-center

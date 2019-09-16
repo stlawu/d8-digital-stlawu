@@ -1,0 +1,10 @@
+uuid: 7b415aad-6bb6-4236-9b7f-8ee6aa7497cc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4kdKgKLO61Gksw9B2ie09r5YslVUUmrQzlkf89HmNoM
+id: ds_stlawu_date_only
+label: 'Date only'
+locked: false
+pattern: 'F j, Y'

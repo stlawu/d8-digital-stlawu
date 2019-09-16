@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+label: 'Social media - Twitter'
+id: social_media_twitter
+description: 'Image crop for sharing on Twitter. See https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image for more information.'
+aspect_ratio: '2:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

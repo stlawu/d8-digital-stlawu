@@ -1,0 +1,39 @@
+{
+  "name": "stlawu/ds_stlawu_paragraphs",
+  "type": "drupal-custom-module",
+  "description": "Field storage, shared config, paragraph types for Digital Scholarship.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/stlawu/ds_stlawu_paragraphs",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "",
+    "source": ""
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "asset-packagist": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
+  "suggest": {
+    "stlawu/ds_stlawu": "Recommended sub-theme with St.Lawrence University branding.",
+    "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+    "stlawu/ds_stlawu_media": "Recommended for easy media.",
+    "stlawu/ds_stlawu_nodes": "Recommended for pre-packaged content types.",
+    "stlawu/ds_stlawu_text_formats": "Recommended for pre-packaged text editors/formats.",
+    "npm-asset/sortablejs": "Recommended for supporting drag-and-drop paragraphs."
+  },
+  "require": {
+    "drupal/core": "~8",
+    "drupal/entity_reference_revisions": "^1.6",
+    "drupal/features": "^3.8",
+    "drupal/paragraphs": "^1.8",
+    "drupal/viewsreference": "^2.0",
+    "oomphinc/composer-installers-extender": "^1.1"
+  }
+}

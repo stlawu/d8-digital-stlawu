@@ -10,21 +10,21 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    simple: simple
-    plain_text: plain_text
+    simple_html: simple_html
     basic_html: '0'
     restricted_html: '0'
     full_html: '0'
+    plain_text: '0'
 _core:
-  default_config_hash: jlddWQr-ORIwM2HT0VV2h8eKvRAkSjjs-A7zQUzVV0I
+  default_config_hash: _HheYtd7cx7-cowyJsutv9mIfKwHbIvnEch-1S-xYLQ
 id: media.image.field_media_byline_freeform
 field_name: field_media_byline_freeform
 entity_type: media
 bundle: image
-label: 'Byline (freeform)'
+label: Byline/Credit
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

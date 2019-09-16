@@ -1,0 +1,30 @@
+/**
+ * Referenced
+ * Loosely based off of Bootstrap 4.
+ */
+
+@import "teaser";
+
+.node--view-mode-referenced {
+  font-size: $teaser-font-size;
+  word-wrap: break-word;
+  background: $color-gray-light;
+  padding: ($grid-gutter-width / 2);
+  
+  .referenced__title {
+    @include teaser-title;
+  }
+  .referenced__body .node__metadata {
+    @include teaser-metadata;
+  }
+  .referenced__body .links {
+    @include teaser-links;
+  }
+}
+
+.article--view-mode-referenced,
+.narrative--view-mode-referenced {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the ds_stlawu theme.
+
+ds_stlawu.settings:
+  type: theme_settings
+  label: 'ds_stlawu settings'

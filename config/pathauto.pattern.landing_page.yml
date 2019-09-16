@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: JxhNSuUlKBL4Rahkmsm1DFizWzJxeSUALm24jY3jjGs
 id: landing_page
 label: 'Landing page'
 type: 'canonical_entities:node'

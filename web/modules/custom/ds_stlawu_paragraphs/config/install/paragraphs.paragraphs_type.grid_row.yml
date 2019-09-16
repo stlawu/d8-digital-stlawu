@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: grid_row
+label: Grid
+icon_uuid: null
+description: 'Use <em>grid</em> to build a grid of items.'
+behavior_plugins: {  }

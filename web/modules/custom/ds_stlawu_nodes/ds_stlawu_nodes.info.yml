@@ -1,0 +1,27 @@
+name: 'STLAWU Digital Scholarship: Nodes'
+type: module
+description: 'Field storage, shared config, and various content types for Digital Scholarship.'
+core: 8.x
+package: 'STLAWU Digital Scholarship'
+dependencies:
+  - allowed_formats:allowed_formats
+  - drupal:ckeditor
+  - drupal:datetime
+  - ds_stlawu_date_formats:ds_stlawu_date_formats
+  - ds_stlawu_text_formats:ds_stlawu_text_formats
+  - entity_reference_revisions:entity_reference_revisions
+  - drupal:field
+  - features:features
+  - field_group:field_group
+  - drupal:media
+  - drupal:media_library
+  - metatag:metatag
+  - drupal:node
+  - drupal:options
+  - paragraphs:paragraphs
+  - drupal:path
+  - pathauto:pathauto
+  - drupal:system
+  - drupal:text
+  - token:token
+  - drupal:user

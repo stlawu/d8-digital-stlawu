@@ -1,0 +1,17 @@
+/**
+ * University brand banner.
+ * 
+ */
+
+@import "default-variables";
+@import '../bootstrap/assets/stylesheets/bootstrap/variables';
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+.university-brand-banner {
+  background-color: $color-red-dark;
+  padding-top: ($line-height-computed / 4);
+  padding-bottom: ($line-height-computed / 4);
+  img.university-line-logo {
+    height: 20px;
+  }
+}

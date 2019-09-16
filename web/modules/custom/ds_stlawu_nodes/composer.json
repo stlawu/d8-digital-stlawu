@@ -1,0 +1,41 @@
+{
+  "name": "stlawu/ds_stlawu_nodes",
+  "type": "drupal-custom-module",
+  "description": "Field storage, shared config, and various content types for Digital Scholarship.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/stlawu/ds_stlawu_nodes",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "",
+    "source": ""
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "asset-packagist": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
+  "suggest": {
+    "stlawu/ds_stlawu": "Recommended sub-theme with St.Lawrence University branding.",
+    "stlawu/ds_stlawu_date_formats": "Recommended for commonly used date formats.",
+    "stlawu/ds_stlawu_media": "Recommended for easy media.",
+    "stlawu/ds_stlawu_paragraphs": "Recommended for pre-packaged paragraph types.",
+    "stlawu/ds_stlawu_text_formats": "Recommended for pre-packaged text editors/formats."
+  },
+  "require": {
+    "drupal/allowed_formats": "^1.1",
+    "drupal/core": "~8",
+    "drupal/features": "^3.8",
+    "drupal/field_group": "^3.0",
+    "drupal/maxlength": "^1.0",
+    "drupal/metatag": "^1.9",
+    "drupal/pathauto": "^1.4",
+    "drupal/token": "^1.5",
+    "oomphinc/composer-installers-extender": "^1.1"
+  }
+}

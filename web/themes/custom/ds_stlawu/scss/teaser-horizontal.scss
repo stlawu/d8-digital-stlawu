@@ -1,0 +1,42 @@
+/**
+ * Teaser Horizontal
+ * Loosely based off of Bootstrap 4.
+ */
+
+@import "teaser";
+
+.node--view-mode-teaser-horizontal {
+  @include teaser;
+  padding-top: $grid-gutter-width;
+  border-top: 1px solid $color-gray-medium;
+}
+
+.node--view-mode-teaser-horizontal .teaser__media {
+  &.col-xs-4,
+  &.col-sm-3 {
+    padding-left: 0;
+  }
+}
+
+.node--view-mode-teaser-horizontal .teaser__body {
+  &.col-xs-8,
+  &.col-sm-9 {
+    padding-right: 0;
+  }
+}
+
+.node--view-mode-teaser-horizontal {
+
+  .teaser__title {
+    @include teaser-title;
+  }
+  .teaser__body .node__metadata {
+    @include teaser-metadata;
+  }
+  .teaser__body .node__author {
+    font-weight: 700;
+  }
+  .teaser__body .links {
+    @include teaser-links;
+  }
+}
