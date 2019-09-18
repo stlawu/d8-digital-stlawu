@@ -379,7 +379,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       group_by: true
-      css_class: 'map map--right'
+      css_class: 'map map--right clearfix'
     cache_metadata:
       max-age: -1
       contexts:
