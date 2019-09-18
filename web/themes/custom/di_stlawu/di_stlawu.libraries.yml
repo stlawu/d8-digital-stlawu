@@ -19,6 +19,10 @@ landing-page:
   css:
     component:
       css/landing-page.css: {}
+map:
+  css:
+    component:
+      css/map.css: {}
 person:
   css:
     component:

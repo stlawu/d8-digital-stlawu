@@ -1,0 +1,41 @@
+/**
+ * Map views.
+ */
+
+@import "default-variables";
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+
+@mixin map-with-sidebar {
+  @media (min-width: $screen-sm-min) {
+    width: 60%;
+  }
+}
+
+.map--left,
+.map--right {
+  & > .view-content {
+    @include map-with-sidebar;
+  }
+}
+
+.map--left > .view-content {
+  @media (min-width: $screen-sm-min) {
+    float: left;
+  }
+}
+
+.map--right > .view-content {
+  @media (min-width: $screen-sm-min) {
+    float: right;
+  }
+}
+
+.map__sidebar {
+  word-wrap: break-word;
+  border: 1px solid #dddddd;
+  @media (min-width: $screen-sm-min) {
+    width: 40%;
+    min-height: 450px;
+    overflow-y: scroll;
+  }
+}
