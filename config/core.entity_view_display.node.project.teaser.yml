@@ -5,15 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
+    - field.field.node.project.field_geofield_location
+    - field.field.node.project.field_geofield_string_address
     - field.field.node.project.field_last_updated
     - field.field.node.project.field_meta_tags
     - field.field.node.project.field_project_director
     - field.field.node.project.field_project_discipline
+    - field.field.node.project.field_project_image
     - field.field.node.project.field_project_status
     - field.field.node.project.field_project_supporting_institu
     - field.field.node.project.field_project_team
     - field.field.node.project.field_project_title_full
     - field.field.node.project.field_project_url
+    - field.field.node.project.field_project_url_alias
     - field.field.node.project.field_teaser_media
     - field.field.node.project.field_teaser_text
     - node.type.project
@@ -49,6 +53,8 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_geofield_location: true
+  field_geofield_string_address: true
   field_last_updated: true
   field_meta_tags: true
   field_project_director: true
@@ -59,3 +65,4 @@ hidden:
   field_project_team: true
   field_project_title_full: true
   field_project_url: true
+  field_project_url_alias: true

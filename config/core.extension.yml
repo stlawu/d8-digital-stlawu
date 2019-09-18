@@ -35,12 +35,20 @@ module:
   file_mdm_exif: 0
   file_mdm_font: 0
   filter: 0
+  geocoder: 0
+  geocoder_field: 0
+  geocoder_geofield: 0
+  geofield: 0
+  geofield_map: 0
   google_analytics: 0
   help: 0
   history: 0
   image: 0
   image_effects: 0
   image_widget_crop: 0
+  leaflet: 0
+  leaflet_markercluster: 0
+  leaflet_views: 0
   link: 0
   linkit: 0
   maxlength: 0

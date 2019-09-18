@@ -1,0 +1,30 @@
+uuid: 1120812c-f4de-4811-bd57-f57fcadf3d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.test_map
+  module:
+    - system
+    - views
+  theme:
+    - di_stlawu
+id: views_block__test_map_block_1
+theme: di_stlawu
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:test_map-block_1'
+settings:
+  id: 'views_block:test_map-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /test-map
+    negate: false
+    context_mapping: {  }

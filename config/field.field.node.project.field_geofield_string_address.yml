@@ -1,0 +1,19 @@
+uuid: 6be180ec-c9e1-4638-8c6b-6a3db42072ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geofield_string_address
+    - node.type.project
+id: node.project.field_geofield_string_address
+field_name: field_geofield_string_address
+entity_type: node
+bundle: project
+label: 'String address (geocoded)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

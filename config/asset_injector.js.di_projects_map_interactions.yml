@@ -1,0 +1,14 @@
+uuid: 16bf888f-9c37-49a8-a124-473da53af90a
+langcode: en
+status: true
+dependencies: {  }
+id: di_projects_map_interactions
+label: 'Digital Initiatives: Projects on Map Interactions'
+code: "(function ($, Drupal) {\r\n\r\n  'use strict';\r\n\r\n  // This drives the interaction with the Geofield Leaflet Map.\r\n  Drupal.behaviors.geofieldMapLeafletMapInteraction = {\r\n    attach: function (context, settings) {\r\n\r\n      // React on geofieldMapInit event.\r\n        $(document).on('leaflet.map', function (e, settings, lMap, mapid) {\r\n          var map = lMap;\r\n          var markers = Drupal.Leaflet[mapid].markers;\r\n          $('.view-display-id-attachment_list_projects_map .map-list-item__locations .marker-selector', context).each(function () {\r\n            $(this).hover(\r\n              function() {\r\n                var marker_id = $(this).data('marker-id');\r\n                setTimeout(function () {\r\n                  if(markers[marker_id]) {\r\n                    map.setView(markers[marker_id].getLatLng(), '12');\r\n                    markers[marker_id].fire('click');\r\n                  }\r\n                }, 500);\r\n              }, function() {\r\n                setTimeout(function () {\r\n                  map.closePopup();\r\n                }, 200);\r\n              }\r\n            );\r\n          });\r\n          $('.view-display-id-attachment_list_projects_map', context).each(function () {\r\n            var timeoutId;\r\n            $(this).hover(\r\n              function() {\r\n              }, function() {\r\n                timeoutId = setTimeout(function () {\r\n                  map.closePopup();\r\n                  //$('#' + 'leaflet-map--' + mapid + '--reset-control').click();\r\n                  Drupal.Leaflet.prototype.map_reset(mapid);\r\n                }, 2000);\r\n              }\r\n            );\r\n          });\r\n      });\r\n    }\r\n  };\r\n\r\n})(jQuery, Drupal);"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions: {  }
+conditions_require_all: true

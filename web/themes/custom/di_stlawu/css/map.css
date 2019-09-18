@@ -1,0 +1,87 @@
+/**
+ * Map views.
+ */
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+@media (min-width: 768px) {
+  .map--left > .view-content,
+  .map--right > .view-content {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .map--left > .view-content {
+    float: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .map--right > .view-content {
+    float: right;
+  }
+}
+
+.map__sidebar {
+  word-wrap: break-word;
+  border: 1px solid #dddddd;
+}
+@media (min-width: 768px) {
+  .map__sidebar {
+    width: 40%;
+    min-height: 450px;
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+}
+
+.map-list-item {
+  font-size: 14px;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.map-list-item__title {
+  font-family: "Avenir", "Helvetica", sans-serif;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 7px;
+  line-height: 1.1;
+}
+
+.map-list-item .map-list-item__media {
+  padding-right: 0;
+}
+
+.map-list-item__locations {
+  margin-top: 14px;
+}
+
+.map-list-item__locations ul {
+  margin-bottom: 0;
+}
+
+.map-list-item__locations .list-inline > li {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.map-list-item__locations .btn {
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=map.css.map */
