@@ -379,6 +379,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       group_by: true
+      css_class: 'map map--right'
     cache_metadata:
       max-age: -1
       contexts:
@@ -408,6 +409,7 @@ display:
         filters: false
         filter_groups: false
         empty: false
+        css_class: false
       row:
         type: fields
         options:
@@ -744,6 +746,7 @@ display:
           tokenize: false
           content: 'No projects with locations found.'
           plugin_id: text_custom
+      css_class: 'map__sidebar map__sidebar--left'
     cache_metadata:
       max-age: -1
       contexts:
