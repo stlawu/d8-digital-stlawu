@@ -66,7 +66,7 @@ display:
           view_mode: teaser
           leaflet_map: 'OSM Mapnik'
           height: '450'
-          hide_empty_map: 1
+          hide_empty_map: 0
           disable_wheel: 0
           fullscreen_control: 1
           reset_map:
@@ -374,18 +374,7 @@ display:
             label: ''
       header: {  }
       footer: {  }
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content: 'No projects with locations found.'
-          plugin_id: text_custom
+      empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -418,6 +407,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        empty: false
       row:
         type: fields
         options:
@@ -742,6 +732,18 @@ display:
         operator: AND
         groups:
           1: AND
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: 'No projects with locations found.'
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
