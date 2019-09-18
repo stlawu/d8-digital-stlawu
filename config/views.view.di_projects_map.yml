@@ -5,11 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_geofield_location
     - field.storage.node.field_geofield_string_address
+    - field.storage.node.field_teaser_media
+    - field.storage.node.field_teaser_text
     - node.type.project
   module:
     - geofield
     - leaflet_views
     - node
+    - text
     - user
 id: di_projects_map
 label: 'Digital Initiatives: Projects on Map'
@@ -380,6 +383,7 @@ display:
       display_extenders: {  }
       group_by: true
       css_class: 'map map--right clearfix'
+      title: 'Map of Projects'
     cache_metadata:
       max-age: -1
       contexts:
@@ -400,7 +404,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: list-group-item
+          row_class: 'map-list-item clearfix'
           default_row_class: false
       defaults:
         style: false
@@ -490,6 +494,69 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: field
+        field_teaser_media:
+          id: field_teaser_media
+          table: node__field_teaser_media
+          field: field_teaser_media
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: teaser
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -498,7 +565,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -555,6 +622,68 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
+        field_teaser_text:
+          id: field_teaser_text
+          table: node__field_teaser_text
+          field: field_teaser_text
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: entity_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_geofield_string_address:
           id: field_geofield_string_address
           table: node__field_geofield_string_address
@@ -566,7 +695,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<li><span class="fa-li"><span class="fas fa-map-marker-alt"></span></span><span class="visually-hidden sr-only">View map marker for </span>{{ field_geofield_string_address }}</li>'
+            text: '<li><a class="btn btn-default btn-normal btn-xs marker-selector" href="#fix-to-go-to-map-marker" data-marker-id="{{ nid }}-0"  role="button"><span class="btn-icon fas fa-map-marker-alt" aria-hidden="true"></span><span class="visually-hidden sr-only">View map marker for </span>{{ field_geofield_string_address }}</a></li>'
             make_link: false
             path: ''
             absolute: false
@@ -624,12 +753,12 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: 'Unordered List of String addresses (Global: Custom text)'
+          admin_label: 'Markup for map list item (Global: Custom text)'
           label: ''
           exclude: false
           alter:
             alter_text: true
-            text: "<ul class=\"fa-ul\">\r\n{{ field_geofield_string_address }} \r\n</ul>"
+            text: "<div class=\"map-list-item-wrapper row\">\r\n{% if field_teaser_media %}\r\n<div class=\"map-list-item__media col-xs-4 col-sm-4\">\r\n  {{ field_teaser_media }}\r\n</div>\r\n{% endif %}\r\n{% if field_teaser_media %}\r\n<div class=\"map-list-item__body col-xs-8 col-sm-8\">\r\n{% else %}\r\n<div class=\"map-list-item__body col-xs-12\">\r\n{% endif %}\r\n<h2 class=\"map-list-item__title\">{{ title }}</h2>\r\n{% if field_teaser_text %}\r\n<div class=\"field--name-field-teaser-text\">{{ field_teaser_text }}</div>\r\n{% endif %}\r\n</div>\r\n<div class=\"map-list-item__locations col-xs-12\">\r\n<ul class=\"list-inline\">\r\n{{ field_geofield_string_address }} \r\n</ul>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -659,7 +788,7 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: '0'
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
@@ -756,6 +885,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_geofield_string_address'
+        - 'config:field.storage.node.field_teaser_media'
+        - 'config:field.storage.node.field_teaser_text'
   block_all_projects_map:
     display_plugin: block
     id: block_all_projects_map

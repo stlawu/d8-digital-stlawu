@@ -16273,6 +16273,10 @@ Custom Stuffs
   font-weight: 700;
 }
 
+.btn-icon {
+  margin-right: .25em;
+}
+
 .btn-default-dark {
   color: #333;
   background-color: #ebebeb;
