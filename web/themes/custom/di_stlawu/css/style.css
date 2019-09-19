@@ -16393,6 +16393,25 @@ Custom Stuffs
   }
 }
 
+.no-sidebars.edge-to-edge .region-page-title {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.no-sidebars.edge-to-edge .region-page-title:before, .no-sidebars.edge-to-edge .region-page-title:after {
+  content: " ";
+  display: table;
+}
+.no-sidebars.edge-to-edge .region-page-title:after {
+  clear: both;
+}
+@media (min-width: 1200px) {
+  .no-sidebars.edge-to-edge .region-page-title {
+    max-width: 1170px;
+  }
+}
+
 /**
  * Display
  * Loosely based off of Bootstrap 4

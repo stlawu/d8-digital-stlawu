@@ -11,3 +11,10 @@
    max-width: $container-lg;
   }
 }
+
+.no-sidebars.edge-to-edge .region-page-title {
+  @include container-fixed;
+  @media (min-width: $screen-lg-min) {
+   max-width: $container-lg;
+  }
+}

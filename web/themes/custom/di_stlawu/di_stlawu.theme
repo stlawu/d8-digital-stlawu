@@ -68,17 +68,21 @@ function di_stlawu_page_attachments_alter(array &$page) {
 function di_stlawu_preprocess_page(array &$variables) {
   // Get the current node.
   $node = \Drupal::routeMatch()->getParameter('node');
+  // Get the current view.
+  $view_id = \Drupal::routeMatch()->getParameter('view_id');
   // Load nodes that aren't objects? Somehow this helps...?
   if(!is_object($node) && is_int((int) $node)) {
     $node = Drupal\node\Entity\Node::load($node);
   }
-  // Define which content types or pages (e.g., views that are displayed as pages?) will be edge-to-edge
+  // Define which content types or pages (e.g., views that are displayed as
+  // pages?) will be edge-to-edge
   $edgetoedge = ['landing_page'];
-  // Check if it's a node object first then check that it can be assigned to $node
+  // Check if it's a node object first then check that it can be assigned to
+  // $node
   if (is_object($node)){
     // Get the content type
     $type = $node->getType();
-    // if the content type is defined to be edge-to-edge
+    // if the content type is defined to be edge-to-edge.
     if (in_array($type, $edgetoedge)){
       $variables['layout_type'] = 'layout-edge-to-edge';
     }
@@ -86,6 +90,10 @@ function di_stlawu_preprocess_page(array &$variables) {
     else {
       $variables['layout_type'] = 'layout-constrained';
     }
+  }
+  // If the page is a view and should be edge-to-edge.
+  elseif (!empty($view_id) && $view_id == 'di_projects_map') {
+    $variables['layout_type'] = 'layout-edge-to-edge';
   }
   // if the page is NOT edge-to-edge (and also NOT a content type)
   else {

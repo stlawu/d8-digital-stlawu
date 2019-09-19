@@ -104,7 +104,7 @@ display:
               'y': ''
           leaflet_markercluster:
             control: 1
-            options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+            options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":false,"removeOutsideVisibleBounds":false,"maxClusterRadius":10}'
           path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
           geocoder:
             control: 0
@@ -695,7 +695,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<li><a class="btn btn-default btn-normal btn-xs marker-selector" href="#fix-to-go-to-map-marker" data-marker-id="{{ nid }}-0"  role="button"><span class="btn-icon fas fa-map-marker-alt" aria-hidden="true"></span><span class="visually-hidden sr-only">View map marker for </span>{{ field_geofield_string_address }}</a></li>'
+            text: '<li><a class="btn btn-default btn-normal btn-xs marker-selector" data-marker-id="{{ nid }}-"  href="#" role="button"><span class="btn-icon fas fa-map-marker-alt" aria-hidden="true"></span><span class="visually-hidden sr-only">View map marker for </span>{{ field_geofield_string_address }}</a></li>'
             make_link: false
             path: ''
             absolute: false
