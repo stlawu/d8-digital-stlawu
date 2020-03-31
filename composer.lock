@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79a8bde9b614df4e96023d0dbec66d18",
+    "content-hash": "ab53b8a33c8801af5c56b6b9a2fbe930",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -133,8 +133,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/090e6148d3f63a45b40e7cd8679bd4d64e58d75d",
-                "reference": "090e6148d3f63a45b40e7cd8679bd4d64e58d75d",
-                "shasum": null
+                "reference": "090e6148d3f63a45b40e7cd8679bd4d64e58d75d"
             },
             "type": "bower-asset"
         },
@@ -143,14 +142,13 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "shasum": null
+                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "type": "bower-asset",
             "license": [
@@ -168,8 +166,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/recurser/jquery-simple-color/zipball/ebe0b2c0db639584e81499bd29d6619abb9a2599",
-                "reference": "ebe0b2c0db639584e81499bd29d6619abb9a2599",
-                "shasum": null
+                "reference": "ebe0b2c0db639584e81499bd29d6619abb9a2599"
             },
             "type": "bower-asset",
             "license": [
@@ -187,8 +184,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/barrel/mixitup/zipball/a4c474ead1f4332d3f3b2f997a891ab416dfbf66",
-                "reference": "a4c474ead1f4332d3f3b2f997a891ab416dfbf66",
-                "shasum": null
+                "reference": "a4c474ead1f4332d3f3b2f997a891ab416dfbf66"
             },
             "type": "bower-asset"
         },
@@ -203,8 +199,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/bgrins/spectrum/zipball/98454b55521cfb495f628db28af01100c029ef76",
-                "reference": "98454b55521cfb495f628db28af01100c029ef76",
-                "shasum": null
+                "reference": "98454b55521cfb495f628db28af01100c029ef76"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7.2"
@@ -5672,6 +5667,48 @@
             }
         },
         {
+            "name": "drupal/views_storymapjs",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_storymapjs.git",
+                "reference": "2a52c0a58381c5344ab8d01d2654b9a96d03de57"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1585343365",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jlashomb",
+                    "homepage": "https://www.drupal.org/user/1222286"
+                }
+            ],
+            "description": "Views StoryMapJS",
+            "homepage": "https://www.drupal.org/project/views_storymapjs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_storymapjs"
+            },
+            "time": "2020-03-25T16:07:40+00:00"
+        },
+        {
             "name": "drupal/viewsreference",
             "version": "2.0.0-alpha4",
             "source": {
@@ -6825,9 +6862,7 @@
             "version": "1.8.0-RC1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.8.0-rc1.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.8.0-rc1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -9529,6 +9564,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
+            "abandoned": "drupal/core-recommended",
             "time": "2018-01-30T18:48:19+00:00"
         },
         {
@@ -9830,6 +9866,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-08-06T17:53:53+00:00"
         },
         {
@@ -9875,6 +9912,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2019-09-05T20:03:20+00:00"
         },
         {
@@ -9938,6 +9976,7 @@
                 "feed",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2019-03-05T20:08:49+00:00"
         },
         {
@@ -9984,6 +10023,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
@@ -11915,7 +11955,8 @@
     "stability-flags": {
         "drupal/geocoder": 10,
         "drupal/leaflet": 10,
-        "drupal/simple_block": 10
+        "drupal/simple_block": 10,
+        "drupal/views_storymapjs": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -11925,5 +11966,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.0.8"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }

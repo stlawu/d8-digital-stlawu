@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_type
+    - node.type.storymap
+id: node.storymap.field_map_type
+field_name: field_map_type
+entity_type: node
+bundle: storymap
+label: 'Map Type'
+description: '<strong>Map URL pattern:</strong> "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"<br><strong>Presets:</strong> stamen:toner-lite, stamen:toner, stamen:toner-lines, stamen:toner-labels, stamen:watercolor, osm:standard, mapbox:<em>map-id</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

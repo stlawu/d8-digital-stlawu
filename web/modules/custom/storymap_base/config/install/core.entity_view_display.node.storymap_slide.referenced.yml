@@ -1,0 +1,130 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.referenced
+    - field.field.node.storymap_slide.body
+    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geolocation_zoom
+    - field.field.node.storymap_slide.field_media
+    - field.field.node.storymap_slide.field_media_caption_formatted
+    - field.field.node.storymap_slide.field_media_citation_formatted
+    - field.field.node.storymap_slide.field_year
+    - image.style.media_preview
+    - node.type.storymap_slide
+  module:
+    - field_group
+    - geolocation
+    - media
+    - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_column1
+        - group_column2
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: row
+      label: Row
+    group_column1:
+      children:
+        - field_geolocation
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        element: span
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-md-7'
+      label: Column1
+    group_column2:
+      children:
+        - field_media
+      parent_name: group_row
+      weight: 3
+      format_type: html_element
+      region: content
+      format_settings:
+        element: span
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'col-xs-12 col-md-3'
+      label: Column2
+id: node.storymap_slide.referenced
+targetEntityType: node
+bundle: storymap_slide
+mode: referenced
+content:
+  field_geolocation:
+    type: geolocation_map
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      set_marker: '1'
+      title: Location
+      info_text: ''
+      google_map_settings:
+        height: 98px
+        width: 196px
+        type: ROADMAP
+        zoom: '15'
+        maxZoom: 18
+        minZoom: 0
+        gestureHandling: none
+        disableDoubleClickZoom: 1
+        style: "[\r\n    {\r\n        \"featureType\": \"administrative\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"poi\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"simplified\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"simplified\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"water\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"simplified\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"transit\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"simplified\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"landscape\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"simplified\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.highway\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.local\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"on\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.highway\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"on\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"water\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#84afa3\"\r\n            },\r\n            {\r\n                \"lightness\": 52\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"stylers\": [\r\n            {\r\n                \"saturation\": -77\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road\"\r\n    }\r\n]"
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        mapTypeControl: 0
+        streetViewControl: 0
+        zoomControl: 0
+        rotateControl: 0
+        fullscreenControl: 0
+        scrollwheel: 0
+        draggable: 0
+        preferScrollingToZooming: 0
+      use_overridden_map_settings: 0
+      common_map: ''
+    third_party_settings: {  }
+  field_media:
+    type: media_thumbnail
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: media_preview
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_geolocation_zoom: true
+  field_media_caption_formatted: true
+  field_media_citation_formatted: true
+  field_year: true
+  links: true

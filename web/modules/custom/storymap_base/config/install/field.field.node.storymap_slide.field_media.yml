@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - media.type.image
+    - media.type.soundcloud
+    - media.type.video_external
+    - node.type.storymap_slide
+id: node.storymap_slide.field_media
+field_name: field_media
+entity_type: node
+bundle: storymap_slide
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      soundcloud: soundcloud
+      video_external: video_external
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: image
+field_type: entity_reference
