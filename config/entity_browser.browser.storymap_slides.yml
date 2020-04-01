@@ -1,0 +1,52 @@
+uuid: a9220947-3a8c-4320-bc4a-9d378dfa9d64
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.storymap_slide_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: storymap_slides
+label: 'StoryMap Slides'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select slides'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  fcfdb682-e2ff-4b09-9e13-d0c084aed8c3:
+    settings:
+      entity_type: node
+      bundle: storymap_slide
+      form_mode: embedded
+      submit_text: 'Save Slide'
+    uuid: fcfdb682-e2ff-4b09-9e13-d0c084aed8c3
+    weight: -8
+    label: Create
+    id: entity_form
+  cecb2e99-3355-4bf6-b35e-1758618d9ab5:
+    settings:
+      view: storymap_slide_browser
+      view_display: entity_browser_2
+      submit_text: 'Select Slide'
+      auto_select: false
+    uuid: cecb2e99-3355-4bf6-b35e-1758618d9ab5
+    weight: -10
+    label: 'Browse Own'
+    id: view
+  a21cd3d9-9e3c-4b96-a86c-92dbc03dad24:
+    settings:
+      view: storymap_slide_browser
+      view_display: entity_browser_1
+      submit_text: 'Select Slide'
+      auto_select: false
+    uuid: a21cd3d9-9e3c-4b96-a86c-92dbc03dad24
+    weight: -9
+    label: 'Browse All'
+    id: view

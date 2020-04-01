@@ -1,0 +1,23 @@
+uuid: 8fb1f3de-57bc-49c3-affc-2f3c44d889e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.storymap_slide
+id: node.storymap_slide.field_year
+field_name: field_year
+entity_type: node
+bundle: storymap_slide
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

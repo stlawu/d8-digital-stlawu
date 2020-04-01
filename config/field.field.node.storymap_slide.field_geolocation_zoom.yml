@@ -1,0 +1,23 @@
+uuid: eccfbd32-0ed5-495d-b853-a3127174fdc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocation_zoom
+    - node.type.storymap_slide
+id: node.storymap_slide.field_geolocation_zoom
+field_name: field_geolocation_zoom
+entity_type: node
+bundle: storymap_slide
+label: 'Zoom (Experimental)'
+description: 'The zoom level works best for the pin. Leave blank unless the default doesn''t work.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 18
+  prefix: ''
+  suffix: ''
+field_type: integer

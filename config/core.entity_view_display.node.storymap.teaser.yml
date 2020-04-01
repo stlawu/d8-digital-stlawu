@@ -1,0 +1,31 @@
+uuid: 14fcac95-3e5c-40c6-add8-ca0163864c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.storymap.body
+    - node.type.storymap
+  module:
+    - text
+    - user
+id: node.storymap.teaser
+targetEntityType: node
+bundle: storymap
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

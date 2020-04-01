@@ -1,0 +1,177 @@
+uuid: 15ee1290-6fe5-4088-b2dd-9c572d253db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.embedded
+    - entity_browser.browser.media_browser
+    - field.field.node.storymap_slide.body
+    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geolocation_zoom
+    - field.field.node.storymap_slide.field_media
+    - field.field.node.storymap_slide.field_media_caption_formatted
+    - field.field.node.storymap_slide.field_media_citation_formatted
+    - field.field.node.storymap_slide.field_year
+    - node.type.storymap_slide
+  module:
+    - entity_browser
+    - field_group
+    - geolocation_google_maps
+    - text
+third_party_settings:
+  field_group:
+    group_slide:
+      children:
+        - group_content
+        - group_location
+        - group_media
+      parent_name: ''
+      weight: 0
+      format_type: accordion
+      format_settings:
+        id: ''
+        classes: ''
+        effect: none
+      label: Slide
+      region: content
+    group_content:
+      children:
+        - title
+        - body
+      parent_name: group_slide
+      weight: 20
+      format_type: accordion_item
+      format_settings:
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Content
+      region: content
+    group_location:
+      children:
+        - field_geolocation
+      parent_name: group_slide
+      weight: 21
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: Location
+      region: content
+    group_media:
+      children:
+        - field_media
+        - field_media_caption_formatted
+        - field_media_citation_formatted
+      parent_name: group_slide
+      weight: 22
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: Media
+      region: content
+    group_extras:
+      children: {  }
+      parent_name: ''
+      weight: 8
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: Extras
+      region: hidden
+id: node.storymap_slide.embedded
+targetEntityType: node
+bundle: storymap_slide
+mode: embedded
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_geolocation:
+    type: geolocation_googlegeocoder
+    weight: 0
+    region: content
+    settings:
+      default_longitude: null
+      default_latitude: null
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      google_map_settings:
+        map_features:
+          control_geocoder:
+            enabled: true
+            weight: -100
+          control_recenter:
+            enabled: true
+          control_locate:
+            enabled: true
+    third_party_settings: {  }
+  field_media:
+    type: entity_browser_entity_reference
+    weight: 0
+    region: content
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: preview
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+  field_media_caption_formatted:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_citation_formatted:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_geolocation_zoom: true
+  field_year: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

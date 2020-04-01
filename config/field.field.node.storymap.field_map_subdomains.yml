@@ -1,0 +1,19 @@
+uuid: 0cb43eab-3bcb-45b5-b124-55bbf0d1fdc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_subdomains
+    - node.type.storymap
+id: node.storymap.field_map_subdomains
+field_name: field_map_subdomains
+entity_type: node
+bundle: storymap
+label: 'Map Subdomains'
+description: 'Is only needed when using a custom URL tile template. It should be specified as a single string, where each character is a valid subdomain substitution (e.g. "abc"). These a substitutions for the "s" wildcard, {s}.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

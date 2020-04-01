@@ -1,0 +1,28 @@
+uuid: fe2d71cd-947f-48d4-b22f-75e6259c69f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_storymap_slides
+    - node.type.storymap
+    - node.type.storymap_slide
+id: node.storymap.field_storymap_slides
+field_name: field_storymap_slides
+entity_type: node
+bundle: storymap
+label: 'StoryMap Slides'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      storymap_slide: storymap_slide
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

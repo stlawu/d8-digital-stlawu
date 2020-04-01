@@ -1,0 +1,17 @@
+uuid: 466d8788-86d7-4490-9777-d0256624448f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'StoryMap Slide'
+type: storymap_slide
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

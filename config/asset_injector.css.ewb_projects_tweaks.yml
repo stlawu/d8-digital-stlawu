@@ -6,7 +6,7 @@ dependencies:
     - system
 id: ewb_projects_tweaks
 label: 'EWB - Projects Tweaks'
-code: ".card {\r\n  min-height: 322px;\r\n}"
+code: ".card .old {\r\n  min-height: 322px;\r\n}\r\n.card {\r\n  padding: 15px 15px 5px;\r\n}\r\n.card-body {\r\n    min-height: 76px;\r\n}"
 media: all
 preprocess: true
 conditions:

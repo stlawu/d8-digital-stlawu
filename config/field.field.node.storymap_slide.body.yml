@@ -1,0 +1,23 @@
+uuid: 9ce1f09d-6946-41cd-aaa7-43de48fb0a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.storymap_slide
+  module:
+    - text
+id: node.storymap_slide.body
+field_name: body
+entity_type: node
+bundle: storymap_slide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,201 @@
+uuid: dc34723e-ea86-4a8d-ae7e-03af334292a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.storymap_slides
+    - field.field.node.storymap.body
+    - field.field.node.storymap.field_map_subdomains
+    - field.field.node.storymap.field_map_type
+    - field.field.node.storymap.field_media
+    - field.field.node.storymap.field_media_caption_formatted
+    - field.field.node.storymap.field_media_citation_formatted
+    - field.field.node.storymap.field_storymap_slides
+    - node.type.storymap
+  module:
+    - entity_browser
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_map_settings:
+      children:
+        - field_map_type
+        - field_map_subdomains
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Map Settings'
+    group_title_slide:
+      children:
+        - title
+        - body
+        - group_media
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Title Slide'
+    group_media:
+      children:
+        - field_media
+        - field_media_caption_formatted
+        - field_media_citation_formatted
+      parent_name: group_title_slide
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Media
+id: node.storymap.default
+targetEntityType: node
+bundle: storymap
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_map_subdomains:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_map_type:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media:
+    weight: 11
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: embed
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      selection_mode: selection_append
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_media_caption_formatted:
+    weight: 12
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_media_citation_formatted:
+    weight: 13
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_storymap_slides:
+    weight: 3
+    settings:
+      entity_browser: storymap_slides
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: referenced
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

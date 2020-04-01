@@ -1,0 +1,43 @@
+uuid: b3421443-6c90-40ac-8a22-da8733656ae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.storymap_slide.body
+    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geolocation_zoom
+    - field.field.node.storymap_slide.field_media
+    - field.field.node.storymap_slide.field_media_caption_formatted
+    - field.field.node.storymap_slide.field_media_citation_formatted
+    - field.field.node.storymap_slide.field_year
+    - node.type.storymap_slide
+  module:
+    - text
+    - user
+id: node.storymap_slide.teaser
+targetEntityType: node
+bundle: storymap_slide
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_geolocation: true
+  field_geolocation_zoom: true
+  field_media: true
+  field_media_caption_formatted: true
+  field_media_citation_formatted: true
+  field_year: true

@@ -1,0 +1,129 @@
+uuid: 2fd872ff-a9e7-40fd-b5bb-dd8e2aee89c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.storymap_slide.body
+    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geolocation_zoom
+    - field.field.node.storymap_slide.field_media
+    - field.field.node.storymap_slide.field_media_caption_formatted
+    - field.field.node.storymap_slide.field_media_citation_formatted
+    - field.field.node.storymap_slide.field_year
+    - node.type.storymap_slide
+  module:
+    - field_group
+    - geolocation
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_row:
+      children:
+        - group_column1
+        - group_column2
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+      region: content
+    group_column1:
+      children:
+        - body
+      parent_name: group_row
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-7'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Column1
+      region: content
+    group_column2:
+      children:
+        - field_media
+        - field_media_citation_formatted
+        - field_media_caption_formatted
+        - field_geolocation
+      parent_name: group_row
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-5'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Column2
+      region: content
+id: node.storymap_slide.default
+targetEntityType: node
+bundle: storymap_slide
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_geolocation:
+    type: geolocation_latlng
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+  field_media_caption_formatted:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_media_citation_formatted:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_geolocation_zoom: true
+  field_year: true

@@ -1,0 +1,29 @@
+uuid: f82e680a-eeee-403d-af96-116e52b9e8b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: media_browser
+label: 'Media Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  968f7bdd-1579-4272-8d74-468d0a93bf65:
+    settings:
+      entity_type: media
+      bundle: image
+      form_mode: default
+      submit_text: 'Save image'
+    uuid: 968f7bdd-1579-4272-8d74-468d0a93bf65
+    weight: 2
+    label: 'Add new Image'
+    id: entity_form

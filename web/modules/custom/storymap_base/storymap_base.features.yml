@@ -24,5 +24,15 @@ required:
   - field.field.node.storymap_slide.field_media_caption_formatted
   - field.field.node.storymap_slide.field_media_citation_formatted
   - field.field.node.storymap_slide.field_year
+  - field.storage.node.body
+  - field.storage.node.field_geolocation
+  - field.storage.node.field_geolocation_zoom
+  - field.storage.node.field_map_subdomains
+  - field.storage.node.field_map_type
+  - field.storage.node.field_media
+  - field.storage.node.field_media_caption_formatted
+  - field.storage.node.field_media_citation_formatted
+  - field.storage.node.field_storymap_slides
+  - field.storage.node.field_year
   - views.view.storymap_ct
   - views.view.storymap_slide_browser

@@ -1,0 +1,18 @@
+uuid: ae9938f7-bdad-44ec-ba93-56d154f77cdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: StoryMap
+type: storymap
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
