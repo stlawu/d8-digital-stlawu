@@ -66,6 +66,7 @@
         "drupal/image_widget_crop": "^2.2",
         "drupal/inline_entity_form": "^1.0",
         "drupal/leaflet": "^1.0@beta",
+        "drupal/leaflet_widget": "^2.0@alpha",
         "drupal/linkit": "^5.0",
         "drupal/maxlength": "^1.0",
         "drupal/menu_block": "^1.5",
