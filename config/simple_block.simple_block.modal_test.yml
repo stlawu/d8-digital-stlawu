@@ -1,0 +1,11 @@
+uuid: 6e69ff6e-9118-4da3-8009-e116efa19052
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: modal_test
+title: 'Modal Test'
+content:
+  value: "<div class=\"modal hide fade\" id=\"myModal\">\r\n<div class=\"modal-header\"><a class=\"close\" data-dismiss=\"modal\">×</a>\r\n<h3>Modal header</h3>\r\n</div>\r\n\r\n<div class=\"modal-body\">\r\n<p>One fine body…</p>\r\n</div>\r\n\r\n<div class=\"modal-footer\"><a class=\"btn\" href=\"#\">Close</a> <a class=\"btn btn-primary\" href=\"#\">Save changes</a></div>\r\n</div>\r\n"
+  format: full_html

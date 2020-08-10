@@ -11,7 +11,7 @@ id: dsf_application
 title: 'Digital Scholarship Fellows Application'
 description: 'Application webform for Digital Scholarship Fellows'
 category: ''
-elements: "dsf_application_name:\n  '#type': webform_name\n  '#title': Name\n  '#title_display': ''\n  '#required': true\n  '#wrapper_type': container\n  '#title__access': false\n  '#first__title': 'First name'\n  '#first__title_display': before\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': 'Last name'\n  '#last__title_display': before\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\n  '#flexbox': '1'\ndsf_application_email:\n  '#type': email\n  '#title': 'Email address'\n  '#required': true\n  '#required_error': 'Email address is required.'\ndsf_application_class_year:\n  '#type': textfield\n  '#title': 'Class year'\n  '#required': true\n  '#required_error': 'Class year is required.'\ndsf_application_majors:\n  '#type': textfield\n  '#title': 'Major(s) or expected majors(s)'\n  '#required': true\n  '#required_error': 'Major(s) are required.'\ndsf_application_interest_description:\n  '#type': textarea\n  '#title': 'Please describe your interest in the fellowship'\n  '#description': 'Include examples of digital scholarship projects you find interesting and any experience you may have with digital platforms and/or digital scholarship. Please note that previous experience is not a requirement for the fellowship!'\n  '#description_display': after\n  '#required': true\n  '#required_error': 'Description of interest is required.'\ndsf_application_study_abroad:\n  '#type': radios\n  '#title': 'Do you plan to study abroad during the academic year?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#required': true"
+elements: "dsf_application_name:\n  '#type': webform_name\n  '#title': Name\n  '#title_display': ''\n  '#required': true\n  '#wrapper_type': container\n  '#title__access': false\n  '#first__title': 'First name'\n  '#first__title_display': before\n  '#first__required': true\n  '#middle__access': false\n  '#last__title': 'Last name'\n  '#last__title_display': before\n  '#last__required': true\n  '#suffix__access': false\n  '#degree__access': false\n  '#flexbox': '1'\ndsf_application_email:\n  '#type': email\n  '#title': 'Email address'\n  '#required': true\n  '#required_error': 'Email address is required.'\ndsf_application_class_year:\n  '#type': textfield\n  '#title': 'Class year'\n  '#required': true\n  '#required_error': 'Class year is required.'\ndsf_application_majors:\n  '#type': textfield\n  '#title': 'Major(s) or current areas of academic interest'\n  '#required': true\n  '#required_error': 'Major(s) are required.'\ndsf_application_interest_description:\n  '#type': textarea\n  '#title': 'Please describe your interest in the fellowship'\n  '#description': 'Include examples of digital scholarship projects you find interesting and any experience you may have with digital platforms and/or digital scholarship. Please note that previous experience is not a requirement for the fellowship!'\n  '#description_display': after\n  '#required': true\n  '#required_error': 'Description of interest is required.'\ndsf_application_study_abroad:\n  '#type': radios\n  '#title': 'Do you plan to study abroad during the academic year?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n  '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -23,7 +23,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
@@ -53,6 +53,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -78,11 +83,17 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
+  wizard_auto_forward: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''

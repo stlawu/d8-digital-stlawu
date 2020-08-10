@@ -13,6 +13,7 @@ module:
   config_direct_save: 0
   config_update: 0
   contact: 0
+  content_sync: 0
   contextual: 0
   crop: 0
   ctools: 0
@@ -42,9 +43,7 @@ module:
   geocoder_geofield: 0
   geofield: 0
   geofield_map: 0
-  geolocation: 0
-  geolocation_google_maps: 0
-  geolocation_leaflet: 0
+  geofield_map_extras: 0
   google_analytics: 0
   help: 0
   history: 0
@@ -55,6 +54,7 @@ module:
   leaflet: 0
   leaflet_markercluster: 0
   leaflet_views: 0
+  leaflet_widget: 0
   link: 0
   linkit: 0
   maxlength: 0
@@ -77,6 +77,7 @@ module:
   redirect: 0
   redirect_domain: 0
   search: 0
+  serialization: 0
   shortcut: 0
   simple_block: 0
   system: 0

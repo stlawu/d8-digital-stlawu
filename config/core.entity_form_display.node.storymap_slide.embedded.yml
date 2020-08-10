@@ -6,7 +6,7 @@ dependencies:
     - core.entity_form_mode.node.embedded
     - entity_browser.browser.media_browser
     - field.field.node.storymap_slide.body
-    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geofield_location
     - field.field.node.storymap_slide.field_geolocation_zoom
     - field.field.node.storymap_slide.field_media
     - field.field.node.storymap_slide.field_media_caption_formatted
@@ -16,7 +16,7 @@ dependencies:
   module:
     - entity_browser
     - field_group
-    - geolocation_google_maps
+    - geofield_map
     - text
 third_party_settings:
   field_group:
@@ -50,7 +50,7 @@ third_party_settings:
       region: content
     group_location:
       children:
-        - field_geolocation
+        - field_geofield_location
       parent_name: group_slide
       weight: 21
       format_type: accordion_item
@@ -79,7 +79,9 @@ third_party_settings:
       label: Media
       region: content
     group_extras:
-      children: {  }
+      children:
+        - field_geolocation_zoom
+        - field_year
       parent_name: ''
       weight: 8
       format_type: accordion_item
@@ -106,25 +108,112 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_geolocation:
-    type: geolocation_googlegeocoder
+  field_geofield_location:
+    type: geofield_map
     weight: 0
     region: content
     settings:
-      default_longitude: null
-      default_latitude: null
-      auto_client_location: ''
-      auto_client_location_marker: ''
-      allow_override_map_settings: 0
-      google_map_settings:
-        map_features:
-          control_geocoder:
-            enabled: true
-            weight: -100
-          control_recenter:
-            enabled: true
-          control_locate:
-            enabled: true
+      map_geocoder:
+        settings:
+          providers:
+            arcgisonline:
+              weight: '0'
+              checked: 0
+            bingmaps:
+              weight: '0'
+              checked: 0
+            file:
+              weight: '0'
+              checked: 0
+            freegeoip:
+              weight: '0'
+              checked: 0
+            gpxfile:
+              weight: '0'
+              checked: 0
+            geojsonfile:
+              weight: '0'
+              checked: 0
+            geoplugin:
+              weight: '0'
+              checked: 0
+            geoip:
+              weight: '0'
+              checked: 0
+            geonames:
+              weight: '0'
+              checked: 0
+            googlemaps:
+              weight: '0'
+              checked: 0
+            googlemaps_business:
+              weight: '0'
+              checked: 0
+            hostip:
+              weight: '0'
+              checked: 0
+            ipinfodb:
+              weight: '0'
+              checked: 0
+            kmlfile:
+              weight: '0'
+              checked: 0
+            mapquest:
+              weight: '0'
+              checked: 0
+            maxmind:
+              weight: '0'
+              checked: 0
+            nominatim:
+              weight: '0'
+              checked: 0
+            opencage:
+              weight: '0'
+              checked: 0
+            openstreetmap:
+              weight: '0'
+              checked: 0
+            random:
+              weight: '0'
+              checked: 0
+            tomtom:
+              weight: '0'
+              checked: 0
+            yandex:
+              weight: '0'
+              checked: 0
+          min_terms: '4'
+          delay: '800'
+          options: ''
+        control: 0
+      map_google_places:
+        places_additional_options: ''
+        places_control: false
+      map_library: gmap
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      map_dimensions:
+        width: 100%
+        height: 450px
+      zoom:
+        start: 3
+        focus: 12
+        min: 0
+        max: 22
+      click_to_find_marker: true
+      click_to_place_marker: true
+      hide_coordinates: true
+      geoaddress_field:
+        field: '0'
+        disabled: true
+        hidden: false
+      html5_geolocation: true
+      default_value:
+        lat: !!float 0
+        lon: !!float 0
+      map_google_api_key: ''
+      zoom_level: 5
     third_party_settings: {  }
   field_media:
     type: entity_browser_entity_reference

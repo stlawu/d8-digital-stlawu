@@ -29,3 +29,9 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_map_subdomains: true
+  field_map_type: true
+  field_media: true
+  field_media_caption_formatted: true
+  field_media_citation_formatted: true
+  field_storymap_slides: true

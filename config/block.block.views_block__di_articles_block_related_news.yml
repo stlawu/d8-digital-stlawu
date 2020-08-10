@@ -12,7 +12,7 @@ dependencies:
 id: views_block__di_articles_block_related_news
 theme: di_stlawu
 region: content
-weight: 1
+weight: -7
 provider: null
 plugin: 'views_block:di_articles-block_related_news'
 settings:

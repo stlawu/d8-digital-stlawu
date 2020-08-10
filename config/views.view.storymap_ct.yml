@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_geolocation
+    - field.storage.node.field_geofield_location
     - field.storage.node.field_geolocation_zoom
     - field.storage.node.field_map_subdomains
     - field.storage.node.field_map_type
@@ -15,7 +15,7 @@ dependencies:
     - node.type.storymap_slide
   module:
     - eva
-    - geolocation
+    - geofield
     - node
     - text
     - user
@@ -82,9 +82,9 @@ display:
             date: field_year
             headline: title
             text: body
-            latlon: field_geolocation
-            lat: field_geolocation_1
-            lon: field_geolocation_1
+            latlon: field_geofield_location
+            lat: ''
+            lon: ''
             zoom: field_geolocation_zoom
             media: field_media
             media_caption: field_media_caption_formatted
@@ -415,10 +415,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_geolocation:
-          id: field_geolocation
-          table: node__field_geolocation
-          field: field_geolocation
+        field_geofield_location:
+          id: field_geofield_location
+          table: node__field_geofield_location
+          field: field_geofield_location
           relationship: field_storymap_slides
           group_type: group
           admin_label: ''
@@ -426,7 +426,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_geolocation__lat }}'
+            text: '{{ field_geofield_location__lat }},{{ field_geofield_location__lon }}'
             make_link: false
             path: ''
             absolute: false
@@ -463,10 +463,12 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: ''
-          type: geolocation_latlng
-          settings: {  }
-          group_column: ''
+          click_sort_column: value
+          type: geofield_latlon
+          settings:
+            output_format: decimal
+            output_escape: 1
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -476,69 +478,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: geolocation_field
-        field_geolocation_1:
-          id: field_geolocation_1
-          table: node__field_geolocation
-          field: field_geolocation
-          relationship: field_storymap_slides
-          group_type: group
-          admin_label: ''
-          label: Longitude
-          exclude: false
-          alter:
-            alter_text: true
-            text: '{{ field_geolocation_1__lng }}'
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: ''
-          type: geolocation_latlng
-          settings: {  }
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: geolocation_field
+          plugin_id: field
         field_geolocation_zoom:
           id: field_geolocation_zoom
           table: node__field_geolocation_zoom
@@ -738,8 +678,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<em>{{ field_media_citation_formatted|striptags("<a><strong><em>") }}</em>'
             make_link: false
             path: ''
             absolute: false
@@ -1117,8 +1057,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<em>{{ field_media_citation_formatted_1|striptags("<a><strong><em>") }}</em>'
             make_link: false
             path: ''
             absolute: false
@@ -1287,7 +1227,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_geolocation'
+        - 'config:field.storage.node.field_geofield_location'
         - 'config:field.storage.node.field_geolocation_zoom'
         - 'config:field.storage.node.field_map_subdomains'
         - 'config:field.storage.node.field_map_type'
@@ -1317,7 +1257,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_geolocation'
+        - 'config:field.storage.node.field_geofield_location'
         - 'config:field.storage.node.field_geolocation_zoom'
         - 'config:field.storage.node.field_map_subdomains'
         - 'config:field.storage.node.field_map_type'

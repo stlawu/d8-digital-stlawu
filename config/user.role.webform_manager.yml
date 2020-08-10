@@ -7,6 +7,8 @@ label: 'Webform manager'
 weight: -6
 is_admin: null
 permissions:
+  - 'access media_browser entity browser pages'
+  - 'access storymap_slides entity browser pages'
   - 'access toolbar'
   - 'access webform overview'
   - 'view the administration theme'

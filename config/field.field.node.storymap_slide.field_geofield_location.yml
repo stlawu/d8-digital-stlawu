@@ -1,0 +1,22 @@
+uuid: 4a009c98-4d5f-4149-b7e1-64b521366158
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geofield_location
+    - node.type.storymap_slide
+  module:
+    - geofield
+id: node.storymap_slide.field_geofield_location
+field_name: field_geofield_location
+entity_type: node
+bundle: storymap_slide
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

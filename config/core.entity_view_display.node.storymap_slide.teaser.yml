@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.storymap_slide.body
-    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geofield_location
     - field.field.node.storymap_slide.field_geolocation_zoom
     - field.field.node.storymap_slide.field_media
     - field.field.node.storymap_slide.field_media_caption_formatted
@@ -35,7 +35,7 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_geolocation: true
+  field_geofield_location: true
   field_geolocation_zoom: true
   field_media: true
   field_media_caption_formatted: true

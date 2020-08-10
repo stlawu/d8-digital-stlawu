@@ -1,0 +1,11 @@
+uuid: 4eaaf5e1-c49e-49b1-97e0-74109f247a7c
+langcode: en
+status: true
+dependencies: {  }
+id: storymapjs
+label: StoryMapJS
+code: ".vco-storymap .vco-caption p {\r\n  line-height: 1.1em;\r\n}\r\n.vco-storymap .vco-media-content {\r\n  margin: 0 auto;\r\n  display: inline-block;\r\n}\r\n.vco-storymap .vco-media-content .vco-media-item {\r\n  object-fit: contain;\r\n  background: black;\r\n  background: rgba(0,0,0,.8);\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

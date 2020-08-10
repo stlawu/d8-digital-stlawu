@@ -28,7 +28,7 @@ widgets:
       submit_text: 'Save Slide'
     uuid: fcfdb682-e2ff-4b09-9e13-d0c084aed8c3
     weight: -8
-    label: Create
+    label: 'Create New Slide'
     id: entity_form
   cecb2e99-3355-4bf6-b35e-1758618d9ab5:
     settings:

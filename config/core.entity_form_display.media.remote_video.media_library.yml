@@ -22,29 +22,52 @@ dependencies:
     - field.field.media.remote_video.field_media_transcript
     - field.field.media.remote_video.field_media_width
     - media.type.remote_video
+  module:
+    - text
 id: media.remote_video.media_library
 targetEntityType: media
 bundle: remote_video
 mode: media_library
 content:
-  name:
+  field_media_byline_freeform:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_oembed_video:
     type: string_textfield
+    weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
-    weight: 0
     third_party_settings: {  }
+  field_media_transcript:
+    type: text_textarea
+    weight: 2
     region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_author_name: true
-  field_media_byline_freeform: true
   field_media_cache_age: true
   field_media_default_name: true
-  field_media_description: true
   field_media_height: true
   field_media_html: true
-  field_media_oembed_video: true
   field_media_provider_name: true
   field_media_provider_url: true
   field_media_resource_title: true
@@ -52,8 +75,8 @@ hidden:
   field_media_thumbnail_height: true
   field_media_thumbnail_uri: true
   field_media_thumbnail_width: true
-  field_media_transcript: true
   field_media_width: true
+  name: true
   path: true
   status: true
   uid: true

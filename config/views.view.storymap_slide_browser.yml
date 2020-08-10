@@ -3,14 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_geolocation
     - field.storage.node.field_media
     - image.style.thumbnail
     - node.type.storymap_slide
   module:
     - entity_browser
-    - geolocation
-    - geolocation_google_maps
     - media
     - node
     - user
@@ -282,96 +279,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_geolocation:
-          id: field_geolocation
-          table: node__field_geolocation
-          field: field_geolocation
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: GeoLocation
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: ''
-          type: geolocation_map
-          settings:
-            set_marker: '1'
-            title: 'Slide Location'
-            info_text: ''
-            replacement_patterns:
-              token_geolocation:
-                token_items: ''
-            google_map_settings:
-              height: 100px
-              width: 100%
-              type: ROADMAP
-              zoom: '10'
-              maxZoom: 18
-              minZoom: 0
-              mapTypeControl: 0
-              streetViewControl: 0
-              zoomControl: 0
-              rotateControl: 0
-              fullscreenControl: 0
-              scrollwheel: 0
-              gestureHandling: auto
-              draggable: 0
-              preferScrollingToZooming: 0
-              disableDoubleClickZoom: 0
-              style: ''
-              info_auto_display: 0
-              marker_icon_path: ''
-              disableAutoPan: 0
-            use_overridden_map_settings: 0
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: geolocation_field
       filters:
         type:
           id: type
@@ -415,7 +322,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_media'
   entity_browser_1:
     display_plugin: entity_browser
     id: entity_browser_1
@@ -432,7 +340,8 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_media'
   entity_browser_2:
     display_plugin: entity_browser
     id: entity_browser_2
@@ -508,4 +417,5 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_media'

@@ -1,0 +1,20 @@
+uuid: 9380c138-4952-4bea-994a-d24d4668ee33
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: modal_popup
+label: 'Modal PopUp'
+code: "(function ($) {\r\n  // $('#myModal').modal('show');\r\n  $('#myModal').on('shown.bs.modal', function () {\r\n    $('#myInput').trigger('focus');\r\n  })\r\n})(jQuery);"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /node/76
+    negate: false
+conditions_require_all: true

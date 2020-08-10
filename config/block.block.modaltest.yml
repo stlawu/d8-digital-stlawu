@@ -1,0 +1,28 @@
+uuid: f539a1f7-5a31-494a-8063-182d5b7bb3a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.modal_test
+  module:
+    - simple_block
+    - system
+  theme:
+    - di_stlawu
+id: modaltest
+theme: di_stlawu
+region: content
+weight: -9
+provider: null
+plugin: 'simple_block:modal_test'
+settings:
+  id: 'simple_block:modal_test'
+  label: 'Modal Test'
+  provider: simple_block
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/76
+    negate: false
+    context_mapping: {  }

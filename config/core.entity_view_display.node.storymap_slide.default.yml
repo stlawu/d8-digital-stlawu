@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.storymap_slide.body
-    - field.field.node.storymap_slide.field_geolocation
+    - field.field.node.storymap_slide.field_geofield_location
     - field.field.node.storymap_slide.field_geolocation_zoom
     - field.field.node.storymap_slide.field_media
     - field.field.node.storymap_slide.field_media_caption_formatted
@@ -13,7 +13,7 @@ dependencies:
     - node.type.storymap_slide
   module:
     - field_group
-    - geolocation
+    - geofield_map
     - text
     - user
 third_party_settings:
@@ -60,7 +60,7 @@ third_party_settings:
         - field_media
         - field_media_citation_formatted
         - field_media_caption_formatted
-        - field_geolocation
+        - field_geofield_location
       parent_name: group_row
       weight: 21
       format_type: html_element
@@ -88,13 +88,160 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_geolocation:
-    type: geolocation_latlng
+  field_geofield_location:
     weight: 3
-    region: content
     label: hidden
-    settings: {  }
+    settings:
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_empty:
+        empty_behaviour: '0'
+        empty_message: 'No Geofield Value entered for this field'
+      map_center:
+        lat: '42'
+        lon: '12.5'
+        center_force: 0
+        geocode: 'Find my location'
+      map_zoom_and_pan:
+        zoom:
+          initial: '14'
+          min: '1'
+          max: '22'
+          finer: '0'
+          force: 0
+        gestureHandling: auto
+        scrollwheel: '1'
+        draggable: '1'
+        map_reset_position: TOP_RIGHT
+        map_reset: 0
+      map_controls:
+        zoom_control: '1'
+        map_type_id: roadmap
+        map_type_control: '1'
+        map_type_control_options_type_ids:
+          roadmap: roadmap
+          satellite: satellite
+          hybrid: hybrid
+          terrain: terrain
+        scale_control: '1'
+        street_view_control: '1'
+        fullscreen_control: '1'
+        disable_default_ui: 0
+      map_marker_and_infowindow:
+        icon_image_mode: icon_file
+        icon_file_wrapper:
+          icon_file:
+            fids: ''
+            upload_button: Upload
+            remove_button: Remove
+            upload: ''
+            is_svg: false
+          image_style: geofield_map_default_icon_style
+        icon_image_path: ''
+        infowindow_field: title
+        view_mode: full
+        multivalue_split: 0
+        force_open: 0
+      map_additional_options: ''
+      map_geometries_options: '{"strokeColor":"black","strokeOpacity":"0.8","strokeWeight":2,"fillColor":"blue","fillOpacity":"0.1","clickable":false}'
+      map_oms:
+        map_oms_control: '1'
+        map_oms_options: '{"markersWontMove":"true","markersWontHide":"true","basicFormatEvents":"true","nearbyDistance":3}'
+      custom_style_map:
+        custom_style_name: ''
+        custom_style_options: ''
+        custom_style_control: 0
+        custom_style_default: 0
+      map_markercluster:
+        markercluster_additional_options: '{"maxZoom":12,"gridSize":50}'
+        markercluster_control: 0
+      map_geocoder:
+        settings:
+          position: TOP_LEFT
+          input_size: '25'
+          providers:
+            arcgisonline:
+              weight: '0'
+              checked: 0
+            bingmaps:
+              weight: '0'
+              checked: 0
+            file:
+              weight: '0'
+              checked: 0
+            freegeoip:
+              weight: '0'
+              checked: 0
+            gpxfile:
+              weight: '0'
+              checked: 0
+            geojsonfile:
+              weight: '0'
+              checked: 0
+            geoplugin:
+              weight: '0'
+              checked: 0
+            geoip:
+              weight: '0'
+              checked: 0
+            geonames:
+              weight: '0'
+              checked: 0
+            googlemaps:
+              weight: '0'
+              checked: 0
+            googlemaps_business:
+              weight: '0'
+              checked: 0
+            hostip:
+              weight: '0'
+              checked: 0
+            ipinfodb:
+              weight: '0'
+              checked: 0
+            kmlfile:
+              weight: '0'
+              checked: 0
+            mapquest:
+              weight: '0'
+              checked: 0
+            maxmind:
+              weight: '0'
+              checked: 0
+            nominatim:
+              weight: '0'
+              checked: 0
+            opencage:
+              weight: '0'
+              checked: 0
+            openstreetmap:
+              weight: '0'
+              checked: 0
+            random:
+              weight: '0'
+              checked: 0
+            tomtom:
+              weight: '0'
+              checked: 0
+            yandex:
+              weight: '0'
+              checked: 0
+          min_terms: '4'
+          delay: '800'
+          zoom: '16'
+          options: ''
+          infowindow: 0
+        control: 0
+      map_additional_libraries:
+        places: 0
+        drawing: 0
+        geometry: 0
+        visualization: 0
+      gmap_api_key: ''
     third_party_settings: {  }
+    type: geofield_google_map
+    region: content
   field_media:
     type: entity_reference_entity_view
     weight: 0
