@@ -1,0 +1,184 @@
+uuid: 4aa26741-5d95-47b0-97e0-ca373680a2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.biography.body
+    - field.field.node.biography.field_geofield_location
+    - field.field.node.biography.field_geofield_string_address
+    - field.field.node.biography.field_media
+    - field.field.node.biography.field_person_name
+    - field.field.node.biography.field_person_portrait
+    - node.type.biography
+  module:
+    - geofield_map
+    - media_library
+    - name
+    - path
+    - text
+id: node.biography.default
+targetEntityType: node
+bundle: biography
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_geofield_location:
+    weight: 12
+    settings:
+      html5_geolocation: false
+      default_value:
+        lat: !!float 0
+        lon: !!float 0
+      map_library: leaflet
+      map_google_api_key: ''
+      map_google_places:
+        places_control: false
+        places_additional_options: ''
+      map_geocoder:
+        control: 0
+        settings:
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          options: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_type_google: roadmap
+      map_type_leaflet: OpenStreetMap_Mapnik
+      map_type_selector: true
+      zoom_level: 5
+      zoom:
+        start: 6
+        focus: 12
+        min: 0
+        max: 22
+      click_to_find_marker: false
+      click_to_place_marker: false
+      hide_coordinates: false
+      geoaddress_field:
+        field: '0'
+        hidden: false
+        disabled: true
+    third_party_settings: {  }
+    type: geofield_map
+    region: content
+  field_geofield_string_address:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media:
+    weight: 11
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_person_name:
+    weight: 10
+    settings:
+      labels:
+        title: Title
+        given: Given
+        middle: 'Middle name(s)'
+        family: Family
+        generational: Generational
+        credentials: Credentials
+      size:
+        title: 6
+        given: 20
+        middle: 20
+        family: 20
+        generational: 5
+        credentials: 35
+      title_display:
+        title: description
+        given: description
+        middle: description
+        family: description
+        generational: description
+        credentials: description
+      widget_layout: stacked
+      show_component_required_marker: false
+      credentials_inline: false
+      override_field_settings: false
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_person_portrait:
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

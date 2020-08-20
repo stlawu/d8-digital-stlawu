@@ -1,0 +1,41 @@
+uuid: 98028927-0752-4868-90dd-3109639e8f28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geofield_location
+    - node.type.biography
+  module:
+    - geocoder_field
+    - geofield
+third_party_settings:
+  geocoder_field:
+    method: source
+    weight: 0
+    geocode_field: field_geofield_string_address
+    reverse_geocode_field: ''
+    skip_not_empty_value: false
+    disabled: false
+    hidden: false
+    plugins:
+      - geonames
+      - googlemaps
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: node.biography.field_geofield_location
+field_name: field_geofield_location
+entity_type: node
+bundle: biography
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

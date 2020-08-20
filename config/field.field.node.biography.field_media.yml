@@ -1,0 +1,32 @@
+uuid: 7324a973-7c70-4886-b913-786483bce154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - media.type.audio
+    - media.type.image
+    - media.type.remote_video
+    - node.type.biography
+id: node.biography.field_media
+field_name: field_media
+entity_type: node
+bundle: biography
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: audio
+field_type: entity_reference

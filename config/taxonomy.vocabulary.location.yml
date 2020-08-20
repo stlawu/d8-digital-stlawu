@@ -1,0 +1,8 @@
+uuid: 17384ad4-4c98-406e-8067-c2d1ab35c86c
+langcode: en
+status: true
+dependencies: {  }
+name: Location
+vid: location
+description: 'List of global locations with their coordinates, displayed hierarchically.'
+weight: 0

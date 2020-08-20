@@ -1,0 +1,19 @@
+uuid: 1c64db19-31ee-4067-9bc4-bbcb2d255277
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geofield_string_address
+    - node.type.biography
+id: node.biography.field_geofield_string_address
+field_name: field_geofield_string_address
+entity_type: node
+bundle: biography
+label: 'String address (geocoded)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,50 @@
+uuid: dc77f62b-df3d-4cc7-8dad-752dd759a172
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.biography
+  module:
+    - allowed_formats
+    - better_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: restricted_html
+    simple: simple
+    full_html: full_html
+    plain_text: '0'
+  better_formats:
+    allowed_formats_toggle: 1
+    allowed_formats:
+      basic_html: basic_html
+      restricted_html: restricted_html
+      simple: simple
+      full_html: full_html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        basic_html:
+          weight: '0'
+        restricted_html:
+          weight: '0'
+        simple:
+          weight: '0'
+        full_html:
+          weight: '1'
+id: node.biography.body
+field_name: body
+entity_type: node
+bundle: biography
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
