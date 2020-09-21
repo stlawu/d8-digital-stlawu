@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57b0e7ca490d2af9d53562349d36b6bc",
+    "content-hash": "5777bc5476b8eb5079c71a84945a7e7a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -123,6 +123,24 @@
             "time": "2019-12-24T22:41:47+00:00"
         },
         {
+            "name": "bower-asset/blazy",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dinbror/blazy.git",
+                "reference": "5becad405976695e6016ba301be4f22ba61d5b95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dinbror/blazy/zipball/5becad405976695e6016ba301be4f22ba61d5b95",
+                "reference": "5becad405976695e6016ba301be4f22ba61d5b95"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/colorbox",
             "version": "1.6.4",
             "source": {
@@ -174,6 +192,24 @@
             ]
         },
         {
+            "name": "bower-asset/jquery-mousewheel",
+            "version": "3.1.13",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:jquery/jquery-mousewheel.git",
+                "reference": "67289b6b2aa0066d7d78a5807f520387135ffb22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-mousewheel/zipball/67289b6b2aa0066d7d78a5807f520387135ffb22",
+                "reference": "67289b6b2aa0066d7d78a5807f520387135ffb22"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.2.2"
+            },
+            "type": "bower-asset"
+        },
+        {
             "name": "bower-asset/jquery-simple-color",
             "version": "v1.2.2",
             "source": {
@@ -192,6 +228,24 @@
             ]
         },
         {
+            "name": "bower-asset/jquery.easing",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:jozefizso/bower-jquery-easing.git",
+                "reference": "7ddc8b25d24c78bbae8d00a3ae43bf3f274ec8b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jozefizso/bower-jquery-easing/zipball/7ddc8b25d24c78bbae8d00a3ae43bf3f274ec8b5",
+                "reference": "7ddc8b25d24c78bbae8d00a3ae43bf3f274ec8b5"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.2.1"
+            },
+            "type": "bower-asset"
+        },
+        {
             "name": "bower-asset/mixitup",
             "version": "v3.3.0",
             "source": {
@@ -205,6 +259,27 @@
                 "reference": "a4c474ead1f4332d3f3b2f997a891ab416dfbf66"
             },
             "type": "bower-asset"
+        },
+        {
+            "name": "bower-asset/slick-carousel",
+            "version": "v1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kenwheeler/slick.git",
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kenwheeler/slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/spectrum",
