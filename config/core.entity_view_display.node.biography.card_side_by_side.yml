@@ -1,0 +1,391 @@
+uuid: adb8f84b-0e14-4380-846c-f70183c3e6a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_side_by_side
+    - field.field.node.biography.body
+    - field.field.node.biography.field_geofield_location
+    - field.field.node.biography.field_geofield_string_address
+    - field.field.node.biography.field_geographic_region
+    - field.field.node.biography.field_media
+    - field.field.node.biography.field_person_name
+    - field.field.node.biography.field_person_portrait
+    - node.type.biography
+  module:
+    - field_group
+    - geofield_map
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_column1:
+      children:
+        - body
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-7'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Column1
+    group_row:
+      children:
+        - group_column1
+        - group_column2
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+    group_column2:
+      children:
+        - field_person_portrait
+        - field_media
+        - field_geofield_location
+        - field_geofield_string_address
+        - links
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-5'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Column2
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 67-33
+        components:
+          797c2ce4-68bf-41e0-bc93-c58dd1d19b97:
+            uuid: 797c2ce4-68bf-41e0-bc93-c58dd1d19b97
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:biography:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          a9cfdf75-37f1-45b1-839a-399004ad182f:
+            uuid: a9cfdf75-37f1-45b1-839a-399004ad182f
+            region: second
+            configuration:
+              id: 'field_block:node:biography:field_person_portrait'
+              label: Portrait
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: media_library
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          84149706-315e-4c8e-94ff-f89a767268d5:
+            uuid: 84149706-315e-4c8e-94ff-f89a767268d5
+            region: first
+            configuration:
+              id: 'field_block:node:biography:field_media'
+              label: Media
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: person_teaser
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          99a9beec-623c-4799-90f6-3903861b7c24:
+            uuid: 99a9beec-623c-4799-90f6-3903861b7c24
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:biography:field_geofield_location'
+              formatter:
+                label: hidden
+                settings:
+                  gmap_api_key: ''
+                  map_dimensions:
+                    width: 100%
+                    height: 450px
+                  map_empty:
+                    empty_behaviour: '0'
+                    empty_message: 'No Geofield Value entered for this field'
+                  map_center:
+                    lat: '42'
+                    lon: '12.5'
+                    center_force: 0
+                  map_zoom_and_pan:
+                    zoom:
+                      initial: 6
+                      force: 0
+                      min: 1
+                      max: 22
+                      finer: 0
+                    scrollwheel: 1
+                    draggable: 1
+                    map_reset: 0
+                    map_reset_position: TOP_RIGHT
+                  map_controls:
+                    disable_default_ui: 0
+                    zoom_control: 1
+                    map_type_id: roadmap
+                    map_type_control: 1
+                    map_type_control_options_type_ids:
+                      roadmap: roadmap
+                      satellite: satellite
+                      hybrid: hybrid
+                      terrain: terrain
+                    scale_control: 1
+                    street_view_control: 1
+                    fullscreen_control: 1
+                  map_marker_and_infowindow:
+                    icon_image_mode: icon_file
+                    icon_image_path: ''
+                    icon_file_wrapper:
+                      icon_file: ''
+                    infowindow_field: title
+                    view_mode: full
+                    multivalue_split: 0
+                    force_open: 0
+                    tooltip_field: title
+                  map_oms:
+                    map_oms_control: 1
+                    map_oms_options: '{"markersWontMove": "true", "markersWontHide": "true", "basicFormatEvents": "true", "nearbyDistance": 3}'
+                  map_additional_options: ''
+                  map_additional_libraries: {  }
+                  map_geometries_options: '{"strokeColor":"black","strokeOpacity":"0.8","strokeWeight":2,"fillColor":"blue","fillOpacity":"0.1", "clickable": false}'
+                  custom_style_map:
+                    custom_style_control: 0
+                    custom_style_name: ''
+                    custom_style_options: ''
+                    custom_style_default: 0
+                  map_markercluster:
+                    markercluster_control: 0
+                    markercluster_additional_options: '{"maxZoom":12, "gridSize":50}'
+                  map_geocoder:
+                    control: 0
+                    settings:
+                      position: topright
+                      input_size: 25
+                      providers: {  }
+                      min_terms: 4
+                      delay: 800
+                      zoom: 16
+                      infowindow: 0
+                      options: ''
+                  map_lazy_load:
+                    lazy_load: 0
+                third_party_settings: {  }
+                type: geofield_google_map
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3a24e1ee-125b-4f1d-aab5-7e5d26fdccd9:
+            uuid: 3a24e1ee-125b-4f1d-aab5-7e5d26fdccd9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:biography:field_geofield_string_address'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 5
+          871947f4-d09a-4aab-afbc-c3a180b983d3:
+            uuid: 871947f4-d09a-4aab-afbc-c3a180b983d3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:biography:links'
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+id: node.biography.card_side_by_side
+targetEntityType: node
+bundle: biography
+mode: card_side_by_side
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_geofield_location:
+    weight: 9
+    label: hidden
+    settings:
+      gmap_api_key: ''
+      map_dimensions:
+        width: 100%
+        height: 450px
+      map_empty:
+        empty_behaviour: '0'
+        empty_message: 'No Geofield Value entered for this field'
+      map_center:
+        lat: '42'
+        lon: '12.5'
+        center_force: 0
+      map_zoom_and_pan:
+        zoom:
+          initial: 6
+          force: 0
+          min: 1
+          max: 22
+          finer: 0
+        scrollwheel: 1
+        draggable: 1
+        map_reset: 0
+        map_reset_position: TOP_RIGHT
+      map_controls:
+        disable_default_ui: 0
+        zoom_control: 1
+        map_type_id: roadmap
+        map_type_control: 1
+        map_type_control_options_type_ids:
+          roadmap: roadmap
+          satellite: satellite
+          hybrid: hybrid
+          terrain: terrain
+        scale_control: 1
+        street_view_control: 1
+        fullscreen_control: 1
+      map_marker_and_infowindow:
+        icon_image_mode: icon_file
+        icon_image_path: ''
+        icon_file_wrapper:
+          icon_file: ''
+        infowindow_field: title
+        view_mode: full
+        multivalue_split: 0
+        force_open: 0
+        tooltip_field: title
+      map_oms:
+        map_oms_control: 1
+        map_oms_options: '{"markersWontMove": "true", "markersWontHide": "true", "basicFormatEvents": "true", "nearbyDistance": 3}'
+      map_additional_options: ''
+      map_additional_libraries: {  }
+      map_geometries_options: '{"strokeColor":"black","strokeOpacity":"0.8","strokeWeight":2,"fillColor":"blue","fillOpacity":"0.1", "clickable": false}'
+      custom_style_map:
+        custom_style_control: 0
+        custom_style_name: ''
+        custom_style_options: ''
+        custom_style_default: 0
+      map_markercluster:
+        markercluster_control: 0
+        markercluster_additional_options: '{"maxZoom":12, "gridSize":50}'
+      map_geocoder:
+        control: 0
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          infowindow: 0
+          options: ''
+      map_lazy_load:
+        lazy_load: 0
+    third_party_settings: {  }
+    type: geofield_google_map
+    region: content
+  field_geofield_string_address:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_person_portrait:
+    weight: 7
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_geographic_region: true
+  field_person_name: true

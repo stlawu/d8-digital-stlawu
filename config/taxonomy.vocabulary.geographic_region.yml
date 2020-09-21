@@ -1,0 +1,8 @@
+uuid: a330a5c5-c12c-46e7-8bec-e0e6eb937309
+langcode: en
+status: true
+dependencies: {  }
+name: 'Geographic Region'
+vid: geographic_region
+description: ''
+weight: 0

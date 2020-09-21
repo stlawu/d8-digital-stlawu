@@ -1,0 +1,29 @@
+uuid: ce68c8c1-c0cb-4128-9836-e27e3423defa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geographic_region
+    - node.type.biography
+    - taxonomy.vocabulary.geographic_region
+id: node.biography.field_geographic_region
+field_name: field_geographic_region
+entity_type: node
+bundle: biography
+label: 'Geographic Region'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      geographic_region: geographic_region
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.biography.body
     - field.field.node.biography.field_geofield_location
     - field.field.node.biography.field_geofield_string_address
+    - field.field.node.biography.field_geographic_region
     - field.field.node.biography.field_media
     - field.field.node.biography.field_person_name
     - field.field.node.biography.field_person_portrait
@@ -85,6 +86,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_geographic_region:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_media:
     weight: 11

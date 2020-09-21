@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.biography.body
     - field.field.node.biography.field_geofield_location
     - field.field.node.biography.field_geofield_string_address
+    - field.field.node.biography.field_geographic_region
     - field.field.node.biography.field_media
     - field.field.node.biography.field_person_name
     - field.field.node.biography.field_person_portrait
@@ -36,6 +37,7 @@ hidden:
   addtoany: true
   field_geofield_location: true
   field_geofield_string_address: true
+  field_geographic_region: true
   field_media: true
   field_person_name: true
   field_person_portrait: true

@@ -1,0 +1,10 @@
+uuid: 1bbaf0d2-94ae-43b1-8529-1b2c9266a192
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_side_by_side
+label: 'Card Side by Side'
+targetEntityType: node
+cache: true
