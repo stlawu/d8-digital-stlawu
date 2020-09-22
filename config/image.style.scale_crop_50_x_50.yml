@@ -1,0 +1,19 @@
+uuid: 6959e3d6-66a7-4596-a7f7-3e7678fba1d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: scale_crop_50_x_50
+label: 'Scale Crop 50 x 50'
+effects:
+  732be2ea-818f-43ff-9279-6bc401941717:
+    uuid: 732be2ea-818f-43ff-9279-6bc401941717
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: '50'
+      height: '50'
+      upscale: false
+      simulate: false
+      algorithm: entropy_slice

@@ -56,9 +56,8 @@ module:
   layout_builder: 0
   layout_discovery: 0
   leaflet: 0
-  leaflet_countries: 0
   leaflet_markercluster: 0
-  leaflet_topojson: 0
+  leaflet_more_maps: 0
   leaflet_views: 0
   link: 0
   linkit: 0
@@ -88,6 +87,7 @@ module:
   shortcut: 0
   simple_block: 0
   slick: 0
+  slick_ui: 0
   slick_views: 0
   system: 0
   taxonomy: 0

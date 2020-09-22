@@ -1,0 +1,21 @@
+uuid: a60c9e58-9b3c-46e0-8015-f73ee07ba423
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: bio_ct
+label: 'Bio CT'
+code: ".field--name-field-person-portrait {\n  padding-bottom:3rem;\n}\n.field--name-body {\n  padding-bottom:3rem;\n}"
+conditions_require_all: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      biography: biography
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+contexts: {  }
+media: all
+preprocess: true

@@ -10,10 +10,13 @@ dependencies:
     - field.field.node.biography.field_media
     - field.field.node.biography.field_person_name
     - field.field.node.biography.field_person_portrait
+    - image.style.large
+    - image.style.thumbnail
     - node.type.biography
   module:
     - field_group
     - geofield_map
+    - slick
     - text
     - user
 third_party_settings:
@@ -187,10 +190,82 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: tile
-      link: false
+      style: ''
+      optionset: slu_main
+      optionset_thumbnail: slu_thumbnail
+      skin: default
+      skin_thumbnail: asnavfor
+      image_style: large
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: colorbox
+      box_style: ''
+      thumbnail_style: thumbnail
+      box_media_style: ''
+      ratio: ''
+      box_caption: title
+      view_mode: slick
+      box_caption_custom: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      image: field_media_image
+      title: field_media_description
+      link: ''
+      layout: ''
+      thumbnail_caption: field_media_byline_freeform
+      class: ''
+      cache: 0
+      overridables:
+        arrows: arrows
+        dots: dots
+        draggable: draggable
+        autoplay: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      current_view_mode: default
+      vanilla: false
+      background: false
+      caption:
+        field_media_byline_freeform: '0'
+        field_media_description: '0'
+        field_media_file_size: '0'
+        field_media_mime_type: '0'
+        field_media_transcript: '0'
+        field_media_height: '0'
+        field_media_width: '0'
+        field_media_author_name: '0'
+        field_media_cache_age: '0'
+        field_media_default_name: '0'
+        field_media_html: '0'
+        field_media_provider_name: '0'
+        field_media_provider_url: '0'
+        field_media_resource_title: '0'
+        field_media_resource_type: '0'
+        field_media_thumbnail_height: '0'
+        field_media_thumbnail_uri: '0'
+        field_media_thumbnail_width: '0'
+        title: '0'
+        alt: '0'
+      preserve_keys: false
+      override: false
+      thumbnail: ''
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      responsive_image_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      id: ''
+      overlay: ''
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: slick_media
     region: content
   field_person_portrait:
     weight: 7

@@ -1,0 +1,66 @@
+uuid: a125d03d-b6f5-4f61-9be0-de1658d64c71
+langcode: en
+status: true
+dependencies: {  }
+id: slu_thumbnail
+name: slu_thumbnail
+label: 'SLU Thumbnail'
+weight: 0
+group: thumbnail
+skin: ''
+breakpoints: 0
+optimized: false
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    mobileFirst: true
+    asNavFor: ''
+    accessibility: true
+    adaptiveHeight: false
+    autoplay: false
+    autoplaySpeed: 3000
+    pauseOnHover: true
+    pauseOnDotsHover: false
+    pauseOnFocus: true
+    arrows: true
+    prevArrow: Previous
+    nextArrow: Next
+    downArrow: false
+    downArrowTarget: ''
+    downArrowOffset: 0
+    centerMode: true
+    centerPadding: 50px
+    dots: false
+    dotsClass: slick-dots
+    appendDots: $(element)
+    draggable: true
+    fade: false
+    focusOnSelect: true
+    infinite: false
+    initialSlide: 0
+    lazyLoad: blazy
+    mouseWheel: false
+    randomize: false
+    respondTo: window
+    rtl: false
+    rows: 1
+    slidesPerRow: 7
+    slide: ''
+    slidesToShow: 7
+    slidesToScroll: 1
+    speed: 500
+    swipe: true
+    swipeToSlide: false
+    edgeFriction: 0.35
+    touchMove: true
+    touchThreshold: 5
+    useCSS: false
+    cssEase: ease
+    cssEaseBezier: ''
+    cssEaseOverride: ''
+    useTransform: false
+    easing: linear
+    variableWidth: true
+    vertical: false
+    verticalSwiping: false
+    waitForAnimate: true

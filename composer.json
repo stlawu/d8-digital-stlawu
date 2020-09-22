@@ -76,6 +76,7 @@
         "drupal/inline_entity_form": "^1.0",
         "drupal/leaflet": "^2.0",
         "drupal/leaflet_countries": "^1.1",
+        "drupal/leaflet_more_maps": "^1.0@alpha",
         "drupal/linkit": "^5.0",
         "drupal/maxlength": "^1.0",
         "drupal/menu_block": "^1.5",

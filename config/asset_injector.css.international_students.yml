@@ -1,0 +1,18 @@
+uuid: a9f9c65a-b725-4956-90f6-fba778096760
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: international_students
+label: 'International Students'
+code: ".region.region-content {\n    min-height: 1000px;\n}\n.mix_item  {\n  background:black;\n}\n\n.views-field-title a {\n  color: white;\n  text-decoration:none;\n\n}\n.views-field-title a:hover {\n  color: yellow;\n  text-decoration:underline;\n  \n}\n\n.view-id-international_students_browse .views-row {\n  position: relative;\n}\n.view-id-international_students_browse .views-row .views-field-title {\n  position: absolute;\n  bottom: 0%;\n  background: black;\n  background: rgba(0,0,0,.75);\n  width: 100%;\n  padding: 0 .5em;\n}\n"
+conditions_require_all: true
+conditions:
+  request_path:
+    id: request_path
+    pages: "/international-students*\r\n"
+    negate: false
+contexts: {  }
+media: all
+preprocess: true

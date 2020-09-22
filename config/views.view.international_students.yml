@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_geofield_location
     - field.storage.node.field_media
     - node.type.storymap_slide
+    - user.role.administrator
   module:
     - geofield
     - leaflet_views
@@ -29,9 +30,10 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -293,7 +295,7 @@ display:
           type: geofield_default
           settings:
             output_format: wkt
-            output_escape: 1
+            output_escape: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -485,7 +487,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_geofield_location'
@@ -497,14 +499,14 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: international-students
+      path: international-students-leaflet
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_geofield_location'
