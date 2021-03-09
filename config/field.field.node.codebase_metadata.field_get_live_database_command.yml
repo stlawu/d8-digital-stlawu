@@ -1,0 +1,19 @@
+uuid: e444f40d-7328-4e50-b363-fb459db64d8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_get_live_database_command
+    - node.type.codebase_metadata
+id: node.codebase_metadata.field_get_live_database_command
+field_name: field_get_live_database_command
+entity_type: node
+bundle: codebase_metadata
+label: 'Download Live Database Export Command'
+description: 'Command to download a database export from the live site to database.sql file.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

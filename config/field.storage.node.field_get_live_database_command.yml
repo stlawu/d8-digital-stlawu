@@ -1,0 +1,19 @@
+uuid: 983b683c-289c-4ab7-8ca5-ca00f12413b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_get_live_database_command
+field_name: field_get_live_database_command
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

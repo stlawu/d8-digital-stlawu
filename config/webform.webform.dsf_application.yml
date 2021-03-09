@@ -1,3 +1,4 @@
+uuid: c001772f-9d89-4621-9b8c-e27824c8250e
 langcode: en
 status: open
 dependencies: {  }
@@ -211,7 +212,43 @@ handlers:
         - completed
       to_mail: _default
       to_options: {  }
-      cc_mail: cmcgrath@stlawu.edu
+      cc_mail: 'ewilliamsbergen@stlawu.edu, nroche@stlawu.edu, jdegroat@stlawu.edu, aolearczyk@stlawu.edu'
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'Digital Scholarship Fellows application at [site:name]'
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  notification_of_submission:
+    id: email
+    label: 'Notification of submission'
+    handler_id: notification_of_submission
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: jlashomb@stlawu.edu
+      to_options: {  }
+      cc_mail: ''
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -236,4 +273,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: c001772f-9d89-4621-9b8c-e27824c8250e

@@ -1,0 +1,118 @@
+uuid: 80ff5959-3f7a-4f28-bcb6-2d19e0c6af85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser_alternate
+    - field.field.node.biography.body
+    - field.field.node.biography.field_geofield_location
+    - field.field.node.biography.field_geofield_string_address
+    - field.field.node.biography.field_geographic_region
+    - field.field.node.biography.field_media
+    - field.field.node.biography.field_person_name
+    - field.field.node.biography.field_person_portrait
+    - image.style.scale_crop_220x220
+    - node.type.biography
+  module:
+    - field_group
+    - layout_builder
+    - media
+    - taxonomy
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_column1:
+      children:
+        - body
+      parent_name: group_row
+      weight: 10
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-7'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Column1
+    group_row:
+      children:
+        - group_column1
+        - group_column2
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Row
+    group_column2:
+      children:
+        - field_person_portrait
+      parent_name: group_row
+      weight: 11
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'col-xs-12 col-md-5'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Column2
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.biography.teaser_alternate
+targetEntityType: node
+bundle: biography
+mode: teaser_alternate
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_geographic_region:
+    type: entity_reference_rss_category
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_person_portrait:
+    type: media_thumbnail
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      image_style: scale_crop_220x220
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_geofield_location: true
+  field_geofield_string_address: true
+  field_media: true
+  field_person_name: true
+  links: true

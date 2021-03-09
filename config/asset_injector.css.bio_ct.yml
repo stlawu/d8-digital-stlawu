@@ -6,7 +6,7 @@ dependencies:
     - ctools
 id: bio_ct
 label: 'Bio CT'
-code: ".field--name-field-person-portrait {\n  padding-bottom:3rem;\n}\n.field--name-body {\n  padding-bottom:3rem;\n}"
+code: ".field--name-field-person-portrait {\n  padding-bottom:3rem;\n}\n.field--name-field-geofield-string-address {\n  font-weight:bold;\n  font-style: italic;\n  padding-bottom:2rem;\n}\n.field--name-body {\n  padding-bottom:3rem;\n}"
 conditions_require_all: true
 conditions:
   'entity_bundle:node':

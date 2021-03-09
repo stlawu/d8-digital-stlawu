@@ -6,7 +6,7 @@ dependencies:
     - system
 id: international_students
 label: 'International Students'
-code: ".region.region-content {\n    min-height: 1000px;\n}\n.mix_item  {\n  background:black;\n}\n\n.views-field-title a {\n  color: white;\n  text-decoration:none;\n\n}\n.views-field-title a:hover {\n  color: yellow;\n  text-decoration:underline;\n  \n}\n\n.view-id-international_students_browse .views-row {\n  position: relative;\n}\n.view-id-international_students_browse .views-row .views-field-title {\n  position: absolute;\n  bottom: 0%;\n  background: black;\n  background: rgba(0,0,0,.75);\n  width: 100%;\n  padding: 0 .5em;\n}\n"
+code: ".region.region-content {\n    min-height: 1000px;\n}\n.mix_item  {\n  background:black;\n}\n\n.views-field-title a {\n  color: white;\n  text-decoration:none;\n\n}\n.views-field-title a:hover {\n  color: yellow;\n  text-decoration:underline;\n  \n}\n\n.view-id-international_students_browse .views-row {\n  position: relative;\n}\n.view-id-international_students_browse .views-row .views-field-title {\n  position: absolute;\n  bottom: 0%;\n  background: black;\n  background: rgba(0,0,0,.75);\n  width: 100%;\n  padding: 0 .5em;\n}\n.leaflet-popup-content p {\n    margin: 2px 0;\n}\n.col-md-5.portrait {\n    padding-left: 12px;\n    padding-right: 3px;\n}\n"
 conditions_require_all: true
 conditions:
   request_path:

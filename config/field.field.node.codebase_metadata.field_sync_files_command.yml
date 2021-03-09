@@ -1,0 +1,19 @@
+uuid: b7495159-72b4-4875-ada7-27d90baf1482
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sync_files_command
+    - node.type.codebase_metadata
+id: node.codebase_metadata.field_sync_files_command
+field_name: field_sync_files_command
+entity_type: node
+bundle: codebase_metadata
+label: 'Sync Files Command'
+description: 'Command to sync files from the live environment to your local environment from the docroot of the codebase.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

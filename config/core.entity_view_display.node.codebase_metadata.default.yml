@@ -14,6 +14,9 @@ dependencies:
     - field.field.node.codebase_metadata.field_codebase_status
     - field.field.node.codebase_metadata.field_codebase_version
     - field.field.node.codebase_metadata.field_codebase_website
+    - field.field.node.codebase_metadata.field_codebase_workflow
+    - field.field.node.codebase_metadata.field_get_live_database_command
+    - field.field.node.codebase_metadata.field_sync_files_command
     - node.type.codebase_metadata
   module:
     - datetime
@@ -33,6 +36,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  codebase_metadata_ct_local_setup_entity_view_1:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_codease_hosted_location:
     weight: 7
     label: above
@@ -118,4 +126,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_codebase_workflow: true
+  field_get_live_database_command: true
+  field_sync_files_command: true
   links: true

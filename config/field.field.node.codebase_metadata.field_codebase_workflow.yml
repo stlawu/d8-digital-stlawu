@@ -1,0 +1,29 @@
+uuid: 622bc707-34b1-46f6-9e78-99069fe87f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codebase_workflow
+    - node.type.codebase_metadata
+    - taxonomy.vocabulary.codebase_workflow
+id: node.codebase_metadata.field_codebase_workflow
+field_name: field_codebase_workflow
+entity_type: node
+bundle: codebase_metadata
+label: 'Codebase Workflow'
+description: 'How the codebase is setup to handle updates.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codebase_workflow: codebase_workflow
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

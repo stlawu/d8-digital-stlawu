@@ -22,12 +22,19 @@ bundle: image
 mode: default
 content:
   field_media_byline_freeform:
-    weight: 2
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  field_media_description:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_media_image:
     label: visually_hidden
     settings:
@@ -35,12 +42,11 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    weight: 1
+    weight: 0
     region: content
 hidden:
   addtoany: true
   created: true
-  field_media_description: true
   field_media_file_size: true
   field_media_height: true
   field_media_mime_type: true
