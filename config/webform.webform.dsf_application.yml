@@ -142,6 +142,7 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
   serial_disabled: false
 access:
   create:
@@ -203,6 +204,7 @@ handlers:
   dsf_email_submission:
     id: email
     label: 'Notification of submission'
+    notes: ''
     handler_id: dsf_email_submission
     status: true
     conditions: {  }
@@ -239,6 +241,7 @@ handlers:
   notification_of_submission:
     id: email
     label: 'Notification of submission'
+    notes: ''
     handler_id: notification_of_submission
     status: true
     conditions: {  }
