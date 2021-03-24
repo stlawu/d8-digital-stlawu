@@ -42,7 +42,7 @@ readline==6.2.4.1
 requests==2.20.0
 robotframework==3.0
 robotframework-selenium2library==1.8.0
-rsa==3.1.4
+rsa==4.1
 selenium==2.53.6
 sentinels==1.0.0
 simplejson==3.6.5
